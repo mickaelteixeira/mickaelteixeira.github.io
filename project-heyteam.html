@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeyTeam - Mickaël Teixeira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Top Bar (Logo & Back) -->
+    <header class="top-bar">
+        <div class="container-fluid top-bar-container">
+            <a href="index.html" class="logo glass">MT<span class="dot">.</span></a>
+            <a href="index.html#projets" class="nav-back-btn">
+                <span>← Retour aux projets</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="project-page">
+        <header class="project-hero">
+            <div class="container">
+                <span class="project-year-label">2025</span>
+                <h1 class="project-title glitch-text" data-text="HeyTeam">HeyTeam</h1>
+                <p class="project-role">Lead Developer</p>
+            </div>
+            <div class="hero-overlay"></div>
+        </header>
+
+        <section class="project-content section">
+            <div class="container">
+                <div class="case-study-grid">
+                    <div class="case-block mission glass">
+                        <h2>Mission & Réalisation</h2>
+                        <p class="lead">Conception d'une architecture modulaire pour une plateforme B2B d'interconnexion
+                            SIRH.</p>
+                        <p>Le défi comprenait la refonte technique d'une application Laravel legacy avec l'adoption des
+                            principes DDD, la simplification des patterns existants et la standardisation des pratiques
+                            de développement.</p>
+
+                        <h3 class="sub-title">Réalisations Clés</h3>
+                        <ul class="feature-list">
+                            <li>Conduite d’audits techniques et mise en place de plans d’amélioration.</li>
+                            <li>Mise en place de tests automatisés, d’analyses statiques et intégration continue.</li>
+                            <li>Animation de rituels tech (revues de code, pair programming).</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-block stack glass">
+                        <h2>La Stack</h2>
+                        <div class="hero-tech-stack">
+                            <span class="tech-badge">Laravel 8</span>
+                            <span class="tech-badge">PHP 7.4</span>
+                            <span class="tech-badge">DDD</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">GitLab CI</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="next-project section">
+            <div class="container text-center">
+                <p class="next-label">Projet Suivant</p>
+                <a href="project-maxicoffee.html" class="next-link">
+                    <span class="next-title">MaxiCoffee Middle Office</span>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-watermark">MT</div>
+        <div class="container">
+            <p>© 2025 Mickaël Teixeira. Fait avec audace à Bordeaux.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
