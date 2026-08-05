@@ -25,6 +25,7 @@
 <script src="assets/v2-fx.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="assets/dc-runtime.js"></script>
+<link rel="stylesheet" href="assets/responsive.css">
 </head>
 <body>
 <x-dc>
@@ -210,12 +211,12 @@ a:hover { color: var(--link-hover); }
     <span data-scramble="true" style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); margin-left: auto;">Dossier [{{ data.index }}] / 04</span>
   </div>
   <header style="padding: 40px 24px 32px; border-bottom: 1px solid var(--border); position: relative; overflow: hidden;">
-    <div style="display: flex; justify-content: space-between; gap: 16px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 24px;">
+    <div class="mt-r-metarow" style="display: flex; justify-content: space-between; gap: 16px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 24px;">
       <span data-scramble="true">Étude de cas — {{ data.year }}</span>
       <span data-scramble="true">Client — {{ data.client }}</span>
       <span data-scramble="true">Rôle — {{ data.role }}</span>
     </div>
-    <h1 style="margin: 0; font-family: var(--font-display); font-weight: 400; font-size: clamp(48px, 9.5vw, 140px); line-height: 0.92; letter-spacing: -0.01em; text-transform: uppercase; text-wrap: balance;">
+    <h1 class="mt-r-case-title" style="margin: 0; font-family: var(--font-display); font-weight: 400; font-size: clamp(48px, 9.5vw, 140px); line-height: 0.92; letter-spacing: -0.01em; text-transform: uppercase; text-wrap: balance;">
       <div style="overflow: hidden;"><span data-line="true" style="display: block;">{{ data.title }}<span style="color: var(--accent);">.</span></span></div>
     </h1>
     <div data-fade="true" style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px;">
@@ -224,7 +225,7 @@ a:hover { color: var(--link-hover); }
       </sc-for>
     </div>
   </header>
-  <div style="max-width: var(--container); margin: 0 auto; padding: 56px 24px 72px; display: grid; grid-template-columns: 300px 1fr; gap: 56px; align-items: start;">
+  <div class="mt-r-case-grid" style="max-width: var(--container); margin: 0 auto; padding: 56px 24px 72px; display: grid; grid-template-columns: 300px 1fr; gap: 56px; align-items: start;">
     <aside data-anim="0" style="position: sticky; top: 84px;">
       <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.MetaTable" rows="{{ metaRows }}" hint-size="100%,180px"></x-import>
       <div style="margin-top: 28px; color: var(--text-primary);">
@@ -251,14 +252,14 @@ a:hover { color: var(--link-hover); }
           <span style="position: absolute; bottom: 10px; left: 12px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary);">Plateforme interne — visuel confidentiel</span>
         </div>
       </sc-if>
-      <div data-anim="0" style="display: grid; grid-template-columns: 130px 1fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--border);">
+      <div data-anim="0" class="mt-r-caserow" style="display: grid; grid-template-columns: 130px 1fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--border);">
         <span data-scramble="true" style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary);">[A] — Mission</span>
         <div>
           <p style="margin: 0 0 14px; font-size: 18px; line-height: 1.5; color: var(--text-primary);">{{ data.lead }}</p>
           <p style="margin: 0; font-size: 14px; line-height: 1.7; color: var(--text-secondary);">{{ data.body }}</p>
         </div>
       </div>
-      <div data-anim="1" style="display: grid; grid-template-columns: 130px 1fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--border);">
+      <div data-anim="1" class="mt-r-caserow" style="display: grid; grid-template-columns: 130px 1fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--border);">
         <span data-scramble="true" style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary);">[B] — Réalisations</span>
         <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 12px;">
           <sc-for list="{{ data.keyItems }}" as="item" hint-placeholder-count="3">
@@ -266,7 +267,7 @@ a:hover { color: var(--link-hover); }
           </sc-for>
         </ul>
       </div>
-      <div data-anim="2" style="display: grid; grid-template-columns: 130px 1fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+      <div data-anim="2" class="mt-r-caserow" style="display: grid; grid-template-columns: 130px 1fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
         <span data-scramble="true" style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary);">[C] — La stack</span>
         <div style="display: flex; flex-wrap: wrap; gap: 8px;">
           <sc-for list="{{ data.stack }}" as="tech" hint-placeholder-count="6">
@@ -280,7 +281,7 @@ a:hover { color: var(--link-hover); }
   <a href="{{ data.nextHref }}" sc-camel-on-click="{{ wipeNav }}" style="display: block; padding: 48px 24px; border-bottom: 1px solid var(--border); text-decoration: none; color: var(--text-primary); background: transparent; transition: background 140ms cubic-bezier(0.7,0,0.3,1), color 140ms cubic-bezier(0.7,0,0.3,1);" style-hover="background: var(--bg-inverse); color: var(--text-inverse);">
     <div style="max-width: var(--container); margin: 0 auto;">
       <span style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: inherit; opacity: 0.55; display: block; margin-bottom: 12px;">Projet suivant — [{{ data.nextIndex }}]</span>
-      <span style="display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+      <span class="mt-r-nextrow" style="display: flex; align-items: center; justify-content: space-between; gap: 24px;">
         <span style="font-family: var(--font-display); font-weight: 400; font-size: clamp(36px, 6vw, 88px); line-height: 0.94; text-transform: uppercase; color: inherit;">{{ data.nextTitle }}</span>
         <span style="font-size: clamp(28px, 3.4vw, 52px); color: inherit;">→</span>
       </span>
