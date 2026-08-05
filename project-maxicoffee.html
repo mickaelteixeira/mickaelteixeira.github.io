@@ -1,110 +1,365 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"><head>
+<meta charset="utf-8">
+<script>window.__resources = {"g1": "gallery/maxicoffee-b2b-home.png", "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "assets/react-production-min.js", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "assets/react-dom-production-min.js"};</script>
+<title>MaxiCoffee Middle Office - Mickaël Teixeira</title>
+<meta name="author" content="Mickaël Teixeira">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mickaelteixeira.github.io/project-maxicoffee.html">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mickaelteixeira.github.io/project-maxicoffee.html">
+<meta property="og:title" content="MaxiCoffee Middle Office — Étude de cas | Mickaël Teixeira">
+<meta property="og:description" content="Middle office critique gérant la logistique et la facturation. Laravel, DDD et synchronisation haute performance via RedPanda.">
+<meta property="og:image" content="https://mickaelteixeira.github.io/gallery/maxicoffee-b2b-home.png">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MaxiCoffee Middle Office — Étude de cas | Mickaël Teixeira">
+<meta name="twitter:description" content="Middle office critique gérant la logistique et la facturation. Laravel, DDD et synchronisation haute performance via RedPanda.">
+<meta name="twitter:image" content="https://mickaelteixeira.github.io/gallery/maxicoffee-b2b-home.png">
+<meta name="description" content="Développeur Freelance expert Symfony, Sylius, API Platform &amp; Angular basé à Bordeaux. 15+ ans d'expérience en architecture web, e-commerce et applications critiques.">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaxiCoffee Middle Office - Mickaël Teixeira</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<script src="assets/v2-fx.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="assets/dc-runtime.js"></script>
 </head>
-
 <body>
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
+<x-dc>
+<helmet>
+<style>@font-face{font-family:'Geist';src:url("assets/fonts/geist.ttf") format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Geist Mono';src:url("assets/fonts/geist-mono.ttf") format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Archivo Black';src:url("assets/fonts/archivo-black.ttf") format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Serif';src:url("assets/fonts/instrument-serif.ttf") format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Serif';src:url("assets/fonts/instrument-serif-italic.ttf") format('truetype');font-weight:400;font-style:italic;font-display:swap}
+</style>
+<style>:root{
+/* base — ink scale (dark-first) */
+--black:#000000;--white:#ffffff;
+--gray-950:#0a0a0a;--gray-900:#111111;--gray-850:#161616;--gray-800:#1f1f1f;--gray-700:#2e2e2e;--gray-600:#454545;--gray-500:#6b6b6b;--gray-400:#8f8f8f;--gray-300:#b4b4b4;--gray-200:#d6d6d6;--gray-100:#ededed;
+--paper:#f2f1ec;
+/* accents — used sparingly, never together in one element */
+--accent:#5b2eff;--accent-2:#ff4d00;
+--negative:#ff3333;--positive:#00e585;--warning:#ffb300;
+/* semantic (dark default) */
+--bg:var(--black);--bg-subtle:var(--gray-950);--bg-inverse:var(--white);
+--surface-card:var(--black);--surface-raised:var(--gray-900);--surface-inverse:var(--white);
+--border:var(--gray-800);--border-strong:var(--gray-600);--border-inverse:var(--white);
+--text-primary:var(--white);--text-secondary:var(--gray-400);--text-tertiary:var(--gray-500);--text-inverse:var(--black);
+--link:var(--white);--link-hover:var(--accent);
+--focus-ring:var(--accent);
+--selection-bg:var(--accent);--selection-fg:var(--black);
+}
+[data-theme="light"]{
+--bg:var(--paper);--bg-subtle:#e9e8e2;--bg-inverse:var(--black);
+--surface-card:var(--paper);--surface-raised:var(--white);--surface-inverse:var(--black);
+--border:var(--black);--border-strong:var(--black);--border-inverse:var(--paper);
+--text-primary:var(--black);--text-secondary:#55534d;--text-tertiary:#8a877e;--text-inverse:var(--white);
+--link:var(--black);--link-hover:var(--accent);
+--selection-bg:var(--black);--selection-fg:var(--paper);
+}
+</style>
+<style>:root{
+--font-display:'Archivo Black',system-ui,sans-serif;
+--font-sans:'Geist',system-ui,-apple-system,sans-serif;
+--font-mono:'Geist Mono',ui-monospace,'SFMono-Regular',monospace;
+--font-serif:'Instrument Serif',Georgia,serif;
+/* scale */
+--text-2xs:10px;--text-xs:11px;--text-sm:12.5px;--text-base:14px;--text-md:16px;--text-lg:20px;--text-xl:24px;--text-2xl:32px;--text-3xl:44px;--text-4xl:64px;
+--text-display:clamp(56px,9vw,128px);
+/* leading */
+--leading-none:0.92;--leading-tight:1.1;--leading-snug:1.35;--leading-normal:1.6;
+/* tracking */
+--tracking-display:-0.01em;--tracking-tight:-0.02em;--tracking-normal:0;--tracking-caps:0.12em;--tracking-wide:0.2em;
+/* weights (Geist variable) */
+--weight-regular:400;--weight-medium:500;--weight-semibold:600;--weight-bold:700;
+}
+</style>
+<style>:root{
+/* 4px grid */
+--space-0:0;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;--space-8:32px;--space-10:40px;--space-12:48px;--space-16:64px;--space-20:80px;--space-24:96px;--space-32:128px;
+/* layout */
+--container:1200px;--container-narrow:760px;--gutter:24px;--section-gap:var(--space-24);
+--nav-height:56px;
+}
+</style>
+<style>:root{
+/* radii — sharp by default, pill for chips/buttons only */
+--radius-0:0;--radius-sm:2px;--radius-pill:999px;
+/* borders */
+--border-w:1px;--border-w-strong:2px;
+--rule:1px solid var(--border);--rule-strong:1px solid var(--border-strong);
+/* shadows — flat system; hard offset used on light/paper surfaces only */
+--shadow-none:none;
+--shadow-hard:4px 4px 0 0 var(--black);
+--shadow-hard-sm:2px 2px 0 0 var(--black);
+/* motion — fast, mechanical */
+--duration-instant:80ms;/* @kind other */--duration-fast:140ms;/* @kind other */--duration-base:220ms;/* @kind other */
+--ease-out:cubic-bezier(0.16,1,0.3,1);/* @kind other */--ease-mech:cubic-bezier(0.7,0,0.3,1);/* @kind other */--ease-step:steps(3,end);/* @kind other */
+/* dither/scan treatments */
+--img-filter:grayscale(1) contrast(1.15);/* @kind other */
+--z-nav:100;/* @kind other */--z-overlay:500;/* @kind other */
+}
+</style>
+<style>*{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text-primary);font-family:var(--font-sans);font-size:var(--text-base);line-height:var(--leading-normal);font-weight:var(--weight-regular)}
+::selection{background:var(--selection-bg);color:var(--selection-fg)}
+a{color:var(--link);text-decoration:none;transition:color var(--duration-fast) var(--ease-out)}
+a:hover{color:var(--link-hover)}
+:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
+</style>
+<style>@font-face{font-family:'Geist';src:url("assets/fonts/geist.ttf") format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Geist Mono';src:url("assets/fonts/geist-mono.ttf") format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Archivo Black';src:url("assets/fonts/archivo-black.ttf") format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Serif';src:url("assets/fonts/instrument-serif.ttf") format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Serif';src:url("assets/fonts/instrument-serif-italic.ttf") format('truetype');font-weight:400;font-style:italic;font-display:swap}
 
-    <!-- Navigation -->
-    <!-- Top Bar (Logo & Back) -->
-    <header class="top-bar">
-        <div class="container-fluid top-bar-container">
-            <a href="index.html" class="logo glass">MT<span class="dot">.</span></a>
-            <a href="index.html#projets" class="nav-back-btn">
-                <span>← Retour aux projets</span>
-            </a>
+:root{
+/* base — ink scale (dark-first) */
+--black:#000000;--white:#ffffff;
+--gray-950:#0a0a0a;--gray-900:#111111;--gray-850:#161616;--gray-800:#1f1f1f;--gray-700:#2e2e2e;--gray-600:#454545;--gray-500:#6b6b6b;--gray-400:#8f8f8f;--gray-300:#b4b4b4;--gray-200:#d6d6d6;--gray-100:#ededed;
+--paper:#f2f1ec;
+/* accents — used sparingly, never together in one element */
+--accent:#5b2eff;--accent-2:#ff4d00;
+--negative:#ff3333;--positive:#00e585;--warning:#ffb300;
+/* semantic (dark default) */
+--bg:var(--black);--bg-subtle:var(--gray-950);--bg-inverse:var(--white);
+--surface-card:var(--black);--surface-raised:var(--gray-900);--surface-inverse:var(--white);
+--border:var(--gray-800);--border-strong:var(--gray-600);--border-inverse:var(--white);
+--text-primary:var(--white);--text-secondary:var(--gray-400);--text-tertiary:var(--gray-500);--text-inverse:var(--black);
+--link:var(--white);--link-hover:var(--accent);
+--focus-ring:var(--accent);
+--selection-bg:var(--accent);--selection-fg:var(--black);
+}
+[data-theme="light"]{
+--bg:var(--paper);--bg-subtle:#e9e8e2;--bg-inverse:var(--black);
+--surface-card:var(--paper);--surface-raised:var(--white);--surface-inverse:var(--black);
+--border:var(--black);--border-strong:var(--black);--border-inverse:var(--paper);
+--text-primary:var(--black);--text-secondary:#55534d;--text-tertiary:#8a877e;--text-inverse:var(--white);
+--link:var(--black);--link-hover:var(--accent);
+--selection-bg:var(--black);--selection-fg:var(--paper);
+}
+
+:root{
+--font-display:'Archivo Black',system-ui,sans-serif;
+--font-sans:'Geist',system-ui,-apple-system,sans-serif;
+--font-mono:'Geist Mono',ui-monospace,'SFMono-Regular',monospace;
+--font-serif:'Instrument Serif',Georgia,serif;
+/* scale */
+--text-2xs:10px;--text-xs:11px;--text-sm:12.5px;--text-base:14px;--text-md:16px;--text-lg:20px;--text-xl:24px;--text-2xl:32px;--text-3xl:44px;--text-4xl:64px;
+--text-display:clamp(56px,9vw,128px);
+/* leading */
+--leading-none:0.92;--leading-tight:1.1;--leading-snug:1.35;--leading-normal:1.6;
+/* tracking */
+--tracking-display:-0.01em;--tracking-tight:-0.02em;--tracking-normal:0;--tracking-caps:0.12em;--tracking-wide:0.2em;
+/* weights (Geist variable) */
+--weight-regular:400;--weight-medium:500;--weight-semibold:600;--weight-bold:700;
+}
+
+:root{
+/* 4px grid */
+--space-0:0;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;--space-8:32px;--space-10:40px;--space-12:48px;--space-16:64px;--space-20:80px;--space-24:96px;--space-32:128px;
+/* layout */
+--container:1200px;--container-narrow:760px;--gutter:24px;--section-gap:var(--space-24);
+--nav-height:56px;
+}
+
+:root{
+/* radii — sharp by default, pill for chips/buttons only */
+--radius-0:0;--radius-sm:2px;--radius-pill:999px;
+/* borders */
+--border-w:1px;--border-w-strong:2px;
+--rule:1px solid var(--border);--rule-strong:1px solid var(--border-strong);
+/* shadows — flat system; hard offset used on light/paper surfaces only */
+--shadow-none:none;
+--shadow-hard:4px 4px 0 0 var(--black);
+--shadow-hard-sm:2px 2px 0 0 var(--black);
+/* motion — fast, mechanical */
+--duration-instant:80ms;/* @kind other */--duration-fast:140ms;/* @kind other */--duration-base:220ms;/* @kind other */
+--ease-out:cubic-bezier(0.16,1,0.3,1);/* @kind other */--ease-mech:cubic-bezier(0.7,0,0.3,1);/* @kind other */--ease-step:steps(3,end);/* @kind other */
+/* dither/scan treatments */
+--img-filter:grayscale(1) contrast(1.15);/* @kind other */
+--z-nav:100;/* @kind other */--z-overlay:500;/* @kind other */
+}
+
+*{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text-primary);font-family:var(--font-sans);font-size:var(--text-base);line-height:var(--leading-normal);font-weight:var(--weight-regular)}
+::selection{background:var(--selection-bg);color:var(--selection-fg)}
+a{color:var(--link);text-decoration:none;transition:color var(--duration-fast) var(--ease-out)}
+a:hover{color:var(--link-hover)}
+:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
+
+</style>
+<script src="assets/design-system.js"></script>
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text-primary); font-family: var(--font-sans); cursor: crosshair; }
+a { color: var(--link); }
+a:hover { color: var(--link-hover); }
+@keyframes mtSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+</style>
+</helmet>
+<div data-screen-label="Projet V3" style="background: var(--bg); color: var(--text-primary); font-family: var(--font-sans); min-height: 100vh;">
+  <div style="position: fixed; left: 16px; bottom: 12px; z-index: 500; pointer-events: none; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.2em; color: var(--text-tertiary); text-transform: uppercase;">Scroll — <span id="mt-scroll">000</span>%</div>
+  <div style="position: sticky; top: 0; z-index: 200; display: flex; align-items: center; gap: 16px; padding: 12px 24px; border-bottom: 1px solid var(--border); background: var(--bg);">
+    <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Button" variant="ghost" size="sm" href="index.html" sc-camel-on-click="{{ wipeNav }}" hint-size="90px,28px">← Index</x-import>
+    <span data-scramble="true" style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); margin-left: auto;">Dossier [{{ data.index }}] / 04</span>
+  </div>
+  <header style="padding: 40px 24px 32px; border-bottom: 1px solid var(--border); position: relative; overflow: hidden;">
+    <div style="display: flex; justify-content: space-between; gap: 16px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 24px;">
+      <span data-scramble="true">Étude de cas — {{ data.year }}</span>
+      <span data-scramble="true">Client — {{ data.client }}</span>
+      <span data-scramble="true">Rôle — {{ data.role }}</span>
+    </div>
+    <h1 style="margin: 0; font-family: var(--font-display); font-weight: 400; font-size: clamp(48px, 9.5vw, 140px); line-height: 0.92; letter-spacing: -0.01em; text-transform: uppercase; text-wrap: balance;">
+      <div style="overflow: hidden;"><span data-line="true" style="display: block;">{{ data.title }}<span style="color: var(--accent);">.</span></span></div>
+    </h1>
+    <div data-fade="true" style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px;">
+      <sc-for list="{{ data.tags }}" as="t" hint-placeholder-count="3">
+        <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Tag" hint-size="80px,26px">{{ t }}</x-import>
+      </sc-for>
+    </div>
+  </header>
+  <div style="max-width: var(--container); margin: 0 auto; padding: 56px 24px 72px; display: grid; grid-template-columns: 300px 1fr; gap: 56px; align-items: start;">
+    <aside data-anim="0" style="position: sticky; top: 84px;">
+      <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.MetaTable" rows="{{ metaRows }}" hint-size="100%,180px"></x-import>
+      <div style="margin-top: 28px; color: var(--text-primary);">
+        <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Barcode" dc-props="{{ barcodeProps }}" hint-size="240px,58px"></x-import>
+      </div>
+      <div style="margin-top: 28px;">
+        <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Button" variant="outline" size="sm" href="index.html#contact" sc-camel-on-click="{{ wipeNav }}" hint-size="170px,28px">Un projet similaire ?</x-import>
+      </div>
+    </aside>
+    <div>
+      <sc-if value="{{ hasImages }}" hint-placeholder-val="{{ true }}">
+        <div style="display: grid; gap: 32px; margin-bottom: 56px;">
+          <sc-for list="{{ galleryProps }}" as="g" hint-placeholder-count="1">
+            <div data-clip="true">
+              <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.DitherImage" dc-props="{{ g }}" hint-size="100%,480px"></x-import>
+            </div>
+          </sc-for>
         </div>
-    </header>
-
-    <main class="project-page">
-        <!-- Hero Section -->
-        <header class="project-hero">
-            <div class="container">
-                <span class="project-year-label">2025</span>
-                <h1 class="project-title glitch-text" data-text="MaxiCoffee Middle Office">MaxiCoffee Middle Office</h1>
-                <p class="project-role">Développeur</p>
-            </div>
-            <div class="hero-overlay"></div>
-        </header>
-
-        <!-- Content Grid -->
-        <section class="project-content section">
-            <div class="container">
-                <div class="case-study-grid">
-                    <!-- Mission & Réalisation -->
-                    <div class="case-block mission glass">
-                        <h2>Mission & Réalisation</h2>
-                        <p class="lead">Mise en place d'un middle office pour la gestion de territoire, la facturation
-                            et la logistique.</p>
-                        <p>Le projet consistait à développer des modules critiques (gestion territoire, facturation,
-                            logistique) et à intégrer Salesforce pour la synchronisation des données clients et
-                            territoires commerciaux.</p>
-
-                        <h3 class="sub-title">Réalisations Clés</h3>
-                        <ul class="feature-list">
-                            <li>Implémentation de parsers CSV et systèmes d'import complexes.</li>
-                            <li>Architecture de messaging asynchrone pour la synchronisation multi-domaines.</li>
-                            <li>Intégration Salesforce : synchronisation des données clients et territoires.</li>
-                        </ul>
-                    </div>
-
-                    <!-- Stack -->
-                    <div class="case-block stack glass">
-                        <h2>La Stack</h2>
-                        <div class="hero-tech-stack">
-                            <span class="tech-badge">PHP 8.3</span>
-                            <span class="tech-badge">Laravel</span>
-                            <span class="tech-badge">API Platform</span>
-                            <span class="tech-badge">Hexagonal Arch</span>
-                            <span class="tech-badge">DDD</span>
-                            <span class="tech-badge">Docker</span>
-                            <span class="tech-badge">RedPanda</span>
-                            <span class="tech-badge">GitLab CI</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Gallery -->
-                <div class="project-gallery">
-                    <div class="screenshot-placeholder">
-                        <img src="gallery/maxicoffee-b2b-home.png" alt="MaxiCoffee B2B Home">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Next Project -->
-        <section class="next-project section">
-            <div class="container text-center">
-                <p class="next-label">Projet Suivant</p>
-                <a href="project-commande.html" class="next-link">
-                    <span class="next-title">Commande.com Refonte</span>
-                    <span class="arrow">→</span>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-watermark">MT</div>
-        <div class="container">
-            <p>© 2025 Mickaël Teixeira. Fait avec audace à Bordeaux.</p>
+      </sc-if>
+      <sc-if value="{{ noImages }}" hint-placeholder-val="{{ false }}">
+        <div data-clip="true" style="border: 1px solid var(--border); aspect-ratio: 16 / 10; display: flex; align-items: center; justify-content: center; position: relative; color: var(--text-primary); overflow: hidden; margin-bottom: 56px;">
+          <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.WarpGrid" dc-props="{{ warpProps }}" style="position: absolute; inset: 0; margin: auto; color: var(--gray-700);" hint-size="620px,420px"></x-import>
+          <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Globe" dc-props="{{ globeProps }}" style="position: relative; z-index: 1;" hint-size="240px,240px"></x-import>
+          <span style="position: absolute; bottom: 10px; left: 12px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary);">Plateforme interne — visuel confidentiel</span>
         </div>
-    </footer>
+      </sc-if>
+      <div data-anim="0" style="display: grid; grid-template-columns: 130px 1fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--border);">
+        <span data-scramble="true" style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary);">[A] — Mission</span>
+        <div>
+          <p style="margin: 0 0 14px; font-size: 18px; line-height: 1.5; color: var(--text-primary);">{{ data.lead }}</p>
+          <p style="margin: 0; font-size: 14px; line-height: 1.7; color: var(--text-secondary);">{{ data.body }}</p>
+        </div>
+      </div>
+      <div data-anim="1" style="display: grid; grid-template-columns: 130px 1fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--border);">
+        <span data-scramble="true" style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary);">[B] — Réalisations</span>
+        <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 12px;">
+          <sc-for list="{{ data.keyItems }}" as="item" hint-placeholder-count="3">
+            <li style="position: relative; padding-left: 24px; font-size: 14px; line-height: 1.65; color: var(--text-secondary); border-bottom: 1px solid var(--border); padding-bottom: 12px;"><span style="position: absolute; left: 0; color: var(--accent);">→</span>{{ item }}</li>
+          </sc-for>
+        </ul>
+      </div>
+      <div data-anim="2" style="display: grid; grid-template-columns: 130px 1fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+        <span data-scramble="true" style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary);">[C] — La stack</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <sc-for list="{{ data.stack }}" as="tech" hint-placeholder-count="6">
+            <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Tag" hint-size="80px,26px">{{ tech }}</x-import>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+  <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.HazardTape" hint-size="100%,14px"></x-import>
+  <a href="{{ data.nextHref }}" sc-camel-on-click="{{ wipeNav }}" style="display: block; padding: 48px 24px; border-bottom: 1px solid var(--border); text-decoration: none; color: var(--text-primary); background: transparent; transition: background 140ms cubic-bezier(0.7,0,0.3,1), color 140ms cubic-bezier(0.7,0,0.3,1);" style-hover="background: var(--bg-inverse); color: var(--text-inverse);">
+    <div style="max-width: var(--container); margin: 0 auto;">
+      <span style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: inherit; opacity: 0.55; display: block; margin-bottom: 12px;">Projet suivant — [{{ data.nextIndex }}]</span>
+      <span style="display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+        <span style="font-family: var(--font-display); font-weight: 400; font-size: clamp(36px, 6vw, 88px); line-height: 0.94; text-transform: uppercase; color: inherit;">{{ data.nextTitle }}</span>
+        <span style="font-size: clamp(28px, 3.4vw, 52px); color: inherit;">→</span>
+      </span>
+    </div>
+  </a>
+  <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Footer" name="Mickael Teixeira" columns="{{ footerCols }}" legal="©2025 Mickaël Teixeira — Fait avec audace à Bordeaux" coords="{{ coordsStr }}" hint-size="100%,380px"></x-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{
+  &quot;accent&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#5b2eff&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;options&quot;: [&quot;#5b2eff&quot;, &quot;#ff4d00&quot;], &quot;section&quot;: &quot;Thème&quot; }
+}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this.applyTheme();
+    Promise.resolve(window.MTFX).then((fx) => {
+      this.fx = fx;
+      fx.initCursor(); fx.initReveals(); fx.initScrollMeter();
+      fx.playWipeIn();
+      fx.revealHero(250);
+    });
+  }
+  componentDidUpdate() { this.applyTheme(); }
+  applyTheme() {
+    const accent = this.props.accent ?? localStorage.getItem('mt_v3_accent') ?? '#5b2eff';
+    const theme = localStorage.getItem('mt_v3_theme') ?? 'dark';
+    document.documentElement.style.setProperty('--accent', accent);
+    document.documentElement.setAttribute('data-theme', theme === 'paper' ? 'light' : 'dark');
+  }
+  renderVals() {
+    const data = {
+      index: '01',
+      year: '2025',
+      title: 'MaxiCoffee Middle Office',
+      role: 'Développeur',
+      client: 'MaxiCoffee',
+      tags: ['Laravel', 'DDD', 'RedPanda'],
+      lead: "Mise en place d'un middle office pour la gestion de territoire, la facturation et la logistique.",
+      body: "Le projet consistait à développer des modules critiques (gestion territoire, facturation, logistique) et à intégrer Salesforce pour la synchronisation des données clients et territoires commerciaux.",
+      keyItems: [
+        "Implémentation de parsers CSV et systèmes d'import complexes.",
+        "Architecture de messaging asynchrone pour la synchronisation multi-domaines.",
+        "Intégration Salesforce : synchronisation des données clients et territoires."
+      ],
+      stack: ['PHP 8.3', 'Laravel', 'API Platform', 'Hexagonal Arch', 'DDD', 'Docker', 'RedPanda', 'GitLab CI'],
+      gallery: [{ src: window.__resources.g1, caption: 'MaxiCoffee B2B — Home' }],
+      nextHref: 'project-commande.html',
+      nextIndex: '02',
+      nextTitle: 'Commande.com Refonte'
+    };
+    return {
+      data,
+      hasImages: data.gallery.length > 0,
+      noImages: data.gallery.length === 0,
+      galleryProps: data.gallery.map((g, i) => ({ src: g.src, ratio: '16 / 10', treatment: 'scanlines', caption: g.caption, index: '0' + (i + 1) })),
+      warpProps: { width: 620, height: 420, cols: 18, rows: 12, amp: 12, seed: 5 },
+      globeProps: { size: 240, dotted: true, spin: true },
+      metaRows: [
+        { k: 'Client', v: data.client },
+        { k: 'Année', v: data.year },
+        { k: 'Rôle', v: data.role },
+        { k: 'Catégorie', v: data.tags.join(' / ') }
+      ],
+      barcodeProps: { bars: 48, width: 240, height: 44, seed: 11, label: 'MT—' + data.year + ' — [' + data.index + ']' },
+      coordsStr: "44°50'16\"N 0°34'46\"W — Bordeaux, FR",
+      footerCols: [
+        { title: 'Navigation', links: [{ label: 'Index', href: 'index.html' }, { label: 'Contact', href: 'index.html#contact' }] },
+        { title: 'Réseaux', links: [{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/dev-php-bordeaux/' }, { label: 'Malt', href: 'https://www.malt.fr/profile/mickaelteixeira' }] }
+      ],
+      wipeNav: (e) => {
+        e.preventDefault();
+        const href = e.currentTarget.getAttribute('href');
+        if (this.fx) this.fx.wipeTo(href); else window.location.href = href;
+      }
+    };
+  }
+}
+</script>
 
-    <script src="script.js"></script>
-</body>
 
-</html>
+
+</body></html>
