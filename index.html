@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr"><head>
 <meta charset="utf-8">
-<script>window.__resources = {"pUpd": "gallery/upd-home.webp", "pHeyteam": "gallery/heyteam-preview.jpg", "pCommande": "gallery/commande-com.webp", "pMaxi": "gallery/maxicoffee-b2b-home.png", "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "assets/react-production-min.js", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "assets/react-dom-production-min.js"};</script>
+<script>window.__resources = {"pUpd": "gallery/upd-home.webp", "pHeyteam": "gallery/heyteam-preview.jpg", "pMaxi": "gallery/maxicoffee-b2b-home.png", "pCommande": "gallery/commande-com.webp", "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "assets/react-production-min.js", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "assets/react-dom-production-min.js"};</script>
 <title>Mickaël Teixeira | Développeur Freelance Symfony, Sylius &amp; Angular - Bordeaux</title>
 <meta name="google-site-verification" content="wsdzIL0Lmsbtvz1F2wSa2pzjxPZG2HtzG2G24YiEvAY">
 <meta name="keywords" content="Développeur Freelance, Symfony, Sylius, API Platform, Angular, PHP, Architecte Web, Bordeaux, Fullstack, E-commerce">
@@ -60,7 +60,6 @@
 <script src="assets/v2-fx.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="assets/dc-runtime.js"></script>
-<link rel="stylesheet" href="assets/responsive.css">
 </head>
 <body>
 <x-dc>
@@ -237,80 +236,86 @@ body { margin: 0; background: var(--bg); color: var(--text-primary); font-family
 a { color: var(--link); }
 a:hover { color: var(--link-hover); }
 @keyframes mtSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+#deck::-webkit-scrollbar { width: 0; height: 0; }
 </style>
 </helmet>
-<div data-screen-label="Accueil V3" style="background: var(--bg); color: var(--text-primary); font-family: var(--font-sans); min-height: 100vh;">
-  <div style="position: fixed; left: 16px; bottom: 12px; z-index: 500; pointer-events: none; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.2em; color: var(--text-tertiary); text-transform: uppercase;">Scroll — <span id="mt-scroll">000</span>%</div>
+<div data-screen-label="Accueil V3" style="background: var(--bg); color: var(--text-primary); font-family: var(--font-sans); height: 100dvh; overflow: hidden; display: flex; flex-direction: column;">
+  <div id="mt-cover" style="position: fixed; inset: 0; background: #000; z-index: 9998; pointer-events: none; transition: transform 0.7s cubic-bezier(0.16,1,0.3,1);"></div>
   <span style="position: fixed; top: 62px; left: 10px; z-index: 500; pointer-events: none; font-family: var(--font-mono); font-size: 12px; color: var(--text-tertiary);">+</span>
   <span style="position: fixed; top: 62px; right: 10px; z-index: 500; pointer-events: none; font-family: var(--font-mono); font-size: 12px; color: var(--text-tertiary);">+</span>
   <span style="position: fixed; bottom: 8px; right: 10px; z-index: 500; pointer-events: none; font-family: var(--font-mono); font-size: 12px; color: var(--text-tertiary);">+</span>
-  <div style="position: sticky; top: 0; z-index: 200;">
+  <div style="flex: none; z-index: 200;">
     <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.SiteNav" name="Mickael Teixeira" links="{{ navLinks }}" on-navigate="{{ navTo }}" hint-size="100%,57px"></x-import>
   </div>
-  <section id="hero" class="mt-r-hero" style="position: relative; min-height: 92vh; display: flex; flex-direction: column; justify-content: space-between; border-bottom: 1px solid var(--border); padding: 20px 24px 28px; overflow: hidden; box-sizing: border-box;">
-    <div data-clip="true" class="mt-r-hero-media" style="position: absolute; top: 0; right: 0; bottom: 0; width: 46%; z-index: 0; border-left: 1px solid var(--border); overflow: hidden;">
+  <div style="position: fixed; top: 0; right: 24px; height: 57px; z-index: 300; display: flex; align-items: center;">
+    <div style="display: flex; align-items: center; gap: clamp(10px, 2vw, 18px);">
+      <sc-for list="{{ rail }}" as="r" hint-placeholder-count="4">
+        <div data-rail-item="true" sc-camel-on-click="{{ railGo }}" data-idx="{{ r.idx }}" style="display: flex; align-items: center; gap: 7px; cursor: pointer; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-tertiary); transition: color 220ms cubic-bezier(0.16,1,0.3,1);" style-hover="color: var(--text-primary);">
+          <span style="opacity: 0.6;">{{ r.num }}</span>
+          <span style="max-width: clamp(0px, (100vw - 720px) * 999, 220px); overflow: hidden; white-space: nowrap;">{{ r.label }}</span>
+          <span data-rail-bar="true" style="display: block; width: 12px; height: 1px; background: var(--gray-700); transition: width 320ms cubic-bezier(0.16,1,0.3,1), background 320ms cubic-bezier(0.16,1,0.3,1);"></span>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+  <div id="deck" style="flex: 1; min-height: 0; overflow-y: auto; overflow-x: hidden; scroll-snap-type: y mandatory; scroll-behavior: smooth; overscroll-behavior: contain; scrollbar-width: none; -ms-overflow-style: none; position: relative;">
+  <section data-deck-section="true" id="hero" style="position: relative; min-height: 100%; scroll-snap-align: start; flex: none; display: flex; flex-direction: column; justify-content: center; gap: 20px; border-bottom: 1px solid var(--border); padding: 24px 24px 28px; overflow: hidden; box-sizing: border-box;">
+    <div data-clip="true" style="position: absolute; top: 0; right: 0; bottom: 0; width: clamp(46%, (720px - 100vw) * 999, 100%); z-index: 0; border-left: 1px solid var(--border); overflow: hidden;">
       <img src="barbie_avatar.jpg" alt="Mickaël Teixeira — portrait" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%; display: block; filter: grayscale(1) contrast(1.75) brightness(1.06);">
       <span style="position: absolute; inset: 0; background-image: radial-gradient(rgba(0,0,0,0.7) 1px, transparent 1.4px); background-size: 3px 3px; pointer-events: none;"></span>
       <span style="position: absolute; inset: 0; background: repeating-linear-gradient(0deg, rgba(0,0,0,0.5) 0 1px, transparent 1px 4px); pointer-events: none;"></span>
+      <span style="position: absolute; inset: 0; background: var(--bg); opacity: 0.55; width: clamp(0%, (720px - 100vw) * 999, 100%); pointer-events: none;"></span>
     </div>
-    <div class="mt-r-metarow" style="position: relative; z-index: 1; display: flex; justify-content: space-between; gap: 16px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-secondary);">
-      <span data-scramble="true" style="background: var(--bg); border: 1px solid var(--border); padding: 3px 8px;">Développeur freelance — Symfony / Sylius</span>
-      <span data-scramble="true" style="background: var(--bg); border: 1px solid var(--border); padding: 3px 8px;">{{ coordsStr }}</span>
-      <span data-scramble="true" style="background: var(--bg); border: 1px solid var(--border); padding: 3px 8px;">(2026)</span>
-    </div>
-    <div style="position: relative; z-index: 1; margin: 28px 0;">
-      <h1 class="mt-r-hero-title" style="margin: 0; font-family: var(--font-display); font-weight: 400; text-transform: uppercase; line-height: 0.94; letter-spacing: -0.01em; color: var(--text-primary);">
-        <div style="overflow: hidden;"><span data-line="true" data-line-index="0" style="display: block; font-size: 10.2vw; white-space: nowrap;">Je construis</span></div>
-        <div style="overflow: hidden;"><span data-line="true" data-line-index="1" style="display: block; font-size: 7.3vw; white-space: nowrap; color: transparent; -webkit-text-stroke: 1.5px var(--text-primary);">des architectures</span></div>
-        <div style="overflow: hidden;"><span data-line="true" data-line-index="2" style="display: block; font-size: 10.6vw; white-space: nowrap;">web <span style="font-family: var(--font-serif); font-style: italic; text-transform: lowercase; letter-spacing: 0;">robustes</span> &amp;</span></div>
-        <div style="overflow: hidden;"><span data-line="true" data-line-index="3" style="display: block; font-size: 12.2vw; white-space: nowrap;">scalables<span>.</span> <span style="display: inline-block; vertical-align: super;"><x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Starburst" dc-props="{{ sparkBig }}" style="display: inline-block; animation: mtSpin 30s linear infinite;" hint-size="56px,56px"></x-import></span></span></div>
+    <div style="position: relative; z-index: 1;">
+      <h1 style="margin: 0; font-family: var(--font-display); font-weight: 400; text-transform: uppercase; line-height: 0.94; letter-spacing: -0.01em; color: var(--text-primary);">
+        <div style="overflow: hidden;"><span data-line="true" data-line-index="0" style="display: block; font-size: 9.2vw; white-space: nowrap;">Je construis</span></div>
+        <div style="overflow: hidden;"><span data-line="true" data-line-index="1" style="display: block; font-size: 6.6vw; white-space: nowrap; color: transparent; -webkit-text-stroke: 1.5px var(--text-primary);">des architectures</span></div>
+        <div style="overflow: hidden;"><span data-line="true" data-line-index="2" style="display: block; font-size: 9.6vw; white-space: nowrap;">web <span style="font-family: var(--font-serif); font-style: italic; text-transform: lowercase; letter-spacing: 0;">robustes</span> &amp;</span></div>
+        <div style="overflow: hidden;"><span data-line="true" data-line-index="3" style="display: block; font-size: 10.9vw; white-space: nowrap;">scalables<span>.</span> <span style="display: inline-block; vertical-align: super;"><x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Starburst" dc-props="{{ sparkBig }}" style="display: inline-block; animation: mtSpin 30s linear infinite;" hint-size="56px,56px"></x-import></span></span></div>
       </h1>
-      <h1 aria-hidden="true" class="mt-r-hero-title" style="position: absolute; inset: 0; z-index: 2; margin: 0; font-family: var(--font-display); font-weight: 400; text-transform: uppercase; line-height: 0.94; letter-spacing: -0.01em; color: var(--accent); pointer-events: none; user-select: none; clip-path: inset(0 0 0 calc(54vw - 24px));">
-        <div style="overflow: hidden;"><span data-line="true" data-line-index="0" style="display: block; font-size: 10.2vw; white-space: nowrap;">Je construis</span></div>
-        <div style="overflow: hidden;"><span data-line="true" data-line-index="1" style="display: block; font-size: 7.3vw; white-space: nowrap; color: transparent; -webkit-text-stroke: 1.5px var(--accent);">des architectures</span></div>
-        <div style="overflow: hidden;"><span data-line="true" data-line-index="2" style="display: block; font-size: 10.6vw; white-space: nowrap;">web <span style="font-family: var(--font-serif); font-style: italic; text-transform: lowercase; letter-spacing: 0;">robustes</span> &amp;</span></div>
-        <div style="overflow: hidden;"><span data-line="true" data-line-index="3" style="display: block; font-size: 12.2vw; white-space: nowrap;">scalables<span>.</span> <span style="display: inline-block; vertical-align: super;"><x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Starburst" dc-props="{{ sparkBig }}" style="display: inline-block; animation: mtSpin 30s linear infinite;" hint-size="56px,56px"></x-import></span></span></div>
+      <h1 aria-hidden="true" style="position: absolute; inset: 0; z-index: 2; margin: 0; font-family: var(--font-display); font-weight: 400; text-transform: uppercase; line-height: 0.94; letter-spacing: -0.01em; color: var(--accent); pointer-events: none; user-select: none; clip-path: inset(0 0 0 clamp(0px, (100vw - 720px) * 999, 54vw - 24px));">
+        <div style="overflow: hidden;"><span data-line="true" data-line-index="0" style="display: block; font-size: 9.2vw; white-space: nowrap;">Je construis</span></div>
+        <div style="overflow: hidden;"><span data-line="true" data-line-index="1" style="display: block; font-size: 6.6vw; white-space: nowrap; color: transparent; -webkit-text-stroke: 1.5px var(--accent);">des architectures</span></div>
+        <div style="overflow: hidden;"><span data-line="true" data-line-index="2" style="display: block; font-size: 9.6vw; white-space: nowrap;">web <span style="font-family: var(--font-serif); font-style: italic; text-transform: lowercase; letter-spacing: 0;">robustes</span> &amp;</span></div>
+        <div style="overflow: hidden;"><span data-line="true" data-line-index="3" style="display: block; font-size: 10.9vw; white-space: nowrap;">scalables<span>.</span> <span style="display: inline-block; vertical-align: super;"><x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Starburst" dc-props="{{ sparkBig }}" style="display: inline-block; animation: mtSpin 30s linear infinite;" hint-size="56px,56px"></x-import></span></span></div>
       </h1>
     </div>
     <div style="position: relative; z-index: 1; display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; flex-wrap: wrap;">
-      <div data-fade="true" style="border-top: 1px solid var(--border-strong); padding-top: 18px; max-width: 640px;">
-        <p style="margin: 0; font-size: 20px; line-height: 1.45; color: var(--text-primary); font-weight: 500; text-wrap: pretty;">Expert Symfony &amp; Sylius avec <strong style="font-weight: 700;">15+ ans d'expérience</strong>. Je transforme des défis techniques complexes en <span style="font-family: var(--font-serif); font-style: italic; font-weight: 400; font-size: 1.15em;">solutions pérennes</span>.</p>
+      <div data-fade="true" style="border-top: 1px solid var(--border-strong); padding-top: 18px; max-width: max(min(640px, 50vw - 48px), (720px - 100vw) * 9.99);">
+        <p style="margin: 0; font-size: 18px; line-height: 1.45; color: var(--text-primary); font-weight: 500; text-wrap: pretty;">Expert Symfony &amp; Sylius avec <strong style="font-weight: 700;">15+ ans d'expérience</strong>. Je transforme des défis techniques complexes en <span style="font-family: var(--font-serif); font-style: italic; font-weight: 400; font-size: 1.15em;">solutions pérennes</span>.</p>
       </div>
     </div>
   </section>
-  <section id="projets" style="padding: 80px 24px 64px; border-bottom: 1px solid var(--border);">
-    <div style="max-width: var(--container); margin: 0 auto;">
-      <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.SectionHeader" index="01" title="Projets sélectionnés" meta="2022 — 2025 / Survoler pour aperçu" hint-size="100%,60px"></x-import>
-    </div>
-    <div style="margin-top: 40px; border-top: 1px solid var(--border);">
+  <section data-deck-section="true" id="projets" style="min-height: 100%; scroll-snap-align: start; flex: none; display: flex; flex-direction: column; justify-content: center; padding: 28px 0; border-bottom: 1px solid var(--border); box-sizing: border-box;">
+    <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.SectionHeader" index="01" title="Projets sélectionnés" meta="2022 — 2025 / Survoler pour aperçu" dc-props="{{ sectionHeadPad }}" hint-size="100%,60px"></x-import>
+    <div style="margin-top: 18px; border-top: 1px solid var(--border);">
       <sc-for list="{{ projects }}" as="p" hint-placeholder-count="4">
-        <a href="{{ p.href }}" class="mt-r-projrow" sc-camel-on-click="{{ wipeNav }}" data-anim="{{ p.anim }}" data-preview="{{ p.preview }}" data-preview-label="{{ p.previewLabel }}" style="display: grid; grid-template-columns: 72px 1fr auto auto 48px; grid-template-areas: 'idx title tags year arrow' '. desc desc desc .'; column-gap: 24px; row-gap: 6px; align-items: center; padding: 26px 24px; border-bottom: 1px solid var(--border); text-decoration: none; color: var(--text-primary); background: transparent; transition: background 140ms cubic-bezier(0.7,0,0.3,1), color 140ms cubic-bezier(0.7,0,0.3,1);" style-hover="background: var(--bg-inverse); color: var(--text-inverse);">
+        <a href="{{ p.href }}" sc-camel-on-click="{{ wipeNav }}" data-anim="{{ p.anim }}" data-preview="{{ p.preview }}" data-preview-label="{{ p.previewLabel }}" style="display: grid; grid-template-columns: clamp(28px, 7vw, 72px) 1fr auto auto clamp(20px, 5vw, 48px); grid-template-areas: 'idx title tags year arrow' '. desc desc desc .'; column-gap: clamp(10px, 2.5vw, 24px); row-gap: 4px; align-items: center; padding: 14px 24px; border-bottom: 1px solid var(--border); text-decoration: none; color: var(--text-primary); background: transparent; transition: background 140ms cubic-bezier(0.7,0,0.3,1), color 140ms cubic-bezier(0.7,0,0.3,1);" style-hover="background: var(--bg-inverse); color: var(--text-inverse);">
           <span style="grid-area: idx; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; color: inherit; opacity: 0.5;">[{{ p.index }}]</span>
-          <h3 style="grid-area: title; margin: 0; font-family: var(--font-display); font-weight: 400; font-size: clamp(26px, 3.4vw, 46px); line-height: 1; text-transform: uppercase; letter-spacing: 0; color: inherit;">{{ p.title }}</h3>
-          <span style="grid-area: tags; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: inherit; opacity: 0.55;">{{ p.tagline }}</span>
+          <h3 style="grid-area: title; margin: 0; font-family: var(--font-display); font-weight: 400; font-size: clamp(22px, 2.9vw, 40px); line-height: 1; text-transform: uppercase; letter-spacing: 0; color: inherit;">{{ p.title }}</h3>
+          <span style="grid-area: tags; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: inherit; opacity: 0.55; max-width: clamp(0px, (100vw - 720px) * 999, 400px); overflow: hidden; white-space: nowrap;">{{ p.tagline }}</span>
           <span style="grid-area: year; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; color: inherit; opacity: 0.5;">({{ p.year }})</span>
           <span style="grid-area: arrow; font-size: 22px; text-align: right; color: inherit;">↗</span>
-          <p style="grid-area: desc; margin: 0; font-size: 12.5px; line-height: 1.6; color: inherit; opacity: 0.6; max-width: 640px;">{{ p.desc }}</p>
+          <p style="grid-area: desc; margin: 0; font-size: 13px; line-height: 1.6; color: inherit; opacity: 0.65; max-width: 640px;">{{ p.desc }}</p>
         </a>
       </sc-for>
     </div>
   </section>
-  <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.HazardTape" hint-size="100%,14px"></x-import>
-  <section id="expertise" style="padding: 80px 24px 64px; border-bottom: 1px solid var(--border);">
-    <div style="max-width: var(--container); margin: 0 auto;">
-      <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.SectionHeader" index="02" title="Mon expertise" meta="15+ ans d'expérience" hint-size="100%,60px"></x-import>
-      <div style="margin-top: 40px; border-top: 1px solid var(--border);">
+  <section data-deck-section="true" id="expertise" style="min-height: 100%; scroll-snap-align: start; flex: none; display: flex; flex-direction: column; justify-content: center; padding: 28px 0; border-bottom: 1px solid var(--border); box-sizing: border-box;">
+    <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.SectionHeader" index="02" title="Mon expertise" meta="15+ ans d'expérience" dc-props="{{ sectionHeadPad }}" hint-size="100%,60px"></x-import>
+    <div>
+      <div style="margin-top: 18px; border-top: 1px solid var(--border);">
         <sc-for list="{{ expertises }}" as="exp" hint-placeholder-count="3">
-          <div data-anim="{{ exp.idx }}" class="mt-r-exprow" style="display: grid; grid-template-columns: 160px 72px 1fr 1.2fr; gap: 28px; align-items: center; padding: 24px 0; border-bottom: 1px solid var(--border); transition: border-color 140ms cubic-bezier(0.7,0,0.3,1);">
-            <div data-clip="true" style="border: 1px solid var(--border); height: 100px; display: flex; align-items: center; justify-content: center; overflow: hidden; color: var(--text-primary); background: var(--bg-subtle);">
-              <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.{{ exp.motifName }}" dc-props="{{ exp.motifProps }}" hint-size="150px,90px"></x-import>
+          <div data-anim="{{ exp.idx }}" style="display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; padding: 14px 24px; border-bottom: 1px solid var(--border); transition: border-color 140ms cubic-bezier(0.7,0,0.3,1);">
+            <div data-clip="true" style="border: 1px solid var(--border); flex: none; width: 140px; height: 76px; display: flex; align-items: center; justify-content: center; overflow: hidden; color: var(--text-primary); background: var(--bg-subtle);">
+              <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.{{ exp.motifName }}" dc-props="{{ exp.motifProps }}" hint-size="130px,76px"></x-import>
             </div>
-            <span style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; color: var(--text-tertiary);">[{{ exp.num }}]</span>
-            <div>
+            <span style="flex: none; width: 40px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; color: var(--text-tertiary);">[{{ exp.num }}]</span>
+            <div style="flex: 1 1 190px; min-width: 0;">
               <h3 style="margin: 0 0 8px; font-family: var(--font-display); font-weight: 400; font-size: clamp(20px, 2.2vw, 30px); line-height: 1; text-transform: uppercase;">{{ exp.title }}</h3>
               <span style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-tertiary);">{{ exp.metaLabel }}</span>
             </div>
-            <div>
+            <div style="flex: 1.2 1 260px; min-width: 0;">
               <p style="margin: 0 0 12px; font-size: 13.5px; line-height: 1.65; color: var(--text-secondary);">{{ exp.desc }}</p>
               <div style="display: flex; flex-wrap: wrap; gap: 6px;">
                 <sc-for list="{{ exp.tags }}" as="t" hint-placeholder-count="3">
@@ -323,42 +328,45 @@ a:hover { color: var(--link-hover); }
       </div>
     </div>
   </section>
-  <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Marquee" dc-props="{{ marqueeCta }}" hint-size="100%,64px"></x-import>
-  <section id="contact" style="padding: 80px 24px 96px; border-bottom: 1px solid var(--border); position: relative; overflow: hidden;">
-    <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Globe" dc-props="{{ globeBig }}" style="position: absolute; right: -140px; top: -60px; z-index: 0; color: var(--gray-700); animation: mtSpin 80s linear infinite;" hint-size="460px,460px"></x-import>
-    <div style="max-width: var(--container); margin: 0 auto; position: relative; z-index: 1;">
-      <div class="mt-r-metarow" style="display: flex; justify-content: space-between; gap: 16px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 24px;">
+  <section data-deck-section="true" id="contact" style="min-height: 100%; scroll-snap-align: start; flex: none; display: flex; flex-direction: column; justify-content: center; padding: 28px 24px; position: relative; overflow: hidden; box-sizing: border-box;">
+    <div style="position: absolute; right: -140px; top: -60px; z-index: 0; width: clamp(0px, (100vw - 720px) * 999, 460px); height: clamp(0px, (100vw - 720px) * 999, 460px); overflow: hidden; pointer-events: none;">
+      <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Globe" dc-props="{{ globeBig }}" style="color: var(--gray-700); animation: mtSpin 80s linear infinite;" hint-size="460px,460px"></x-import>
+    </div>
+    <div style="max-width: var(--container); width: 100%; box-sizing: border-box; margin: 0 auto; position: relative; z-index: 1;">
+      <div style="display: flex; justify-content: space-between; gap: 16px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 24px;">
         <span data-scramble="true">[03] — Contact</span>
         <span data-scramble="true">Réponse directe — sans intermédiaire</span>
       </div>
-      <h2 data-anim="0" style="margin: 0 0 16px; font-family: var(--font-display); font-weight: 400; font-size: clamp(44px, 6.8vw, 104px); line-height: 0.92; text-transform: uppercase;">Parlons de votre <span style="font-family: var(--font-serif); font-style: italic; text-transform: lowercase; letter-spacing: 0;">projet</span><span style="color: var(--accent);">.</span></h2>
-      <p data-anim="1" style="margin: 0 0 48px; font-size: 15px; line-height: 1.7; color: var(--text-secondary); max-width: 560px;">Écrivons <span style="font-family: var(--font-serif); font-style: italic; font-size: 1.2em; color: var(--text-primary);">le prochain chapitre</span> de votre succès ensemble. Vous cherchez un expert technique pour sécuriser et scaler votre business ? Je suis disponible pour en discuter.</p>
-      <div class="mt-r-contact-grid" style="display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: start;">
+      <h2 data-anim="0" style="margin: 0 0 16px; font-family: var(--font-display); font-weight: 400; font-size: clamp(36px, 5vw, 76px); line-height: 0.92; text-transform: uppercase;">Parlons de votre <span style="font-family: var(--font-serif); font-style: italic; text-transform: lowercase; letter-spacing: 0;">projet</span><span style="color: var(--accent);">.</span></h2>
+      <p data-anim="1" style="margin: 0 0 28px; font-size: 14px; line-height: 1.65; color: var(--text-secondary); max-width: 620px;">Écrivons <span style="font-family: var(--font-serif); font-style: italic; font-size: 1.2em; color: var(--text-primary);">le prochain chapitre</span> de votre succès ensemble. Vous cherchez un expert technique pour sécuriser et scaler votre business ? Je suis disponible pour en discuter.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); gap: 40px; align-items: start;">
         <div data-anim="1">
           <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.MetaTable" rows="{{ metaRows }}" hint-size="100%,150px"></x-import>
           <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px;">
             <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Button" variant="outline" size="md" href="https://www.linkedin.com/in/dev-php-bordeaux/" target="_blank" hint-size="230px,36px">LinkedIn — Voir mon profil ↗</x-import>
             <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Button" variant="outline" size="md" href="https://www.malt.fr/profile/mickaelteixeira" target="_blank" hint-size="190px,36px">Malt — Me recruter ↗</x-import>
           </div>
-          <div style="margin-top: 40px; color: var(--text-primary);">
+          <div style="margin-top: 26px; color: var(--text-primary);">
             <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Barcode" dc-props="{{ barcodeProps }}" hint-size="240px,58px"></x-import>
           </div>
         </div>
-        <div data-anim="2" style="position: relative; border: 1px solid var(--border-strong); padding: 28px; background: var(--bg);">
+        <div data-anim="2" style="position: relative; border: 1px solid var(--border-strong); padding: 22px; background: var(--bg);">
           <span style="position: absolute; top: 2px; left: 6px; font-family: var(--font-mono); font-size: 11px; color: var(--text-tertiary);">+</span>
           <span style="position: absolute; top: 2px; right: 6px; font-family: var(--font-mono); font-size: 11px; color: var(--text-tertiary);">+</span>
           <span style="position: absolute; bottom: 2px; left: 6px; font-family: var(--font-mono); font-size: 11px; color: var(--text-tertiary);">+</span>
           <span style="position: absolute; bottom: 2px; right: 6px; font-family: var(--font-mono); font-size: 11px; color: var(--text-tertiary);">+</span>
-          <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 24px;">
+          <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 18px;">
             <span data-scramble="true">Formulaire — Contact</span><span>[04]</span>
           </div>
-          <form action="https://formsubmit.co/e110c54cb2a432600624c2f081c81939" method="POST" style="display: grid; gap: 18px;">
+          <form action="https://formsubmit.co/e110c54cb2a432600624c2f081c81939" method="POST" style="display: grid; gap: 14px;">
             <input type="hidden" name="_subject" value="Nouveau lead (Portfolio V3)">
             <input type="hidden" name="_captcha" value="true">
             <input type="hidden" name="_next" value="https://mickaelteixeira.github.io/index.html?success=true">
             <input type="text" name="_honey" style="display: none;">
-            <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Input" label="Nom" name="name" placeholder="Votre nom" required="required" hint-size="100%,64px"></x-import>
-            <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Input" label="Email" name="email" type="email" placeholder="votre@email.com" required="required" hint-size="100%,64px"></x-import>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+              <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Input" label="Nom" name="name" placeholder="Votre nom" required="required" hint-size="100%,64px"></x-import>
+              <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Input" label="Email" name="email" type="email" placeholder="votre@email.com" required="required" hint-size="100%,64px"></x-import>
+            </div>
             <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Textarea" label="Message" name="message" placeholder="Décrivez votre besoin..." required="required" dc-props="{{ textareaProps }}" hint-size="100%,140px"></x-import>
             <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Button" variant="primary" size="lg" type="submit" dc-props="{{ btnFull }}" style="width: 100%;" hint-size="100%,46px">Envoyer</x-import>
           </form>
@@ -366,7 +374,7 @@ a:hover { color: var(--link-hover); }
       </div>
     </div>
   </section>
-  <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Footer" name="Mickael Teixeira" columns="{{ footerCols }}" legal="©2025 Mickaël Teixeira — Fait avec audace à Bordeaux" coords="{{ coordsStr }}" hint-size="100%,380px"></x-import>
+  </div>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script="" data-props="{
@@ -380,16 +388,18 @@ class Component extends DCLogic {
     this.applyTweaks();
     Promise.resolve(window.MTFX).then((fx) => {
       this.fx = fx;
-      fx.initCursor(); fx.initReveals(); fx.initScrollMeter(); fx.initHoverPreview();
+      fx.initCursor(); fx.initHoverPreview();
+      this.deck = fx.initSectionDeck({ scroller: '#deck' });
       const seen = sessionStorage.getItem('mt_v3_intro');
       const wantIntro = (this.props.intro ?? true) && !seen;
+      const cov = document.getElementById('mt-cover');
       if (wantIntro) {
         sessionStorage.setItem('mt_v3_intro', '1');
         fx.playIntro();
-        fx.revealHero(1350);
-      } else {
-        fx.playWipeIn();
-        fx.revealHero(300);
+        if (cov) cov.remove();
+      } else if (cov) {
+        setTimeout(() => { cov.style.transform = 'translateY(-100%)'; }, 80);
+        setTimeout(() => cov.remove(), 900);
       }
     });
     if (!this.state.nsReady) {
@@ -399,7 +409,7 @@ class Component extends DCLogic {
     }
   }
   componentWillUnmount() { if (this.nsPoll) clearInterval(this.nsPoll); }
-  componentDidUpdate() { this.applyTweaks(); }
+  componentDidUpdate() { this.applyTweaks(); if (this.deck) this.deck.onScroll(); }
   applyTweaks() {
     const accent = this.props.accent ?? localStorage.getItem('mt_v3_accent') ?? '#5b2eff';
     const theme = this.props.theme ?? localStorage.getItem('mt_v3_theme') ?? 'dark';
@@ -407,29 +417,29 @@ class Component extends DCLogic {
     document.documentElement.setAttribute('data-theme', theme === 'paper' ? 'light' : 'dark');
     try { localStorage.setItem('mt_v3_accent', accent); localStorage.setItem('mt_v3_theme', theme); } catch (e) {}
   }
-  scrollToId(e, id) {
-    if (e) e.preventDefault();
-    const t = document.getElementById(id);
-    if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
+  goSection(id) {
+    const order = ['hero', 'projets', 'expertise', 'contact'];
+    const i = order.indexOf(id === 'home' ? 'hero' : id);
+    if (this.deck && i >= 0) this.deck.go(i);
   }
   renderVals() {
     const ns = window.MickaelTeixeiraDesignSystem_e955b5;
     return {
       coordsStr: "44°50'16\"N 0°34'46\"W — Bordeaux, FR",
-      navLinks: [{ id: 'projets', label: 'Projets' }, { id: 'expertise', label: 'Expertise' }, { id: 'contact', label: 'Contact' }],
-      navTo: (id) => { if (id === 'home') window.scrollTo({ top: 0, behavior: 'smooth' }); else this.scrollToId(null, id); },
-      goProjets: (e) => this.scrollToId(e, 'projets'),
-      goContact: (e) => this.scrollToId(e, 'contact'),
+      navLinks: [],
+      navTo: (id) => this.goSection(id),
+      rail: [{ idx: 0, num: '00', label: 'Profil' }, { idx: 1, num: '01', label: 'Projets' }, { idx: 2, num: '02', label: 'Expertise' }, { idx: 3, num: '03', label: 'Contact' }],
+      railGo: (e) => this.goSection(['hero', 'projets', 'expertise', 'contact'][Number(e.currentTarget.getAttribute('data-idx'))]),
       wipeNav: (e) => {
         e.preventDefault();
         const href = e.currentTarget.getAttribute('href');
         if (this.fx) this.fx.wipeTo(href); else window.location.href = href;
       },
       sparkBig: { shape: 'sparkle', size: 56 },
+      sectionHeadPad: { style: { paddingLeft: 24, paddingRight: 24 } },
       globeBig: { size: 460, meridians: 8, parallels: 6 },
-      textareaProps: { rows: 5 },
+      textareaProps: { rows: 3 },
       btnFull: { style: { width: '100%' } },
-      marqueeCta: { text: 'Et maintenant ? — Écrivons le prochain chapitre de votre succès ensemble', separator: '✦', font: 'display', size: 34, duration: 32, repeat: 4 },
       projects: [
         { anim: 0, index: '01', title: 'MaxiCoffee Middle Office', year: '2025', tagline: 'Laravel / DDD / RedPanda', desc: 'Développeur. Mise en place d\'un middle office critique gérant la logistique et la facturation. Synchronisation haute performance via RedPanda.', href: 'project-maxicoffee.html', preview: window.__resources.pMaxi, previewLabel: '[01] MaxiCoffee' },
         { anim: 1, index: '02', title: 'Commande.com Refonte', year: '2025', tagline: 'Sylius / Symfony / API Platform', desc: 'Développeur. Refonte complète d\'une plateforme e-commerce vers Sylius Headless. Gestion de flux ERP et transporteurs.', href: 'project-commande.html', preview: window.__resources.pCommande, previewLabel: '[02] Commande.com' },
@@ -437,9 +447,9 @@ class Component extends DCLogic {
         { anim: 3, index: '04', title: 'Ultra Premium Direct', year: '2022-2024', tagline: 'Sylius / Symfony / API Platform', desc: 'Backend Developer. Migration stratégique vers Sylius et optimisation des performances pour un leader du petfood.', href: 'project-upd.html', preview: window.__resources.pUpd, previewLabel: '[04] Ultra Premium Direct' }
       ],
       expertises: [
-        { idx: 0, num: '01', metaLabel: 'Backend — Distribué', motifName: 'WarpGrid', motifProps: { width: 150, height: 90, cols: 12, rows: 8, amp: 8, seed: 4 }, title: 'System Architecture', desc: 'Conception de systèmes distribués haute performance. Je transforme la complexité en architectures scalables, sécurisées et maintenables (DDD, Hexagonal).', tags: ['Symfony', 'Docker', 'RabbitMQ'] },
+        { idx: 0, num: '01', metaLabel: 'Backend — Distribué', motifName: 'WarpGrid', motifProps: { width: 130, height: 76, cols: 12, rows: 8, amp: 8, seed: 4 }, title: 'System Architecture', desc: 'Conception de systèmes distribués haute performance. Je transforme la complexité en architectures scalables, sécurisées et maintenables (DDD, Hexagonal).', tags: ['Symfony', 'Docker', 'RabbitMQ'] },
         { idx: 1, num: '02', metaLabel: 'E-commerce — Sylius', motifName: 'Barcode', motifProps: { bars: 36, width: 130, height: 56, seed: 9 }, title: 'E-commerce Engineering', desc: 'Expertise approfondie sur Sylius et les tunnels de vente complexes. Optimisation des performances et des taux de conversion pour des volumes élevés.', tags: ['Sylius', 'API Platform', 'Payment'] },
-        { idx: 2, num: '03', metaLabel: 'Frontend — SPA / PWA', motifName: 'Globe', motifProps: { size: 84, dotted: true, spin: true }, title: 'Modern Frontend', desc: 'Création d\'interfaces réactives et immersives. Je connecte vos APIs à des expériences utilisateurs fluides et engageantes (SPA, PWA).', tags: ['Angular', 'TypeScript', 'UX/UI'] }
+        { idx: 2, num: '03', metaLabel: 'Frontend — SPA / PWA', motifName: 'Globe', motifProps: { size: 72, dotted: true, spin: true }, title: 'Modern Frontend', desc: 'Création d\'interfaces réactives et immersives. Je connecte vos APIs à des expériences utilisateurs fluides et engageantes (SPA, PWA).', tags: ['Angular', 'TypeScript', 'UX/UI'] }
       ],
       metaRows: [
         { k: 'Statut', v: 'Disponible — missions freelance' },

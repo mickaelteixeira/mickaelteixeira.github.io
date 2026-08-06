@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr"><head>
 <meta charset="utf-8">
-<script>window.__resources = {"g1": "gallery/commande-com.webp", "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "assets/react-production-min.js", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "assets/react-dom-production-min.js"};</script>
+<script>window.__resources = {"g1": "gallery/commande-com.webp", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "assets/react-dom-production-min.js", "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "assets/react-production-min.js"};</script>
 <title>Commande.com Refonte - Mickaël Teixeira</title>
 <meta name="author" content="Mickaël Teixeira">
 <meta name="robots" content="index, follow">
@@ -26,7 +26,6 @@
 <script src="assets/v2-fx.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="assets/dc-runtime.js"></script>
-<link rel="stylesheet" href="assets/responsive.css">
 </head>
 <body>
 <x-dc>
@@ -206,18 +205,19 @@ a:hover { color: var(--link-hover); }
 </style>
 </helmet>
 <div data-screen-label="Projet Commande V3" style="background: var(--bg); color: var(--text-primary); font-family: var(--font-sans); min-height: 100vh;">
+  <div id="mt-cover" style="position: fixed; inset: 0; background: #000; z-index: 9998; pointer-events: none; transition: transform 0.7s cubic-bezier(0.16,1,0.3,1);"></div>
   <div style="position: fixed; left: 16px; bottom: 12px; z-index: 500; pointer-events: none; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.2em; color: var(--text-tertiary); text-transform: uppercase;">Scroll — <span id="mt-scroll">000</span>%</div>
   <div style="position: sticky; top: 0; z-index: 200; display: flex; align-items: center; gap: 16px; padding: 12px 24px; border-bottom: 1px solid var(--border); background: var(--bg);">
     <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Button" variant="ghost" size="sm" href="index.html" sc-camel-on-click="{{ wipeNav }}" hint-size="90px,28px">← Index</x-import>
     <span data-scramble="true" style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); margin-left: auto;">Dossier [{{ data.index }}] / 04</span>
   </div>
   <header style="padding: 40px 24px 32px; border-bottom: 1px solid var(--border); position: relative; overflow: hidden;">
-    <div class="mt-r-metarow" style="display: flex; justify-content: space-between; gap: 16px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 24px;">
+    <div style="display: flex; justify-content: space-between; gap: 16px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 24px;">
       <span data-scramble="true">Étude de cas — {{ data.year }}</span>
       <span data-scramble="true">Client — {{ data.client }}</span>
       <span data-scramble="true">Rôle — {{ data.role }}</span>
     </div>
-    <h1 class="mt-r-case-title" style="margin: 0; font-family: var(--font-display); font-weight: 400; font-size: clamp(48px, 9.5vw, 140px); line-height: 0.92; letter-spacing: -0.01em; text-transform: uppercase; text-wrap: balance;">
+    <h1 style="margin: 0; font-family: var(--font-display); font-weight: 400; font-size: clamp(48px, 9.5vw, 140px); line-height: 0.92; letter-spacing: -0.01em; text-transform: uppercase; text-wrap: balance;">
       <div style="overflow: hidden;"><span data-line="true" style="display: block;">{{ data.title }}<span style="color: var(--accent);">.</span></span></div>
     </h1>
     <div data-fade="true" style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px;">
@@ -226,8 +226,8 @@ a:hover { color: var(--link-hover); }
       </sc-for>
     </div>
   </header>
-  <div class="mt-r-case-grid" style="max-width: var(--container); margin: 0 auto; padding: 56px 24px 72px; display: grid; grid-template-columns: 300px 1fr; gap: 56px; align-items: start;">
-    <aside data-anim="0" style="position: sticky; top: 84px;">
+  <div style="max-width: var(--container); margin: 0 auto; padding: 56px 24px 72px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start;">
+    <aside data-anim="0" style="flex: 0 1 300px; min-width: min(260px, 100%);">
       <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.MetaTable" rows="{{ metaRows }}" hint-size="100%,180px"></x-import>
       <div style="margin-top: 28px; color: var(--text-primary);">
         <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Barcode" dc-props="{{ barcodeProps }}" hint-size="240px,58px"></x-import>
@@ -236,7 +236,7 @@ a:hover { color: var(--link-hover); }
         <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Button" variant="outline" size="sm" href="index.html#contact" sc-camel-on-click="{{ wipeNav }}" hint-size="170px,28px">Un projet similaire ?</x-import>
       </div>
     </aside>
-    <div>
+    <div style="flex: 1 1 420px; min-width: 0;">
       <sc-if value="{{ hasImages }}" hint-placeholder-val="{{ true }}">
         <div style="display: grid; gap: 32px; margin-bottom: 56px;">
           <sc-for list="{{ galleryProps }}" as="g" hint-placeholder-count="1">
@@ -253,24 +253,24 @@ a:hover { color: var(--link-hover); }
           <span style="position: absolute; bottom: 10px; left: 12px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary);">Plateforme interne — visuel confidentiel</span>
         </div>
       </sc-if>
-      <div data-anim="0" class="mt-r-caserow" style="display: grid; grid-template-columns: 130px 1fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--border);">
-        <span data-scramble="true" style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary);">[A] — Mission</span>
-        <div>
+      <div data-anim="0" style="display: flex; flex-wrap: wrap; gap: 16px 24px; padding: 28px 0; border-top: 1px solid var(--border);">
+        <span data-scramble="true" style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); flex: 0 0 130px;">[A] — Mission</span>
+        <div style="flex: 1 1 300px; min-width: 0;">
           <p style="margin: 0 0 14px; font-size: 18px; line-height: 1.5; color: var(--text-primary);">{{ data.lead }}</p>
           <p style="margin: 0; font-size: 14px; line-height: 1.7; color: var(--text-secondary);">{{ data.body }}</p>
         </div>
       </div>
-      <div data-anim="1" class="mt-r-caserow" style="display: grid; grid-template-columns: 130px 1fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--border);">
-        <span data-scramble="true" style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary);">[B] — Réalisations</span>
-        <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 12px;">
+      <div data-anim="1" style="display: flex; flex-wrap: wrap; gap: 16px 24px; padding: 28px 0; border-top: 1px solid var(--border);">
+        <span data-scramble="true" style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); flex: 0 0 130px;">[B] — Réalisations</span>
+        <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; flex: 1 1 300px; min-width: 0;">
           <sc-for list="{{ data.keyItems }}" as="item" hint-placeholder-count="3">
             <li style="position: relative; padding-left: 24px; font-size: 14px; line-height: 1.65; color: var(--text-secondary); border-bottom: 1px solid var(--border); padding-bottom: 12px;"><span style="position: absolute; left: 0; color: var(--accent);">→</span>{{ item }}</li>
           </sc-for>
         </ul>
       </div>
-      <div data-anim="2" class="mt-r-caserow" style="display: grid; grid-template-columns: 130px 1fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
-        <span data-scramble="true" style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary);">[C] — La stack</span>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+      <div data-anim="2" style="display: flex; flex-wrap: wrap; gap: 16px 24px; padding: 28px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+        <span data-scramble="true" style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-tertiary); flex: 0 0 130px;">[C] — La stack</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; flex: 1 1 300px; min-width: 0;">
           <sc-for list="{{ data.stack }}" as="tech" hint-placeholder-count="6">
             <x-import component-from-global-scope="MickaelTeixeiraDesignSystem_e955b5.Tag" hint-size="80px,26px">{{ tech }}</x-import>
           </sc-for>
@@ -282,7 +282,7 @@ a:hover { color: var(--link-hover); }
   <a href="{{ data.nextHref }}" sc-camel-on-click="{{ wipeNav }}" style="display: block; padding: 48px 24px; border-bottom: 1px solid var(--border); text-decoration: none; color: var(--text-primary); background: transparent; transition: background 140ms cubic-bezier(0.7,0,0.3,1), color 140ms cubic-bezier(0.7,0,0.3,1);" style-hover="background: var(--bg-inverse); color: var(--text-inverse);">
     <div style="max-width: var(--container); margin: 0 auto;">
       <span style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: inherit; opacity: 0.55; display: block; margin-bottom: 12px;">Projet suivant — [{{ data.nextIndex }}]</span>
-      <span class="mt-r-nextrow" style="display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+      <span style="display: flex; align-items: center; justify-content: space-between; gap: 24px;">
         <span style="font-family: var(--font-display); font-weight: 400; font-size: clamp(36px, 6vw, 88px); line-height: 0.94; text-transform: uppercase; color: inherit;">{{ data.nextTitle }}</span>
         <span style="font-size: clamp(28px, 3.4vw, 52px); color: inherit;">→</span>
       </span>
@@ -300,8 +300,12 @@ class Component extends DCLogic {
     Promise.resolve(window.MTFX).then((fx) => {
       this.fx = fx;
       fx.initCursor(); fx.initReveals(); fx.initScrollMeter();
-      fx.playWipeIn();
-      fx.revealHero(250);
+      const cov = document.getElementById('mt-cover');
+      if (cov) {
+        setTimeout(() => { cov.style.transform = 'translateY(-100%)'; }, 80);
+        setTimeout(() => cov.remove(), 900);
+      }
+      fx.revealHero(220);
     });
   }
   componentDidUpdate() { this.applyTheme(); }
