@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Playwright, aussi pour le design · Mickaël Teixeira</title>
 <meta name="description" content="Playwright MCP et Claude pour le frontend : références Pinterest, système de design, captures d’écran et itérations sur les composants.">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://mickaelteixeira.github.io/actualites/playwright-mcp-design-frontend/">
 <meta name="author" content="Mickaël Teixeira">
 <meta name="google-site-verification" content="wsdzIL0Lmsbtvz1F2wSa2pzjxPZG2HtzG2G24YiEvAY">
@@ -13,11 +13,84 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#171717" media="(prefers-color-scheme: dark)">
 <script>try{var t=localStorage.getItem('theme');if(t==='clair'||t==='sombre')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preload" href="/assets/fonts/inter-400-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-tight-300-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Inter';font-style:normal;font-weight:400 800;font-display:swap;src:url(/assets/fonts/inter-400-800.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Inter Tight';font-style:normal;font-weight:300 400;font-display:swap;src:url(/assets/fonts/inter-tight-300-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url(/assets/fonts/jetbrains-mono-400-500.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Epilogue';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/epilogue-500.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Epilogue';font-style:normal;font-weight:800;font-display:swap;src:url(/assets/fonts/epilogue-800.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/lato-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Lato';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/lato-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Lato';font-style:normal;font-weight:900;font-display:swap;src:url(/assets/fonts/lato-900.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/poppins-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/poppins-600.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/poppins-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+:root{--fond:#ffffff;--fond-2:#f5f5f5;--encre:#171717;--texte:#3d3d3d;--second:#5c5c5c;--trait:#e5e5e5;--trait-fort:#b3b3b3;--accent:#2f4bff;--sur-accent:#ffffff;--lien:#2f4bff;--panneau:#171717;--panneau-texte:#ebebeb;--panneau-second:#a3a3a3;--panneau-trait:#303030;--panneau-accent:#8fa2ff;color-scheme:light}
+[data-theme-img="sombre"]{display:none!important}
+:root[data-theme="sombre"]{--fond:#171717;--fond-2:#1f1f1f;--encre:#ebebeb;--texte:#c7c7c7;--second:#a3a3a3;--trait:#2a2a2a;--trait-fort:#484848;--accent:#8fa2ff;--sur-accent:#171717;--lien:#8fa2ff;--panneau:#0f0f0f;--panneau-texte:#ebebeb;--panneau-second:#a3a3a3;--panneau-trait:#2a2a2a;--panneau-accent:#8fa2ff;color-scheme:dark}
+:root[data-theme="sombre"] [data-theme-img="clair"]{display:none!important}:root[data-theme="sombre"] [data-theme-img="sombre"]{display:block!important}
+@media (prefers-color-scheme:dark){:root:not([data-theme="clair"]){--fond:#171717;--fond-2:#1f1f1f;--encre:#ebebeb;--texte:#c7c7c7;--second:#a3a3a3;--trait:#2a2a2a;--trait-fort:#484848;--accent:#8fa2ff;--sur-accent:#171717;--lien:#8fa2ff;--panneau:#0f0f0f;--panneau-texte:#ebebeb;--panneau-second:#a3a3a3;--panneau-trait:#2a2a2a;--panneau-accent:#8fa2ff;color-scheme:dark}:root:not([data-theme="clair"]) [data-theme-img="clair"]{display:none!important}:root:not([data-theme="clair"]) [data-theme-img="sombre"]{display:block!important}}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:80px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--fond);color:var(--encre);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg,canvas{max-width:100%}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.evitement{position:absolute;left:16px;top:-64px;z-index:20;padding:10px 16px;background:var(--encre);color:var(--fond);border-radius:8px;text-decoration:none;font-weight:500}
+.evitement:focus{top:12px}
+.entete{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--fond) 92%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--trait)}
+.entete__barre{max-width:1312px;margin:0 auto;padding-inline:clamp(20px,4.5vw,64px);min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px 32px}
+.entete__nom{color:var(--encre);text-decoration:none;font-weight:600;font-size:16px;letter-spacing:-.01em}
+.entete__nav{display:flex;align-items:center;gap:32px;font-size:15px}
+.entete__nav a{color:var(--encre);text-decoration:none}
+.entete__nav a:hover{text-decoration:underline;text-underline-offset:8px}
+.entete__nav a[aria-current="page"]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:8px}
+.entete__contact{display:inline-flex;align-items:center;height:40px;padding:0 16px;border:1px solid var(--trait-fort);border-radius:8px;color:var(--encre);text-decoration:none;font-size:15px;font-weight:500}
+.entete__contact:hover{border-color:var(--encre)}
+.entete__actions{display:flex;align-items:center;gap:10px}
+.theme{width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--trait-fort);border-radius:8px;color:var(--encre);cursor:pointer}
+.theme:hover{border-color:var(--encre)}
+.theme svg{display:none}
+:root:not([data-theme]) .theme [data-icone="auto"],:root[data-theme="clair"] .theme [data-icone="clair"],:root[data-theme="sombre"] .theme [data-icone="sombre"]{display:block}
+.entete__menu{display:none;width:44px;height:44px;align-items:center;justify-content:center;background:transparent;border:1px solid var(--trait-fort);border-radius:8px;color:var(--encre);cursor:pointer}
+.menu-mobile{display:none}
+@media (max-width:860px){
+.entete__barre{min-height:56px}
+.entete__nav,.entete__contact{display:none}
+.theme{width:44px;height:44px}
+.entete__menu{display:inline-flex}
+.menu-mobile:not([hidden]){display:flex;flex-direction:column;position:fixed;inset:56px 0 0;z-index:9;padding:8px 20px 24px;background:var(--fond);overflow-y:auto}
+.menu-mobile a.menu-mobile__lien{display:flex;justify-content:space-between;align-items:center;min-height:64px;border-bottom:1px solid var(--trait);color:var(--encre);text-decoration:none;font-family:'Inter Tight',Inter,sans-serif;font-weight:300;font-size:30px;letter-spacing:-.02em}
+.menu-mobile__pied{margin-top:auto;padding-top:24px;display:flex;flex-direction:column;gap:16px}
+.menu-mobile__pied p{margin:0;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--second)}
+.menu-mobile__pied a{display:inline-flex;align-items:center;justify-content:center;height:52px;background:var(--accent);color:var(--sur-accent);border-radius:8px;text-decoration:none;font-weight:500}
+body.menu-ouvert{overflow:hidden}
+}
+.facade{position:relative;width:100%;aspect-ratio:4/5}
+.facade img,.facade canvas{position:absolute;inset:0;width:100%;height:100%}
+.facade img{transition:opacity .4s ease}
+.facade.est-animee img{opacity:0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.pied{container-type:inline-size;background:var(--panneau);color:var(--panneau-second);font-size:15px;line-height:1.55;border-top:1px solid var(--panneau-trait)}
+.pied__cadre{max-width:1312px;margin:0 auto;padding:clamp(48px,5cqw,72px) clamp(20px,4.5cqw,64px) 32px;display:flex;flex-direction:column;gap:clamp(40px,4cqw,56px)}
+.pied__grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:40px 32px}
+.pied__marque{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.pied__marque p{margin:0;max-width:300px}
+.pied__nom{color:#ffffff;font-weight:600;font-size:16px;letter-spacing:-.01em}
+.pied__titre{margin:0 0 14px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:400;color:var(--panneau-second)}
+.pied ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.pied a{color:var(--panneau-texte);text-decoration:none}
+.pied a:hover{text-decoration:underline;text-underline-offset:4px}
+.pied__bas{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding-top:24px;border-top:1px solid var(--panneau-trait);font-size:14px}
+.pied__bas a{color:var(--panneau-second)}</style>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
 <link rel="alternate" type="application/atom+xml" title="Actualités de Mickaël Teixeira" href="/actualites/flux.xml">
+<link rel="alternate" type="text/plain" title="Résumé du site pour les modèles de langage" href="/llms.txt">
+<link rel="me" href="https://www.linkedin.com/in/dev-php-bordeaux/">
+<link rel="me" href="https://github.com/mickaelteixeira">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Mickaël Teixeira">
 <meta property="og:locale" content="fr_FR">
@@ -25,6 +98,7 @@
 <meta property="og:description" content="Playwright MCP et Claude pour le frontend : références Pinterest, système de design, captures d’écran et itérations sur les composants.">
 <meta property="og:url" content="https://mickaelteixeira.github.io/actualites/playwright-mcp-design-frontend/">
 <meta property="og:image" content="https://mickaelteixeira.github.io/assets/img/partage/article-playwright-mcp-design-frontend.jpg">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Trame de lignes : une scène de théâtre vide sous un projecteur">
@@ -32,14 +106,11 @@
 <meta name="twitter:title" content="Playwright, aussi pour le design">
 <meta name="twitter:description" content="Playwright MCP et Claude pour le frontend : références Pinterest, système de design, captures d’écran et itérations sur les composants.">
 <meta name="twitter:image" content="https://mickaelteixeira.github.io/assets/img/partage/article-playwright-mcp-design-frontend.jpg">
-<link rel="preload" href="/assets/fonts/inter-400-800.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/inter-tight-300-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/site.css">
 <meta property="article:published_time" content="2026-07-20">
 <meta property="article:modified_time" content="2026-11-15">
-<meta property="article:author" content="https://mickaelteixeira.github.io/">
+<meta property="article:author" content="https://mickaelteixeira.github.io/parcours/">
 <meta property="article:section" content="Outils">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://mickaelteixeira.github.io/actualites/playwright-mcp-design-frontend/#article","headline":"Playwright, aussi pour le design","alternativeHeadline":"Avec Claude, je pars de références visuelles et je corrige le rendu composant par composant.","description":"Playwright MCP et Claude pour le frontend : références Pinterest, système de design, captures d’écran et itérations sur les composants.","datePublished":"2026-07-20","dateModified":"2026-11-15","inLanguage":"fr-FR","author":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"},"publisher":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"},"mainEntityOfPage":"https://mickaelteixeira.github.io/actualites/playwright-mcp-design-frontend/","image":["https://mickaelteixeira.github.io/assets/img/partage/article-playwright-mcp-design-frontend.jpg","https://mickaelteixeira.github.io/assets/img/actualites/playwright-mcp-design-frontend-carte.webp"],"articleSection":"Outils","keywords":["Playwright MCP","Claude","frontend","design"],"wordCount":669,"citation":["https://playwright.dev/docs/getting-started-mcp","https://github.com/microsoft/playwright-mcp","https://www.linkedin.com/feed/update/urn:li:activity:7484980089521315842/"],"isPartOf":{"@id":"https://mickaelteixeira.github.io/actualites/#blog"},"discussionUrl":"https://www.linkedin.com/feed/update/urn:li:activity:7484980089521315842/"},{"@type":"Person","@id":"https://mickaelteixeira.github.io/#mickael-teixeira","name":"Mickaël Teixeira","givenName":"Mickaël","familyName":"Teixeira","jobTitle":"Développeur Symfony et Sylius freelance","url":"https://mickaelteixeira.github.io/","image":"https://mickaelteixeira.github.io/assets/img/mickael-teixeira-developpeur-symfony-bordeaux.webp","description":"Développeur PHP depuis 2009, freelance à Bordeaux depuis 2025 : Symfony, Sylius, API Platform et Laravel. Fondateur de Yedra, le CRM des écoles.","address":{"@type":"PostalAddress","addressLocality":"Bordeaux","addressRegion":"Nouvelle-Aquitaine","addressCountry":"FR"},"alumniOf":{"@type":"EducationalOrganization","name":"ETNA","url":"https://etna.io/"},"knowsAbout":["PHP","Symfony","Sylius","API Platform","Laravel","E-commerce","Architecture hexagonale","Domain-Driven Design","Angular","Elasticsearch","RabbitMQ","Docker","GitLab CI","Tests automatisés"],"knowsLanguage":["fr","en"],"sameAs":["https://www.linkedin.com/in/dev-php-bordeaux/","https://www.malt.fr/profile/mickaelteixeira","https://github.com/mickaelteixeira"]},{"@type":"WebSite","@id":"https://mickaelteixeira.github.io/#site","url":"https://mickaelteixeira.github.io/","name":"Mickaël Teixeira","inLanguage":"fr-FR","publisher":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://mickaelteixeira.github.io/"},{"@type":"ListItem","position":2,"name":"Actualités","item":"https://mickaelteixeira.github.io/actualites/"},{"@type":"ListItem","position":3,"name":"Playwright, aussi pour le design","item":"https://mickaelteixeira.github.io/actualites/playwright-mcp-design-frontend/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://mickaelteixeira.github.io/actualites/playwright-mcp-design-frontend/#article","headline":"Playwright, aussi pour le design","alternativeHeadline":"Avec Claude, je pars de références visuelles et je corrige le rendu composant par composant.","description":"Playwright MCP et Claude pour le frontend : références Pinterest, système de design, captures d’écran et itérations sur les composants.","datePublished":"2026-07-20","dateModified":"2026-11-15","inLanguage":"fr-FR","author":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"},"publisher":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"},"mainEntityOfPage":"https://mickaelteixeira.github.io/actualites/playwright-mcp-design-frontend/","image":["https://mickaelteixeira.github.io/assets/img/partage/article-playwright-mcp-design-frontend.jpg","https://mickaelteixeira.github.io/assets/img/actualites/playwright-mcp-design-frontend-carte.webp"],"articleSection":"Outils","keywords":["Playwright MCP","Claude","frontend","design"],"wordCount":669,"citation":["https://playwright.dev/docs/getting-started-mcp","https://github.com/microsoft/playwright-mcp","https://www.linkedin.com/feed/update/urn:li:activity:7484980089521315842/"],"isPartOf":{"@id":"https://mickaelteixeira.github.io/actualites/#blog"},"discussionUrl":"https://www.linkedin.com/feed/update/urn:li:activity:7484980089521315842/"},{"@type":"Person","@id":"https://mickaelteixeira.github.io/#mickael-teixeira","name":"Mickaël Teixeira","givenName":"Mickaël","familyName":"Teixeira","jobTitle":"Développeur Symfony et Sylius freelance","url":"https://mickaelteixeira.github.io/","mainEntityOfPage":"https://mickaelteixeira.github.io/parcours/","image":"https://mickaelteixeira.github.io/assets/img/mickael-teixeira-developpeur-symfony-bordeaux.webp","description":"Développeur PHP depuis 2009, freelance à Bordeaux depuis 2025 : Symfony, Sylius, API Platform et Laravel. Fondateur de Yedra, le CRM des écoles.","address":{"@type":"PostalAddress","addressLocality":"Bordeaux","addressRegion":"Nouvelle-Aquitaine","addressCountry":"FR"},"workLocation":{"@type":"City","name":"Bordeaux"},"alumniOf":{"@type":"EducationalOrganization","name":"ETNA","url":"https://etna.io/"},"hasCredential":{"@type":"EducationalOccupationalCredential","name":"Master Architecte logiciel","credentialCategory":"degree","recognizedBy":{"@type":"EducationalOrganization","name":"ETNA"}},"hasOccupation":{"@type":"Occupation","name":"Développeur web freelance","occupationLocation":{"@type":"City","name":"Bordeaux"},"skills":"PHP, Symfony, Sylius, API Platform, Laravel, architecture hexagonale, Domain-Driven Design, intégration ERP et CRM"},"knowsAbout":["PHP","Symfony","Sylius","API Platform","Laravel","E-commerce","Architecture hexagonale","Domain-Driven Design","Salesforce","Angular","Elasticsearch","RabbitMQ","RedPanda","Docker","GitLab CI","Tests automatisés"],"knowsLanguage":["fr","en"],"worksFor":{"@id":"https://mickaelteixeira.github.io/#activite"},"sameAs":["https://www.linkedin.com/in/dev-php-bordeaux/","https://www.malt.fr/profile/mickaelteixeira","https://github.com/mickaelteixeira"]},{"@type":"WebSite","@id":"https://mickaelteixeira.github.io/#site","url":"https://mickaelteixeira.github.io/","name":"Mickaël Teixeira","alternateName":"Mickaël Teixeira, développeur Symfony et Sylius freelance","inLanguage":"fr-FR","description":"Le site de Mickaël Teixeira, développeur Symfony, Sylius et API Platform freelance à Bordeaux.","publisher":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://mickaelteixeira.github.io/"},{"@type":"ListItem","position":2,"name":"Actualités","item":"https://mickaelteixeira.github.io/actualites/"},{"@type":"ListItem","position":3,"name":"Playwright, aussi pour le design","item":"https://mickaelteixeira.github.io/actualites/playwright-mcp-design-frontend/"}]}]}</script>
 </head>
 <body>
 <a class="evitement" href="#contenu">Aller au contenu</a>
@@ -47,10 +118,10 @@
 <div class="entete__barre">
 <a class="entete__nom" href="/">Mickaël Teixeira</a>
 <nav class="entete__nav" aria-label="Navigation principale">
-<a href="/#missions">Missions</a>
-<a href="/#expertises">Expertises</a>
+<a href="/missions/">Missions</a>
+<a href="/expertises/">Expertises</a>
 <a href="/#yedra">Yedra</a>
-<a href="/#parcours">Parcours</a>
+<a href="/parcours/">Parcours</a>
 <a href="/actualites/" aria-current="page">Actualités</a>
 </nav>
 <div class="entete__actions">
@@ -61,10 +132,10 @@
 </div>
 </header>
 <nav id="menu-mobile" class="menu-mobile" aria-label="Menu" hidden>
-<a class="menu-mobile__lien" href="/#missions">Missions</a>
-<a class="menu-mobile__lien" href="/#expertises">Expertises</a>
+<a class="menu-mobile__lien" href="/missions/">Missions</a>
+<a class="menu-mobile__lien" href="/expertises/">Expertises</a>
 <a class="menu-mobile__lien" href="/#yedra">Yedra</a>
-<a class="menu-mobile__lien" href="/#parcours">Parcours</a>
+<a class="menu-mobile__lien" href="/parcours/">Parcours</a>
 <a class="menu-mobile__lien" href="/actualites/">Actualités</a>
 <div class="menu-mobile__pied">
 <p>Toujours ouvert à une mission</p>
@@ -77,13 +148,13 @@
 <header style="padding-block: clamp(48px, 6cqw, 96px) clamp(32px, 4cqw, 56px)">
 <div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
 <nav aria-label="Fil d’Ariane" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--second)"><a href="/" style="color: var(--second)">Accueil</a> / <a href="/actualites/" style="color: var(--second)">Actualités</a> / <span aria-current="page">Outils</span></nav>
-<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--second)"><time datetime="2026-07-20">20 juillet 2026</time> · 4 min de lecture · par <a href="/" rel="author" style="color: var(--second)">Mickaël Teixeira</a></p>
-<h1 id="titre-article" style="margin: 0; max-width: 1080px; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(40px, 5cqw, 76px); line-height: 1.03; letter-spacing: -0.03em">Playwright, aussi pour le design. <span style="color: #9a9a9a">Avec Claude, je pars de références visuelles et je corrige le rendu composant par composant.</span></h1>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--second)"><time datetime="2026-07-20">20 juillet 2026</time> · 4 min de lecture · par <a href="/parcours/" rel="author" style="color: var(--second)">Mickaël Teixeira</a></p>
+<h1 id="titre-article" style="margin: 0; max-width: 1080px; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(40px, 5cqw, 76px); line-height: 1.03; letter-spacing: -0.03em">Playwright, aussi pour le design. <span style="color: #8a8a8a">Avec Claude, je pars de références visuelles et je corrige le rendu composant par composant.</span></h1>
 <p style="margin: 0; max-width: 760px; font-size: 22px; line-height: 1.55; color: var(--texte)">Un frontend peut fonctionner et rester loin de ce que j’avais en tête. Avec Playwright MCP, j’intègre le navigateur à ma méthode de travail avec Claude.</p>
 </div>
 </header>
 <figure style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; margin: 0 auto">
-<div style="overflow: hidden; border-radius: 16px; border: 1px solid var(--trait); background: var(--fond)"><img src="/assets/img/actualites/playwright-mcp-design-frontend.svg" data-theme-img="clair" alt="Trame de lignes : une scène de théâtre vide sous un projecteur" width="1200" height="675" fetchpriority="high" style="display: block; width: 100%; height: auto"><img src="/assets/img/actualites/playwright-mcp-design-frontend-nuit.svg" data-theme-img="sombre" alt="Trame de lignes : une scène de théâtre vide sous un projecteur" width="1200" height="675" loading="lazy" style="display: block; width: 100%; height: auto"></div>
+<div style="overflow: hidden; border-radius: 16px; border: 1px solid var(--trait); background: var(--fond)"><img src="/assets/img/actualites/playwright-mcp-design-frontend.svg" data-theme-img="clair" alt="Trame de lignes : une scène de théâtre vide sous un projecteur" width="1200" height="675" loading="lazy" style="display: block; width: 100%; height: auto"><img src="/assets/img/actualites/playwright-mcp-design-frontend-nuit.svg" data-theme-img="sombre" alt="Trame de lignes : une scène de théâtre vide sous un projecteur" width="1200" height="675" loading="lazy" style="display: block; width: 100%; height: auto"></div>
 </figure>
 <div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; padding-block: clamp(48px, 5cqw, 80px) clamp(72px, 8cqw, 128px); display: flex; flex-wrap: wrap; gap: 48px clamp(48px, 7cqw, 112px); align-items: flex-start">
 <div style="flex: 999 1 560px; min-width: 0; max-width: 700px; display: flex; flex-direction: column; gap: 24px; font-size: 18px; line-height: 1.75; color: var(--texte)">
@@ -108,13 +179,13 @@
 <section aria-label="Et depuis" style="margin-top: 24px; padding: 24px; background: var(--fond-2); border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--accent)">Et depuis</p><p style="margin: 0; font-size: 17px; line-height: 1.65; color: var(--encre)">Le README de Playwright MCP recommande désormais aux agents de code le CLI de Playwright avec des skills, plus économe en contexte, et réserve le serveur MCP aux boucles qui gagnent à garder le navigateur ouvert : exploration, tests qui se réparent, longues sessions autonomes.</p></section>
 </div>
 <aside aria-label="À propos de cet article" style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 28px; font-size: 15px">
-<figure style="margin: 0; padding: 24px; border: 1px solid var(--trait); border-radius: 12px; display: flex; flex-direction: column; gap: 14px"><figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)">En discussion sur LinkedIn</figcaption><blockquote style="margin: 0; color: var(--encre); font-size: 16px; line-height: 1.6"><p style="margin: 0">« Ce n&#x27;est pas parfait, mais c&#x27;est clairement l&#x27;approche la plus efficace que j&#x27;ai trouvée à ce jour. »</p></blockquote><a href="https://www.linkedin.com/feed/update/urn:li:activity:7484980089521315842/" style="align-self: start; display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border: 1px solid var(--trait-fort); border-radius: 8px; color: var(--encre); text-decoration: none; font-weight: 500">Rejoindre la discussion</a></figure>
+<figure style="margin: 0; padding: 24px; border: 1px solid var(--trait); border-radius: 12px; display: flex; flex-direction: column; gap: 14px"><figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)">En discussion sur LinkedIn</figcaption><blockquote style="margin: 0; color: var(--encre); font-size: 16px; line-height: 1.6"><p style="margin: 0">« Ce n&#x27;est pas parfait, mais c&#x27;est clairement l&#x27;approche la plus efficace que j&#x27;ai trouvée à ce jour. »</p></blockquote><a href="https://www.linkedin.com/feed/update/urn:li:activity:7484980089521315842/" rel="noopener" style="align-self: start; display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border: 1px solid var(--trait-fort); border-radius: 8px; color: var(--encre); text-decoration: none; font-weight: 500">Rejoindre la discussion</a></figure>
 <div style="display: flex; flex-direction: column; gap: 10px"><h2 style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 400; color: var(--second)">Sources</h2><ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column"><li style="padding-block: 10px; border-top: 1px solid var(--trait)"><a href="https://playwright.dev/docs/getting-started-mcp" style="color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere">Playwright — documentation officielle de Playwright MCP</a></li><li style="padding-block: 10px; border-top: 1px solid var(--trait)"><a href="https://github.com/microsoft/playwright-mcp" style="color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere">Microsoft — dépôt officiel du serveur Playwright MCP</a></li><li style="padding-block: 10px; border-top: 1px solid var(--trait)"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7484980089521315842/" style="color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere">Mickaël Teixeira — méthode et retour personnel</a></li></ol></div>
 <ul aria-label="Mots-clés" style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px"><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--fond-2); color: var(--texte)">Playwright MCP</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--fond-2); color: var(--texte)">Claude</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--fond-2); color: var(--texte)">frontend</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--fond-2); color: var(--texte)">design</li></ul>
 <div style="padding-top: 20px; border-top: 1px solid var(--encre); display: flex; flex-direction: column; gap: 6px">
-<b style="font-weight: 600; color: var(--encre)">Mickaël Teixeira</b>
-<span style="color: var(--second)">Développeur Symfony et Sylius, freelance à Bordeaux. Fondateur de Yedra.</span>
-<a href="/#missions" style="color: var(--accent); font-weight: 500; text-underline-offset: 4px">Voir les missions</a>
+<a href="/parcours/" style="font-weight: 600; color: var(--encre); text-decoration: none">Mickaël Teixeira</a>
+<span style="color: var(--second)">Développeur <a href="/expertises/symfony/" style="color: var(--second)">Symfony</a> et <a href="/expertises/sylius/" style="color: var(--second)">Sylius</a>, freelance à Bordeaux. Fondateur de Yedra.</span>
+<a href="/missions/" style="color: var(--accent); font-weight: 500; text-underline-offset: 4px">Voir les missions</a>
 </div>
 </aside>
 </div>
@@ -133,7 +204,7 @@
 <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)">4 min de lecture</span>
 </a></li><li><a href="/actualites/claw-code-reecriture-agents/" style="display: flex; flex-direction: column; gap: 14px; color: var(--encre); text-decoration: none">
 <span style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid var(--trait); background: var(--fond)"><img src="/assets/img/actualites/claw-code-reecriture-agents-carte.webp" data-theme-img="clair" alt="Trame de lignes : un rayon de miel et quelques abeilles au travail" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"><img src="/assets/img/actualites/claw-code-reecriture-agents-nuit-carte.webp" data-theme-img="sombre" alt="Trame de lignes : un rayon de miel et quelques abeilles au travail" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></span>
-<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)"><time datetime="2026-04-01">1 avril 2026</time> · Outils</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)"><time datetime="2026-04-01">1er avril 2026</time> · Outils</span>
 <span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.14; letter-spacing: -0.02em">Claw Code reprend l’architecture de l’agent.</span>
 <span style="font-size: 15px; line-height: 1.6; color: var(--texte)">Au lendemain de la fuite de Claude Code, les développeurs s’emparent de son architecture. Claw Code illustre cette envie de comprendre et de reconstruire.</span>
 <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)">4 min de lecture</span>
@@ -147,25 +218,36 @@
 </div>
 </section>
 </main>
-<section aria-labelledby="titre-suite" style="container-type: inline-size; background: var(--panneau); color: #ebebeb">
-<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; padding-block: clamp(64px, 7cqw, 112px) 40px; display: flex; flex-direction: column; gap: clamp(48px, 5cqw, 72px)">
+<section aria-labelledby="titre-suite" style="container-type: inline-size; background: var(--panneau); color: #ebebeb; font-size: 16px; line-height: 1.55">
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; padding-block: clamp(64px, 7cqw, 112px); display: flex; flex-direction: column; gap: clamp(48px, 5cqw, 72px)">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 32px 64px">
-<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
-<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #a3a3a3">Développeur Symfony et Sylius · Bordeaux</p>
-<h2 id="titre-suite" style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(36px, 4.2cqw, 64px); line-height: 1.04; letter-spacing: -0.03em; color: #ffffff">Une plateforme à faire évoluer ? <span style="color: #8a8a8a">Parlons-en.</span></h2>
-</div>
+<h2 id="titre-suite" style="margin: 0; flex: 1 1 520px; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(36px, 4.2cqw, 64px); line-height: 1.04; letter-spacing: -0.03em; color: #ffffff">Une plateforme à faire évoluer ? <span style="color: #8a8a8a">Parlons-en.</span></h2>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
-<a href="/#contact" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; background: #8fa2ff; color: #171717; border-radius: 8px; text-decoration: none; font-weight: 500">Proposer une mission</a>
-<a href="https://www.linkedin.com/in/dev-php-bordeaux/" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border: 1px solid #5c5c5c; color: #ffffff; border-radius: 8px; text-decoration: none; font-weight: 500">Suivre sur LinkedIn</a>
+<a href="/#contact" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 16px; background: #8fa2ff; color: #171717">Proposer une mission</a>
+<a href="https://www.linkedin.com/in/dev-php-bordeaux/" rel="noopener" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 16px; border: 1px solid #5c5c5c; color: #ffffff">Suivre sur LinkedIn</a>
 </div>
 </div>
-<footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 24px; border-top: 1px solid #303030; font-size: 14px; color: #a3a3a3">
-<span>© 2026 Mickaël Teixeira · entrepreneur individuel · Bordeaux</span>
-<nav aria-label="Pied de page" style="display: flex; flex-wrap: wrap; gap: 24px"><a href="/" style="color: #a3a3a3">Accueil</a><a href="/actualites/" style="color: #a3a3a3">Actualités</a><a href="/mentions-legales/" style="color: #a3a3a3">Mentions légales</a><a href="https://www.linkedin.com/in/dev-php-bordeaux/" style="color: #a3a3a3">LinkedIn</a></nav>
-</footer>
+
 </div>
 </section>
 </div>
+<footer class="pied">
+<div class="pied__cadre">
+<div class="pied__grille">
+<div class="pied__marque">
+<a class="pied__nom" href="/">Mickaël Teixeira</a>
+<p>Développeur Symfony et Sylius freelance à Bordeaux. PHP depuis 2009.</p>
+</div>
+<nav aria-labelledby="pied-expertises"><h2 class="pied__titre" id="pied-expertises">Expertises</h2><ul><li><a href="/expertises/symfony/">Symfony</a></li><li><a href="/expertises/sylius/">Sylius</a></li><li><a href="/expertises/api-platform/">API Platform</a></li><li><a href="/expertises/laravel/">Laravel</a></li><li><a href="/expertises/architecture-hexagonale-ddd/">Architecture hexagonale et DDD</a></li><li><a href="/expertises/integration-erp-crm/">Intégration ERP et CRM</a></li></ul></nav>
+<nav aria-labelledby="pied-site"><h2 class="pied__titre" id="pied-site">Site</h2><ul><li><a href="/missions/">Missions</a></li><li><a href="/parcours/">Parcours</a></li><li><a href="/actualites/">Actualités</a></li><li><a href="/#contact">Contact</a></li><li><a href="/mentions-legales/">Mentions légales</a></li></ul></nav>
+<nav aria-labelledby="pied-profils"><h2 class="pied__titre" id="pied-profils">Profils</h2><ul><li><a href="https://www.linkedin.com/in/dev-php-bordeaux/" rel="me noopener">LinkedIn</a></li><li><a href="https://www.malt.fr/profile/mickaelteixeira" rel="me noopener">Malt</a></li><li><a href="https://github.com/mickaelteixeira" rel="me noopener">GitHub</a></li><li><a href="https://yedra.app" rel="noopener">Yedra</a></li></ul></nav>
+</div>
+<div class="pied__bas">
+<span>© 2026 Mickaël Teixeira · entrepreneur individuel · Bordeaux</span>
+<a href="/actualites/flux.xml">Flux des actualités</a>
+</div>
+</div>
+</footer>
 <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

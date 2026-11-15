@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Refonte Sylius headless de Commande.com · Mickaël Teixeira</title>
 <meta name="description" content="Mission freelance avec l’agence Dn’D (2025) : la refonte de Commande.com sur Sylius en headless, API Platform, flux ERP et transporteurs, tests automatisés.">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://mickaelteixeira.github.io/missions/commande/">
 <meta name="author" content="Mickaël Teixeira">
 <meta name="google-site-verification" content="wsdzIL0Lmsbtvz1F2wSa2pzjxPZG2HtzG2G24YiEvAY">
@@ -13,11 +13,84 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#171717" media="(prefers-color-scheme: dark)">
 <script>try{var t=localStorage.getItem('theme');if(t==='clair'||t==='sombre')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preload" href="/assets/fonts/inter-400-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-tight-300-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Inter';font-style:normal;font-weight:400 800;font-display:swap;src:url(/assets/fonts/inter-400-800.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Inter Tight';font-style:normal;font-weight:300 400;font-display:swap;src:url(/assets/fonts/inter-tight-300-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url(/assets/fonts/jetbrains-mono-400-500.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Epilogue';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/epilogue-500.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Epilogue';font-style:normal;font-weight:800;font-display:swap;src:url(/assets/fonts/epilogue-800.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/lato-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Lato';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/lato-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Lato';font-style:normal;font-weight:900;font-display:swap;src:url(/assets/fonts/lato-900.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/poppins-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/poppins-600.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/poppins-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+:root{--fond:#ffffff;--fond-2:#f5f5f5;--encre:#171717;--texte:#3d3d3d;--second:#5c5c5c;--trait:#e5e5e5;--trait-fort:#b3b3b3;--accent:#2f4bff;--sur-accent:#ffffff;--lien:#2f4bff;--panneau:#171717;--panneau-texte:#ebebeb;--panneau-second:#a3a3a3;--panneau-trait:#303030;--panneau-accent:#8fa2ff;color-scheme:light}
+[data-theme-img="sombre"]{display:none!important}
+:root[data-theme="sombre"]{--fond:#171717;--fond-2:#1f1f1f;--encre:#ebebeb;--texte:#c7c7c7;--second:#a3a3a3;--trait:#2a2a2a;--trait-fort:#484848;--accent:#8fa2ff;--sur-accent:#171717;--lien:#8fa2ff;--panneau:#0f0f0f;--panneau-texte:#ebebeb;--panneau-second:#a3a3a3;--panneau-trait:#2a2a2a;--panneau-accent:#8fa2ff;color-scheme:dark}
+:root[data-theme="sombre"] [data-theme-img="clair"]{display:none!important}:root[data-theme="sombre"] [data-theme-img="sombre"]{display:block!important}
+@media (prefers-color-scheme:dark){:root:not([data-theme="clair"]){--fond:#171717;--fond-2:#1f1f1f;--encre:#ebebeb;--texte:#c7c7c7;--second:#a3a3a3;--trait:#2a2a2a;--trait-fort:#484848;--accent:#8fa2ff;--sur-accent:#171717;--lien:#8fa2ff;--panneau:#0f0f0f;--panneau-texte:#ebebeb;--panneau-second:#a3a3a3;--panneau-trait:#2a2a2a;--panneau-accent:#8fa2ff;color-scheme:dark}:root:not([data-theme="clair"]) [data-theme-img="clair"]{display:none!important}:root:not([data-theme="clair"]) [data-theme-img="sombre"]{display:block!important}}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:80px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--fond);color:var(--encre);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg,canvas{max-width:100%}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.evitement{position:absolute;left:16px;top:-64px;z-index:20;padding:10px 16px;background:var(--encre);color:var(--fond);border-radius:8px;text-decoration:none;font-weight:500}
+.evitement:focus{top:12px}
+.entete{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--fond) 92%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--trait)}
+.entete__barre{max-width:1312px;margin:0 auto;padding-inline:clamp(20px,4.5vw,64px);min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px 32px}
+.entete__nom{color:var(--encre);text-decoration:none;font-weight:600;font-size:16px;letter-spacing:-.01em}
+.entete__nav{display:flex;align-items:center;gap:32px;font-size:15px}
+.entete__nav a{color:var(--encre);text-decoration:none}
+.entete__nav a:hover{text-decoration:underline;text-underline-offset:8px}
+.entete__nav a[aria-current="page"]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:8px}
+.entete__contact{display:inline-flex;align-items:center;height:40px;padding:0 16px;border:1px solid var(--trait-fort);border-radius:8px;color:var(--encre);text-decoration:none;font-size:15px;font-weight:500}
+.entete__contact:hover{border-color:var(--encre)}
+.entete__actions{display:flex;align-items:center;gap:10px}
+.theme{width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--trait-fort);border-radius:8px;color:var(--encre);cursor:pointer}
+.theme:hover{border-color:var(--encre)}
+.theme svg{display:none}
+:root:not([data-theme]) .theme [data-icone="auto"],:root[data-theme="clair"] .theme [data-icone="clair"],:root[data-theme="sombre"] .theme [data-icone="sombre"]{display:block}
+.entete__menu{display:none;width:44px;height:44px;align-items:center;justify-content:center;background:transparent;border:1px solid var(--trait-fort);border-radius:8px;color:var(--encre);cursor:pointer}
+.menu-mobile{display:none}
+@media (max-width:860px){
+.entete__barre{min-height:56px}
+.entete__nav,.entete__contact{display:none}
+.theme{width:44px;height:44px}
+.entete__menu{display:inline-flex}
+.menu-mobile:not([hidden]){display:flex;flex-direction:column;position:fixed;inset:56px 0 0;z-index:9;padding:8px 20px 24px;background:var(--fond);overflow-y:auto}
+.menu-mobile a.menu-mobile__lien{display:flex;justify-content:space-between;align-items:center;min-height:64px;border-bottom:1px solid var(--trait);color:var(--encre);text-decoration:none;font-family:'Inter Tight',Inter,sans-serif;font-weight:300;font-size:30px;letter-spacing:-.02em}
+.menu-mobile__pied{margin-top:auto;padding-top:24px;display:flex;flex-direction:column;gap:16px}
+.menu-mobile__pied p{margin:0;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--second)}
+.menu-mobile__pied a{display:inline-flex;align-items:center;justify-content:center;height:52px;background:var(--accent);color:var(--sur-accent);border-radius:8px;text-decoration:none;font-weight:500}
+body.menu-ouvert{overflow:hidden}
+}
+.facade{position:relative;width:100%;aspect-ratio:4/5}
+.facade img,.facade canvas{position:absolute;inset:0;width:100%;height:100%}
+.facade img{transition:opacity .4s ease}
+.facade.est-animee img{opacity:0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.pied{container-type:inline-size;background:var(--panneau);color:var(--panneau-second);font-size:15px;line-height:1.55;border-top:1px solid var(--panneau-trait)}
+.pied__cadre{max-width:1312px;margin:0 auto;padding:clamp(48px,5cqw,72px) clamp(20px,4.5cqw,64px) 32px;display:flex;flex-direction:column;gap:clamp(40px,4cqw,56px)}
+.pied__grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:40px 32px}
+.pied__marque{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.pied__marque p{margin:0;max-width:300px}
+.pied__nom{color:#ffffff;font-weight:600;font-size:16px;letter-spacing:-.01em}
+.pied__titre{margin:0 0 14px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:400;color:var(--panneau-second)}
+.pied ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.pied a{color:var(--panneau-texte);text-decoration:none}
+.pied a:hover{text-decoration:underline;text-underline-offset:4px}
+.pied__bas{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding-top:24px;border-top:1px solid var(--panneau-trait);font-size:14px}
+.pied__bas a{color:var(--panneau-second)}</style>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
 <link rel="alternate" type="application/atom+xml" title="Actualités de Mickaël Teixeira" href="/actualites/flux.xml">
+<link rel="alternate" type="text/plain" title="Résumé du site pour les modèles de langage" href="/llms.txt">
+<link rel="me" href="https://www.linkedin.com/in/dev-php-bordeaux/">
+<link rel="me" href="https://github.com/mickaelteixeira">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Mickaël Teixeira">
 <meta property="og:locale" content="fr_FR">
@@ -25,6 +98,7 @@
 <meta property="og:description" content="Mission freelance avec l’agence Dn’D (2025) : la refonte de Commande.com sur Sylius en headless, API Platform, flux ERP et transporteurs, tests automatisés.">
 <meta property="og:url" content="https://mickaelteixeira.github.io/missions/commande/">
 <meta property="og:image" content="https://mickaelteixeira.github.io/assets/img/partage/mission-commande.jpg">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Commande.com × Mickaël Teixeira">
@@ -32,10 +106,7 @@
 <meta name="twitter:title" content="Refonte Sylius headless de Commande.com">
 <meta name="twitter:description" content="Mission freelance avec l’agence Dn’D (2025) : la refonte de Commande.com sur Sylius en headless, API Platform, flux ERP et transporteurs, tests automatisés.">
 <meta name="twitter:image" content="https://mickaelteixeira.github.io/assets/img/partage/mission-commande.jpg">
-<link rel="preload" href="/assets/fonts/inter-400-800.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/inter-tight-300-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/site.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://mickaelteixeira.github.io/missions/commande/#page","url":"https://mickaelteixeira.github.io/missions/commande/","name":"Refonte Sylius headless de Commande.com","description":"Mission freelance avec l’agence Dn’D (2025) : la refonte de Commande.com sur Sylius en headless, API Platform, flux ERP et transporteurs, tests automatisés.","inLanguage":"fr-FR","isPartOf":{"@id":"https://mickaelteixeira.github.io/#site"},"author":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"},"about":{"@type":"Organization","name":"Commande.com","url":"https://commande.com/"},"primaryImageOfPage":"https://mickaelteixeira.github.io/assets/img/missions/commande-couverture.webp","dateModified":"2026-11-15"},{"@type":"Person","@id":"https://mickaelteixeira.github.io/#mickael-teixeira","name":"Mickaël Teixeira","givenName":"Mickaël","familyName":"Teixeira","jobTitle":"Développeur Symfony et Sylius freelance","url":"https://mickaelteixeira.github.io/","image":"https://mickaelteixeira.github.io/assets/img/mickael-teixeira-developpeur-symfony-bordeaux.webp","description":"Développeur PHP depuis 2009, freelance à Bordeaux depuis 2025 : Symfony, Sylius, API Platform et Laravel. Fondateur de Yedra, le CRM des écoles.","address":{"@type":"PostalAddress","addressLocality":"Bordeaux","addressRegion":"Nouvelle-Aquitaine","addressCountry":"FR"},"alumniOf":{"@type":"EducationalOrganization","name":"ETNA","url":"https://etna.io/"},"knowsAbout":["PHP","Symfony","Sylius","API Platform","Laravel","E-commerce","Architecture hexagonale","Domain-Driven Design","Angular","Elasticsearch","RabbitMQ","Docker","GitLab CI","Tests automatisés"],"knowsLanguage":["fr","en"],"sameAs":["https://www.linkedin.com/in/dev-php-bordeaux/","https://www.malt.fr/profile/mickaelteixeira","https://github.com/mickaelteixeira"]},{"@type":"WebSite","@id":"https://mickaelteixeira.github.io/#site","url":"https://mickaelteixeira.github.io/","name":"Mickaël Teixeira","inLanguage":"fr-FR","publisher":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://mickaelteixeira.github.io/"},{"@type":"ListItem","position":2,"name":"Missions","item":"https://mickaelteixeira.github.io/#missions"},{"@type":"ListItem","position":3,"name":"Commande.com","item":"https://mickaelteixeira.github.io/missions/commande/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://mickaelteixeira.github.io/missions/commande/#page","url":"https://mickaelteixeira.github.io/missions/commande/","name":"Refonte Sylius headless de Commande.com","description":"Mission freelance avec l’agence Dn’D (2025) : la refonte de Commande.com sur Sylius en headless, API Platform, flux ERP et transporteurs, tests automatisés.","inLanguage":"fr-FR","isPartOf":{"@id":"https://mickaelteixeira.github.io/#site"},"author":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"},"about":{"@type":"Organization","name":"Commande.com","url":"https://commande.com/"},"primaryImageOfPage":"https://mickaelteixeira.github.io/assets/img/missions/commande-couverture.webp","dateModified":"2026-11-15"},{"@type":"Person","@id":"https://mickaelteixeira.github.io/#mickael-teixeira","name":"Mickaël Teixeira","givenName":"Mickaël","familyName":"Teixeira","jobTitle":"Développeur Symfony et Sylius freelance","url":"https://mickaelteixeira.github.io/","mainEntityOfPage":"https://mickaelteixeira.github.io/parcours/","image":"https://mickaelteixeira.github.io/assets/img/mickael-teixeira-developpeur-symfony-bordeaux.webp","description":"Développeur PHP depuis 2009, freelance à Bordeaux depuis 2025 : Symfony, Sylius, API Platform et Laravel. Fondateur de Yedra, le CRM des écoles.","address":{"@type":"PostalAddress","addressLocality":"Bordeaux","addressRegion":"Nouvelle-Aquitaine","addressCountry":"FR"},"workLocation":{"@type":"City","name":"Bordeaux"},"alumniOf":{"@type":"EducationalOrganization","name":"ETNA","url":"https://etna.io/"},"hasCredential":{"@type":"EducationalOccupationalCredential","name":"Master Architecte logiciel","credentialCategory":"degree","recognizedBy":{"@type":"EducationalOrganization","name":"ETNA"}},"hasOccupation":{"@type":"Occupation","name":"Développeur web freelance","occupationLocation":{"@type":"City","name":"Bordeaux"},"skills":"PHP, Symfony, Sylius, API Platform, Laravel, architecture hexagonale, Domain-Driven Design, intégration ERP et CRM"},"knowsAbout":["PHP","Symfony","Sylius","API Platform","Laravel","E-commerce","Architecture hexagonale","Domain-Driven Design","Salesforce","Angular","Elasticsearch","RabbitMQ","RedPanda","Docker","GitLab CI","Tests automatisés"],"knowsLanguage":["fr","en"],"worksFor":{"@id":"https://mickaelteixeira.github.io/#activite"},"sameAs":["https://www.linkedin.com/in/dev-php-bordeaux/","https://www.malt.fr/profile/mickaelteixeira","https://github.com/mickaelteixeira"]},{"@type":"WebSite","@id":"https://mickaelteixeira.github.io/#site","url":"https://mickaelteixeira.github.io/","name":"Mickaël Teixeira","alternateName":"Mickaël Teixeira, développeur Symfony et Sylius freelance","inLanguage":"fr-FR","description":"Le site de Mickaël Teixeira, développeur Symfony, Sylius et API Platform freelance à Bordeaux.","publisher":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://mickaelteixeira.github.io/"},{"@type":"ListItem","position":2,"name":"Missions","item":"https://mickaelteixeira.github.io/missions/"},{"@type":"ListItem","position":3,"name":"Commande.com","item":"https://mickaelteixeira.github.io/missions/commande/"}]}]}</script>
 </head>
 <body>
 <a class="evitement" href="#contenu">Aller au contenu</a>
@@ -43,10 +114,10 @@
 <div class="entete__barre">
 <a class="entete__nom" href="/">Mickaël Teixeira</a>
 <nav class="entete__nav" aria-label="Navigation principale">
-<a href="/#missions" aria-current="page">Missions</a>
-<a href="/#expertises">Expertises</a>
+<a href="/missions/" aria-current="page">Missions</a>
+<a href="/expertises/">Expertises</a>
 <a href="/#yedra">Yedra</a>
-<a href="/#parcours">Parcours</a>
+<a href="/parcours/">Parcours</a>
 <a href="/actualites/">Actualités</a>
 </nav>
 <div class="entete__actions">
@@ -57,10 +128,10 @@
 </div>
 </header>
 <nav id="menu-mobile" class="menu-mobile" aria-label="Menu" hidden>
-<a class="menu-mobile__lien" href="/#missions">Missions</a>
-<a class="menu-mobile__lien" href="/#expertises">Expertises</a>
+<a class="menu-mobile__lien" href="/missions/">Missions</a>
+<a class="menu-mobile__lien" href="/expertises/">Expertises</a>
 <a class="menu-mobile__lien" href="/#yedra">Yedra</a>
-<a class="menu-mobile__lien" href="/#parcours">Parcours</a>
+<a class="menu-mobile__lien" href="/parcours/">Parcours</a>
 <a class="menu-mobile__lien" href="/actualites/">Actualités</a>
 <div class="menu-mobile__pied">
 <p>Toujours ouvert à une mission</p>
@@ -73,18 +144,18 @@
 
 <section aria-labelledby="titre-mission" style="padding-block: clamp(48px, 6cqw, 96px) clamp(32px, 4cqw, 56px)">
 <div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
-<nav aria-label="Fil d’Ariane" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--second)"><a href="/" style="color: var(--second)">Accueil</a> / <a href="/#missions" style="color: var(--second)">Missions</a> / <span aria-current="page">Commande.com</span></nav>
-<h1 id="titre-mission" style="margin: 0; max-width: 1080px; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(42px, 5.4cqw, 80px); line-height: 1.02; letter-spacing: -0.03em">La refonte de Commande.com sur Sylius. <span style="color: #9a9a9a">Un moteur headless, des flux ERP et transporteurs, des tests automatisés.</span></h1>
+<nav aria-label="Fil d’Ariane" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--second)"><a href="/" style="color: var(--second)">Accueil</a> / <a href="/missions/" style="color: var(--second)">Missions</a> / <span aria-current="page">Commande.com</span></nav>
+<h1 id="titre-mission" style="margin: 0; max-width: 1080px; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(42px, 5.4cqw, 80px); line-height: 1.02; letter-spacing: -0.03em">La refonte de Commande.com sur Sylius. <span style="color: #8a8a8a">Un moteur headless, des flux ERP et transporteurs, des tests automatisés.</span></h1>
 </div>
 </section>
 
 <figure style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
 <div style="position: relative; overflow: hidden; border-radius: 16px; background: #0b2a30; height: clamp(320px, 42cqw, 600px)">
-<img src="/assets/img/missions/commande-couverture.webp" srcset="/assets/img/missions/commande-couverture-800.webp 800w, /assets/img/missions/commande-couverture.webp 1600w" sizes="(min-width: 1312px) 1312px, 100vw" alt="Vue aérienne d’un entrepôt logistique sur une presqu’île boisée, au-dessus d’une eau sombre" width="1600" height="1067" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: left center">
+<img src="/assets/img/missions/commande-couverture.webp" fetchpriority="high" srcset="/assets/img/missions/commande-couverture-800.webp 800w, /assets/img/missions/commande-couverture.webp 1600w" sizes="(min-width: 1312px) 1312px, 100vw" alt="Vue aérienne d’un entrepôt logistique sur une presqu’île boisée, au-dessus d’une eau sombre" width="1600" height="1067" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: left center">
 <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgb(4 22 26 / 0) 38%, rgb(4 22 26 / .5) 72%, rgb(4 22 26 / .7) 100%)"></div>
 <div style="position: absolute; right: clamp(24px, 5cqw, 80px); top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; align-items: flex-end; gap: 12px">
 <img src="/assets/img/missions/commande-logo.svg" alt="Commande.com" width="2675" height="313" style="display: block; width: clamp(170px, 20cqw, 290px); height: auto">
-<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: rgb(255 255 255 / .75)">× Mickaël Teixeira, avec l’agence Dn’D</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: rgb(255 255 255 / .75)">avec l’agence Dn’D</span>
 </div>
 </div>
 </figure>
@@ -140,6 +211,7 @@
 <li style="display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 8px"><span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 28px; line-height: 1; color: var(--accent)">4</span><span>outils de qualité : PHPUnit, Behat, PHPStan, CS Fixer</span></li>
 </ul>
 <p style="margin: 0; padding-top: 16px; border-top: 1px solid var(--trait); font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 1.8; color: var(--second)">PHP 8.2 · Symfony · Sylius · API Platform · RabbitMQ · Elasticsearch · Docker · GitLab CI</p>
+<nav aria-label="Expertises mobilisées" style="display: flex; flex-direction: column; gap: 10px; padding-top: 16px; border-top: 1px solid var(--trait); font-size: 15px"><p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)">Expertises mobilisées</p><ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px"><li><a href="/expertises/symfony/" style="color: var(--accent); text-underline-offset: 3px">Symfony</a></li><li><a href="/expertises/sylius/" style="color: var(--accent); text-underline-offset: 3px">Sylius</a></li><li><a href="/expertises/api-platform/" style="color: var(--accent); text-underline-offset: 3px">API Platform</a></li><li><a href="/expertises/integration-erp-crm/" style="color: var(--accent); text-underline-offset: 3px">Intégration ERP et CRM</a></li></ul></nav>
 </aside>
 
 </article>
@@ -177,11 +249,14 @@
 
 </main>
 
-<section aria-labelledby="titre-prochain" style="container-type: inline-size; background: var(--panneau); color: #ebebeb; font-size: 16px; line-height: 1.55">
-<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; padding-block: clamp(64px, 7cqw, 112px) 40px; display: flex; flex-direction: column; gap: clamp(56px, 6cqw, 88px)">
+<section aria-labelledby="titre-suite" style="container-type: inline-size; background: var(--panneau); color: #ebebeb; font-size: 16px; line-height: 1.55">
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; padding-block: clamp(64px, 7cqw, 112px); display: flex; flex-direction: column; gap: clamp(48px, 5cqw, 72px)">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 32px 64px">
-<h2 id="titre-prochain" style="margin: 0; flex: 1 1 520px; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(36px, 4.2cqw, 64px); line-height: 1.04; letter-spacing: -0.03em; color: #ffffff">La prochaine mission, <span style="color: #8a8a8a">c’est peut-être la vôtre.</span></h2>
-<a href="/#contact" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; background: #8fa2ff; color: #171717; border-radius: 8px; text-decoration: none; font-weight: 500">Proposer une mission</a>
+<h2 id="titre-suite" style="margin: 0; flex: 1 1 520px; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(36px, 4.2cqw, 64px); line-height: 1.04; letter-spacing: -0.03em; color: #ffffff">La prochaine mission, <span style="color: #8a8a8a">c’est peut-être la vôtre.</span></h2>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="/#contact" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 16px; background: #8fa2ff; color: #171717">Proposer une mission</a>
+<a href="https://www.linkedin.com/in/dev-php-bordeaux/" rel="noopener" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 16px; border: 1px solid #5c5c5c; color: #ffffff">Suivre sur LinkedIn</a>
+</div>
 </div>
 <nav aria-label="Toutes les missions" style="display: flex; flex-direction: column; gap: 16px">
 <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #a3a3a3">Toutes les missions, depuis 2009</p>
@@ -196,15 +271,28 @@
 <li style="border-top: 1px solid #303030"><a href="/missions/illicotravel/" style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 16px; padding-block: 14px; color: #ebebeb; text-decoration: none"><span style="font-weight: 500">illicotravel</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #a3a3a3">2009</span><span style="grid-column: 1 / -1; font-size: 14px; color: #a3a3a3">Comparateur de voyages · stage</span></a></li>
 </ol>
 </nav>
-<footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 24px; border-top: 1px solid #303030; font-size: 14px; color: #a3a3a3">
-<span>© 2026 Mickaël Teixeira · entrepreneur individuel · Bordeaux</span>
-<nav aria-label="Pied de page" style="display: flex; flex-wrap: wrap; gap: 24px"><a href="/" style="color: #a3a3a3">Accueil</a><a href="/actualites/" style="color: #a3a3a3">Actualités</a><a href="/mentions-legales/" style="color: #a3a3a3">Mentions légales</a><a href="https://www.linkedin.com/in/dev-php-bordeaux/" style="color: #a3a3a3">LinkedIn</a></nav>
-</footer>
 </div>
 </section>
 
 </div>
 
+<footer class="pied">
+<div class="pied__cadre">
+<div class="pied__grille">
+<div class="pied__marque">
+<a class="pied__nom" href="/">Mickaël Teixeira</a>
+<p>Développeur Symfony et Sylius freelance à Bordeaux. PHP depuis 2009.</p>
+</div>
+<nav aria-labelledby="pied-expertises"><h2 class="pied__titre" id="pied-expertises">Expertises</h2><ul><li><a href="/expertises/symfony/">Symfony</a></li><li><a href="/expertises/sylius/">Sylius</a></li><li><a href="/expertises/api-platform/">API Platform</a></li><li><a href="/expertises/laravel/">Laravel</a></li><li><a href="/expertises/architecture-hexagonale-ddd/">Architecture hexagonale et DDD</a></li><li><a href="/expertises/integration-erp-crm/">Intégration ERP et CRM</a></li></ul></nav>
+<nav aria-labelledby="pied-site"><h2 class="pied__titre" id="pied-site">Site</h2><ul><li><a href="/missions/">Missions</a></li><li><a href="/parcours/">Parcours</a></li><li><a href="/actualites/">Actualités</a></li><li><a href="/#contact">Contact</a></li><li><a href="/mentions-legales/">Mentions légales</a></li></ul></nav>
+<nav aria-labelledby="pied-profils"><h2 class="pied__titre" id="pied-profils">Profils</h2><ul><li><a href="https://www.linkedin.com/in/dev-php-bordeaux/" rel="me noopener">LinkedIn</a></li><li><a href="https://www.malt.fr/profile/mickaelteixeira" rel="me noopener">Malt</a></li><li><a href="https://github.com/mickaelteixeira" rel="me noopener">GitHub</a></li><li><a href="https://yedra.app" rel="noopener">Yedra</a></li></ul></nav>
+</div>
+<div class="pied__bas">
+<span>© 2026 Mickaël Teixeira · entrepreneur individuel · Bordeaux</span>
+<a href="/actualites/flux.xml">Flux des actualités</a>
+</div>
+</div>
+</footer>
 <script src="/assets/js/site.js" defer></script>
 </body>
 </html>
