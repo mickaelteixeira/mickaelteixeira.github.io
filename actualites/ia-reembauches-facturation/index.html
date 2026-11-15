@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L’IA produit du code. Le travail continue · Mickaël Teixeira</title>
+<meta name="description" content="IA et coût de l’automatisation : facturation GitHub Copilot, réembauches chez Klarna et rôle de la supervision dans mon travail de développeur.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://mickaelteixeira.github.io/actualites/ia-reembauches-facturation/">
+<meta name="author" content="Mickaël Teixeira">
+<meta name="google-site-verification" content="wsdzIL0Lmsbtvz1F2wSa2pzjxPZG2HtzG2G24YiEvAY">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171717" media="(prefers-color-scheme: dark)">
+<script>try{var t=localStorage.getItem('theme');if(t==='clair'||t==='sombre')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="alternate" type="application/atom+xml" title="Actualités de Mickaël Teixeira" href="/actualites/flux.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Mickaël Teixeira">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="L’IA produit du code. Le travail continue">
+<meta property="og:description" content="IA et coût de l’automatisation : facturation GitHub Copilot, réembauches chez Klarna et rôle de la supervision dans mon travail de développeur.">
+<meta property="og:url" content="https://mickaelteixeira.github.io/actualites/ia-reembauches-facturation/">
+<meta property="og:image" content="https://mickaelteixeira.github.io/assets/img/partage/article-ia-reembauches-facturation.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Trame de lignes : une porte à tambour en verre">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="L’IA produit du code. Le travail continue">
+<meta name="twitter:description" content="IA et coût de l’automatisation : facturation GitHub Copilot, réembauches chez Klarna et rôle de la supervision dans mon travail de développeur.">
+<meta name="twitter:image" content="https://mickaelteixeira.github.io/assets/img/partage/article-ia-reembauches-facturation.jpg">
+<link rel="preload" href="/assets/fonts/inter-400-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-tight-300-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<meta property="article:published_time" content="2026-06-19">
+<meta property="article:modified_time" content="2026-11-15">
+<meta property="article:author" content="https://mickaelteixeira.github.io/">
+<meta property="article:section" content="IA et métier">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://mickaelteixeira.github.io/actualites/ia-reembauches-facturation/#article","headline":"L’IA produit du code. Le travail continue","alternativeHeadline":"Facturation à l’usage, réembauches et supervision remettent le coût complet au centre du sujet.","description":"IA et coût de l’automatisation : facturation GitHub Copilot, réembauches chez Klarna et rôle de la supervision dans mon travail de développeur.","datePublished":"2026-06-19","dateModified":"2026-11-15","inLanguage":"fr-FR","author":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"},"publisher":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"},"mainEntityOfPage":"https://mickaelteixeira.github.io/actualites/ia-reembauches-facturation/","image":["https://mickaelteixeira.github.io/assets/img/partage/article-ia-reembauches-facturation.jpg","https://mickaelteixeira.github.io/assets/img/actualites/ia-reembauches-facturation-carte.webp"],"articleSection":"IA et métier","keywords":["IA","emploi","GitHub Copilot","automatisation"],"wordCount":680,"citation":["https://github.blog/news-insights/github-copilot-is-moving-to-usage-based-billing/","https://news.bloomberglaw.com/daily-labor-report/klarna-rethinks-ai-cost-cutting-plan-with-call-for-real-people","https://www.finextra.com/newsarticle/45956/klarna-rethinks-ai-customer-service-push-as-as-ceo-acknowledges-value-of-human-touch","https://www.gartner.com/en/newsroom/press-releases/2026-02-03-gartner-predicts-half-of-companies-that-cut-customer-service-staff-due-to-ai-will-rehire-by-2027","https://www.gartner.com/en/newsroom/press-releases/2026-11-05-gartner-survey-finds-21-percent-of-service-and-support-leaders-have-reduced-human-agent-headcount-because-of-ai"],"isPartOf":{"@id":"https://mickaelteixeira.github.io/actualites/#blog"},"discussionUrl":"https://www.linkedin.com/feed/update/urn:li:activity:7473712588116267008/"},{"@type":"Person","@id":"https://mickaelteixeira.github.io/#mickael-teixeira","name":"Mickaël Teixeira","givenName":"Mickaël","familyName":"Teixeira","jobTitle":"Développeur Symfony et Sylius freelance","url":"https://mickaelteixeira.github.io/","image":"https://mickaelteixeira.github.io/assets/img/mickael-teixeira-developpeur-symfony-bordeaux.webp","description":"Développeur PHP depuis 2009, freelance à Bordeaux depuis 2025 : Symfony, Sylius, API Platform et Laravel. Fondateur de Yedra, le CRM des écoles.","address":{"@type":"PostalAddress","addressLocality":"Bordeaux","addressRegion":"Nouvelle-Aquitaine","addressCountry":"FR"},"alumniOf":{"@type":"EducationalOrganization","name":"ETNA","url":"https://etna.io/"},"knowsAbout":["PHP","Symfony","Sylius","API Platform","Laravel","E-commerce","Architecture hexagonale","Domain-Driven Design","Angular","Elasticsearch","RabbitMQ","Docker","GitLab CI","Tests automatisés"],"knowsLanguage":["fr","en"],"sameAs":["https://www.linkedin.com/in/dev-php-bordeaux/","https://www.malt.fr/profile/mickaelteixeira","https://github.com/mickaelteixeira"]},{"@type":"WebSite","@id":"https://mickaelteixeira.github.io/#site","url":"https://mickaelteixeira.github.io/","name":"Mickaël Teixeira","inLanguage":"fr-FR","publisher":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://mickaelteixeira.github.io/"},{"@type":"ListItem","position":2,"name":"Actualités","item":"https://mickaelteixeira.github.io/actualites/"},{"@type":"ListItem","position":3,"name":"L’IA produit du code. Le travail continue","item":"https://mickaelteixeira.github.io/actualites/ia-reembauches-facturation/"}]}]}</script>
+</head>
+<body>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header class="entete">
+<div class="entete__barre">
+<a class="entete__nom" href="/">Mickaël Teixeira</a>
+<nav class="entete__nav" aria-label="Navigation principale">
+<a href="/#missions">Missions</a>
+<a href="/#expertises">Expertises</a>
+<a href="/#yedra">Yedra</a>
+<a href="/#parcours">Parcours</a>
+<a href="/actualites/" aria-current="page">Actualités</a>
+</nav>
+<div class="entete__actions">
+<button class="theme" type="button" aria-label="Thème : automatique. Changer de thème" title="Thème : automatique"><svg data-icone="auto" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="8"></circle><path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"></path></svg><svg data-icone="clair" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><svg data-icone="sombre" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg></button>
+<a class="entete__contact" href="/#contact">Me contacter</a>
+<button class="entete__menu" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
+</div>
+</header>
+<nav id="menu-mobile" class="menu-mobile" aria-label="Menu" hidden>
+<a class="menu-mobile__lien" href="/#missions">Missions</a>
+<a class="menu-mobile__lien" href="/#expertises">Expertises</a>
+<a class="menu-mobile__lien" href="/#yedra">Yedra</a>
+<a class="menu-mobile__lien" href="/#parcours">Parcours</a>
+<a class="menu-mobile__lien" href="/actualites/">Actualités</a>
+<div class="menu-mobile__pied">
+<p>Toujours ouvert à une mission</p>
+<a href="/#contact">Me contacter</a>
+</div>
+</nav>
+<div style="container-type: inline-size; background: var(--fond); color: var(--encre)">
+<main id="contenu">
+<article aria-labelledby="titre-article">
+<header style="padding-block: clamp(48px, 6cqw, 96px) clamp(32px, 4cqw, 56px)">
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<nav aria-label="Fil d’Ariane" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--second)"><a href="/" style="color: var(--second)">Accueil</a> / <a href="/actualites/" style="color: var(--second)">Actualités</a> / <span aria-current="page">IA et métier</span></nav>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--second)"><time datetime="2026-06-19">19 juin 2026</time> · 4 min de lecture · par <a href="/" rel="author" style="color: var(--second)">Mickaël Teixeira</a></p>
+<h1 id="titre-article" style="margin: 0; max-width: 1080px; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(40px, 5cqw, 76px); line-height: 1.03; letter-spacing: -0.03em">L’IA produit du code. Le travail continue. <span style="color: #9a9a9a">Facturation à l’usage, réembauches et supervision remettent le coût complet au centre du sujet.</span></h1>
+<p style="margin: 0; max-width: 760px; font-size: 22px; line-height: 1.55; color: var(--texte)">Je trouve l’IA très efficace sur le répétitif. Mais le calcul, la relecture et la maintenance font aussi partie de la facture.</p>
+</div>
+</header>
+<figure style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; margin: 0 auto">
+<div style="overflow: hidden; border-radius: 16px; border: 1px solid var(--trait); background: var(--fond)"><img src="/assets/img/actualites/ia-reembauches-facturation.svg" data-theme-img="clair" alt="Trame de lignes : une porte à tambour en verre" width="1200" height="675" fetchpriority="high" style="display: block; width: 100%; height: auto"><img src="/assets/img/actualites/ia-reembauches-facturation-nuit.svg" data-theme-img="sombre" alt="Trame de lignes : une porte à tambour en verre" width="1200" height="675" loading="lazy" style="display: block; width: 100%; height: auto"></div>
+</figure>
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; padding-block: clamp(48px, 5cqw, 80px) clamp(72px, 8cqw, 128px); display: flex; flex-wrap: wrap; gap: 48px clamp(48px, 7cqw, 112px); align-items: flex-start">
+<div style="flex: 999 1 560px; min-width: 0; max-width: 700px; display: flex; flex-direction: column; gap: 24px; font-size: 18px; line-height: 1.75; color: var(--texte)">
+<p style="margin: 0">Produire davantage de code ne termine pas le travail. Il faut encore le relire, le sécuriser et le maintenir. Le 19 juin 2026, c’est ce coût complet qui me préoccupe. D’un côté, la facturation des outils rend la consommation plus visible. De l’autre, le service client offre des exemples où la place des humains revient dans la discussion.</p>
+<h2 style="margin: 24px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; color: var(--encre)">Copilot compte les jetons.</h2>
+<p style="margin: 0">GitHub a annoncé la transition de Copilot vers les AI Credits à partir du 1er juin 2026. La consommation est liée aux jetons utilisés. Les abonnements comprennent une enveloppe, avec des possibilités de consommation supplémentaire. Certains abonnements annuels bénéficient d’un traitement particulier jusqu’à leur échéance.</p>
+<p style="margin: 0">Cette évolution me ramène au coût des agents. Une aide ponctuelle et une longue session ne représentent pas nécessairement la même dépense de calcul. Quand j’évalue le temps gagné, je veux aussi tenir compte de l’usage nécessaire pour obtenir le résultat. La vitesse de production seule raconte une partie du travail.</p>
+<h2 style="margin: 24px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; color: var(--encre)">Chez Klarna, la qualité revient dans la discussion.</h2>
+<p style="margin: 0">En mai 2025, le dirigeant de Klarna expliquait déjà vouloir recruter de nouveau pour préserver la possibilité de parler à une personne. Il reconnaissait qu’une priorité trop forte donnée aux coûts avait affecté la qualité du service. C’est cette place du contact humain qui me paraît intéressante dans son propos.</p>
+<p style="margin: 0">Dans le service client, Gartner prévoit que, d’ici 2027, la moitié des entreprises ayant attribué des réductions d’effectifs à l’IA réembaucheront pour des fonctions similaires, sous d’autres intitulés. Cette prévision pose directement la question du travail que les entreprises voudront à nouveau confier à des personnes.</p>
+<figure style="margin: 16px 0; padding-top: 20px; border-top: 1px solid var(--encre); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 8px 32px; align-items: end"><span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(56px, 6cqw, 88px); line-height: .95; letter-spacing: -0.04em; color: var(--accent)">50 %</span><figcaption style="display: flex; flex-direction: column; gap: 6px; font-size: 16px; line-height: 1.5; color: var(--encre)"><span>Prévision Gartner pour 2027 : entreprises du service client ayant attribué des réductions d’effectifs à l’IA, puis réembauchant pour des fonctions similaires.</span><a href="https://www.gartner.com/en/newsroom/press-releases/2026-02-03-gartner-predicts-half-of-companies-that-cut-customer-service-staff-due-to-ai-will-rehire-by-2027" style="color: var(--accent); text-underline-offset: 3px; font-size: 14px">Source</a></figcaption></figure>
+<figure style="margin: 16px 0; padding: 8px 0 8px 24px; border-left: 2px solid var(--accent); display: flex; flex-direction: column; gap: 12px"><blockquote style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(24px, 2.4cqw, 30px); line-height: 1.28; letter-spacing: -0.02em; color: var(--encre)"><p style="margin: 0">« Relying solely on AI right now is premature and could lead to unintended consequences. »</p></blockquote><figcaption style="display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 14px; line-height: 1.5"><span style="color: var(--encre); font-weight: 500">Emily Potosky</span><a href="https://www.gartner.com/en/newsroom/press-releases/2026-02-03-gartner-predicts-half-of-companies-that-cut-customer-service-staff-due-to-ai-will-rehire-by-2027" style="color: var(--accent); text-underline-offset: 3px; color: var(--second)">Gartner, communiqué sur le service client, février 2026</a></figcaption></figure>
+<h2 style="margin: 24px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; color: var(--encre)">Relire fait partie de la production.</h2>
+<p style="margin: 0">Dans ma pratique de développeur, l’IA est particulièrement utile pour les tâches répétitives et le code standard. J’apprécie cette aide. La relecture, la sécurité et la maintenance restent pourtant dans mon périmètre. Je dois juger ce qui est produit et ce que cela demandera ensuite.</p>
+<p style="margin: 0">Pour mon propre travail, je voudrais mettre les mêmes questions dans une évaluation simple. Prenons une tâche de développement répétitive : je comparerais le temps passé à la préparer, à obtenir une proposition et à relire le résultat. J’ajouterais ensuite les corrections nécessaires et le coût de l’outil utilisé. Ce serait une manière de regarder le résultat complet, avec les étapes qui restent à ma charge.</p>
+<aside style="margin: 8px 0; padding: 24px; background: var(--fond-2); border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-weight: 600; font-size: 17px; color: var(--encre)">Compter jusqu’au résultat accepté.</p><p style="margin: 0; font-size: 17px; line-height: 1.65; color: var(--texte)">Je veux mesurer le travail jusqu’au moment où je peux accepter le changement. La génération est une étape du calcul ; la relecture et les reprises en font partie elles aussi.</p></aside>
+<p style="margin: 0">Une proposition rapide mais difficile à relire ne serait pas forcément le meilleur résultat pour moi. À l’inverse, une aide limitée à une tâche bien définie pourrait être très utile si je comprends facilement ce qu’elle a fait. Ce sont les critères que je voudrais garder dans le choix d’un usage. Je n’ai pas besoin que l’outil prenne tout en charge pour trouver sa place dans ma façon de développer.</p>
+<p style="margin: 0">La question de la supervision se pose aussi avant de produire le code. Je voudrais décider quelles consignes donner, quelles parties examiner avec le plus d’attention et à quel moment interrompre une tentative qui s’allonge. Cela fait partie du travail que j’attends d’une personne expérimentée. Si l’on veut comparer deux méthodes, ce temps de préparation mérite d’être visible au même titre que le temps d’exécution.</p>
+<p style="margin: 0">Le service client et le développement gardent leurs particularités. Je ne déduis pas une trajectoire d’emploi des développeurs d’une prévision sur les agents de support. Ce qui relie ces sujets dans ma réflexion, c’est une question de décision : quel travail confier à l’outil et quel résultat attend-on de l’ensemble ? C’est sur cette base que j’ai envie de parler de gains.</p>
+<p style="margin: 0">Le rôle de supervision des seniors me paraît essentiel dans cet usage. Ma conviction reste celle d’un avenir hybride, où l’on mesure aussi la qualité du résultat. Je veux évaluer l’automatisation sur l’ensemble du travail : ce qu’elle produit, ce qu’il faut reprendre et ce qu’il faudra maintenir. C’est à cette échelle que le gain devient intéressant pour moi.</p>
+<section aria-label="Et depuis" style="margin-top: 24px; padding: 24px; background: var(--fond-2); border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--accent)">Et depuis</p><p style="margin: 0; font-size: 17px; line-height: 1.65; color: var(--encre)">Dans une enquête menée auprès de 275 responsables du service et du support en juillet et août 2026, Gartner indique le 5 novembre que 7 % des répondants signalent des réembauches après des réductions antérieures. L’enquête porte sur le service et le support client.</p></section>
+</div>
+<aside aria-label="À propos de cet article" style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 28px; font-size: 15px">
+<figure style="margin: 0; padding: 24px; border: 1px solid var(--trait); border-radius: 12px; display: flex; flex-direction: column; gap: 14px"><figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)">En discussion sur LinkedIn</figcaption><blockquote style="margin: 0; color: var(--encre); font-size: 16px; line-height: 1.6"><p style="margin: 0">« En tant que développeur, je le vois clairement : l&#x27;IA est un multiplicateur de productivité exceptionnel sur le répétitif et le boilerplate. »</p></blockquote><a href="https://www.linkedin.com/feed/update/urn:li:activity:7473712588116267008/" style="align-self: start; display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border: 1px solid var(--trait-fort); border-radius: 8px; color: var(--encre); text-decoration: none; font-weight: 500">Rejoindre la discussion</a></figure>
+<div style="display: flex; flex-direction: column; gap: 10px"><h2 style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 400; color: var(--second)">Sources</h2><ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column"><li style="padding-block: 10px; border-top: 1px solid var(--trait)"><a href="https://github.blog/news-insights/github-copilot-is-moving-to-usage-based-billing/" style="color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere">GitHub — annonce de la transition Copilot du 27 avril 2026</a></li><li style="padding-block: 10px; border-top: 1px solid var(--trait)"><a href="https://news.bloomberglaw.com/daily-labor-report/klarna-rethinks-ai-cost-cutting-plan-with-call-for-real-people" style="color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere">Bloomberg — entretien du dirigeant de Klarna du 8 mai 2025</a></li><li style="padding-block: 10px; border-top: 1px solid var(--trait)"><a href="https://www.finextra.com/newsarticle/45956/klarna-rethinks-ai-customer-service-push-as-as-ceo-acknowledges-value-of-human-touch" style="color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere">Finextra — propos sur la qualité et ajustement de la stratégie de Klarna</a></li><li style="padding-block: 10px; border-top: 1px solid var(--trait)"><a href="https://www.gartner.com/en/newsroom/press-releases/2026-02-03-gartner-predicts-half-of-companies-that-cut-customer-service-staff-due-to-ai-will-rehire-by-2027" style="color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere">Gartner — prévision de réembauches dans le service client</a></li><li style="padding-block: 10px; border-top: 1px solid var(--trait)"><a href="https://www.gartner.com/en/newsroom/press-releases/2026-11-05-gartner-survey-finds-21-percent-of-service-and-support-leaders-have-reduced-human-agent-headcount-because-of-ai" style="color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere">Gartner — enquête publiée le 5 novembre 2026</a></li></ol></div>
+<ul aria-label="Mots-clés" style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px"><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--fond-2); color: var(--texte)">IA</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--fond-2); color: var(--texte)">emploi</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--fond-2); color: var(--texte)">GitHub Copilot</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--fond-2); color: var(--texte)">automatisation</li></ul>
+<div style="padding-top: 20px; border-top: 1px solid var(--encre); display: flex; flex-direction: column; gap: 6px">
+<b style="font-weight: 600; color: var(--encre)">Mickaël Teixeira</b>
+<span style="color: var(--second)">Développeur Symfony et Sylius, freelance à Bordeaux. Fondateur de Yedra.</span>
+<a href="/#missions" style="color: var(--accent); font-weight: 500; text-underline-offset: 4px">Voir les missions</a>
+</div>
+</aside>
+</div>
+</article>
+<section aria-labelledby="titre-aussi" style="padding-bottom: clamp(72px, 8cqw, 128px)">
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; padding-top: 24px; border-top: 1px solid var(--encre)">
+<h2 id="titre-aussi" style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 34px; letter-spacing: -0.02em">À lire aussi.</h2>
+<a href="/actualites/" style="color: var(--accent); font-weight: 500; text-underline-offset: 4px">Toutes les actualités</a>
+</div>
+<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 48px 32px"><li><a href="/actualites/mistral-gros-chaton-rumeur/" style="display: flex; flex-direction: column; gap: 14px; color: var(--encre); text-decoration: none">
+<span style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid var(--trait); background: var(--fond)"><img src="/assets/img/actualites/mistral-gros-chaton-rumeur-carte.webp" data-theme-img="clair" alt="Trame de lignes : un gros chat en contre-jour devant une fenêtre" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"><img src="/assets/img/actualites/mistral-gros-chaton-rumeur-nuit-carte.webp" data-theme-img="sombre" alt="Trame de lignes : un gros chat en contre-jour devant une fenêtre" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)"><time datetime="2026-06-15">15 juin 2026</time> · IA et métier</span>
+<span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.14; letter-spacing: -0.02em">Le Gros Chat sait nourrir la « hype ».</span>
+<span style="font-size: 15px; line-height: 1.6; color: var(--texte)">Le « Gros Chat » est une parodie, et elle fonctionne très bien. Faux classements et visuels reprennent les ingrédients d’une annonce d’IA que l’on a envie de croire.</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)">4 min de lecture</span>
+</a></li><li><a href="/actualites/amodei-prevision-metier-developpeur/" style="display: flex; flex-direction: column; gap: 14px; color: var(--encre); text-decoration: none">
+<span style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid var(--trait); background: var(--fond)"><img src="/assets/img/actualites/amodei-prevision-metier-developpeur-carte.webp" data-theme-img="clair" alt="Trame de lignes : un sablier sous une lumière rasante" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"><img src="/assets/img/actualites/amodei-prevision-metier-developpeur-nuit-carte.webp" data-theme-img="sombre" alt="Trame de lignes : un sablier sous une lumière rasante" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)"><time datetime="2026-01-21">21 janvier 2026</time> · IA et métier</span>
+<span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.14; letter-spacing: -0.02em">Six à douze mois selon Amodei. Je reste sceptique.</span>
+<span style="font-size: 15px; line-height: 1.6; color: var(--texte)">À Davos, Dario Amodei envisage que l’IA puisse assurer l’essentiel du travail logiciel sous six à douze mois. Je me méfie de ces échéances si proches.</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)">4 min de lecture</span>
+</a></li><li><a href="/actualites/fatigue-mentale-developpeur/" style="display: flex; flex-direction: column; gap: 14px; color: var(--encre); text-decoration: none">
+<span style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid var(--trait); background: var(--fond)"><img src="/assets/img/actualites/fatigue-mentale-developpeur-carte.webp" data-theme-img="clair" alt="Trame de lignes : un ordinateur portable fermé, près d’une fenêtre d’hiver" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"><img src="/assets/img/actualites/fatigue-mentale-developpeur-nuit-carte.webp" data-theme-img="sombre" alt="Trame de lignes : un ordinateur portable fermé, près d’une fenêtre d’hiver" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)"><time datetime="2026-01-09">9 janvier 2026</time> · IA et métier</span>
+<span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.14; letter-spacing: -0.02em">Une heure de veille de plus ne réglera pas l’avenir.</span>
+<span style="font-size: 15px; line-height: 1.6; color: var(--texte)">J’ai parfois l’impression de devoir tout apprendre tout de suite pour continuer à exister comme développeur. Cette course me fatigue, et je veux savoir m’arrêter.</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)">4 min de lecture</span>
+</a></li></ul>
+</div>
+</section>
+</main>
+<section aria-labelledby="titre-suite" style="container-type: inline-size; background: var(--panneau); color: #ebebeb">
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; padding-block: clamp(64px, 7cqw, 112px) 40px; display: flex; flex-direction: column; gap: clamp(48px, 5cqw, 72px)">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 32px 64px">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #a3a3a3">Développeur Symfony et Sylius · Bordeaux</p>
+<h2 id="titre-suite" style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(36px, 4.2cqw, 64px); line-height: 1.04; letter-spacing: -0.03em; color: #ffffff">Une plateforme à faire évoluer ? <span style="color: #8a8a8a">Parlons-en.</span></h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="/#contact" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; background: #8fa2ff; color: #171717; border-radius: 8px; text-decoration: none; font-weight: 500">Proposer une mission</a>
+<a href="https://www.linkedin.com/in/dev-php-bordeaux/" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border: 1px solid #5c5c5c; color: #ffffff; border-radius: 8px; text-decoration: none; font-weight: 500">Suivre sur LinkedIn</a>
+</div>
+</div>
+<footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 24px; border-top: 1px solid #303030; font-size: 14px; color: #a3a3a3">
+<span>© 2026 Mickaël Teixeira · entrepreneur individuel · Bordeaux</span>
+<nav aria-label="Pied de page" style="display: flex; flex-wrap: wrap; gap: 24px"><a href="/" style="color: #a3a3a3">Accueil</a><a href="/actualites/" style="color: #a3a3a3">Actualités</a><a href="/mentions-legales/" style="color: #a3a3a3">Mentions légales</a><a href="https://www.linkedin.com/in/dev-php-bordeaux/" style="color: #a3a3a3">LinkedIn</a></nav>
+</footer>
+</div>
+</section>
+</div>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

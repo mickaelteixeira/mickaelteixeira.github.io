@@ -1,0 +1,1386 @@
+[
+ {
+  "id": "A12",
+  "date": "2026-08-13",
+  "date_affichee": "13 août 2026",
+  "slug": "yedra-crm-ecoles",
+  "rubrique": "Yedra",
+  "titre": "Yedra. Et pour une fois, je suis allé au bout.",
+  "suite": "Mon CRM pour les écoles a un nom, un site et une ouverture prévue fin 2026.",
+  "chapo": "Je construis Yedra pour réunir le fichier des familles, les demandes et les échanges avec les parents. Six modules, des choix concrets, et une ouverture prévue fin 2026 avec des écoles pilotes.",
+  "meta_description": "Yedra, mon CRM pour les écoles : familles, demandes, e-mails, parcours, imports et RGPD. Ouverture prévue fin 2026 avec des écoles pilotes.",
+  "temps_lecture": 7,
+  "corps": [
+   {
+    "type": "p",
+    "texte": "Il s’appelle Yedra. C’est mon CRM pour les écoles, et voilà bientôt deux ans que je le construis. En ce 13 août 2026, il a un site, une liste d’attente et une ouverture prévue fin 2026, école après école. Je suis fier de pouvoir enfin lui donner un nom et montrer ce que je prépare pour les premiers établissements pilotes."
+   },
+   {
+    "type": "h2",
+    "texte": "Pourquoi je construis Yedra."
+   },
+   {
+    "type": "p",
+    "texte": "Le point de départ, c’est le fichier des familles, les demandes qui arrivent et les e-mails aux parents. Ces informations sont aujourd’hui éparpillées : un tableur pour les coordonnées, un formulaire ailleurs, des listes de destinataires à refaire. Entre une adresse corrigée et le prochain courrier, il faut retrouver la bonne information. Je veux réunir ce travail dans un outil où les étapes se suivent."
+   },
+   {
+    "type": "p",
+    "texte": "Je pense aux directions et aux secrétariats des écoles, collèges et lycées privés, aux écoles hors contrat, mais aussi aux conservatoires et aux associations. Leurs organisations diffèrent ; le besoin de savoir à qui écrire, avec quelles coordonnées et pour quel sujet mérite un outil soigné. Je construis Yedra autour de six modules :"
+   },
+   {
+    "type": "liste",
+    "items": [
+     "Contacts et foyers : les personnes, leurs liens de famille et leurs adresses.",
+     "Formulaire et demandes : la page publique et les informations à vérifier.",
+     "Campagnes d’e-mails : les lettres aux familles, regroupées par foyer.",
+     "Automatisations : les parcours visuels et leur essai avant publication.",
+     "Import et documents : les fichiers existants, la simulation et les PDF.",
+     "RGPD et sécurité : les droits des familles, les accès et le journal."
+    ]
+   },
+   {
+    "type": "h2",
+    "texte": "Une personne, une fiche. Une adresse, un foyer."
+   },
+   {
+    "type": "p",
+    "texte": "Dans le module Contacts et foyers, chaque personne a sa fiche, avec les champs choisis par l’établissement. Un foyer rassemble adultes et enfants à une adresse. Yedra propose les foyers à partir des liens de famille ; l’équipe les confirme. Ce partage des tâches me tient à cœur : le logiciel prépare, les personnes qui connaissent les familles décident."
+   },
+   {
+    "type": "p",
+    "texte": "Pour chaque élève, l’établissement précise « qui reçoit quoi », sujet par sujet : facturation, sorties, informations pratiques. Les liens familiaux, l’autorité parentale et les destinataires d’un message répondent à des questions différentes. Je veux que l’interface permette de les régler clairement. Le fichier peut ensuite être filtré, trié, regroupé, et ces réglages enregistrés dans des vues réutilisables."
+   },
+   {
+    "type": "h2",
+    "texte": "Les demandes passent d’abord par « À vérifier »."
+   },
+   {
+    "type": "p",
+    "texte": "Le module Formulaire et demandes donne à l’établissement une page publique, à ses couleurs, avec son formulaire. Une demande arrive dans la file « À vérifier », où se retrouvent aussi les corrections proposées par les familles et les doublons à examiner. L’équipe lit, vérifie, puis valide d’un geste : la fiche est alors créée. Un bandeau permet encore d’annuler pendant cinq secondes."
+   },
+   {
+    "type": "encart",
+    "titre": "La validation fait partie du produit.",
+    "texte": "Rien n’entre dans la base sans validation : une demande ou une correction proposée par une famille doit passer par l’équipe. Je veux rendre cette décision facile à prendre, avec assez d’informations pour comprendre ce qui va changer."
+   },
+   {
+    "type": "h2",
+    "texte": "Une lettre par foyer, des destinataires choisis."
+   },
+   {
+    "type": "p",
+    "texte": "Les campagnes d’e-mails partent d’une vue du fichier. Une lettre par foyer ou par adresse évite de multiplier les courriers quand plusieurs enfants sont concernés. Le message reprend le logo et les couleurs de l’établissement. L’éditeur assemble textes, images, boutons ou fichiers ; un aperçu permet de regarder la lettre telle qu’une personne la recevra, au bureau ou au téléphone."
+   },
+   {
+    "type": "p",
+    "texte": "Je veux aussi que l’envoi ait une suite compréhensible : suivre la remise, retrouver les réponses dans Yedra, faire revenir les adresses refusées dans « À vérifier ». Chaque famille doit pouvoir choisir ses sujets et se désinscrire en un geste. Le choix des destinataires commence dans les fiches et se prolonge jusque dans le courrier reçu."
+   },
+   {
+    "type": "h2",
+    "texte": "Des parcours que l’on peut essayer avant de publier."
+   },
+   {
+    "type": "p",
+    "texte": "Pour les automatisations, je travaille sur une toile où les étapes sont reliées : un déclencheur, des attentes, des conditions, des e-mails, des étiquettes ou une répartition A/B. Le parcours « Bienvenue aux nouvelles familles » rend cette logique visible. « Demande approuvée » déclenche une attente d’un jour, puis l’e-mail « Bienvenue parmi nous ». Une condition vérifie ensuite l’étiquette « Demi-pension » pour orienter la suite."
+   },
+   {
+    "type": "capture",
+    "cle": "yedra-automatisations"
+   },
+   {
+    "type": "p",
+    "texte": "Avant publication, un essai sur une fiche choisie montre le chemin suivi. Rien ne part et rien ne s’écrit pendant cet essai. C’est un choix de développeur auquel je tiens : pouvoir comprendre une règle avant de la laisser agir. Une fois le parcours publié, son déroulement doit rester consultable contact par contact, pour retrouver où chacun en est."
+   },
+   {
+    "type": "h2",
+    "texte": "Importer en voyant le résultat avant l’écriture."
+   },
+   {
+    "type": "p",
+    "texte": "Le module Import et documents lit les fichiers CSV, XLSX, XLS et ODS. Une ligne d’élève peut contenir ses deux responsables : Yedra prépare alors les fiches des parents et le foyer. Avant toute écriture, la simulation joue l’import sur une copie et distingue les créations, les mises à jour et les fiches inchangées. Les foyers et les fratries reconnus deviennent eux aussi visibles."
+   },
+   {
+    "type": "capture",
+    "cle": "yedra-import"
+   },
+   {
+    "type": "chiffre",
+    "valeur": "30 jours",
+    "libelle": "Le délai prévu pour annuler un import depuis les travaux de l’établissement.",
+    "source_url": "https://yedra.app"
+   },
+   {
+    "type": "p",
+    "texte": "La réversibilité va jusqu’au détail des modifications : les fiches créées partent à la corbeille, les anciennes valeurs reviennent, sauf celles retouchées depuis. Je veux que reprendre un fichier existant soit une opération que l’on peut examiner et défaire. À partir des vues, les documents sortent en PDF : fiches, listes, étiquettes d’adresse, trombinoscopes et fiches d’urgence, dans l’ordre choisi par l’équipe."
+   },
+   {
+    "type": "h2",
+    "texte": "Le RGPD se règle dans le produit."
+   },
+   {
+    "type": "p",
+    "texte": "La page « Vos droits sur vos données » doit permettre aux familles, sans compte, de demander une copie, de faire corriger une information, de choisir leurs envois sujet par sujet ou de demander l’effacement. Elle annonce une réponse de l’établissement sous un mois et permet de suivre la demande. L’effacement porte sur ce que l’établissement n’est pas tenu de conserver ; il doit expliquer ce qu’il garde et pourquoi."
+   },
+   {
+    "type": "capture",
+    "cle": "yedra-rgpd"
+   },
+   {
+    "type": "p",
+    "texte": "Côté équipe, un registre suit les demandes et leurs échéances. Les durées de conservation se règlent dans Yedra ; les fiches arrivées au bout sont proposées à l’effacement. Quatre rôles structurent les accès : Direction, Secrétariat, Communication et Enseignant. Le journal garde qui a fait quoi et quand, notamment pour les imports, les exports, les documents et les connexions. Je prévois un hébergement du service et des données en France, chez Scaleway, à Paris. Ces décisions doivent se traduire en réglages et en gestes quotidiens, au-delà d’un document à lire."
+   },
+   {
+    "type": "h2",
+    "texte": "Cette fois, je veux aller jusqu’aux premières écoles."
+   },
+   {
+    "type": "p",
+    "texte": "Le 30 juillet, j’avais promis d’en dire plus à la rentrée. J’y avouais aussi ma longue liste de projets abandonnés, mon perfectionnisme et les moments où je perdais confiance dans ce que je pouvais apporter. Montrer Yedra aujourd’hui représente une vraie étape. Il reste en construction ; l’ouverture de fin 2026 doit se faire progressivement, avec des écoles pilotes qui pèseront sur son évolution."
+   },
+   {
+    "type": "capture",
+    "cle": "yedra-accueil"
+   },
+   {
+    "type": "p",
+    "texte": "Je prépare aussi une démonstration accessible sans compte, où aucun e-mail ne partira, pour permettre de parcourir le produit. Pour la suite, je cherche des équipes prêtes à confronter Yedra à leurs fichiers, leurs demandes et leurs courriers. Si vous dirigez un établissement ou travaillez dans un secrétariat, un conservatoire ou une association, découvrez le projet sur https://yedra.app et rejoignez la démarche des pilotes."
+   }
+  ],
+  "et_depuis": null,
+  "sources": [
+   {
+    "libelle": "Yedra : le CRM des écoles et des établissements scolaires",
+    "url": "https://yedra.app"
+   }
+  ],
+  "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:activity:7493590906726510593/",
+  "mots_cles": [
+   "Yedra",
+   "CRM écoles",
+   "contacts et foyers",
+   "automatisations",
+   "écoles pilotes"
+  ],
+  "extrait_post": "Il s'appelle Yedra. C'est un CRM pour les écoles. Et pour une fois, je suis allé au bout.",
+  "visuel_alt": "Trame de lignes : une salle de classe vide, au matin"
+ },
+ {
+  "id": "A11",
+  "date": "2026-07-20",
+  "date_affichee": "20 juillet 2026",
+  "slug": "playwright-mcp-design-frontend",
+  "rubrique": "Outils",
+  "titre": "Playwright, aussi pour le design.",
+  "suite": "Avec Claude, je pars de références visuelles et je corrige le rendu composant par composant.",
+  "chapo": "Un frontend peut fonctionner et rester loin de ce que j’avais en tête. Avec Playwright MCP, j’intègre le navigateur à ma méthode de travail avec Claude.",
+  "meta_description": "Playwright MCP et Claude pour le frontend : références Pinterest, système de design, captures d’écran et itérations sur les composants.",
+  "temps_lecture": 4,
+  "corps": [
+   {
+    "type": "p",
+    "texte": "Le code passe. L’interface, elle, ne ressemble pas à ce que j’imaginais. C’est toute la difficulté du frontend avec Claude : obtenir des composants ne suffit pas à obtenir le design voulu. Au 20 juillet 2026, la méthode la plus efficace que j’ai trouvée repose sur une direction visuelle, puis des corrections successives."
+   },
+   {
+    "type": "h2",
+    "texte": "Tout commence par les références."
+   },
+   {
+    "type": "p",
+    "texte": "Je prépare un tableau d’inspiration sur Pinterest. Je fais ensuite définir à Claude un système de design cohérent. Puis j’avance composant par composant. Cet ordre change beaucoup de choses pour moi : je sais ce que je cherche avant de demander du code."
+   },
+   {
+    "type": "p",
+    "texte": "Les références donnent la direction. Le système de design les traduit en règles. Et chaque composant devient une partie que je peux examiner et corriger. J’évite ainsi de demander toute une interface d’un coup, puis de multiplier les retouches pour retrouver mon idée de départ."
+   },
+   {
+    "type": "h2",
+    "texte": "Un vrai navigateur dans la boucle."
+   },
+   {
+    "type": "p",
+    "texte": "Playwright MCP donne à Claude accès à un navigateur par le protocole MCP. Il peut naviguer, interagir avec les éléments de la page, prendre des captures d’écran et consulter la console. Je peux donc lui faire examiner l’interface exécutée, puis reprendre le travail à partir de ce rendu."
+   },
+   {
+    "type": "p",
+    "texte": "Pour agir sur la page, le serveur s’appuie principalement sur des instantanés de l’arbre d’accessibilité. Ils décrivent les éléments et leurs rôles. Les captures d’écran apportent l’image du rendu. J’utilise ces deux éléments ensemble : la structure pour les interactions, l’image pour le travail visuel."
+   },
+   {
+    "type": "p",
+    "texte": "C’est ce qui me plaît dans cet usage de Playwright. L’outil qui sert à tester le frontend participe aussi aux corrections du design. Je donne à Claude les critères à suivre et les moyens d’examiner ce qu’il vient de produire."
+   },
+   {
+    "type": "code",
+    "langage": "sh",
+    "code": "claude mcp add playwright npx @playwright/mcp@latest",
+    "legende": "Ajout du serveur à Claude Code selon le README Playwright MCP consulté en novembre 2026.",
+    "source_url": "https://github.com/microsoft/playwright-mcp"
+   },
+   {
+    "type": "p",
+    "texte": "L’ajout du serveur est un point de départ. Je veux ensuite préciser ce que le navigateur doit examiner. Pour un composant, ma demande pourrait porter sur l’alignement, les espacements et le comportement lorsque le texte devient plus long. Ces critères donnent une direction à la correction. Ils évitent que chaque passage reparte vers une nouvelle proposition visuelle alors que je cherche à améliorer celle qui existe."
+   },
+   {
+    "type": "encart",
+    "titre": "Une correction que je peux voir.",
+    "texte": "Pour chaque passage, je préfère nommer un écart concret, corriger le composant concerné, puis revoir le rendu. Un changement précis est plus facile à juger qu’une nouvelle version de toute la page."
+   },
+   {
+    "type": "p",
+    "texte": "Imaginons une carte dont le titre occupe une ligne dans la première maquette. Je voudrais la revoir avec un titre plus long et dans une fenêtre plus étroite. Le but serait de confronter la règle choisie à plusieurs contenus, puis de décider si l’espacement et la hiérarchie tiennent encore. C’est un exemple d’exercice que je demanderais au navigateur dans cette méthode, sans le confondre avec un jugement esthétique automatique."
+   },
+   {
+    "type": "capture",
+    "cle": "playwright-readme"
+   },
+   {
+    "type": "p",
+    "texte": "Je voudrais aussi conserver la même direction visuelle pendant ces essais. Une référence sert à exprimer une intention ; les corrections doivent m’aider à la retrouver dans le produit. Si chaque capture devient le prétexte à changer les couleurs ou la typographie, je perds ce fil. C’est pourquoi le système de design intervient avant les composants dans ma méthode. Il me donne des règles auxquelles revenir lorsque plusieurs corrections possibles se présentent."
+   },
+   {
+    "type": "p",
+    "texte": "L’image du rendu et la structure de la page apportent alors deux prises sur le même problème. Je peux regarder ce qui se voit, demander une interaction précise, puis examiner ce qui a changé. Ce va-et-vient me plaît parce qu’il ramène la discussion à l’interface que je suis en train de construire."
+   },
+   {
+    "type": "h2",
+    "texte": "Produire, examiner, corriger."
+   },
+   {
+    "type": "p",
+    "texte": "Dans mon CLAUDE.md, j’accompagne cette méthode de consignes nommées Frontend-Design, Self-critique et Artifacts Builder. Elles font partie de ma configuration pour poser une intention, examiner le résultat et recommencer sur une partie précise de l’interface."
+   },
+   {
+    "type": "p",
+    "texte": "Chez moi, les interfaces sont plus proches de ma vision et les allers-retours moins nombreux. Tout n’est pas parfait. Mais cette façon d’avancer me convient bien mieux : des références au départ, des composants successifs, et le navigateur pour confronter le code à son rendu. Playwright a toute sa place dans ce travail de design."
+   }
+  ],
+  "et_depuis": "Le README de Playwright MCP recommande désormais aux agents de code le CLI de Playwright avec des skills, plus économe en contexte, et réserve le serveur MCP aux boucles qui gagnent à garder le navigateur ouvert : exploration, tests qui se réparent, longues sessions autonomes.",
+  "sources": [
+   {
+    "libelle": "Playwright — documentation officielle de Playwright MCP",
+    "url": "https://playwright.dev/docs/getting-started-mcp"
+   },
+   {
+    "libelle": "Microsoft — dépôt officiel du serveur Playwright MCP",
+    "url": "https://github.com/microsoft/playwright-mcp"
+   },
+   {
+    "libelle": "Mickaël Teixeira — méthode et retour personnel",
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7484980089521315842/"
+   }
+  ],
+  "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:activity:7484980089521315842/",
+  "mots_cles": [
+   "Playwright MCP",
+   "Claude",
+   "frontend",
+   "design"
+  ],
+  "extrait_post": "Ce n'est pas parfait, mais c'est clairement l'approche la plus efficace que j'ai trouvée à ce jour.",
+  "visuel_alt": "Trame de lignes : une scène de théâtre vide sous un projecteur"
+ },
+ {
+  "id": "A10",
+  "date": "2026-07-15",
+  "date_affichee": "15 juillet 2026",
+  "slug": "dwarfstar-deepseek-local",
+  "rubrique": "Outils",
+  "titre": "DeepSeek en local avec DwarfStar.",
+  "suite": "Le projet d’antirez travaille la quantification et la mémoire pour exécuter V4 Flash sur sa machine.",
+  "chapo": "DwarfStar propose une autre façon d’utiliser DeepSeek V4 Flash : l’exécuter en local. De quoi me donner envie de regarder de près la mémoire nécessaire et les choix techniques.",
+  "meta_description": "DwarfStar, le moteur d’antirez pour DeepSeek V4 Flash en local : quantification des experts, mémoire nécessaire et cache de contexte sur disque.",
+  "temps_lecture": 4,
+  "corps": [
+   {
+    "type": "p",
+    "texte": "Faire tourner DeepSeek V4 Flash sur sa propre machine, voilà un sujet concret. DS4, aussi appelé DwarfStar, propose cette piste. Derrière ce projet, on retrouve antirez, Salvatore Sanfilippo, le créateur de Redis. Ce qui me plaît ici, c’est le travail sur l’exécution locale et sur la mémoire."
+   },
+   {
+    "type": "h2",
+    "texte": "284 milliards de paramètres au total."
+   },
+   {
+    "type": "p",
+    "texte": "DwarfStar est un moteur d’inférence : le programme qui exécute un modèle pour produire ses réponses. Il vise notamment DeepSeek V4 Flash, dont l’architecture à mélange d’experts compte 284 milliards de paramètres. Environ 13 milliards sont activés par jeton."
+   },
+   {
+    "type": "p",
+    "texte": "La mémoire nécessaire dépend de l’ensemble à stocker et à charger. Les 13 milliards de paramètres actifs décrivent le calcul par jeton, pas la taille du modèle complet. Pour envisager une installation locale, je regarde donc les formats proposés et la machine capable de les accueillir."
+   },
+   {
+    "type": "h2",
+    "texte": "Environ 81 Gio pour la variante deux bits."
+   },
+   {
+    "type": "p",
+    "texte": "Le projet propose une variante avec des experts quantifiés sur environ deux bits. Le fichier représente autour de 81 Gio, pour des machines de 96 ou 128 Go de mémoire selon les indications du projet. Une variante quatre bits vise des configurations plus grandes. On parle donc de besoins matériels conséquents."
+   },
+   {
+    "type": "chiffre",
+    "valeur": "81 Gio",
+    "libelle": "Taille approximative de la variante à experts quantifiés autour de deux bits, selon le guide du projet.",
+    "source_url": "https://github.com/antirez/ds4/blob/main/docs/MODELS.md"
+   },
+   {
+    "type": "p",
+    "texte": "La quantification réduit la précision de représentation d’une partie des poids. Le cache de contexte sur disque permet, lui, de conserver un état de calcul. Ce sont deux aspects du travail sur la mémoire : la place occupée par le modèle et celle de son contexte. La qualité des réponses et les limites de contexte feront partie de ce que je voudrai évaluer."
+   },
+   {
+    "type": "h2",
+    "texte": "Choisir où le modèle s’exécute."
+   },
+   {
+    "type": "p",
+    "texte": "DwarfStar annonce des chemins d’exécution Metal, CUDA et ROCm, ainsi qu’un agent de programmation intégré. J’ai envie de voir ce que cette approche donne sur des tâches précises, avec une configuration complète. Le matériel, la mémoire et le coût de l’ensemble entrent dans le choix."
+   },
+   {
+    "type": "p",
+    "texte": "Mon premier essai partirait d’une tâche que je connais suffisamment pour juger la réponse. Par exemple, demander une explication de code puis examiner les points que le modèle a retenus. Je noterais la variante utilisée, le matériel et la taille du contexte. Je voudrais pouvoir refaire le même exercice avant d’élargir la conversation, afin de distinguer une première impression d’un comportement que je retrouve."
+   },
+   {
+    "type": "code",
+    "langage": "sh",
+    "code": "./ds4 -p \"Explain Redis streams in one paragraph.\"",
+    "legende": "Commande du README consulté en novembre 2026, après compilation et téléchargement du modèle, depuis le dossier du dépôt.",
+    "source_url": "https://github.com/antirez/ds4"
+   },
+   {
+    "type": "p",
+    "texte": "Cette commande donne un point d’entrée dans la documentation actuelle. Elle suppose que la compilation et le téléchargement ont déjà été faits. Je la lirais avec le guide de ma plateforme avant de préparer un essai. Le sujet matériel m’intéresse précisément parce qu’il fait partie de l’expérience : je veux savoir ce que je dois installer avant d’interpréter la première réponse comme un résultat utilisable."
+   },
+   {
+    "type": "encart",
+    "titre": "Préparer une comparaison qui me parle.",
+    "texte": "Même tâche, même consigne, variante et machine notées : voilà le point de départ que je choisirais pour un essai local. J’examinerais ensuite la réponse et le temps d’attente ensemble."
+   },
+   {
+    "type": "p",
+    "texte": "Je séparerais également deux questions. D’abord, est-ce que la machine peut accueillir la configuration envisagée ? Ensuite, est-ce que la qualité et le rythme des réponses conviennent à mon travail ? Un fichier qui tient dans l’espace disponible répond seulement à une partie de mon besoin. Je voudrais suivre une vraie séquence de travail avant de décider quelle place donner à cet outil."
+   },
+   {
+    "type": "p",
+    "texte": "Le cache persistant entrerait dans ce même essai. Je regarderais ce qui se passe quand une conversation reprend et quand de nouveaux éléments s’ajoutent. Ce serait plus instructif pour moi qu’une réponse isolée. L’intérêt de cette piste locale tient à la possibilité d’observer l’ensemble sur une configuration que je peux décrire, puis d’en tirer une décision pour mes propres tâches."
+   },
+   {
+    "type": "p",
+    "texte": "C’est cette possibilité d’exécuter le modèle chez soi qui retient mon attention. Je veux pouvoir examiner une autre manière de travailler avec l’IA et mieux maîtriser son lieu d’exécution. DwarfStar met sur la table des formats et des besoins matériels concrets. Pour aller plus loin, j’attends de confronter ces choix à la qualité des réponses sur les tâches qui me concernent."
+   }
+  ],
+  "et_depuis": null,
+  "sources": [
+   {
+    "libelle": "antirez — dépôt DwarfStar et plateformes visées",
+    "url": "https://github.com/antirez/ds4"
+   },
+   {
+    "libelle": "DwarfStar — formats de modèles et mémoire",
+    "url": "https://github.com/antirez/ds4/blob/main/docs/MODELS.md"
+   },
+   {
+    "libelle": "DwarfStar — script de téléchargement et tailles annoncées",
+    "url": "https://github.com/antirez/ds4/blob/main/download_model.sh"
+   },
+   {
+    "libelle": "DeepSeek — présentation initiale de V4 Flash",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/commit/a7aaed80dd2df27620eb534454253ea25eb11c7a"
+   },
+   {
+    "libelle": "DwarfStar : serveur et cache persistant",
+    "url": "https://github.com/antirez/ds4/blob/main/docs/SERVER.md"
+   }
+  ],
+  "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:activity:7483137606046797824/",
+  "mots_cles": [
+   "DwarfStar",
+   "DS4",
+   "DeepSeek",
+   "IA locale",
+   "antirez"
+  ],
+  "extrait_post": "C'est concret, technique, et ça sent le futur du développement IA local.",
+  "visuel_alt": "Trame de lignes : une maison isolée la nuit, une seule fenêtre allumée"
+ },
+ {
+  "id": "A09",
+  "date": "2026-06-19",
+  "date_affichee": "19 juin 2026",
+  "slug": "ia-reembauches-facturation",
+  "rubrique": "IA et métier",
+  "titre": "L’IA produit du code. Le travail continue.",
+  "suite": "Facturation à l’usage, réembauches et supervision remettent le coût complet au centre du sujet.",
+  "chapo": "Je trouve l’IA très efficace sur le répétitif. Mais le calcul, la relecture et la maintenance font aussi partie de la facture.",
+  "meta_description": "IA et coût de l’automatisation : facturation GitHub Copilot, réembauches chez Klarna et rôle de la supervision dans mon travail de développeur.",
+  "temps_lecture": 4,
+  "corps": [
+   {
+    "type": "p",
+    "texte": "Produire davantage de code ne termine pas le travail. Il faut encore le relire, le sécuriser et le maintenir. Le 19 juin 2026, c’est ce coût complet qui me préoccupe. D’un côté, la facturation des outils rend la consommation plus visible. De l’autre, le service client offre des exemples où la place des humains revient dans la discussion."
+   },
+   {
+    "type": "h2",
+    "texte": "Copilot compte les jetons."
+   },
+   {
+    "type": "p",
+    "texte": "GitHub a annoncé la transition de Copilot vers les AI Credits à partir du 1er juin 2026. La consommation est liée aux jetons utilisés. Les abonnements comprennent une enveloppe, avec des possibilités de consommation supplémentaire. Certains abonnements annuels bénéficient d’un traitement particulier jusqu’à leur échéance."
+   },
+   {
+    "type": "p",
+    "texte": "Cette évolution me ramène au coût des agents. Une aide ponctuelle et une longue session ne représentent pas nécessairement la même dépense de calcul. Quand j’évalue le temps gagné, je veux aussi tenir compte de l’usage nécessaire pour obtenir le résultat. La vitesse de production seule raconte une partie du travail."
+   },
+   {
+    "type": "h2",
+    "texte": "Chez Klarna, la qualité revient dans la discussion."
+   },
+   {
+    "type": "p",
+    "texte": "En mai 2025, le dirigeant de Klarna expliquait déjà vouloir recruter de nouveau pour préserver la possibilité de parler à une personne. Il reconnaissait qu’une priorité trop forte donnée aux coûts avait affecté la qualité du service. C’est cette place du contact humain qui me paraît intéressante dans son propos."
+   },
+   {
+    "type": "p",
+    "texte": "Dans le service client, Gartner prévoit que, d’ici 2027, la moitié des entreprises ayant attribué des réductions d’effectifs à l’IA réembaucheront pour des fonctions similaires, sous d’autres intitulés. Cette prévision pose directement la question du travail que les entreprises voudront à nouveau confier à des personnes."
+   },
+   {
+    "type": "chiffre",
+    "valeur": "50 %",
+    "libelle": "Prévision Gartner pour 2027 : entreprises du service client ayant attribué des réductions d’effectifs à l’IA, puis réembauchant pour des fonctions similaires.",
+    "source_url": "https://www.gartner.com/en/newsroom/press-releases/2026-02-03-gartner-predicts-half-of-companies-that-cut-customer-service-staff-due-to-ai-will-rehire-by-2027"
+   },
+   {
+    "type": "citation",
+    "texte": "Relying solely on AI right now is premature and could lead to unintended consequences.",
+    "auteur": "Emily Potosky",
+    "source_libelle": "Gartner, communiqué sur le service client, février 2026",
+    "source_url": "https://www.gartner.com/en/newsroom/press-releases/2026-02-03-gartner-predicts-half-of-companies-that-cut-customer-service-staff-due-to-ai-will-rehire-by-2027"
+   },
+   {
+    "type": "h2",
+    "texte": "Relire fait partie de la production."
+   },
+   {
+    "type": "p",
+    "texte": "Dans ma pratique de développeur, l’IA est particulièrement utile pour les tâches répétitives et le code standard. J’apprécie cette aide. La relecture, la sécurité et la maintenance restent pourtant dans mon périmètre. Je dois juger ce qui est produit et ce que cela demandera ensuite."
+   },
+   {
+    "type": "p",
+    "texte": "Pour mon propre travail, je voudrais mettre les mêmes questions dans une évaluation simple. Prenons une tâche de développement répétitive : je comparerais le temps passé à la préparer, à obtenir une proposition et à relire le résultat. J’ajouterais ensuite les corrections nécessaires et le coût de l’outil utilisé. Ce serait une manière de regarder le résultat complet, avec les étapes qui restent à ma charge."
+   },
+   {
+    "type": "encart",
+    "titre": "Compter jusqu’au résultat accepté.",
+    "texte": "Je veux mesurer le travail jusqu’au moment où je peux accepter le changement. La génération est une étape du calcul ; la relecture et les reprises en font partie elles aussi."
+   },
+   {
+    "type": "p",
+    "texte": "Une proposition rapide mais difficile à relire ne serait pas forcément le meilleur résultat pour moi. À l’inverse, une aide limitée à une tâche bien définie pourrait être très utile si je comprends facilement ce qu’elle a fait. Ce sont les critères que je voudrais garder dans le choix d’un usage. Je n’ai pas besoin que l’outil prenne tout en charge pour trouver sa place dans ma façon de développer."
+   },
+   {
+    "type": "p",
+    "texte": "La question de la supervision se pose aussi avant de produire le code. Je voudrais décider quelles consignes donner, quelles parties examiner avec le plus d’attention et à quel moment interrompre une tentative qui s’allonge. Cela fait partie du travail que j’attends d’une personne expérimentée. Si l’on veut comparer deux méthodes, ce temps de préparation mérite d’être visible au même titre que le temps d’exécution."
+   },
+   {
+    "type": "p",
+    "texte": "Le service client et le développement gardent leurs particularités. Je ne déduis pas une trajectoire d’emploi des développeurs d’une prévision sur les agents de support. Ce qui relie ces sujets dans ma réflexion, c’est une question de décision : quel travail confier à l’outil et quel résultat attend-on de l’ensemble ? C’est sur cette base que j’ai envie de parler de gains."
+   },
+   {
+    "type": "p",
+    "texte": "Le rôle de supervision des seniors me paraît essentiel dans cet usage. Ma conviction reste celle d’un avenir hybride, où l’on mesure aussi la qualité du résultat. Je veux évaluer l’automatisation sur l’ensemble du travail : ce qu’elle produit, ce qu’il faut reprendre et ce qu’il faudra maintenir. C’est à cette échelle que le gain devient intéressant pour moi."
+   }
+  ],
+  "et_depuis": "Et depuis : dans une enquête menée auprès de 275 responsables du service et du support en juillet et août 2026, Gartner indique le 5 novembre que 7 % des répondants signalent des réembauches après des réductions antérieures. L’enquête porte sur le service et le support client. Source : https://www.gartner.com/en/newsroom/press-releases/2026-11-05-gartner-survey-finds-21-percent-of-service-and-support-leaders-have-reduced-human-agent-headcount-because-of-ai",
+  "sources": [
+   {
+    "libelle": "GitHub — annonce de la transition Copilot du 27 avril 2026",
+    "url": "https://github.blog/news-insights/github-copilot-is-moving-to-usage-based-billing/"
+   },
+   {
+    "libelle": "Bloomberg — entretien du dirigeant de Klarna du 8 mai 2025",
+    "url": "https://news.bloomberglaw.com/daily-labor-report/klarna-rethinks-ai-cost-cutting-plan-with-call-for-real-people"
+   },
+   {
+    "libelle": "Finextra — propos sur la qualité et ajustement de la stratégie de Klarna",
+    "url": "https://www.finextra.com/newsarticle/45956/klarna-rethinks-ai-customer-service-push-as-as-ceo-acknowledges-value-of-human-touch"
+   },
+   {
+    "libelle": "Gartner — prévision de réembauches dans le service client",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-02-03-gartner-predicts-half-of-companies-that-cut-customer-service-staff-due-to-ai-will-rehire-by-2027"
+   },
+   {
+    "libelle": "Gartner — enquête publiée le 5 novembre 2026",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-11-05-gartner-survey-finds-21-percent-of-service-and-support-leaders-have-reduced-human-agent-headcount-because-of-ai"
+   }
+  ],
+  "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:activity:7473712588116267008/",
+  "mots_cles": [
+   "IA",
+   "emploi",
+   "GitHub Copilot",
+   "automatisation"
+  ],
+  "extrait_post": "En tant que développeur, je le vois clairement : l'IA est un multiplicateur de productivité exceptionnel sur le répétitif et le boilerplate.",
+  "visuel_alt": "Trame de lignes : une porte à tambour en verre"
+ },
+ {
+  "id": "A08",
+  "date": "2026-06-17",
+  "date_affichee": "17 juin 2026",
+  "slug": "php-generiques-typephp",
+  "rubrique": "Écosystème PHP",
+  "titre": "Génériques PHP et TypePHP, deux pistes à suivre.",
+  "suite": "Le vote reste ouvert sur la RFC, tandis que le compilateur de Swoole explore le code natif.",
+  "chapo": "Les génériques font débat dans PHP, et TypePHP explore la compilation native. J’attends surtout de voir les garanties et la compatibilité dans des applications réelles.",
+  "meta_description": "Génériques PHP et TypePHP : vote sur la RFC Bound-Erased Generic Types, compilation native et attentes de compatibilité avec Symfony et Laravel.",
+  "temps_lecture": 4,
+  "corps": [
+   {
+    "type": "p",
+    "texte": "Les génériques dans PHP et la compilation native avec TypePHP touchent à deux sujets que j’ai envie de suivre. Le premier concerne une proposition pour le langage. Le second explore une autre façon d’exécuter du code. Au 17 juin 2026, je regarde ces deux pistes avec la même attente : comprendre ce qu’elles apportent à une application réelle."
+   },
+   {
+    "type": "h2",
+    "texte": "Une proposition de génériques encore au vote."
+   },
+   {
+    "type": "p",
+    "texte": "Le vote sur la RFC Bound-Erased Generic Types a commencé le 14 juin et doit se terminer le 28 juin. Il est donc encore ouvert. Dans les échanges, certains votants souhaitent des génériques tout en refusant cette proposition. Le choix de l’implémentation fait pleinement partie du débat."
+   },
+   {
+    "type": "p",
+    "texte": "Les génériques permettent de décrire un type paramétré par un autre. Une collection peut ainsi préciser le type de ses éléments. La RFC propose un effacement vers les bornes déclarées à l’exécution. Elle combine plusieurs contrôles avec le travail des outils d’analyse statique."
+   },
+   {
+    "type": "code",
+    "langage": "php",
+    "code": "function identity<T>(T $value): T {\n    return $value;\n}",
+    "legende": "Syntaxe de la RFC consultée en novembre 2026, proposée pour identity ; elle ne fait pas partie du PHP standard disponible.",
+    "source_url": "https://wiki.php.net/rfc/bound_erased_generic_types"
+   },
+   {
+    "type": "p",
+    "texte": "Cet exemple donne une idée de ce que l’on cherche à exprimer. Le paramètre T relie le type de la valeur reçue à celui de la valeur renvoyée. La fonction ne se contente donc pas d’annoncer une sortie générale : la proposition permet de décrire une relation entre l’entrée et la sortie. C’est cette relation qui m’intéresse quand je pense aux collections et aux fonctions que je voudrais rendre plus faciles à comprendre."
+   },
+   {
+    "type": "p",
+    "texte": "Pour évaluer cette syntaxe dans un projet, je partirais d’un exemple assez petit pour pouvoir suivre les types à la main. Une valeur entre, passe par une collection puis ressort. Je voudrais savoir ce que le langage contrôle et ce que l’analyse statique doit encore établir. Cette répartition me paraît plus importante que l’apparence de la déclaration. Elle détermine les erreurs que je peux espérer repérer avant l’exécution."
+   },
+   {
+    "type": "encart",
+    "titre": "Lire cet extrait comme une proposition.",
+    "texte": "Cette syntaxe appartient à la RFC. Je ne la copierais pas dans une application PHP courante comme une fonction déjà disponible. Elle sert ici à comprendre ce que la proposition veut permettre d’écrire."
+   },
+   {
+    "type": "p",
+    "texte": "C’est sur ces garanties que je veux juger une nouvelle syntaxe. Comment les types sont-ils contrôlés, et à quel moment ? Ce sont des questions concrètes pour le code que l’on écrit. La discussion autour de cette RFC porte sur une proposition précise ; le calendrier de futurs génériques natifs reste ouvert."
+   },
+   {
+    "type": "h2",
+    "texte": "TypePHP passe par la compilation."
+   },
+   {
+    "type": "p",
+    "texte": "TypePHP, le projet de Swoole, se présente comme un compilateur AOT, pour Ahead-Of-Time. Il passe par une génération de C++ avant de produire du code machine natif. Cette piste de compilation me donne envie de voir ce qu’elle permet sur une application."
+   },
+   {
+    "type": "p",
+    "texte": "J’attends des essais reproductibles. Pour moi, un résultat sur un calcul isolé apporte moins qu’une mesure sur une application Symfony ou Laravel. Je veux comprendre le gain dans ce contexte, avec ses dépendances et les comportements dont elle a besoin au quotidien."
+   },
+   {
+    "type": "h2",
+    "texte": "La compatibilité décidera de mon choix."
+   },
+   {
+    "type": "p",
+    "texte": "L’objectif de compatibilité avec l’écosystème est important. Pour envisager une migration, je voudrais surtout savoir comment le code existant se comporte. Les dépendances utilisées par l’application doivent entrer dans l’évaluation, au même titre que les performances."
+   },
+   {
+    "type": "p",
+    "texte": "Du côté de TypePHP, mon premier essai souhaité serait tout aussi modeste. Je choisirais une portion d’application identifiable, avec ses entrées et son résultat attendu, puis j’examinerais le parcours de compilation et les dépendances utilisées. Je voudrais pouvoir refaire la mesure et comprendre les écarts. Un changement d’exécution devient intéressant pour moi quand je sais décrire ce qu’il améliore et ce qu’il demande en échange."
+   },
+   {
+    "type": "p",
+    "texte": "Cette façon de procéder laisse de la place à l’envie d’expérimenter. Je n’ai pas besoin de choisir immédiatement un camp pour suivre les deux projets. Je veux surtout garder les questions de typage et celles de compilation assez claires pour pouvoir apprendre quelque chose de chaque essai."
+   },
+   {
+    "type": "p",
+    "texte": "J’ai donc hâte de voir des applications réelles mises à l’essai avec TypePHP. Côté PHP, je suivrai le résultat du vote et les discussions sur les garanties de types. Ces deux pistes se jugeront sur ce qu’elles permettent de faire concrètement. C’est là que se décidera mon envie de les utiliser dans un projet."
+   },
+   {
+    "type": "capture",
+    "cle": "php-rfc-vote"
+   }
+  ],
+  "et_depuis": "Et depuis : le vote s’est clos le 28 juin 2026. La RFC a été rejetée, avec 7 voix pour, 19 contre et 10 abstentions. Source : https://wiki.php.net/rfc/bound_erased_generic_types",
+  "sources": [
+   {
+    "libelle": "PHP — RFC Bound-Erased Generic Types et vote",
+    "url": "https://wiki.php.net/rfc/bound_erased_generic_types"
+   },
+   {
+    "libelle": "PHP Internals — ouverture du vote le 14 juin",
+    "url": "https://discourse.thephp.foundation/t/php-dev-vote-rfc-bound-erased-generic-types/5554"
+   },
+   {
+    "libelle": "Swoole — dépôt et documentation TypePHP",
+    "url": "https://github.com/swoole/typephp"
+   }
+  ],
+  "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:activity:7473037724774641664/",
+  "mots_cles": [
+   "PHP",
+   "génériques",
+   "TypePHP",
+   "Swoole",
+   "Symfony"
+  ],
+  "extrait_post": "J'ai hâte de voir les premiers benchmarks concrets et la compatibilité réelle avec Laravel/Symfony.",
+  "visuel_alt": "Trame de lignes : un éléphant de profil, l’emblème de PHP"
+ },
+ {
+  "id": "A07",
+  "date": "2026-06-15",
+  "date_affichee": "15 juin 2026",
+  "slug": "mistral-gros-chaton-rumeur",
+  "rubrique": "IA et métier",
+  "titre": "Le Gros Chat sait nourrir la « hype ».",
+  "suite": "La parodie autour de Mistral reprend tous les codes d’une annonce de modèle très attendue.",
+  "chapo": "Le « Gros Chat » est une parodie, et elle fonctionne très bien. Faux classements et visuels reprennent les ingrédients d’une annonce d’IA que l’on a envie de croire.",
+  "meta_description": "Le Gros Chaton, parodie autour de Mistral : faux classements, humour d’Arthur Mensch et regard sceptique sur la « hype » des annonces d’IA.",
+  "temps_lecture": 4,
+  "corps": [
+   {
+    "type": "p",
+    "texte": "Le « Gros Chat » de Mistral est un canular. Un nom de modèle, des visuels, des tableaux de performances : la parodie reprend les signes familiers d’une grande annonce d’IA. Le 15 juin 2026, c’est ce décalage qui m’amuse. Tout ressemble à la prochaine sortie que l’on attend avec impatience."
+   },
+   {
+    "type": "h2",
+    "texte": "La recette d’une annonce attendue."
+   },
+   {
+    "type": "p",
+    "texte": "La plaisanterie joue sur une promesse facile à reconnaître : un modèle français qui dépasserait ses concurrents. Les classements parodiques et les visuels donnent corps au récit. Je trouve la mise en scène réussie parce qu’elle reprend les codes que l’on croise dans les annonces de modèles."
+   },
+   {
+    "type": "p",
+    "texte": "Une interface soignée, quelques noms familiers et des performances spectaculaires donnent envie de lire la suite. Je reconnais cette curiosité chez moi. La parodie s’appuie dessus : le décor est en place avant même que l’on se demande ce qui a réellement été annoncé. C’est là que le second degré fonctionne."
+   },
+   {
+    "type": "h2",
+    "texte": "Arthur Mensch joue avec le nom."
+   },
+   {
+    "type": "p",
+    "texte": "Le nom « Le Chaton Fat » circule aussi. Le 15 juin, Arthur Mensch répond avec humour en corrigeant le nom : « le gros chaton ». Une participation à la plaisanterie qui me fait sourire. Le chat reste un personnage du canular."
+   },
+   {
+    "type": "p",
+    "texte": "J’aime cette façon de jouer avec l’attente autour des modèles. La réponse prolonge la blague et le nom devient lui-même un morceau du récit. Pour moi, le plaisir vient de ce décalage entre la solennité habituelle des annonces et ce chat un peu trop gros."
+   },
+   {
+    "type": "h2",
+    "texte": "La « hype » court toujours très vite."
+   },
+   {
+    "type": "p",
+    "texte": "Ce genre de parodie me renvoie à ma façon de suivre l’IA. J’ai envie de découvrir les prochains modèles, leurs possibilités et ce qu’ils peuvent changer dans mon travail. Mais cette attente rend aussi les promesses très attirantes. Un tableau de performances bien présenté capte vite mon attention."
+   },
+   {
+    "type": "p",
+    "texte": "Ce que je retiens surtout, c’est la facilité avec laquelle je peux reconnaître une forme avant d’avoir lu son contenu. Un tableau semble familier, le vocabulaire ressemble aux annonces précédentes, le nom d’un laboratoire fait le reste. J’ai envie de ralentir précisément à ce moment-là. La bonne question pour ma veille serait de retrouver qui s’engage sur la promesse et où cette personne ou cette entreprise la formule."
+   },
+   {
+    "type": "encart",
+    "titre": "Avant de garder le tableau.",
+    "texte": "Je veux retrouver la page de l’annonce, puis les conditions de la comparaison. Un visuel que je ne peux rattacher à rien reste un visuel, même s’il raconte exactement ce que j’espérais lire."
+   },
+   {
+    "type": "p",
+    "texte": "Pour une annonce attribuée à Mistral, son espace d’actualités constitue un point de départ concret. Ce serait l’endroit où chercher le texte officiel correspondant à une image qui circule. Une page d’actualités ne suffit pas à juger un modèle, mais elle donne un premier repère pour lire ce que l’entreprise dit effectivement de son produit. C’est une étape que je veux conserver dans ma manière de suivre ces sorties."
+   },
+   {
+    "type": "p",
+    "texte": "Ensuite, je voudrais pouvoir lire ce que mesure le classement. Quel est l’exercice ? Avec quelles consignes ? Quelles versions ont été comparées ? Ce sont mes questions de lecteur, pas une promesse qu’un tableau aura toutes les réponses. Elles me permettent surtout de ne pas transformer une première impression en conclusion sur l’outil que j’utiliserai demain. Une belle position dans une image et une aide utile dans mon travail ne répondent pas à la même question."
+   },
+   {
+    "type": "p",
+    "texte": "Le second degré garde évidemment sa place. Je peux rire de l’idée du Gros Chaton sans lui demander une fiche technique. Ce qui m’amuse ici, c’est justement de reconnaître mes propres attentes dans la caricature. La prochaine fois qu’un nom spectaculaire apparaîtra dans mon fil, j’aimerais garder ce petit temps de recul avant de lui prêter toutes les qualités."
+   },
+   {
+    "type": "p",
+    "texte": "Mon réflexe pour la veille reste de remonter à l’annonce d’origine avant d’adopter la promesse. C’est encore plus utile quand les visuels et les classements se mêlent aux plaisanteries. Je préfère prendre ce temps plutôt que construire mes attentes sur une belle mise en scène. En attendant les prochains modèles de Mistral, je peux au moins apprécier le Gros Chaton pour ce qu’il est : une bonne blague sur notre impatience."
+   }
+  ],
+  "et_depuis": null,
+  "sources": [
+   {
+    "libelle": "Arthur Mensch — réponse du 15 juin, reprise dans les articles cités",
+    "url": "https://x.com/arthurmensch/status/2066456715650793956"
+   },
+   {
+    "libelle": "TestingCatalog — récit de la parodie, publié le 16 juin 2026",
+    "url": "https://www.testingcatalog.com/mistral-embraces-cat-mascot-after-le-chaton-fat-ai-meme-goes-viral/"
+   },
+   {
+    "libelle": "Frandroid — récit et reprise du message d’Arthur Mensch",
+    "url": "https://www.frandroid.com/culture-tech/intelligence-artificielle/3142097_tout-le-monde-parle-dun-monstre-ia-francais-nomme-le-chaton-fat-il-nexiste-pas-et-les-americains-adorent-sen-moquer"
+   },
+   {
+    "libelle": "Mistral : espace officiel des actualités",
+    "url": "https://mistral.ai/news/"
+   }
+  ],
+  "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:activity:7472269230919487488/",
+  "mots_cles": [
+   "Mistral AI",
+   "Le Gros Chaton",
+   "IA",
+   "vérification"
+  ],
+  "extrait_post": "Dans l'IA, la hype va plus vite que la réalité.",
+  "visuel_alt": "Trame de lignes : un gros chat en contre-jour devant une fenêtre"
+ },
+ {
+  "id": "A06",
+  "date": "2026-04-01",
+  "date_affichee": "1 avril 2026",
+  "slug": "claw-code-reecriture-agents",
+  "rubrique": "Outils",
+  "titre": "Claw Code reprend l’architecture de l’agent.",
+  "suite": "Après la fuite de Claude Code, les réécritures communautaires donnent envie d’ouvrir le capot.",
+  "chapo": "Au lendemain de la fuite de Claude Code, les développeurs s’emparent de son architecture. Claw Code illustre cette envie de comprendre et de reconstruire.",
+  "meta_description": "Claw Code après la fuite de Claude Code : réécriture annoncée en Python, portage Rust et intérêt pour l’architecture des agents de programmation.",
+  "temps_lecture": 4,
+  "corps": [
+   {
+    "type": "p",
+    "texte": "Le 1er avril 2026, au lendemain de la fuite de Claude Code, je retiens surtout la vitesse de réaction des développeurs. Des analyses et des réécritures apparaissent autour de son architecture. Cette énergie collective me plaît beaucoup. Un agent devient un objet que l’on cherche à comprendre, puis à reconstruire."
+   },
+   {
+    "type": "h2",
+    "texte": "Claw Code part d’une base Python."
+   },
+   {
+    "type": "p",
+    "texte": "Porté par Sigrid Jin, Claw Code est présenté par ses auteurs comme une réécriture de l’architecture de Claude Code. Ils décrivent une première base en Python et un travail de portage vers Rust. C’est cette démarche de reconstruction qui donne envie d’examiner le projet."
+   },
+   {
+    "type": "p",
+    "texte": "Comment organiser un agent, son contexte et ses outils ? Voilà ce que j’ai envie de comprendre en regardant une telle réécriture. Pouvoir examiner ces choix me paraît précieux. L’intérêt est aussi dans ce que l’on apprend de l’assemblage, puis dans les idées que l’on peut mettre à l’essai."
+   },
+   {
+    "type": "h2",
+    "texte": "Des outils d’IA pour reconstruire un outil d’IA."
+   },
+   {
+    "type": "p",
+    "texte": "Les auteurs citent notamment oh-my-codex et oh-my-opencode pour la réécriture et le portage. L’assistance par l’IA fait donc partie de la démarche qu’ils décrivent. Je trouve cette boucle stimulante : des développeurs utilisent des agents pour travailler sur l’architecture d’un agent."
+   },
+   {
+    "type": "p",
+    "texte": "Ce qui me donne envie d’aller plus loin, c’est la possibilité de comparer les choix. Comment le contexte est-il organisé ? Quelle place prennent les outils ? Une réécriture offre un autre point de départ pour examiner ces questions. C’est sur le code et son comportement que je veux porter mon attention."
+   },
+   {
+    "type": "h2",
+    "texte": "La mémoire et la reprise d’erreurs m’attendent."
+   },
+   {
+    "type": "p",
+    "texte": "La gestion de la mémoire, l’organisation des tâches et la capacité à reprendre après une erreur sont les sujets que je veux suivre. Ce sont des questions importantes dans mon intérêt pour les agents. J’attends de voir comment les projets les abordent et ce que leurs choix donnent à l’usage."
+   },
+   {
+    "type": "p",
+    "texte": "Pour explorer ce genre de projet, je commencerais par suivre une seule tâche de bout en bout. Une demande entre, le programme prépare son contexte, choisit une action, reçoit un résultat et décide de la suite. Ce serait mon fil de lecture dans le code. Je voudrais retrouver à chaque étape les informations conservées et la décision qui provoque l’étape suivante, plutôt que commencer par une liste de fonctions annoncées."
+   },
+   {
+    "type": "encart",
+    "titre": "Lire une boucle complète.",
+    "texte": "Mon premier exercice serait de suivre une demande simple jusqu’à sa réponse. Je voudrais comprendre où l’agent agit, où il attend un résultat et où un humain peut reprendre la main."
+   },
+   {
+    "type": "p",
+    "texte": "Je prendrais ensuite un cas volontairement banal : un outil renvoie une erreur. Que doit faire l’agent dans cette situation ? Réessayer la même action, modifier sa demande ou demander de l’aide sont des choix différents. Avant de parler de capacité à se corriger, j’aurais envie de voir la décision et sa limite. C’est un exemple de comportement que je chercherais dans une réécriture comme Claw Code, sans présumer de sa réponse."
+   },
+   {
+    "type": "p",
+    "texte": "La même lecture vaut pour la mémoire. Je voudrais distinguer ce qui reste pendant une conversation et ce qui sera retrouvé lors d’une prochaine session. Quels éléments sont retenus ? Comment une information devenue fausse peut-elle être corrigée ? Ces questions m’aident à donner un contenu précis à un terme qui peut recouvrir des mécanismes très différents. Elles rendent aussi la comparaison entre deux architectures plus intéressante pour moi."
+   },
+   {
+    "type": "p",
+    "texte": "Je vois dans cette exploration une façon d’apprendre que j’aime bien : partir d’un programme assez concret pour pouvoir discuter une décision. Le passage annoncé de Python à Rust me donne envie de comparer ce qui change dans l’assemblage, et ce que les auteurs souhaitent conserver. L’intérêt est là même avant de choisir un outil pour un projet. Comprendre un compromis peut déjà nourrir la manière dont j’aborde le prochain agent."
+   },
+   {
+    "type": "p",
+    "texte": "Cette réaction communautaire donne envie de comprendre et d’expérimenter. Pour choisir un outil, je regarderai ensuite sa maturité et ce qu’il permet d’utiliser dans la durée. Mais comme point de départ pour partager des idées sur les agents, cette activité est enthousiasmante. Je veux voir les améliorations concrètes qui sortiront de ce travail et les choix d’architecture que l’on pourra en retenir."
+   },
+   {
+    "type": "capture",
+    "cle": "claw-readme"
+   }
+  ],
+  "et_depuis": "Et depuis : le dépôt principal met désormais l’espace Rust au premier plan et se décrit comme une pièce de musée entretenue par des agents, plutôt que comme un produit de production. Source : https://github.com/ultraworkers/claw-code",
+  "sources": [
+   {
+    "libelle": "Claw Code — dépôt principal, désormais ultraworkers/claw-code",
+    "url": "https://github.com/ultraworkers/claw-code"
+   },
+   {
+    "libelle": "Claw Code — copie du README décrivant Python, Rust et les outils employés",
+    "url": "https://github.com/SainathCheryala/claw-code"
+   }
+  ],
+  "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:activity:7445138301856047106/",
+  "mots_cles": [
+   "Claw Code",
+   "Claude Code",
+   "agents IA",
+   "open source"
+  ],
+  "extrait_post": "Un simple incident chez Anthropic a libéré une créativité folle dans l'écosystème dev.",
+  "visuel_alt": "Trame de lignes : un rayon de miel et quelques abeilles au travail"
+ },
+ {
+  "id": "A05",
+  "date": "2026-03-31",
+  "date_affichee": "31 mars 2026",
+  "slug": "claude-code-fuite-sources",
+  "rubrique": "Outils",
+  "titre": "Une source map ouvre le capot de Claude Code.",
+  "suite": "L’erreur de publication sur npm expose le code client et révèle des fonctions internes.",
+  "chapo": "Le 31 mars 2026, une livraison de Claude Code sur npm expose du code interne. Une source map donne accès aux coulisses du client en ligne de commande d’Anthropic.",
+  "meta_description": "Claude Code sur npm : une source map expose le code client. Undercover, Buddy et Kairos apparaissent dans les analyses des fonctions internes.",
+  "temps_lecture": 4,
+  "corps": [
+   {
+    "type": "p",
+    "texte": "Un fichier de débogage dans une livraison npm, et le code interne de Claude Code devient lisible. Le 31 mars 2026, l’agent en ligne de commande d’Anthropic se retrouve ainsi au centre des analyses. Ce qui me frappe, c’est le point de départ de l’incident : un fichier qui accompagne le programme distribué."
+   },
+   {
+    "type": "h2",
+    "texte": "Une source map d’environ 60 Mo."
+   },
+   {
+    "type": "p",
+    "texte": "Le chercheur Chaofan Shou signale une source map dans la version 2.1.88. Ce type de fichier relie le programme transformé pour sa distribution à son code d’origine. Les analyses décrivent ici un fichier d’environ 60 Mo, contenant du TypeScript et faisant aussi référence à une archive."
+   },
+   {
+    "type": "p",
+    "texte": "Le code exposé est celui du client : le programme qui dialogue avec le modèle et organise ses outils. Les modèles Claude, leurs données d’entraînement et l’infrastructure backend sont d’autres parties du système. C’est l’assemblage de l’agent que cette publication permet d’examiner."
+   },
+   {
+    "type": "h2",
+    "texte": "Undercover vise les contributions internes."
+   },
+   {
+    "type": "p",
+    "texte": "Anthropic indique qu’aucune donnée sensible de clients ni aucun identifiant d’accès n’ont été exposés. Pour moi, l’intérêt technique de cet incident tient aux fonctions internes qui apparaissent dans les analyses et à la manière dont elles s’insèrent dans le client."
+   },
+   {
+    "type": "p",
+    "texte": "Parmi elles, le fichier Undercover décrit des instructions pour les versions internes d’Anthropic lors de contributions publiques. Elles visent à éviter la divulgation d’informations internes et prévoient le retrait des mentions d’attribution à l’IA. C’est un aperçu des consignes associées à ces contributions."
+   },
+   {
+    "type": "h2",
+    "texte": "Regarder le paquet avant de le livrer."
+   },
+   {
+    "type": "p",
+    "texte": "Le point qui me paraît transposable à nos propres outils, c’est le contenu du paquet livré. La documentation npm permet de définir un champ files dans package.json pour sélectionner les fichiers à inclure. Pour une petite bibliothèque dont la sortie JavaScript est dans dist, on peut par exemple limiter cette sélection aux fichiers JavaScript. Voici un exemple à adapter à la structure réelle du projet."
+   },
+   {
+    "type": "code",
+    "langage": "json",
+    "code": "{\n  \"files\": [\"dist/**/*.js\"]\n}",
+    "legende": "Exemple de champ files dans package.json : sélectionner les fichiers JavaScript de dist.",
+    "source_url": "https://docs.npmjs.com/cli/v11/configuring-npm/package-json/",
+    "exemple": true
+   },
+   {
+    "type": "p",
+    "texte": "Ce choix laisse les fichiers .map hors de cette sélection. npm prévoit toutefois des fichiers toujours inclus, notamment package.json, le README, la licence et les fichiers désignés par main ou bin. Je regarderais donc le paquet obtenu avant d’en conclure que la sélection répond au besoin. Une règle écrite dans la configuration et le contenu réellement distribué sont deux choses que je veux rapprocher."
+   },
+   {
+    "type": "code",
+    "langage": "sh",
+    "code": "npm pack --dry-run",
+    "legende": "Afficher ce que npm préparerait pour le paquet du dossier courant.",
+    "source_url": "https://docs.npmjs.com/cli/v11/commands/npm-pack/",
+    "exemple": true
+   },
+   {
+    "type": "encart",
+    "titre": "Relire ce qui part.",
+    "texte": "Avant une livraison, je veux regarder la liste des fichiers du paquet. C’est un contrôle concret, à faire sur le résultat de la préparation, avec une attention particulière aux fichiers de débogage."
+   },
+   {
+    "type": "p",
+    "texte": "Cette lecture devrait suivre le chemin de livraison. Si le paquet est préparé après une compilation, c’est à cet endroit que je voudrais examiner les fichiers. Mon objectif serait simple : retrouver les éléments nécessaires à l’usage prévu et comprendre la présence de chacun des autres. Un fichier de débogage peut être utile dans un contexte donné ; sa diffusion devrait correspondre à une décision explicite."
+   },
+   {
+    "type": "p",
+    "texte": "C’est aussi ce qui rend l’incident intéressant au-delà de Claude Code. Le problème de départ tient à la frontière entre ce qui aide à construire un programme et ce qui doit accompagner sa distribution. J’y vois une bonne raison de donner à cette frontière une étape de revue à part entière. Le contenu final du paquet mérite autant d’attention que le code que l’on vient de modifier."
+   },
+   {
+    "type": "h2",
+    "texte": "Buddy et Kairos apparaissent dans le code."
+   },
+   {
+    "type": "p",
+    "texte": "Les analyses repèrent aussi Buddy, un compagnon virtuel, et Kairos, un mode d’assistant persistant avec consolidation de mémoire. Ces éléments donnent un aperçu de fonctions internes. À cette date, leur présence dans le code ne donne pas de calendrier de disponibilité publique."
+   },
+   {
+    "type": "p",
+    "texte": "J’aime comprendre comment un agent est assemblé : le client, les outils qu’il organise et les consignes qui l’accompagnent. Cette publication involontaire en laisse voir une partie. L’ironie est assez forte pour Anthropic, qui dévoile ainsi davantage de son fonctionnement qu’il ne l’avait prévu. Cette exposition involontaire du code ne constitue pas une ouverture du logiciel. Le code exposé offre un aperçu technique ; pour les fonctions publiques, j’attends les annonces de produit."
+   }
+  ],
+  "et_depuis": null,
+  "sources": [
+   {
+    "libelle": "Analyse technique de la publication npm par pankaj28843",
+    "url": "https://github.com/pankaj28843/understanding-claude-code"
+   },
+   {
+    "libelle": "Undercover — fichier diffusé comme issu des sources exposées",
+    "url": "https://github.com/alex000kim/claude-code/blob/main/src/utils/undercover.ts"
+   },
+   {
+    "libelle": "Axios — déclaration d’Anthropic sur le périmètre de l’incident",
+    "url": "https://www.axios.com/2026/03/31/anthropic-leaked-source-code-ai"
+   },
+   {
+    "libelle": "npm : champ files, inclusions obligatoires et .npmignore",
+    "url": "https://docs.npmjs.com/cli/v11/configuring-npm/package-json/"
+   },
+   {
+    "libelle": "npm : commande pack et option dry-run",
+    "url": "https://docs.npmjs.com/cli/v11/commands/npm-pack/"
+   }
+  ],
+  "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:activity:7444744026047598594/",
+  "mots_cles": [
+   "Claude Code",
+   "Anthropic",
+   "npm",
+   "source map"
+  ],
+  "extrait_post": "Ironiquement, ça rend Anthropic un peu plus « open » qu'ils ne l'auraient voulu.",
+  "visuel_alt": "Trame de lignes : un meuble à plans dont un tiroir est resté ouvert"
+ },
+ {
+  "id": "A04",
+  "date": "2026-01-21",
+  "date_affichee": "21 janvier 2026",
+  "slug": "amodei-prevision-metier-developpeur",
+  "rubrique": "IA et métier",
+  "titre": "Six à douze mois selon Amodei. Je reste sceptique.",
+  "suite": "À Davos, il envisage que l’IA assure l’essentiel du travail logiciel dans ce délai.",
+  "chapo": "À Davos, Dario Amodei envisage que l’IA puisse assurer l’essentiel du travail logiciel sous six à douze mois. Je me méfie de ces échéances si proches.",
+  "meta_description": "Dario Amodei à Davos en janvier 2026 : sa prévision sur les ingénieurs logiciels et mon regard de développeur sur ce calendrier.",
+  "temps_lecture": 4,
+  "corps": [
+   {
+    "type": "p",
+    "texte": "Six à douze mois. À Davos, Dario Amodei envisage que les modèles puissent accomplir la majorité, voire la totalité, du travail d’un ingénieur logiciel de bout en bout dans ce délai. Le dirigeant d’Anthropic présente cette possibilité avec une incertitude sur le calendrier. De mon côté, cette échéance me laisse sceptique."
+   },
+   {
+    "type": "h2",
+    "texte": "Certains ingénieurs retouchent le code du modèle."
+   },
+   {
+    "type": "p",
+    "texte": "Lors de l’échange du 20 janvier 2026, Amodei rapporte que certains de ses ingénieurs font produire le code par le modèle, puis le retouchent. C’est un usage qui occupe une place importante dans son raisonnement sur la transformation du travail logiciel."
+   },
+   {
+    "type": "p",
+    "texte": "Je prends au sérieux la capacité des modèles à produire du code. Ce qui me convainc beaucoup moins, c’est le passage de cet usage à la majorité du métier, de bout en bout, dans un délai aussi court. La complexité des entreprises où nous travaillons entre aussi dans l’équation."
+   },
+   {
+    "type": "chiffre",
+    "valeur": "6 à 12 mois",
+    "libelle": "Horizon envisagé par Dario Amodei à Davos en janvier 2026.",
+    "source_url": "https://www.weforum.org/podcasts/radio-davos/episodes/ai-agi-dario-amodei-demis-hassabis/"
+   },
+   {
+    "type": "h2",
+    "texte": "Une accélération avec des contraintes matérielles."
+   },
+   {
+    "type": "p",
+    "texte": "Son raisonnement repose sur une boucle : l’IA pourrait accélérer la conception des modèles suivants, qui deviendraient à leur tour plus performants. La fabrication des puces et le temps d’entraînement figurent parmi les limites qu’il cite. Cette accélération dépend donc aussi de ces étapes."
+   },
+   {
+    "type": "p",
+    "texte": "J’entends la logique de cette projection. Mais je ne sais pas à quel rythme elle peut se traduire dans toutes les situations que recouvre notre métier. Une amélioration dans la conception des modèles me dit encore peu de choses sur le calendrier du travail dans les entreprises."
+   },
+   {
+    "type": "h2",
+    "texte": "Le métier dépasse la production de code."
+   },
+   {
+    "type": "p",
+    "texte": "C’est là que se situe mon scepticisme. Je ne réduis pas le travail d’un développeur au code produit. Quand je lis cette prédiction, je pense à la complexité du métier et à celle des entreprises. J’ai du mal à les faire tenir dans cette échéance de six à douze mois."
+   },
+   {
+    "type": "p",
+    "texte": "Pour revenir à cette prévision dans un an, je voudrais pouvoir comparer des situations précises. Imaginons une évolution dans une application existante : la demande de départ est incomplète, plusieurs comportements sont possibles et le résultat doit s’insérer dans ce qui fonctionne déjà. Pour moi, accomplir ce travail de bout en bout voudrait dire parvenir jusqu’à une solution que l’équipe peut accepter, exploiter et reprendre plus tard."
+   },
+   {
+    "type": "encart",
+    "titre": "Le rendez-vous de janvier 2027.",
+    "texte": "Je veux comparer la promesse à une tâche entière : comprendre la demande, choisir une solution, la faire fonctionner et expliquer les décisions prises. Le nombre de lignes produites ne suffira pas à mon bilan."
+   },
+   {
+    "type": "p",
+    "texte": "Ma grille d’évaluation partirait de là. Qui a levé les ambiguïtés ? Qui a choisi les compromis ? Combien de reprises ont été nécessaires avant d’obtenir le comportement attendu ? Je voudrais aussi savoir ce qui se passe quand la première approche échoue. Ce sont les questions que j’aimerais poser à une démonstration avant de la rapprocher de mon travail quotidien. Elles donnent un sens concret à l’expression de bout en bout."
+   },
+   {
+    "type": "p",
+    "texte": "Le rôle de la personne qui accompagne le modèle entrerait lui aussi dans le bilan. Si elle reformule chaque étape, sélectionne les bons fichiers et rattrape les erreurs, son travail mérite d’être visible. Je trouverais trompeur de regarder uniquement la dernière réponse en oubliant tout ce qui a permis de l’obtenir. À mes yeux, c’est une partie essentielle de l’évaluation d’un outil de programmation."
+   },
+   {
+    "type": "p",
+    "texte": "Une échéance courte a l’avantage de permettre cette confrontation assez vite. Je n’ai pas besoin de trancher aujourd’hui tout l’avenir du métier pour demander ce qui aura changé dans douze mois. J’attends surtout des exemples que je puisse examiner à cette échelle, avec leurs conditions de réussite. C’est ainsi que je pourrai faire évoluer mon avis, plutôt qu’au rythme des formules les plus frappantes."
+   },
+   {
+    "type": "p",
+    "texte": "J’y entends aussi un discours très vendeur pour les investisseurs : une technologie qui accélérerait sa propre progression. Je préfère juger les capacités à l’usage et revenir au calendrier annoncé. En ce 21 janvier 2026, mon rendez-vous est pris pour janvier 2027. Dans douze mois, je veux comparer cette perspective à ce que les modèles permettront réellement de faire de bout en bout. D’ici là, mon expérience du métier me donne de bonnes raisons de rester sceptique."
+   }
+  ],
+  "et_depuis": null,
+  "sources": [
+   {
+    "libelle": "World Economic Forum — transcription de The Day After AGI",
+    "url": "https://www.weforum.org/podcasts/radio-davos/episodes/ai-agi-dario-amodei-demis-hassabis/"
+   },
+   {
+    "libelle": "World Economic Forum — échange daté du 20 janvier 2026",
+    "url": "https://www.weforum.org/stories/artificial-intelligence/young-people-ai-davos"
+   }
+  ],
+  "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:activity:7419693250111778816/",
+  "mots_cles": [
+   "Dario Amodei",
+   "Anthropic",
+   "développeur",
+   "IA"
+  ],
+  "extrait_post": "Mais en tant que développeur, j'ai tendance à me méfier de ces deadlines ultra-courtes.",
+  "visuel_alt": "Trame de lignes : un sablier sous une lumière rasante"
+ },
+ {
+  "id": "A03",
+  "date": "2026-01-09",
+  "date_affichee": "9 janvier 2026",
+  "slug": "fatigue-mentale-developpeur",
+  "rubrique": "IA et métier",
+  "titre": "Une heure de veille de plus ne réglera pas l’avenir.",
+  "suite": "Face à l’incertitude du métier et à la comparaison sur LinkedIn, j’ai besoin de fermer l’ordinateur.",
+  "chapo": "J’ai parfois l’impression de devoir tout apprendre tout de suite pour continuer à exister comme développeur. Cette course me fatigue, et je veux savoir m’arrêter.",
+  "meta_description": "Fatigue mentale du développeur, IA et comparaison sur LinkedIn : mon regard sur la pression de rester à jour et le besoin de décrocher.",
+  "temps_lecture": 4,
+  "corps": [
+   {
+    "type": "p",
+    "texte": "En ce début de janvier, j’ai envie de parler de fatigue mentale. Celle que je ressens face à l’incertitude du métier, aux nouveautés qui s’accumulent et à cette impression de devoir tout comprendre immédiatement. Plus je réfléchis à l’avenir du développement, moins j’arrive à le prédire."
+   },
+   {
+    "type": "h2",
+    "texte": "La peur de devenir obsolète."
+   },
+   {
+    "type": "p",
+    "texte": "Les annonces autour de l’IA se succèdent. J’y retrouve cette anxiété de l’obsolescence : apprendre encore, essayer le prochain outil, ne rien laisser passer. Je peux y consacrer beaucoup de temps sans jamais atteindre le moment où je me sentirais enfin à jour."
+   },
+   {
+    "type": "p",
+    "texte": "Continuer une heure de plus est tentant. Lire encore une annonce, essayer un outil supplémentaire, s’assurer de ne rien avoir manqué. Je peux remplir toute ma soirée ainsi. À la fin, l’incertitude est toujours là. J’ai passé plus de temps devant l’écran, avec la même difficulté à imaginer la suite."
+   },
+   {
+    "type": "h2",
+    "texte": "LinkedIn devient un miroir déformant."
+   },
+   {
+    "type": "p",
+    "texte": "Dans mon fil, les réussites et les lancements rapides prennent beaucoup de place. À force de les regarder, mon propre travail me paraît parfois trop lent. Je vois leurs résultats, alors que je connais aussi mes hésitations et tout ce qui avance moins vite dans mon parcours."
+   },
+   {
+    "type": "p",
+    "texte": "Cette comparaison me pèse. Je ne vois qu’une partie de leur histoire, mais je la mets en face de tout mon quotidien. Le décalage suffit à nourrir cette impression d’avoir pris du retard. Continuer à faire défiler les publications ne m’aide alors plus à avancer."
+   },
+   {
+    "type": "p",
+    "texte": "Les projets de logiciels en abonnement que je vois passer me font aussi penser à ce besoin de sécurité. J’y vois parfois une recherche de perspective face à un avenir flou. Construire quelque chose à soi pour continuer autrement : cette idée rejoint mes interrogations sur la suite du métier."
+   },
+   {
+    "type": "h2",
+    "texte": "Fermer l’ordinateur reste possible."
+   },
+   {
+    "type": "p",
+    "texte": "J’ai envie de distinguer deux moments : apprendre pour répondre à une question et continuer à lire parce que m’arrêter m’inquiète. Dans le premier cas, je peux formuler ce que je cherche. Dans le second, la prochaine annonce devient elle-même une raison de poursuivre. Cette distinction me semble plus utile que de compter les outils que j’ai essayés. Elle me donne une façon de reconnaître le moment où la veille cesse de m’apporter quelque chose."
+   },
+   {
+    "type": "encart",
+    "titre": "Une fin pour la veille.",
+    "texte": "Avant d’ouvrir un nouvel onglet, je peux me demander ce que je cherche à comprendre. Si je n’ai plus de question précise, je peux remettre la suite à demain. L’actualité continuera sans moi pendant la soirée."
+   },
+   {
+    "type": "p",
+    "texte": "Ce serait aussi une autre manière de choisir ce que j’apprends. Je pourrais partir d’un problème rencontré dans mon travail, puis chercher l’information qui m’aide à le résoudre. Tout ce qui ne répond pas à ce besoin peut attendre. Je ne veux pas transformer chaque démonstration impressionnante en nouvelle obligation personnelle. Avoir vu qu’un outil existe ne m’oblige pas à lui consacrer mon temps disponible le jour même."
+   },
+   {
+    "type": "p",
+    "texte": "L’organisation de la journée a aussi sa place dans cette réflexion. L’INRS recommande d’alterner le travail informatisé avec d’autres tâches et, lorsque cette alternance est impossible, de prévoir des pauses régulières adaptées au travail. Ce repère pratique rejoint mon envie de ne pas remplir tous les intervalles par un autre écran. Quitter le code pour continuer à faire défiler mon fil ne répond pas à ce que je cherche ici."
+   },
+   {
+    "type": "citation",
+    "texte": "Travailler toute la journée sur un écran n’est pas recommandé.",
+    "auteur": "INRS",
+    "source_libelle": "Travail sur écran, prévention des risques",
+    "source_url": "https://www.inrs.fr/risques/travail-ecran/prevention-risques.html"
+   },
+   {
+    "type": "p",
+    "texte": "Je veux pouvoir laisser une question ouverte sans la vivre comme un retard supplémentaire. L’avenir du métier restera incertain après ma prochaine lecture. Mon projet en cours, lui, peut avoir une prochaine étape assez claire. C’est sur cette échelle que j’ai envie de reprendre la main : une tâche, une question utile, puis un moment où la journée se termine."
+   },
+   {
+    "type": "p",
+    "texte": "Je ne maîtrise ni le calendrier des outils ni la direction que prendra le développement. Je peux en revanche décider de m’arrêter pour ce soir. Je veux accepter cette limite, même quand le fil d’actualité me donne l’impression qu’il faudrait continuer."
+   },
+   {
+    "type": "p",
+    "texte": "Une heure de travail de plus ne m’aurait pas donné la réponse sur l’avenir du métier. Je n’ai pas envie de transformer cette incertitude en raison de ne jamais décrocher. Préserver ma santé mentale fait partie de la manière dont je veux continuer à développer. Ce soir, fermer l’ordinateur est une décision que je peux prendre."
+   }
+  ],
+  "et_depuis": null,
+  "sources": [
+   {
+    "libelle": "Mickaël Teixeira — témoignage personnel du 9 janvier 2026",
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7415390139092201474/"
+   },
+   {
+    "libelle": "INRS : organisation du travail sur écran et alternance des tâches",
+    "url": "https://www.inrs.fr/risques/travail-ecran/prevention-risques.html"
+   }
+  ],
+  "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:activity:7415390139092201474/",
+  "mots_cles": [
+   "développeur",
+   "santé mentale",
+   "IA",
+   "LinkedIn"
+  ],
+  "extrait_post": "Le plus dur, mais le plus nécessaire aujourd'hui, c'est de savoir fermer l'ordinateur.",
+  "visuel_alt": "Trame de lignes : un ordinateur portable fermé, près d’une fenêtre d’hiver"
+ },
+ {
+  "id": "A02",
+  "date": "2026-01-08",
+  "date_affichee": "8 janvier 2026",
+  "slug": "tailwind-financement-ia",
+  "rubrique": "IA et métier",
+  "titre": "Tailwind gagne des utilisateurs, perd des revenus.",
+  "suite": "Le témoignage d’Adam Wathan met le financement de l’open source au cœur du sujet.",
+  "chapo": "Adam Wathan annonce le licenciement de 75 % de son équipe d’ingénierie chez Tailwind Labs. Son récit montre un décalage brutal entre popularité et financement.",
+  "meta_description": "Tailwind CSS et IA : Adam Wathan décrit une baisse de trafic et de revenus qui pose la question du financement de l’open source.",
+  "temps_lecture": 4,
+  "corps": [
+   {
+    "type": "p",
+    "texte": "Le message d’Adam Wathan me fait l’effet d’une douche froide. À l’origine de Tailwind CSS et dirigeant de Tailwind Labs, il décrit un framework qui gagne en popularité et une entreprise dont les revenus reculent. Le succès de l’outil et les moyens de le maintenir prennent des directions opposées."
+   },
+   {
+    "type": "h2",
+    "texte": "75 % de l’équipe d’ingénierie licenciée."
+   },
+   {
+    "type": "p",
+    "texte": "Dans son commentaire GitHub du 7 janvier 2026, Wathan annonce que 75 % de son équipe d’ingénierie a perdu son emploi la veille. Il décrit un trafic vers la documentation inférieur d’environ 40 % à celui du début de 2023, et des revenus en baisse de près de 80 %."
+   },
+   {
+    "type": "p",
+    "texte": "Il affirme pourtant que Tailwind continue de gagner en popularité. C’est ce contraste qui me préoccupe. L’outil est utilisé, mais le travail de ceux qui le construisent et le maintiennent doit toujours être financé. La popularité ne suffit pas à payer ce travail."
+   },
+   {
+    "type": "citation",
+    "texte": "The docs are the only way people find out about our commercial products",
+    "auteur": "Adam Wathan",
+    "source_libelle": "Commentaire du 7 janvier 2026 sur GitHub",
+    "source_url": "https://github.com/tailwindlabs/tailwindcss.com/pull/2388"
+   },
+   {
+    "type": "h2",
+    "texte": "La documentation faisait découvrir les produits."
+   },
+   {
+    "type": "p",
+    "texte": "Wathan explique que la documentation est le canal par lequel les utilisateurs découvrent leurs offres commerciales. Selon lui, les assistants d’IA bouleversent ce parcours. Un développeur peut obtenir de l’aide pour utiliser Tailwind sans passer par les pages où sont présentés les produits payants."
+   },
+   {
+    "type": "p",
+    "texte": "C’est un mécanisme assez troublant. L’assistant facilite l’utilisation des classes CSS. Dans le même temps, ce parcours peut éloigner l’utilisateur des offres qui financent leurs créateurs. Je trouve difficile d’ignorer cette tension entre l’aide immédiate que l’on reçoit et le travail nécessaire pour que l’outil continue d’exister."
+   },
+   {
+    "type": "p",
+    "texte": "Un petit exemple rend ce parcours très concret. Dans Tailwind, le préfixe hover: permet d’appliquer une classe au survol. On peut donc exprimer la couleur de fond d’un bouton et sa variation directement dans le HTML. Voici un exemple minimal que j’écris pour montrer cette syntaxe, dans une page où Tailwind est déjà chargé."
+   },
+   {
+    "type": "code",
+    "langage": "html",
+    "code": "<button class=\"bg-sky-500 hover:bg-sky-700\">\n  Enregistrer\n</button>",
+    "legende": "Exemple minimal : fond bleu et variation au survol.",
+    "source_url": "https://tailwindcss.com/docs/hover-focus-and-other-states",
+    "exemple": true
+   },
+   {
+    "type": "p",
+    "texte": "Obtenir ces quelques caractères dans une réponse d’assistant est très pratique. Mais le bouton ne montre rien du travail derrière la classe : sa définition, sa documentation et son entretien. C’est cette distance qui m’interpelle. Au moment où j’utilise le résultat, je peux oublier complètement le projet qui l’a rendu possible et la manière dont son équipe finance ses journées."
+   },
+   {
+    "type": "p",
+    "texte": "Pour moi, le témoignage invite à réexaminer le trajet complet. J’arrive avec un besoin d’interface, je demande une solution, j’obtiens du code. Si ce trajet contourne la documentation, la rencontre avec l’offre commerciale peut aussi disparaître. Wathan décrit précisément cette dépendance dans son entreprise. Cela suffit à poser une question économique sérieuse, sans avoir besoin d’en faire une règle pour tous les projets libres."
+   },
+   {
+    "type": "p",
+    "texte": "Je voudrais garder un réflexe simple quand une dépendance compte dans mon travail : connaître aussi les gens qui la maintiennent et ce qu’ils proposent pour soutenir leur activité. Cela peut entrer dans une discussion de budget au même titre que les autres outils du projet. Je ne veux pas attendre qu’un outil manque pour me demander comment il tenait jusque-là. Son utilité mérite une place dans cette réflexion, même quand son code est accessible gratuitement."
+   },
+   {
+    "type": "h2",
+    "texte": "Le code libre a toujours besoin de moyens."
+   },
+   {
+    "type": "p",
+    "texte": "C’est cette facture qui me reste en tête après le témoignage de Wathan. Utiliser un framework plus facilement ne finance pas son entretien. Dans la situation qu’il décrit, le succès technique ne suffit plus à assurer l’équilibre économique de l’entreprise qui le porte."
+   },
+   {
+    "type": "p",
+    "texte": "Je m’inquiète de voir le financement devenir moins visible alors que l’outil reste présent dans le travail des développeurs. Si nos habitudes pour apprendre et écrire du code changent, il faut aussi pouvoir faire évoluer les moyens de soutenir ses auteurs. Le cas de Tailwind me ramène à cette question très concrète : qui paie le travail dont nous profitons ? J’ai envie que les outils que j’utilise puissent durer, avec les moyens de les maintenir."
+   },
+   {
+    "type": "encart",
+    "titre": "Un outil utile a aussi une équipe.",
+    "texte": "Quand je parle du coût de mes outils, je veux y inclure ceux dont le code est libre. La gratuité d’accès ne dit rien du temps nécessaire pour les faire durer."
+   }
+  ],
+  "et_depuis": null,
+  "sources": [
+   {
+    "libelle": "Adam Wathan — commentaire sur la proposition llms.txt",
+    "url": "https://github.com/tailwindlabs/tailwindcss.com/pull/2388"
+   },
+   {
+    "libelle": "Simon Willison — relevé daté des déclarations du 7 janvier",
+    "url": "https://simonwillison.net/2026/jan/7/adam-wathan/"
+   },
+   {
+    "libelle": "Tailwind CSS : variantes de classes au survol",
+    "url": "https://tailwindcss.com/docs/hover-focus-and-other-states"
+   }
+  ],
+  "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:activity:7414968396418625536/",
+  "mots_cles": [
+   "Tailwind CSS",
+   "IA",
+   "open source",
+   "financement"
+  ],
+  "extrait_post": "Ça pose une vraie question pour la suite : si le modèle actuel de l'Open Source ne survit pas à l'ère de l'IA, qui va payer la facture ?",
+  "visuel_alt": "Trame de lignes : une salle de lecture de bibliothèque vide"
+ },
+ {
+  "id": "A01",
+  "date": "2025-12-11",
+  "date_affichee": "11 décembre 2025",
+  "slug": "sylius-prestashop-rapprochement",
+  "rubrique": "Écosystème PHP",
+  "titre": "Sylius dans le rachat de PrestaShop.",
+  "suite": "L’opération réunit cyber_Folks, Sylius et BitBag. Une grande nouvelle pour mon cœur de développeur.",
+  "chapo": "Le 11 décembre 2025, Sylius participe à l’annonce du rachat de PrestaShop avec cyber_Folks et BitBag. Voir cette solution prendre cette place, ça me fait quelque chose.",
+  "meta_description": "Sylius, PrestaShop, cyber_Folks et BitBag : ce que leur rapprochement représente à mes yeux pour l’écosystème PHP et Symfony.",
+  "temps_lecture": 4,
+  "corps": [
+   {
+    "type": "p",
+    "texte": "J’ai dû relire le titre plusieurs fois. Sylius dans le rachat de PrestaShop. Oui, cette solution basée sur Symfony, sur laquelle j’adore travailler. Le 11 décembre 2025, je ne m’attendais vraiment pas à voir ces deux noms réunis dans une telle annonce."
+   },
+   {
+    "type": "h2",
+    "texte": "cyber_Folks, Sylius et BitBag réunis."
+   },
+   {
+    "type": "p",
+    "texte": "L’opération annoncée réunit cyber_Folks, Sylius et BitBag autour de PrestaShop. Le processus de rachat s’ouvre. Pour moi, c’est déjà une grande nouvelle : Sylius prend place dans une opération aux côtés d’un acteur historique du commerce en ligne."
+   },
+   {
+    "type": "p",
+    "texte": "J’ai vu Sylius grandir comme un challenger. J’aime son exigence technique et la place qu’il donne à l’architecture. Le retrouver dans cette annonce donne une autre portée au chemin parcouru. Il y a de quoi relire le titre, puis se réjouir pour les gens qui ont construit cette solution."
+   },
+   {
+    "type": "h2",
+    "texte": "Symfony et l’open source au cœur de mon attachement."
+   },
+   {
+    "type": "p",
+    "texte": "Sylius s’appuie sur Symfony et revendique une démarche open source. Ce sont des raisons très concrètes pour lesquelles j’aime travailler avec lui. L’architecture et le plaisir de développer avec cette solution comptent dans mes choix. Cette annonce touche donc aussi à mon quotidien de développeur."
+   },
+   {
+    "type": "p",
+    "texte": "Ce rapprochement me parle parce que mes choix techniques engagent aussi ma façon de travailler dans la durée. Quand je défends une architecture, je pense au prochain changement de règle métier, à la personne qui reprendra le projet et au temps nécessaire pour comprendre une décision. C’est sur ce terrain que se construit mon attachement à Sylius. Une annonce de cette ampleur donne soudain une visibilité différente à ces sujets, habituellement bien moins spectaculaires qu’un rachat."
+   },
+   {
+    "type": "encart",
+    "titre": "Ce que je veux retrouver dans la suite.",
+    "texte": "Mon enthousiasme tient à ce qui m’a donné envie de travailler avec Sylius : son architecture, Symfony et le code ouvert. C’est à travers ces choix que je regarderai la suite du rapprochement."
+   },
+   {
+    "type": "p",
+    "texte": "Je peux me réjouir de l’opération tout en gardant des attentes très concrètes. Pour un projet existant, je voudrais regarder les versions à maintenir, les extensions dont il dépend et les possibilités de faire évoluer les développements spécifiques. Ce serait ma grille de lecture avant de déduire une décision technique de cette annonce. Le nom des entreprises réunies donne un contexte ; mon choix pour une application continuerait de partir de ses besoins."
+   },
+   {
+    "type": "p",
+    "texte": "Imaginons une boutique dont les règles de commande demandent une adaptation importante. Mon premier sujet serait de savoir où placer cette logique et comment la faire évoluer proprement. C’est un exemple de question que j’aime pouvoir poser avec Sylius. Le rapprochement me donne envie de suivre ce que les équipes construiront ensemble, avec cette même attention portée au travail quotidien du développeur et à celui des personnes qui exploitent la boutique."
+   },
+   {
+    "type": "p",
+    "texte": "J’attends donc une suite qui puisse se lire dans le produit autant que dans les annonces. Pouvoir continuer à comprendre les choix, à discuter les évolutions et à construire sur une base que j’apprécie : voilà ce qui compterait pour moi. Aujourd’hui, le plaisir est déjà là. Une solution à laquelle je suis attaché prend une place que je n’avais pas imaginée."
+   },
+   {
+    "type": "p",
+    "texte": "J’y vois un signal encourageant pour ceux qui accordent de l’importance à la qualité du code. Quand on aime une solution pour sa manière d’aborder le développement, la voir prendre cette place fait plaisir. Cela donne un écho particulier aux choix techniques auxquels je suis attaché."
+   },
+   {
+    "type": "h2",
+    "texte": "Bravo à l’équipe Sylius."
+   },
+   {
+    "type": "p",
+    "texte": "Ce qui me rend enthousiaste, c’est ce parcours. Le challenger que j’ai aimé voir grandir participe aujourd’hui à une opération autour de PrestaShop. Pour mon petit cœur de développeur Symfony et Sylius, la nouvelle a une saveur particulière. J’ai envie de saluer ceux qui ont fait avancer le projet jusque-là."
+   },
+   {
+    "type": "p",
+    "texte": "Bravo à l’équipe Sylius pour le chemin parcouru. Cette annonce restera pour moi un moment fort de son histoire : une solution que j’aime utiliser associée à un nom historique du commerce en ligne. Le plaisir de travailler avec elle était déjà là. Aujourd’hui s’y ajoute celui de la voir occuper cette place. C’est une bonne journée pour le développeur que je suis."
+   },
+   {
+    "type": "capture",
+    "cle": "sylius-rapprochement"
+   }
+  ],
+  "et_depuis": "Et depuis : cyber_Folks indique détenir 100 % de PrestaShop depuis février 2026. La clôture intervient donc après cette annonce de décembre 2025. Source : https://cyberfolks.com/about-us/",
+  "sources": [
+   {
+    "libelle": "Sylius — bilan de décembre 2025, opération avec cyber_Folks et BitBag",
+    "url": "https://sylius.com/blog/ecosystem/month-of-sylius-december-2025/"
+   },
+   {
+    "libelle": "cyber_Folks — présentation du groupe et acquisition finalisée",
+    "url": "https://cyberfolks.com/about-us/"
+   }
+  ],
+  "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:activity:7404898422811414530/",
+  "mots_cles": [
+   "Sylius",
+   "PrestaShop",
+   "Symfony",
+   "open source"
+  ],
+  "extrait_post": "J'ai dû relire le titre trois fois pour être sûr que ce n'était pas une blague... 😳",
+  "visuel_alt": "Trame de lignes : un cygne qui glisse sur une eau sombre"
+ }
+]

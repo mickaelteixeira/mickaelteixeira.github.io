@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Génériques PHP et TypePHP, deux pistes à suivre</title>
+<meta name="description" content="Génériques PHP et TypePHP : vote sur la RFC Bound-Erased Generic Types, compilation native et attentes de compatibilité avec Symfony et Laravel.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://mickaelteixeira.github.io/actualites/php-generiques-typephp/">
+<meta name="author" content="Mickaël Teixeira">
+<meta name="google-site-verification" content="wsdzIL0Lmsbtvz1F2wSa2pzjxPZG2HtzG2G24YiEvAY">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171717" media="(prefers-color-scheme: dark)">
+<script>try{var t=localStorage.getItem('theme');if(t==='clair'||t==='sombre')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="alternate" type="application/atom+xml" title="Actualités de Mickaël Teixeira" href="/actualites/flux.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Mickaël Teixeira">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Génériques PHP et TypePHP, deux pistes à suivre">
+<meta property="og:description" content="Génériques PHP et TypePHP : vote sur la RFC Bound-Erased Generic Types, compilation native et attentes de compatibilité avec Symfony et Laravel.">
+<meta property="og:url" content="https://mickaelteixeira.github.io/actualites/php-generiques-typephp/">
+<meta property="og:image" content="https://mickaelteixeira.github.io/assets/img/partage/article-php-generiques-typephp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Trame de lignes : un éléphant de profil, l’emblème de PHP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Génériques PHP et TypePHP, deux pistes à suivre">
+<meta name="twitter:description" content="Génériques PHP et TypePHP : vote sur la RFC Bound-Erased Generic Types, compilation native et attentes de compatibilité avec Symfony et Laravel.">
+<meta name="twitter:image" content="https://mickaelteixeira.github.io/assets/img/partage/article-php-generiques-typephp.jpg">
+<link rel="preload" href="/assets/fonts/inter-400-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-tight-300-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<meta property="article:published_time" content="2026-06-17">
+<meta property="article:modified_time" content="2026-11-15">
+<meta property="article:author" content="https://mickaelteixeira.github.io/">
+<meta property="article:section" content="Écosystème PHP">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://mickaelteixeira.github.io/actualites/php-generiques-typephp/#article","headline":"Génériques PHP et TypePHP, deux pistes à suivre","alternativeHeadline":"Le vote reste ouvert sur la RFC, tandis que le compilateur de Swoole explore le code natif.","description":"Génériques PHP et TypePHP : vote sur la RFC Bound-Erased Generic Types, compilation native et attentes de compatibilité avec Symfony et Laravel.","datePublished":"2026-06-17","dateModified":"2026-11-15","inLanguage":"fr-FR","author":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"},"publisher":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"},"mainEntityOfPage":"https://mickaelteixeira.github.io/actualites/php-generiques-typephp/","image":["https://mickaelteixeira.github.io/assets/img/partage/article-php-generiques-typephp.jpg","https://mickaelteixeira.github.io/assets/img/actualites/php-generiques-typephp-carte.webp"],"articleSection":"Écosystème PHP","keywords":["PHP","génériques","TypePHP","Swoole","Symfony"],"wordCount":678,"citation":["https://wiki.php.net/rfc/bound_erased_generic_types","https://discourse.thephp.foundation/t/php-dev-vote-rfc-bound-erased-generic-types/5554","https://github.com/swoole/typephp"],"isPartOf":{"@id":"https://mickaelteixeira.github.io/actualites/#blog"},"discussionUrl":"https://www.linkedin.com/feed/update/urn:li:activity:7473037724774641664/"},{"@type":"Person","@id":"https://mickaelteixeira.github.io/#mickael-teixeira","name":"Mickaël Teixeira","givenName":"Mickaël","familyName":"Teixeira","jobTitle":"Développeur Symfony et Sylius freelance","url":"https://mickaelteixeira.github.io/","image":"https://mickaelteixeira.github.io/assets/img/mickael-teixeira-developpeur-symfony-bordeaux.webp","description":"Développeur PHP depuis 2009, freelance à Bordeaux depuis 2025 : Symfony, Sylius, API Platform et Laravel. Fondateur de Yedra, le CRM des écoles.","address":{"@type":"PostalAddress","addressLocality":"Bordeaux","addressRegion":"Nouvelle-Aquitaine","addressCountry":"FR"},"alumniOf":{"@type":"EducationalOrganization","name":"ETNA","url":"https://etna.io/"},"knowsAbout":["PHP","Symfony","Sylius","API Platform","Laravel","E-commerce","Architecture hexagonale","Domain-Driven Design","Angular","Elasticsearch","RabbitMQ","Docker","GitLab CI","Tests automatisés"],"knowsLanguage":["fr","en"],"sameAs":["https://www.linkedin.com/in/dev-php-bordeaux/","https://www.malt.fr/profile/mickaelteixeira","https://github.com/mickaelteixeira"]},{"@type":"WebSite","@id":"https://mickaelteixeira.github.io/#site","url":"https://mickaelteixeira.github.io/","name":"Mickaël Teixeira","inLanguage":"fr-FR","publisher":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://mickaelteixeira.github.io/"},{"@type":"ListItem","position":2,"name":"Actualités","item":"https://mickaelteixeira.github.io/actualites/"},{"@type":"ListItem","position":3,"name":"Génériques PHP et TypePHP, deux pistes à suivre","item":"https://mickaelteixeira.github.io/actualites/php-generiques-typephp/"}]}]}</script>
+</head>
+<body>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header class="entete">
+<div class="entete__barre">
+<a class="entete__nom" href="/">Mickaël Teixeira</a>
+<nav class="entete__nav" aria-label="Navigation principale">
+<a href="/#missions">Missions</a>
+<a href="/#expertises">Expertises</a>
+<a href="/#yedra">Yedra</a>
+<a href="/#parcours">Parcours</a>
+<a href="/actualites/" aria-current="page">Actualités</a>
+</nav>
+<div class="entete__actions">
+<button class="theme" type="button" aria-label="Thème : automatique. Changer de thème" title="Thème : automatique"><svg data-icone="auto" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="8"></circle><path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"></path></svg><svg data-icone="clair" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><svg data-icone="sombre" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg></button>
+<a class="entete__contact" href="/#contact">Me contacter</a>
+<button class="entete__menu" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
+</div>
+</header>
+<nav id="menu-mobile" class="menu-mobile" aria-label="Menu" hidden>
+<a class="menu-mobile__lien" href="/#missions">Missions</a>
+<a class="menu-mobile__lien" href="/#expertises">Expertises</a>
+<a class="menu-mobile__lien" href="/#yedra">Yedra</a>
+<a class="menu-mobile__lien" href="/#parcours">Parcours</a>
+<a class="menu-mobile__lien" href="/actualites/">Actualités</a>
+<div class="menu-mobile__pied">
+<p>Toujours ouvert à une mission</p>
+<a href="/#contact">Me contacter</a>
+</div>
+</nav>
+<div style="container-type: inline-size; background: var(--fond); color: var(--encre)">
+<main id="contenu">
+<article aria-labelledby="titre-article">
+<header style="padding-block: clamp(48px, 6cqw, 96px) clamp(32px, 4cqw, 56px)">
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<nav aria-label="Fil d’Ariane" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--second)"><a href="/" style="color: var(--second)">Accueil</a> / <a href="/actualites/" style="color: var(--second)">Actualités</a> / <span aria-current="page">Écosystème PHP</span></nav>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--second)"><time datetime="2026-06-17">17 juin 2026</time> · 4 min de lecture · par <a href="/" rel="author" style="color: var(--second)">Mickaël Teixeira</a></p>
+<h1 id="titre-article" style="margin: 0; max-width: 1080px; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(40px, 5cqw, 76px); line-height: 1.03; letter-spacing: -0.03em">Génériques PHP et TypePHP, deux pistes à suivre. <span style="color: #9a9a9a">Le vote reste ouvert sur la RFC, tandis que le compilateur de Swoole explore le code natif.</span></h1>
+<p style="margin: 0; max-width: 760px; font-size: 22px; line-height: 1.55; color: var(--texte)">Les génériques font débat dans PHP, et TypePHP explore la compilation native. J’attends surtout de voir les garanties et la compatibilité dans des applications réelles.</p>
+</div>
+</header>
+<figure style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; margin: 0 auto">
+<div style="overflow: hidden; border-radius: 16px; border: 1px solid var(--trait); background: var(--fond)"><img src="/assets/img/actualites/php-generiques-typephp.svg" data-theme-img="clair" alt="Trame de lignes : un éléphant de profil, l’emblème de PHP" width="1200" height="675" fetchpriority="high" style="display: block; width: 100%; height: auto"><img src="/assets/img/actualites/php-generiques-typephp-nuit.svg" data-theme-img="sombre" alt="Trame de lignes : un éléphant de profil, l’emblème de PHP" width="1200" height="675" loading="lazy" style="display: block; width: 100%; height: auto"></div>
+</figure>
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; padding-block: clamp(48px, 5cqw, 80px) clamp(72px, 8cqw, 128px); display: flex; flex-wrap: wrap; gap: 48px clamp(48px, 7cqw, 112px); align-items: flex-start">
+<div style="flex: 999 1 560px; min-width: 0; max-width: 700px; display: flex; flex-direction: column; gap: 24px; font-size: 18px; line-height: 1.75; color: var(--texte)">
+<p style="margin: 0">Les génériques dans PHP et la compilation native avec TypePHP touchent à deux sujets que j’ai envie de suivre. Le premier concerne une proposition pour le langage. Le second explore une autre façon d’exécuter du code. Au 17 juin 2026, je regarde ces deux pistes avec la même attente : comprendre ce qu’elles apportent à une application réelle.</p>
+<h2 style="margin: 24px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; color: var(--encre)">Une proposition de génériques encore au vote.</h2>
+<p style="margin: 0">Le vote sur la RFC Bound-Erased Generic Types a commencé le 14 juin et doit se terminer le 28 juin. Il est donc encore ouvert. Dans les échanges, certains votants souhaitent des génériques tout en refusant cette proposition. Le choix de l’implémentation fait pleinement partie du débat.</p>
+<p style="margin: 0">Les génériques permettent de décrire un type paramétré par un autre. Une collection peut ainsi préciser le type de ses éléments. La RFC propose un effacement vers les bornes déclarées à l’exécution. Elle combine plusieurs contrôles avec le travail des outils d’analyse statique.</p>
+<figure style="margin: 8px 0; display: flex; flex-direction: column; gap: 10px"><div style="border-radius: 12px; background: var(--panneau); overflow: hidden"><div style="padding: 10px 16px; border-bottom: 1px solid #2a2a2a; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #a3a3a3">php</div><pre style="margin: 0; padding: 18px 16px; overflow-x: auto; font-family: 'JetBrains Mono', monospace; font-size: 14px; line-height: 1.65; color: #ebebeb"><code>function identity&lt;T&gt;(T $value): T {
+    return $value;
+}</code></pre></div><figcaption style="display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 14px; line-height: 1.5; color: var(--second)"><span>Syntaxe de la RFC consultée en novembre 2026, proposée pour identity ; elle ne fait pas partie du PHP standard disponible.</span><a href="https://wiki.php.net/rfc/bound_erased_generic_types" style="color: var(--accent); text-underline-offset: 3px">Source</a></figcaption></figure>
+<p style="margin: 0">Cet exemple donne une idée de ce que l’on cherche à exprimer. Le paramètre T relie le type de la valeur reçue à celui de la valeur renvoyée. La fonction ne se contente donc pas d’annoncer une sortie générale : la proposition permet de décrire une relation entre l’entrée et la sortie. C’est cette relation qui m’intéresse quand je pense aux collections et aux fonctions que je voudrais rendre plus faciles à comprendre.</p>
+<p style="margin: 0">Pour évaluer cette syntaxe dans un projet, je partirais d’un exemple assez petit pour pouvoir suivre les types à la main. Une valeur entre, passe par une collection puis ressort. Je voudrais savoir ce que le langage contrôle et ce que l’analyse statique doit encore établir. Cette répartition me paraît plus importante que l’apparence de la déclaration. Elle détermine les erreurs que je peux espérer repérer avant l’exécution.</p>
+<aside style="margin: 8px 0; padding: 24px; background: var(--fond-2); border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-weight: 600; font-size: 17px; color: var(--encre)">Lire cet extrait comme une proposition.</p><p style="margin: 0; font-size: 17px; line-height: 1.65; color: var(--texte)">Cette syntaxe appartient à la RFC. Je ne la copierais pas dans une application PHP courante comme une fonction déjà disponible. Elle sert ici à comprendre ce que la proposition veut permettre d’écrire.</p></aside>
+<p style="margin: 0">C’est sur ces garanties que je veux juger une nouvelle syntaxe. Comment les types sont-ils contrôlés, et à quel moment ? Ce sont des questions concrètes pour le code que l’on écrit. La discussion autour de cette RFC porte sur une proposition précise ; le calendrier de futurs génériques natifs reste ouvert.</p>
+<h2 style="margin: 24px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; color: var(--encre)">TypePHP passe par la compilation.</h2>
+<p style="margin: 0">TypePHP, le projet de Swoole, se présente comme un compilateur AOT, pour Ahead-Of-Time. Il passe par une génération de C++ avant de produire du code machine natif. Cette piste de compilation me donne envie de voir ce qu’elle permet sur une application.</p>
+<p style="margin: 0">J’attends des essais reproductibles. Pour moi, un résultat sur un calcul isolé apporte moins qu’une mesure sur une application Symfony ou Laravel. Je veux comprendre le gain dans ce contexte, avec ses dépendances et les comportements dont elle a besoin au quotidien.</p>
+<h2 style="margin: 24px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; color: var(--encre)">La compatibilité décidera de mon choix.</h2>
+<p style="margin: 0">L’objectif de compatibilité avec l’écosystème est important. Pour envisager une migration, je voudrais surtout savoir comment le code existant se comporte. Les dépendances utilisées par l’application doivent entrer dans l’évaluation, au même titre que les performances.</p>
+<p style="margin: 0">Du côté de TypePHP, mon premier essai souhaité serait tout aussi modeste. Je choisirais une portion d’application identifiable, avec ses entrées et son résultat attendu, puis j’examinerais le parcours de compilation et les dépendances utilisées. Je voudrais pouvoir refaire la mesure et comprendre les écarts. Un changement d’exécution devient intéressant pour moi quand je sais décrire ce qu’il améliore et ce qu’il demande en échange.</p>
+<p style="margin: 0">Cette façon de procéder laisse de la place à l’envie d’expérimenter. Je n’ai pas besoin de choisir immédiatement un camp pour suivre les deux projets. Je veux surtout garder les questions de typage et celles de compilation assez claires pour pouvoir apprendre quelque chose de chaque essai.</p>
+<p style="margin: 0">J’ai donc hâte de voir des applications réelles mises à l’essai avec TypePHP. Côté PHP, je suivrai le résultat du vote et les discussions sur les garanties de types. Ces deux pistes se jugeront sur ce qu’elles permettent de faire concrètement. C’est là que se décidera mon envie de les utiliser dans un projet.</p>
+<figure style="margin: 16px 0; display: flex; flex-direction: column; gap: 10px"><div style="padding: 10px; background: var(--fond-2); border-radius: 14px"><div style="overflow: hidden; border-radius: 8px; border: 1px solid var(--trait); background: var(--fond)"><img src="/assets/img/actualites/captures/php-rfc-vote.webp" alt="Fin du tableau de vote de la RFC Bound-Erased Generic Types sur le wiki PHP : résultat final 7, 19 et 10, scrutin clos." width="1065" height="603" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></div></div><figcaption style="display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 14px; line-height: 1.5; color: var(--second)"><span>Le vote clos le 28 juin 2026 : 7 pour, 19 contre, 10 abstentions.</span><a href="https://wiki.php.net/rfc/bound_erased_generic_types" style="color: var(--accent); text-underline-offset: 3px">Voir la page</a></figcaption></figure>
+<section aria-label="Et depuis" style="margin-top: 24px; padding: 24px; background: var(--fond-2); border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--accent)">Et depuis</p><p style="margin: 0; font-size: 17px; line-height: 1.65; color: var(--encre)">Le vote s’est clos le 28 juin 2026. La RFC a été rejetée, avec 7 voix pour, 19 contre et 10 abstentions.</p></section>
+</div>
+<aside aria-label="À propos de cet article" style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 28px; font-size: 15px">
+<figure style="margin: 0; padding: 24px; border: 1px solid var(--trait); border-radius: 12px; display: flex; flex-direction: column; gap: 14px"><figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)">En discussion sur LinkedIn</figcaption><blockquote style="margin: 0; color: var(--encre); font-size: 16px; line-height: 1.6"><p style="margin: 0">« J&#x27;ai hâte de voir les premiers benchmarks concrets et la compatibilité réelle avec Laravel/Symfony. »</p></blockquote><a href="https://www.linkedin.com/feed/update/urn:li:activity:7473037724774641664/" style="align-self: start; display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border: 1px solid var(--trait-fort); border-radius: 8px; color: var(--encre); text-decoration: none; font-weight: 500">Rejoindre la discussion</a></figure>
+<div style="display: flex; flex-direction: column; gap: 10px"><h2 style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 400; color: var(--second)">Sources</h2><ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column"><li style="padding-block: 10px; border-top: 1px solid var(--trait)"><a href="https://wiki.php.net/rfc/bound_erased_generic_types" style="color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere">PHP — RFC Bound-Erased Generic Types et vote</a></li><li style="padding-block: 10px; border-top: 1px solid var(--trait)"><a href="https://discourse.thephp.foundation/t/php-dev-vote-rfc-bound-erased-generic-types/5554" style="color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere">PHP Internals — ouverture du vote le 14 juin</a></li><li style="padding-block: 10px; border-top: 1px solid var(--trait)"><a href="https://github.com/swoole/typephp" style="color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere">Swoole — dépôt et documentation TypePHP</a></li></ol></div>
+<ul aria-label="Mots-clés" style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px"><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--fond-2); color: var(--texte)">PHP</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--fond-2); color: var(--texte)">génériques</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--fond-2); color: var(--texte)">TypePHP</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--fond-2); color: var(--texte)">Swoole</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--fond-2); color: var(--texte)">Symfony</li></ul>
+<div style="padding-top: 20px; border-top: 1px solid var(--encre); display: flex; flex-direction: column; gap: 6px">
+<b style="font-weight: 600; color: var(--encre)">Mickaël Teixeira</b>
+<span style="color: var(--second)">Développeur Symfony et Sylius, freelance à Bordeaux. Fondateur de Yedra.</span>
+<a href="/#missions" style="color: var(--accent); font-weight: 500; text-underline-offset: 4px">Voir les missions</a>
+</div>
+</aside>
+</div>
+</article>
+<section aria-labelledby="titre-aussi" style="padding-bottom: clamp(72px, 8cqw, 128px)">
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; padding-top: 24px; border-top: 1px solid var(--encre)">
+<h2 id="titre-aussi" style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 34px; letter-spacing: -0.02em">À lire aussi.</h2>
+<a href="/actualites/" style="color: var(--accent); font-weight: 500; text-underline-offset: 4px">Toutes les actualités</a>
+</div>
+<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 48px 32px"><li><a href="/actualites/sylius-prestashop-rapprochement/" style="display: flex; flex-direction: column; gap: 14px; color: var(--encre); text-decoration: none">
+<span style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid var(--trait); background: var(--fond)"><img src="/assets/img/actualites/sylius-prestashop-rapprochement-carte.webp" data-theme-img="clair" alt="Trame de lignes : un cygne qui glisse sur une eau sombre" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"><img src="/assets/img/actualites/sylius-prestashop-rapprochement-nuit-carte.webp" data-theme-img="sombre" alt="Trame de lignes : un cygne qui glisse sur une eau sombre" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)"><time datetime="2025-12-11">11 décembre 2025</time> · Écosystème PHP</span>
+<span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.14; letter-spacing: -0.02em">Sylius dans le rachat de PrestaShop.</span>
+<span style="font-size: 15px; line-height: 1.6; color: var(--texte)">Le 11 décembre 2025, Sylius participe à l’annonce du rachat de PrestaShop avec cyber_Folks et BitBag. Voir cette solution prendre cette place, ça me fait quelque chose.</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)">4 min de lecture</span>
+</a></li><li><a href="/actualites/yedra-crm-ecoles/" style="display: flex; flex-direction: column; gap: 14px; color: var(--encre); text-decoration: none">
+<span style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid var(--trait); background: var(--fond)"><img src="/assets/img/actualites/yedra-crm-ecoles-carte.webp" data-theme-img="clair" alt="Trame de lignes : une salle de classe vide, au matin" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"><img src="/assets/img/actualites/yedra-crm-ecoles-nuit-carte.webp" data-theme-img="sombre" alt="Trame de lignes : une salle de classe vide, au matin" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)"><time datetime="2026-08-13">13 août 2026</time> · Yedra</span>
+<span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.14; letter-spacing: -0.02em">Yedra. Et pour une fois, je suis allé au bout.</span>
+<span style="font-size: 15px; line-height: 1.6; color: var(--texte)">Je construis Yedra pour réunir le fichier des familles, les demandes et les échanges avec les parents. Six modules, des choix concrets, et une ouverture prévue fin 2026 avec des écoles pilotes.</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)">7 min de lecture</span>
+</a></li><li><a href="/actualites/playwright-mcp-design-frontend/" style="display: flex; flex-direction: column; gap: 14px; color: var(--encre); text-decoration: none">
+<span style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid var(--trait); background: var(--fond)"><img src="/assets/img/actualites/playwright-mcp-design-frontend-carte.webp" data-theme-img="clair" alt="Trame de lignes : une scène de théâtre vide sous un projecteur" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"><img src="/assets/img/actualites/playwright-mcp-design-frontend-nuit-carte.webp" data-theme-img="sombre" alt="Trame de lignes : une scène de théâtre vide sous un projecteur" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)"><time datetime="2026-07-20">20 juillet 2026</time> · Outils</span>
+<span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.14; letter-spacing: -0.02em">Playwright, aussi pour le design.</span>
+<span style="font-size: 15px; line-height: 1.6; color: var(--texte)">Un frontend peut fonctionner et rester loin de ce que j’avais en tête. Avec Playwright MCP, j’intègre le navigateur à ma méthode de travail avec Claude.</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--second)">4 min de lecture</span>
+</a></li></ul>
+</div>
+</section>
+</main>
+<section aria-labelledby="titre-suite" style="container-type: inline-size; background: var(--panneau); color: #ebebeb">
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; padding-block: clamp(64px, 7cqw, 112px) 40px; display: flex; flex-direction: column; gap: clamp(48px, 5cqw, 72px)">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 32px 64px">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #a3a3a3">Développeur Symfony et Sylius · Bordeaux</p>
+<h2 id="titre-suite" style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(36px, 4.2cqw, 64px); line-height: 1.04; letter-spacing: -0.03em; color: #ffffff">Une plateforme à faire évoluer ? <span style="color: #8a8a8a">Parlons-en.</span></h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="/#contact" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; background: #8fa2ff; color: #171717; border-radius: 8px; text-decoration: none; font-weight: 500">Proposer une mission</a>
+<a href="https://www.linkedin.com/in/dev-php-bordeaux/" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border: 1px solid #5c5c5c; color: #ffffff; border-radius: 8px; text-decoration: none; font-weight: 500">Suivre sur LinkedIn</a>
+</div>
+</div>
+<footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 24px; border-top: 1px solid #303030; font-size: 14px; color: #a3a3a3">
+<span>© 2026 Mickaël Teixeira · entrepreneur individuel · Bordeaux</span>
+<nav aria-label="Pied de page" style="display: flex; flex-wrap: wrap; gap: 24px"><a href="/" style="color: #a3a3a3">Accueil</a><a href="/actualites/" style="color: #a3a3a3">Actualités</a><a href="/mentions-legales/" style="color: #a3a3a3">Mentions légales</a><a href="https://www.linkedin.com/in/dev-php-bordeaux/" style="color: #a3a3a3">LinkedIn</a></nav>
+</footer>
+</div>
+</section>
+</div>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

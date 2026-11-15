@@ -1,0 +1,66 @@
+{
+ "claw-readme": {
+  "image": "/assets/img/actualites/captures/claw-readme.webp",
+  "l": 857,
+  "h": 318,
+  "legende": "Le README de Claw Code le présente désormais comme une pièce de musée entretenue par des agents.",
+  "alt": "Encadré « Important » du README de Claw Code : le dépôt se présente comme une exposition de musée maintenue par des agents, pas comme un produit de production.",
+  "url": "https://github.com/ultraworkers/claw-code"
+ },
+ "php-rfc-vote": {
+  "image": "/assets/img/actualites/captures/php-rfc-vote.webp",
+  "l": 1065,
+  "h": 603,
+  "legende": "Le vote clos le 28 juin 2026 : 7 pour, 19 contre, 10 abstentions.",
+  "alt": "Fin du tableau de vote de la RFC Bound-Erased Generic Types sur le wiki PHP : résultat final 7, 19 et 10, scrutin clos.",
+  "url": "https://wiki.php.net/rfc/bound_erased_generic_types"
+ },
+ "playwright-readme": {
+  "image": "/assets/img/actualites/captures/playwright-readme.webp",
+  "l": 898,
+  "h": 658,
+  "legende": "Le README de Playwright MCP : l’arbre d’accessibilité plutôt que les captures, et le CLI conseillé aux agents de code.",
+  "alt": "Début du README de Playwright MCP sur GitHub : présentation du serveur, comparaison entre Playwright MCP et Playwright CLI, fonctionnalités clés.",
+  "url": "https://github.com/microsoft/playwright-mcp"
+ },
+ "sylius-rapprochement": {
+  "image": "/assets/img/actualites/captures/sylius-rapprochement.webp",
+  "l": 943,
+  "h": 281,
+  "legende": "L’annonce sur le blog de Sylius : un investissement commun de cyber_Folks, Sylius et BitBag.",
+  "alt": "Titre de l’annonce sur le blog de Sylius : « Acquiring PrestaShop through a joint investment by cyber_Folks, Sylius, and BitBag ».",
+  "url": "https://sylius.com/blog/ecosystem/month-of-sylius-december-2025/"
+ },
+ "yedra-accueil": {
+  "image": "/assets/img/actualites/captures/yedra-accueil.webp",
+  "l": 943,
+  "h": 446,
+  "legende": "yedra.app : la liste d’attente est ouverte, l’ouverture prévue fin 2026.",
+  "alt": "Haut de la page d’accueil de yedra.app : « Le CRM des écoles. », le bouton « Rejoindre la liste d’attente » et la mention « ouverture fin 2026 · embarquement des écoles pilotes ».",
+  "url": "https://yedra.app"
+ },
+ "yedra-automatisations": {
+  "image": "/assets/img/actualites/captures/yedra-automatisations.webp",
+  "l": 1204,
+  "h": 632,
+  "legende": "Le parcours « Bienvenue aux nouvelles familles » sur la toile.",
+  "alt": "Toile du parcours « Bienvenue aux nouvelles familles » : déclencheur « Demande approuvée », attente d’un jour, e-mail « Bienvenue parmi nous », puis condition sur l’étiquette « Demi-pension ».",
+  "url": "https://yedra.app"
+ },
+ "yedra-import": {
+  "image": "/assets/img/actualites/captures/yedra-import.webp",
+  "l": 1204,
+  "h": 632,
+  "legende": "La simulation d’import avant toute écriture.",
+  "alt": "Simulation d’import : 1 034 fiches créées, 19 mises à jour, 231 inchangées, 402 foyers créés et 86 fratries reconnues. Le bandeau « Réversible » indique un délai de 30 jours pour annuler.",
+  "url": "https://yedra.app"
+ },
+ "yedra-rgpd": {
+  "image": "/assets/img/actualites/captures/yedra-rgpd.webp",
+  "l": 601,
+  "h": 507,
+  "legende": "La page « Vos droits sur vos données » côté famille.",
+  "alt": "Page « Vos droits sur vos données » : obtenir une copie, faire corriger une information, choisir les envois sujet par sujet et demander l’effacement. Réponse de l’établissement annoncée sous un mois.",
+  "url": "https://yedra.app"
+ }
+}
