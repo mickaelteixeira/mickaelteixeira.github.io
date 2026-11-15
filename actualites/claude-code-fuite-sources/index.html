@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Une source map ouvre le capot de Claude Code</title>
+<meta name="description" content="Claude Code sur npm : une source map expose le code client. Undercover, Buddy et Kairos apparaissent dans les analyses des fonctions internes.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://mickaelteixeira.github.io/actualites/claude-code-fuite-sources/">
+<meta name="author" content="Mickaël Teixeira">
+<meta name="google-site-verification" content="wsdzIL0Lmsbtvz1F2wSa2pzjxPZG2HtzG2G24YiEvAY">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="alternate" type="application/atom+xml" title="Actualités de Mickaël Teixeira" href="/actualites/flux.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Mickaël Teixeira">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Une source map ouvre le capot de Claude Code">
+<meta property="og:description" content="Claude Code sur npm : une source map expose le code client. Undercover, Buddy et Kairos apparaissent dans les analyses des fonctions internes.">
+<meta property="og:url" content="https://mickaelteixeira.github.io/actualites/claude-code-fuite-sources/">
+<meta property="og:image" content="https://mickaelteixeira.github.io/assets/img/partage/article-claude-code-fuite-sources.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Trame de lignes : un meuble à plans dont un tiroir est resté ouvert">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Une source map ouvre le capot de Claude Code">
+<meta name="twitter:description" content="Claude Code sur npm : une source map expose le code client. Undercover, Buddy et Kairos apparaissent dans les analyses des fonctions internes.">
+<meta name="twitter:image" content="https://mickaelteixeira.github.io/assets/img/partage/article-claude-code-fuite-sources.jpg">
+<link rel="preload" href="/assets/fonts/inter-400-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-tight-300-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<meta property="article:published_time" content="2026-03-31">
+<meta property="article:modified_time" content="2026-11-15">
+<meta property="article:author" content="https://mickaelteixeira.github.io/">
+<meta property="article:section" content="Outils">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://mickaelteixeira.github.io/actualites/claude-code-fuite-sources/#article","headline":"Une source map ouvre le capot de Claude Code","alternativeHeadline":"L’erreur de publication sur npm expose le code client et révèle des fonctions internes.","description":"Claude Code sur npm : une source map expose le code client. Undercover, Buddy et Kairos apparaissent dans les analyses des fonctions internes.","datePublished":"2026-03-31","dateModified":"2026-11-15","inLanguage":"fr-FR","author":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"},"publisher":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"},"mainEntityOfPage":"https://mickaelteixeira.github.io/actualites/claude-code-fuite-sources/","image":["https://mickaelteixeira.github.io/assets/img/partage/article-claude-code-fuite-sources.jpg","https://mickaelteixeira.github.io/assets/img/actualites/claude-code-fuite-sources-carte.webp"],"articleSection":"Outils","keywords":["Claude Code","Anthropic","npm","source map"],"wordCount":658,"citation":["https://github.com/pankaj28843/understanding-claude-code","https://github.com/alex000kim/claude-code/blob/main/src/utils/undercover.ts","https://www.axios.com/2026/03/31/anthropic-leaked-source-code-ai","https://docs.npmjs.com/cli/v11/configuring-npm/package-json/","https://docs.npmjs.com/cli/v11/commands/npm-pack/"],"isPartOf":{"@id":"https://mickaelteixeira.github.io/actualites/#blog"},"discussionUrl":"https://www.linkedin.com/feed/update/urn:li:activity:7444744026047598594/"},{"@type":"Person","@id":"https://mickaelteixeira.github.io/#mickael-teixeira","name":"Mickaël Teixeira","givenName":"Mickaël","familyName":"Teixeira","jobTitle":"Développeur Symfony et Sylius freelance","url":"https://mickaelteixeira.github.io/","image":"https://mickaelteixeira.github.io/assets/img/mickael-teixeira-developpeur-symfony-bordeaux.webp","description":"Développeur PHP depuis 2009, freelance à Bordeaux depuis 2025 : Symfony, Sylius, API Platform et Laravel. Fondateur de Yedra, le CRM des écoles.","address":{"@type":"PostalAddress","addressLocality":"Bordeaux","addressRegion":"Nouvelle-Aquitaine","addressCountry":"FR"},"alumniOf":{"@type":"EducationalOrganization","name":"ETNA","url":"https://etna.io/"},"knowsAbout":["PHP","Symfony","Sylius","API Platform","Laravel","E-commerce","Architecture hexagonale","Domain-Driven Design","Angular","Elasticsearch","RabbitMQ","Docker","GitLab CI","Tests automatisés"],"knowsLanguage":["fr","en"],"sameAs":["https://www.linkedin.com/in/dev-php-bordeaux/","https://www.malt.fr/profile/mickaelteixeira","https://github.com/mickaelteixeira"]},{"@type":"WebSite","@id":"https://mickaelteixeira.github.io/#site","url":"https://mickaelteixeira.github.io/","name":"Mickaël Teixeira","inLanguage":"fr-FR","publisher":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://mickaelteixeira.github.io/"},{"@type":"ListItem","position":2,"name":"Actualités","item":"https://mickaelteixeira.github.io/actualites/"},{"@type":"ListItem","position":3,"name":"Une source map ouvre le capot de Claude Code","item":"https://mickaelteixeira.github.io/actualites/claude-code-fuite-sources/"}]}]}</script>
+</head>
+<body>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header class="entete">
+<div class="entete__barre">
+<a class="entete__nom" href="/">Mickaël Teixeira</a>
+<nav class="entete__nav" aria-label="Navigation principale">
+<a href="/#missions">Missions</a>
+<a href="/#expertises">Expertises</a>
+<a href="/#yedra">Yedra</a>
+<a href="/#parcours">Parcours</a>
+<a href="/actualites/" aria-current="page">Actualités</a>
+</nav>
+<a class="entete__contact" href="/#contact">Me contacter</a>
+<button class="entete__menu" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
+</header>
+<nav id="menu-mobile" class="menu-mobile" aria-label="Menu" hidden>
+<a class="menu-mobile__lien" href="/#missions">Missions</a>
+<a class="menu-mobile__lien" href="/#expertises">Expertises</a>
+<a class="menu-mobile__lien" href="/#yedra">Yedra</a>
+<a class="menu-mobile__lien" href="/#parcours">Parcours</a>
+<a class="menu-mobile__lien" href="/actualites/">Actualités</a>
+<div class="menu-mobile__pied">
+<p>Toujours ouvert à une mission</p>
+<a href="/#contact">Me contacter</a>
+</div>
+</nav>
+<div style="container-type: inline-size; background: #ffffff; color: #171717">
+<main id="contenu">
+<article aria-labelledby="titre-article">
+<header style="padding-block: clamp(48px, 6cqw, 96px) clamp(32px, 4cqw, 56px)">
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<nav aria-label="Fil d’Ariane" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #5c5c5c"><a href="/" style="color: #5c5c5c">Accueil</a> / <a href="/actualites/" style="color: #5c5c5c">Actualités</a> / <span aria-current="page">Outils</span></nav>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #5c5c5c"><time datetime="2026-03-31">31 mars 2026</time> · 4 min de lecture · par <a href="/" rel="author" style="color: #5c5c5c">Mickaël Teixeira</a></p>
+<h1 id="titre-article" style="margin: 0; max-width: 1080px; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(40px, 5cqw, 76px); line-height: 1.03; letter-spacing: -0.03em">Une source map ouvre le capot de Claude Code. <span style="color: #9a9a9a">L’erreur de publication sur npm expose le code client et révèle des fonctions internes.</span></h1>
+<p style="margin: 0; max-width: 760px; font-size: 22px; line-height: 1.55; color: #3d3d3d">Le 31 mars 2026, une livraison de Claude Code sur npm expose du code interne. Une source map donne accès aux coulisses du client en ligne de commande d’Anthropic.</p>
+</div>
+</header>
+<figure style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; margin: 0 auto">
+<div style="overflow: hidden; border-radius: 16px; border: 1px solid #ebebeb; background: #ffffff"><img src="/assets/img/actualites/claude-code-fuite-sources.svg" alt="Trame de lignes : un meuble à plans dont un tiroir est resté ouvert" width="1200" height="675" fetchpriority="high" style="display: block; width: 100%; height: auto"></div>
+</figure>
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; padding-block: clamp(48px, 5cqw, 80px) clamp(72px, 8cqw, 128px); display: flex; flex-wrap: wrap; gap: 48px clamp(48px, 7cqw, 112px); align-items: flex-start">
+<div style="flex: 999 1 560px; min-width: 0; max-width: 700px; display: flex; flex-direction: column; gap: 24px; font-size: 18px; line-height: 1.75; color: #3d3d3d">
+<p style="margin: 0">Un fichier de débogage dans une livraison npm, et le code interne de Claude Code devient lisible. Le 31 mars 2026, l’agent en ligne de commande d’Anthropic se retrouve ainsi au centre des analyses. Ce qui me frappe, c’est le point de départ de l’incident : un fichier qui accompagne le programme distribué.</p>
+<h2 style="margin: 24px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; color: #171717">Une source map d’environ 60 Mo.</h2>
+<p style="margin: 0">Le chercheur Chaofan Shou signale une source map dans la version 2.1.88. Ce type de fichier relie le programme transformé pour sa distribution à son code d’origine. Les analyses décrivent ici un fichier d’environ 60 Mo, contenant du TypeScript et faisant aussi référence à une archive.</p>
+<p style="margin: 0">Le code exposé est celui du client : le programme qui dialogue avec le modèle et organise ses outils. Les modèles Claude, leurs données d’entraînement et l’infrastructure backend sont d’autres parties du système. C’est l’assemblage de l’agent que cette publication permet d’examiner.</p>
+<h2 style="margin: 24px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; color: #171717">Undercover vise les contributions internes.</h2>
+<p style="margin: 0">Anthropic indique qu’aucune donnée sensible de clients ni aucun identifiant d’accès n’ont été exposés. Pour moi, l’intérêt technique de cet incident tient aux fonctions internes qui apparaissent dans les analyses et à la manière dont elles s’insèrent dans le client.</p>
+<p style="margin: 0">Parmi elles, le fichier Undercover décrit des instructions pour les versions internes d’Anthropic lors de contributions publiques. Elles visent à éviter la divulgation d’informations internes et prévoient le retrait des mentions d’attribution à l’IA. C’est un aperçu des consignes associées à ces contributions.</p>
+<h2 style="margin: 24px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; color: #171717">Regarder le paquet avant de le livrer.</h2>
+<p style="margin: 0">Le point qui me paraît transposable à nos propres outils, c’est le contenu du paquet livré. La documentation npm permet de définir un champ files dans package.json pour sélectionner les fichiers à inclure. Pour une petite bibliothèque dont la sortie JavaScript est dans dist, on peut par exemple limiter cette sélection aux fichiers JavaScript. Voici un exemple à adapter à la structure réelle du projet.</p>
+<figure style="margin: 8px 0; display: flex; flex-direction: column; gap: 10px"><div style="border-radius: 12px; background: #171717; overflow: hidden"><div style="padding: 10px 16px; border-bottom: 1px solid #2a2a2a; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #a3a3a3">json</div><pre style="margin: 0; padding: 18px 16px; overflow-x: auto; font-family: 'JetBrains Mono', monospace; font-size: 14px; line-height: 1.65; color: #ebebeb"><code>{
+  &quot;files&quot;: [&quot;dist/**/*.js&quot;]
+}</code></pre></div><figcaption style="display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 14px; line-height: 1.5; color: #5c5c5c"><span>Exemple de champ files dans package.json : sélectionner les fichiers JavaScript de dist.</span><a href="https://docs.npmjs.com/cli/v11/configuring-npm/package-json/" style="color: #2f4bff; text-underline-offset: 3px">Source</a></figcaption></figure>
+<p style="margin: 0">Ce choix laisse les fichiers .map hors de cette sélection. npm prévoit toutefois des fichiers toujours inclus, notamment package.json, le README, la licence et les fichiers désignés par main ou bin. Je regarderais donc le paquet obtenu avant d’en conclure que la sélection répond au besoin. Une règle écrite dans la configuration et le contenu réellement distribué sont deux choses que je veux rapprocher.</p>
+<figure style="margin: 8px 0; display: flex; flex-direction: column; gap: 10px"><div style="border-radius: 12px; background: #171717; overflow: hidden"><div style="padding: 10px 16px; border-bottom: 1px solid #2a2a2a; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #a3a3a3">sh</div><pre style="margin: 0; padding: 18px 16px; overflow-x: auto; font-family: 'JetBrains Mono', monospace; font-size: 14px; line-height: 1.65; color: #ebebeb"><code>npm pack --dry-run</code></pre></div><figcaption style="display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 14px; line-height: 1.5; color: #5c5c5c"><span>Afficher ce que npm préparerait pour le paquet du dossier courant.</span><a href="https://docs.npmjs.com/cli/v11/commands/npm-pack/" style="color: #2f4bff; text-underline-offset: 3px">Source</a></figcaption></figure>
+<aside style="margin: 8px 0; padding: 24px; background: #f5f5f5; border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-weight: 600; font-size: 17px; color: #171717">Relire ce qui part.</p><p style="margin: 0; font-size: 17px; line-height: 1.65; color: #3d3d3d">Avant une livraison, je veux regarder la liste des fichiers du paquet. C’est un contrôle concret, à faire sur le résultat de la préparation, avec une attention particulière aux fichiers de débogage.</p></aside>
+<p style="margin: 0">Cette lecture devrait suivre le chemin de livraison. Si le paquet est préparé après une compilation, c’est à cet endroit que je voudrais examiner les fichiers. Mon objectif serait simple : retrouver les éléments nécessaires à l’usage prévu et comprendre la présence de chacun des autres. Un fichier de débogage peut être utile dans un contexte donné ; sa diffusion devrait correspondre à une décision explicite.</p>
+<p style="margin: 0">C’est aussi ce qui rend l’incident intéressant au-delà de Claude Code. Le problème de départ tient à la frontière entre ce qui aide à construire un programme et ce qui doit accompagner sa distribution. J’y vois une bonne raison de donner à cette frontière une étape de revue à part entière. Le contenu final du paquet mérite autant d’attention que le code que l’on vient de modifier.</p>
+<h2 style="margin: 24px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; color: #171717">Buddy et Kairos apparaissent dans le code.</h2>
+<p style="margin: 0">Les analyses repèrent aussi Buddy, un compagnon virtuel, et Kairos, un mode d’assistant persistant avec consolidation de mémoire. Ces éléments donnent un aperçu de fonctions internes. À cette date, leur présence dans le code ne donne pas de calendrier de disponibilité publique.</p>
+<p style="margin: 0">J’aime comprendre comment un agent est assemblé : le client, les outils qu’il organise et les consignes qui l’accompagnent. Cette publication involontaire en laisse voir une partie. L’ironie est assez forte pour Anthropic, qui dévoile ainsi davantage de son fonctionnement qu’il ne l’avait prévu. Cette exposition involontaire du code ne constitue pas une ouverture du logiciel. Le code exposé offre un aperçu technique ; pour les fonctions publiques, j’attends les annonces de produit.</p>
+
+</div>
+<aside aria-label="À propos de cet article" style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 28px; font-size: 15px">
+<figure style="margin: 0; padding: 24px; border: 1px solid #e5e5e5; border-radius: 12px; display: flex; flex-direction: column; gap: 14px"><figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5c5c5c">En discussion sur LinkedIn</figcaption><blockquote style="margin: 0; color: #171717; font-size: 16px; line-height: 1.6"><p style="margin: 0">« Ironiquement, ça rend Anthropic un peu plus « open » qu&#x27;ils ne l&#x27;auraient voulu. »</p></blockquote><a href="https://www.linkedin.com/feed/update/urn:li:activity:7444744026047598594/" style="align-self: start; display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border: 1px solid #b3b3b3; border-radius: 8px; color: #171717; text-decoration: none; font-weight: 500">Rejoindre la discussion</a></figure>
+<div style="display: flex; flex-direction: column; gap: 10px"><h2 style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 400; color: #5c5c5c">Sources</h2><ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column"><li style="padding-block: 10px; border-top: 1px solid #e5e5e5"><a href="https://github.com/pankaj28843/understanding-claude-code" style="color: #2f4bff; text-underline-offset: 3px; overflow-wrap: anywhere">Analyse technique de la publication npm par pankaj28843</a></li><li style="padding-block: 10px; border-top: 1px solid #e5e5e5"><a href="https://github.com/alex000kim/claude-code/blob/main/src/utils/undercover.ts" style="color: #2f4bff; text-underline-offset: 3px; overflow-wrap: anywhere">Undercover — fichier diffusé comme issu des sources exposées</a></li><li style="padding-block: 10px; border-top: 1px solid #e5e5e5"><a href="https://www.axios.com/2026/03/31/anthropic-leaked-source-code-ai" style="color: #2f4bff; text-underline-offset: 3px; overflow-wrap: anywhere">Axios — déclaration d’Anthropic sur le périmètre de l’incident</a></li><li style="padding-block: 10px; border-top: 1px solid #e5e5e5"><a href="https://docs.npmjs.com/cli/v11/configuring-npm/package-json/" style="color: #2f4bff; text-underline-offset: 3px; overflow-wrap: anywhere">npm : champ files, inclusions obligatoires et .npmignore</a></li><li style="padding-block: 10px; border-top: 1px solid #e5e5e5"><a href="https://docs.npmjs.com/cli/v11/commands/npm-pack/" style="color: #2f4bff; text-underline-offset: 3px; overflow-wrap: anywhere">npm : commande pack et option dry-run</a></li></ol></div>
+<ul aria-label="Mots-clés" style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px"><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: #f5f5f5; color: #3d3d3d">Claude Code</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: #f5f5f5; color: #3d3d3d">Anthropic</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: #f5f5f5; color: #3d3d3d">npm</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: #f5f5f5; color: #3d3d3d">source map</li></ul>
+<div style="padding-top: 20px; border-top: 1px solid #171717; display: flex; flex-direction: column; gap: 6px">
+<b style="font-weight: 600; color: #171717">Mickaël Teixeira</b>
+<span style="color: #5c5c5c">Développeur Symfony et Sylius, freelance à Bordeaux. Fondateur de Yedra.</span>
+<a href="/#missions" style="color: #2f4bff; font-weight: 500; text-underline-offset: 4px">Voir les missions</a>
+</div>
+</aside>
+</div>
+</article>
+<section aria-labelledby="titre-aussi" style="padding-bottom: clamp(72px, 8cqw, 128px)">
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; padding-top: 24px; border-top: 1px solid #171717">
+<h2 id="titre-aussi" style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 34px; letter-spacing: -0.02em">À lire aussi.</h2>
+<a href="/actualites/" style="color: #2f4bff; font-weight: 500; text-underline-offset: 4px">Toutes les actualités</a>
+</div>
+<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 48px 32px"><li><a href="/actualites/playwright-mcp-design-frontend/" style="display: flex; flex-direction: column; gap: 14px; color: #171717; text-decoration: none">
+<span style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid #ebebeb; background: #ffffff"><img src="/assets/img/actualites/playwright-mcp-design-frontend-carte.webp" alt="Trame de lignes : une scène de théâtre vide sous un projecteur" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5c5c5c"><time datetime="2026-07-20">20 juillet 2026</time> · Outils</span>
+<span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.14; letter-spacing: -0.02em">Playwright, aussi pour le design.</span>
+<span style="font-size: 15px; line-height: 1.6; color: #3d3d3d">Un frontend peut fonctionner et rester loin de ce que j’avais en tête. Avec Playwright MCP, j’intègre le navigateur à ma méthode de travail avec Claude.</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5c5c5c">4 min de lecture</span>
+</a></li><li><a href="/actualites/dwarfstar-deepseek-local/" style="display: flex; flex-direction: column; gap: 14px; color: #171717; text-decoration: none">
+<span style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid #ebebeb; background: #ffffff"><img src="/assets/img/actualites/dwarfstar-deepseek-local-carte.webp" alt="Trame de lignes : une maison isolée la nuit, une seule fenêtre allumée" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5c5c5c"><time datetime="2026-07-15">15 juillet 2026</time> · Outils</span>
+<span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.14; letter-spacing: -0.02em">DeepSeek en local avec DwarfStar.</span>
+<span style="font-size: 15px; line-height: 1.6; color: #3d3d3d">DwarfStar propose une autre façon d’utiliser DeepSeek V4 Flash : l’exécuter en local. De quoi me donner envie de regarder de près la mémoire nécessaire et les choix techniques.</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5c5c5c">4 min de lecture</span>
+</a></li><li><a href="/actualites/claw-code-reecriture-agents/" style="display: flex; flex-direction: column; gap: 14px; color: #171717; text-decoration: none">
+<span style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid #ebebeb; background: #ffffff"><img src="/assets/img/actualites/claw-code-reecriture-agents-carte.webp" alt="Trame de lignes : un rayon de miel et quelques abeilles au travail" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5c5c5c"><time datetime="2026-04-01">1 avril 2026</time> · Outils</span>
+<span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.14; letter-spacing: -0.02em">Claw Code reprend l’architecture de l’agent.</span>
+<span style="font-size: 15px; line-height: 1.6; color: #3d3d3d">Au lendemain de la fuite de Claude Code, les développeurs s’emparent de son architecture. Claw Code illustre cette envie de comprendre et de reconstruire.</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5c5c5c">4 min de lecture</span>
+</a></li></ul>
+</div>
+</section>
+</main>
+<section aria-labelledby="titre-suite" style="container-type: inline-size; background: #171717; color: #ebebeb">
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; padding-block: clamp(64px, 7cqw, 112px) 40px; display: flex; flex-direction: column; gap: clamp(48px, 5cqw, 72px)">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 32px 64px">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #a3a3a3">Développeur Symfony et Sylius · Bordeaux</p>
+<h2 id="titre-suite" style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(36px, 4.2cqw, 64px); line-height: 1.04; letter-spacing: -0.03em; color: #ffffff">Une plateforme à faire évoluer ? <span style="color: #8a8a8a">Parlons-en.</span></h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="/#contact" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; background: #8fa2ff; color: #171717; border-radius: 8px; text-decoration: none; font-weight: 500">Proposer une mission</a>
+<a href="https://www.linkedin.com/in/dev-php-bordeaux/" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border: 1px solid #5c5c5c; color: #ffffff; border-radius: 8px; text-decoration: none; font-weight: 500">Suivre sur LinkedIn</a>
+</div>
+</div>
+<footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 24px; border-top: 1px solid #303030; font-size: 14px; color: #a3a3a3">
+<span>© 2026 Mickaël Teixeira · entrepreneur individuel · Bordeaux</span>
+<nav aria-label="Pied de page" style="display: flex; flex-wrap: wrap; gap: 24px"><a href="/" style="color: #a3a3a3">Accueil</a><a href="/actualites/" style="color: #a3a3a3">Actualités</a><a href="/mentions-legales/" style="color: #a3a3a3">Mentions légales</a><a href="https://www.linkedin.com/in/dev-php-bordeaux/" style="color: #a3a3a3">LinkedIn</a></nav>
+</footer>
+</div>
+</section>
+</div>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

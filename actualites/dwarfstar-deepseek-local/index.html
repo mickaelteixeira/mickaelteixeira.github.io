@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeepSeek en local avec DwarfStar · Mickaël Teixeira</title>
+<meta name="description" content="DwarfStar, le moteur d’antirez pour DeepSeek V4 Flash en local : quantification des experts, mémoire nécessaire et cache de contexte sur disque.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://mickaelteixeira.github.io/actualites/dwarfstar-deepseek-local/">
+<meta name="author" content="Mickaël Teixeira">
+<meta name="google-site-verification" content="wsdzIL0Lmsbtvz1F2wSa2pzjxPZG2HtzG2G24YiEvAY">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="alternate" type="application/atom+xml" title="Actualités de Mickaël Teixeira" href="/actualites/flux.xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Mickaël Teixeira">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="DeepSeek en local avec DwarfStar">
+<meta property="og:description" content="DwarfStar, le moteur d’antirez pour DeepSeek V4 Flash en local : quantification des experts, mémoire nécessaire et cache de contexte sur disque.">
+<meta property="og:url" content="https://mickaelteixeira.github.io/actualites/dwarfstar-deepseek-local/">
+<meta property="og:image" content="https://mickaelteixeira.github.io/assets/img/partage/article-dwarfstar-deepseek-local.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Trame de lignes : une maison isolée la nuit, une seule fenêtre allumée">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DeepSeek en local avec DwarfStar">
+<meta name="twitter:description" content="DwarfStar, le moteur d’antirez pour DeepSeek V4 Flash en local : quantification des experts, mémoire nécessaire et cache de contexte sur disque.">
+<meta name="twitter:image" content="https://mickaelteixeira.github.io/assets/img/partage/article-dwarfstar-deepseek-local.jpg">
+<link rel="preload" href="/assets/fonts/inter-400-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-tight-300-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<meta property="article:published_time" content="2026-07-15">
+<meta property="article:modified_time" content="2026-11-15">
+<meta property="article:author" content="https://mickaelteixeira.github.io/">
+<meta property="article:section" content="Outils">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://mickaelteixeira.github.io/actualites/dwarfstar-deepseek-local/#article","headline":"DeepSeek en local avec DwarfStar","alternativeHeadline":"Le projet d’antirez travaille la quantification et la mémoire pour exécuter V4 Flash sur sa machine.","description":"DwarfStar, le moteur d’antirez pour DeepSeek V4 Flash en local : quantification des experts, mémoire nécessaire et cache de contexte sur disque.","datePublished":"2026-07-15","dateModified":"2026-11-15","inLanguage":"fr-FR","author":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"},"publisher":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"},"mainEntityOfPage":"https://mickaelteixeira.github.io/actualites/dwarfstar-deepseek-local/","image":["https://mickaelteixeira.github.io/assets/img/partage/article-dwarfstar-deepseek-local.jpg","https://mickaelteixeira.github.io/assets/img/actualites/dwarfstar-deepseek-local-carte.webp"],"articleSection":"Outils","keywords":["DwarfStar","DS4","DeepSeek","IA locale","antirez"],"wordCount":653,"citation":["https://github.com/antirez/ds4","https://github.com/antirez/ds4/blob/main/docs/MODELS.md","https://github.com/antirez/ds4/blob/main/download_model.sh","https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/commit/a7aaed80dd2df27620eb534454253ea25eb11c7a","https://github.com/antirez/ds4/blob/main/docs/SERVER.md"],"isPartOf":{"@id":"https://mickaelteixeira.github.io/actualites/#blog"},"discussionUrl":"https://www.linkedin.com/feed/update/urn:li:activity:7483137606046797824/"},{"@type":"Person","@id":"https://mickaelteixeira.github.io/#mickael-teixeira","name":"Mickaël Teixeira","givenName":"Mickaël","familyName":"Teixeira","jobTitle":"Développeur Symfony et Sylius freelance","url":"https://mickaelteixeira.github.io/","image":"https://mickaelteixeira.github.io/assets/img/mickael-teixeira-developpeur-symfony-bordeaux.webp","description":"Développeur PHP depuis 2009, freelance à Bordeaux depuis 2025 : Symfony, Sylius, API Platform et Laravel. Fondateur de Yedra, le CRM des écoles.","address":{"@type":"PostalAddress","addressLocality":"Bordeaux","addressRegion":"Nouvelle-Aquitaine","addressCountry":"FR"},"alumniOf":{"@type":"EducationalOrganization","name":"ETNA","url":"https://etna.io/"},"knowsAbout":["PHP","Symfony","Sylius","API Platform","Laravel","E-commerce","Architecture hexagonale","Domain-Driven Design","Angular","Elasticsearch","RabbitMQ","Docker","GitLab CI","Tests automatisés"],"knowsLanguage":["fr","en"],"sameAs":["https://www.linkedin.com/in/dev-php-bordeaux/","https://www.malt.fr/profile/mickaelteixeira","https://github.com/mickaelteixeira"]},{"@type":"WebSite","@id":"https://mickaelteixeira.github.io/#site","url":"https://mickaelteixeira.github.io/","name":"Mickaël Teixeira","inLanguage":"fr-FR","publisher":{"@id":"https://mickaelteixeira.github.io/#mickael-teixeira"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://mickaelteixeira.github.io/"},{"@type":"ListItem","position":2,"name":"Actualités","item":"https://mickaelteixeira.github.io/actualites/"},{"@type":"ListItem","position":3,"name":"DeepSeek en local avec DwarfStar","item":"https://mickaelteixeira.github.io/actualites/dwarfstar-deepseek-local/"}]}]}</script>
+</head>
+<body>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header class="entete">
+<div class="entete__barre">
+<a class="entete__nom" href="/">Mickaël Teixeira</a>
+<nav class="entete__nav" aria-label="Navigation principale">
+<a href="/#missions">Missions</a>
+<a href="/#expertises">Expertises</a>
+<a href="/#yedra">Yedra</a>
+<a href="/#parcours">Parcours</a>
+<a href="/actualites/" aria-current="page">Actualités</a>
+</nav>
+<a class="entete__contact" href="/#contact">Me contacter</a>
+<button class="entete__menu" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
+</header>
+<nav id="menu-mobile" class="menu-mobile" aria-label="Menu" hidden>
+<a class="menu-mobile__lien" href="/#missions">Missions</a>
+<a class="menu-mobile__lien" href="/#expertises">Expertises</a>
+<a class="menu-mobile__lien" href="/#yedra">Yedra</a>
+<a class="menu-mobile__lien" href="/#parcours">Parcours</a>
+<a class="menu-mobile__lien" href="/actualites/">Actualités</a>
+<div class="menu-mobile__pied">
+<p>Toujours ouvert à une mission</p>
+<a href="/#contact">Me contacter</a>
+</div>
+</nav>
+<div style="container-type: inline-size; background: #ffffff; color: #171717">
+<main id="contenu">
+<article aria-labelledby="titre-article">
+<header style="padding-block: clamp(48px, 6cqw, 96px) clamp(32px, 4cqw, 56px)">
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<nav aria-label="Fil d’Ariane" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #5c5c5c"><a href="/" style="color: #5c5c5c">Accueil</a> / <a href="/actualites/" style="color: #5c5c5c">Actualités</a> / <span aria-current="page">Outils</span></nav>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #5c5c5c"><time datetime="2026-07-15">15 juillet 2026</time> · 4 min de lecture · par <a href="/" rel="author" style="color: #5c5c5c">Mickaël Teixeira</a></p>
+<h1 id="titre-article" style="margin: 0; max-width: 1080px; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(40px, 5cqw, 76px); line-height: 1.03; letter-spacing: -0.03em">DeepSeek en local avec DwarfStar. <span style="color: #9a9a9a">Le projet d’antirez travaille la quantification et la mémoire pour exécuter V4 Flash sur sa machine.</span></h1>
+<p style="margin: 0; max-width: 760px; font-size: 22px; line-height: 1.55; color: #3d3d3d">DwarfStar propose une autre façon d’utiliser DeepSeek V4 Flash : l’exécuter en local. De quoi me donner envie de regarder de près la mémoire nécessaire et les choix techniques.</p>
+</div>
+</header>
+<figure style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; margin: 0 auto">
+<div style="overflow: hidden; border-radius: 16px; border: 1px solid #ebebeb; background: #ffffff"><img src="/assets/img/actualites/dwarfstar-deepseek-local.svg" alt="Trame de lignes : une maison isolée la nuit, une seule fenêtre allumée" width="1200" height="675" fetchpriority="high" style="display: block; width: 100%; height: auto"></div>
+</figure>
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; padding-block: clamp(48px, 5cqw, 80px) clamp(72px, 8cqw, 128px); display: flex; flex-wrap: wrap; gap: 48px clamp(48px, 7cqw, 112px); align-items: flex-start">
+<div style="flex: 999 1 560px; min-width: 0; max-width: 700px; display: flex; flex-direction: column; gap: 24px; font-size: 18px; line-height: 1.75; color: #3d3d3d">
+<p style="margin: 0">Faire tourner DeepSeek V4 Flash sur sa propre machine, voilà un sujet concret. DS4, aussi appelé DwarfStar, propose cette piste. Derrière ce projet, on retrouve antirez, Salvatore Sanfilippo, le créateur de Redis. Ce qui me plaît ici, c’est le travail sur l’exécution locale et sur la mémoire.</p>
+<h2 style="margin: 24px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; color: #171717">284 milliards de paramètres au total.</h2>
+<p style="margin: 0">DwarfStar est un moteur d’inférence : le programme qui exécute un modèle pour produire ses réponses. Il vise notamment DeepSeek V4 Flash, dont l’architecture à mélange d’experts compte 284 milliards de paramètres. Environ 13 milliards sont activés par jeton.</p>
+<p style="margin: 0">La mémoire nécessaire dépend de l’ensemble à stocker et à charger. Les 13 milliards de paramètres actifs décrivent le calcul par jeton, pas la taille du modèle complet. Pour envisager une installation locale, je regarde donc les formats proposés et la machine capable de les accueillir.</p>
+<h2 style="margin: 24px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; color: #171717">Environ 81 Gio pour la variante deux bits.</h2>
+<p style="margin: 0">Le projet propose une variante avec des experts quantifiés sur environ deux bits. Le fichier représente autour de 81 Gio, pour des machines de 96 ou 128 Go de mémoire selon les indications du projet. Une variante quatre bits vise des configurations plus grandes. On parle donc de besoins matériels conséquents.</p>
+<figure style="margin: 16px 0; padding-top: 20px; border-top: 1px solid #171717; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 8px 32px; align-items: end"><span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(56px, 6cqw, 88px); line-height: .95; letter-spacing: -0.04em; color: #2f4bff">81 Gio</span><figcaption style="display: flex; flex-direction: column; gap: 6px; font-size: 16px; line-height: 1.5; color: #171717"><span>Taille approximative de la variante à experts quantifiés autour de deux bits, selon le guide du projet.</span><a href="https://github.com/antirez/ds4/blob/main/docs/MODELS.md" style="color: #2f4bff; text-underline-offset: 3px; font-size: 14px">Source</a></figcaption></figure>
+<p style="margin: 0">La quantification réduit la précision de représentation d’une partie des poids. Le cache de contexte sur disque permet, lui, de conserver un état de calcul. Ce sont deux aspects du travail sur la mémoire : la place occupée par le modèle et celle de son contexte. La qualité des réponses et les limites de contexte feront partie de ce que je voudrai évaluer.</p>
+<h2 style="margin: 24px 0 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; color: #171717">Choisir où le modèle s’exécute.</h2>
+<p style="margin: 0">DwarfStar annonce des chemins d’exécution Metal, CUDA et ROCm, ainsi qu’un agent de programmation intégré. J’ai envie de voir ce que cette approche donne sur des tâches précises, avec une configuration complète. Le matériel, la mémoire et le coût de l’ensemble entrent dans le choix.</p>
+<p style="margin: 0">Mon premier essai partirait d’une tâche que je connais suffisamment pour juger la réponse. Par exemple, demander une explication de code puis examiner les points que le modèle a retenus. Je noterais la variante utilisée, le matériel et la taille du contexte. Je voudrais pouvoir refaire le même exercice avant d’élargir la conversation, afin de distinguer une première impression d’un comportement que je retrouve.</p>
+<figure style="margin: 8px 0; display: flex; flex-direction: column; gap: 10px"><div style="border-radius: 12px; background: #171717; overflow: hidden"><div style="padding: 10px 16px; border-bottom: 1px solid #2a2a2a; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #a3a3a3">sh</div><pre style="margin: 0; padding: 18px 16px; overflow-x: auto; font-family: 'JetBrains Mono', monospace; font-size: 14px; line-height: 1.65; color: #ebebeb"><code>./ds4 -p &quot;Explain Redis streams in one paragraph.&quot;</code></pre></div><figcaption style="display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 14px; line-height: 1.5; color: #5c5c5c"><span>Commande du README consulté en novembre 2026, après compilation et téléchargement du modèle, depuis le dossier du dépôt.</span><a href="https://github.com/antirez/ds4" style="color: #2f4bff; text-underline-offset: 3px">Source</a></figcaption></figure>
+<p style="margin: 0">Cette commande donne un point d’entrée dans la documentation actuelle. Elle suppose que la compilation et le téléchargement ont déjà été faits. Je la lirais avec le guide de ma plateforme avant de préparer un essai. Le sujet matériel m’intéresse précisément parce qu’il fait partie de l’expérience : je veux savoir ce que je dois installer avant d’interpréter la première réponse comme un résultat utilisable.</p>
+<aside style="margin: 8px 0; padding: 24px; background: #f5f5f5; border-radius: 12px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-weight: 600; font-size: 17px; color: #171717">Préparer une comparaison qui me parle.</p><p style="margin: 0; font-size: 17px; line-height: 1.65; color: #3d3d3d">Même tâche, même consigne, variante et machine notées : voilà le point de départ que je choisirais pour un essai local. J’examinerais ensuite la réponse et le temps d’attente ensemble.</p></aside>
+<p style="margin: 0">Je séparerais également deux questions. D’abord, est-ce que la machine peut accueillir la configuration envisagée ? Ensuite, est-ce que la qualité et le rythme des réponses conviennent à mon travail ? Un fichier qui tient dans l’espace disponible répond seulement à une partie de mon besoin. Je voudrais suivre une vraie séquence de travail avant de décider quelle place donner à cet outil.</p>
+<p style="margin: 0">Le cache persistant entrerait dans ce même essai. Je regarderais ce qui se passe quand une conversation reprend et quand de nouveaux éléments s’ajoutent. Ce serait plus instructif pour moi qu’une réponse isolée. L’intérêt de cette piste locale tient à la possibilité d’observer l’ensemble sur une configuration que je peux décrire, puis d’en tirer une décision pour mes propres tâches.</p>
+<p style="margin: 0">C’est cette possibilité d’exécuter le modèle chez soi qui retient mon attention. Je veux pouvoir examiner une autre manière de travailler avec l’IA et mieux maîtriser son lieu d’exécution. DwarfStar met sur la table des formats et des besoins matériels concrets. Pour aller plus loin, j’attends de confronter ces choix à la qualité des réponses sur les tâches qui me concernent.</p>
+
+</div>
+<aside aria-label="À propos de cet article" style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 28px; font-size: 15px">
+<figure style="margin: 0; padding: 24px; border: 1px solid #e5e5e5; border-radius: 12px; display: flex; flex-direction: column; gap: 14px"><figcaption style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5c5c5c">En discussion sur LinkedIn</figcaption><blockquote style="margin: 0; color: #171717; font-size: 16px; line-height: 1.6"><p style="margin: 0">« C&#x27;est concret, technique, et ça sent le futur du développement IA local. »</p></blockquote><a href="https://www.linkedin.com/feed/update/urn:li:activity:7483137606046797824/" style="align-self: start; display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border: 1px solid #b3b3b3; border-radius: 8px; color: #171717; text-decoration: none; font-weight: 500">Rejoindre la discussion</a></figure>
+<div style="display: flex; flex-direction: column; gap: 10px"><h2 style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 400; color: #5c5c5c">Sources</h2><ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column"><li style="padding-block: 10px; border-top: 1px solid #e5e5e5"><a href="https://github.com/antirez/ds4" style="color: #2f4bff; text-underline-offset: 3px; overflow-wrap: anywhere">antirez — dépôt DwarfStar et plateformes visées</a></li><li style="padding-block: 10px; border-top: 1px solid #e5e5e5"><a href="https://github.com/antirez/ds4/blob/main/docs/MODELS.md" style="color: #2f4bff; text-underline-offset: 3px; overflow-wrap: anywhere">DwarfStar — formats de modèles et mémoire</a></li><li style="padding-block: 10px; border-top: 1px solid #e5e5e5"><a href="https://github.com/antirez/ds4/blob/main/download_model.sh" style="color: #2f4bff; text-underline-offset: 3px; overflow-wrap: anywhere">DwarfStar — script de téléchargement et tailles annoncées</a></li><li style="padding-block: 10px; border-top: 1px solid #e5e5e5"><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/commit/a7aaed80dd2df27620eb534454253ea25eb11c7a" style="color: #2f4bff; text-underline-offset: 3px; overflow-wrap: anywhere">DeepSeek — présentation initiale de V4 Flash</a></li><li style="padding-block: 10px; border-top: 1px solid #e5e5e5"><a href="https://github.com/antirez/ds4/blob/main/docs/SERVER.md" style="color: #2f4bff; text-underline-offset: 3px; overflow-wrap: anywhere">DwarfStar : serveur et cache persistant</a></li></ol></div>
+<ul aria-label="Mots-clés" style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px"><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: #f5f5f5; color: #3d3d3d">DwarfStar</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: #f5f5f5; color: #3d3d3d">DS4</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: #f5f5f5; color: #3d3d3d">DeepSeek</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: #f5f5f5; color: #3d3d3d">IA locale</li><li style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: #f5f5f5; color: #3d3d3d">antirez</li></ul>
+<div style="padding-top: 20px; border-top: 1px solid #171717; display: flex; flex-direction: column; gap: 6px">
+<b style="font-weight: 600; color: #171717">Mickaël Teixeira</b>
+<span style="color: #5c5c5c">Développeur Symfony et Sylius, freelance à Bordeaux. Fondateur de Yedra.</span>
+<a href="/#missions" style="color: #2f4bff; font-weight: 500; text-underline-offset: 4px">Voir les missions</a>
+</div>
+</aside>
+</div>
+</article>
+<section aria-labelledby="titre-aussi" style="padding-bottom: clamp(72px, 8cqw, 128px)">
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; padding-top: 24px; border-top: 1px solid #171717">
+<h2 id="titre-aussi" style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 34px; letter-spacing: -0.02em">À lire aussi.</h2>
+<a href="/actualites/" style="color: #2f4bff; font-weight: 500; text-underline-offset: 4px">Toutes les actualités</a>
+</div>
+<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 48px 32px"><li><a href="/actualites/playwright-mcp-design-frontend/" style="display: flex; flex-direction: column; gap: 14px; color: #171717; text-decoration: none">
+<span style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid #ebebeb; background: #ffffff"><img src="/assets/img/actualites/playwright-mcp-design-frontend-carte.webp" alt="Trame de lignes : une scène de théâtre vide sous un projecteur" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5c5c5c"><time datetime="2026-07-20">20 juillet 2026</time> · Outils</span>
+<span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.14; letter-spacing: -0.02em">Playwright, aussi pour le design.</span>
+<span style="font-size: 15px; line-height: 1.6; color: #3d3d3d">Un frontend peut fonctionner et rester loin de ce que j’avais en tête. Avec Playwright MCP, j’intègre le navigateur à ma méthode de travail avec Claude.</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5c5c5c">4 min de lecture</span>
+</a></li><li><a href="/actualites/claw-code-reecriture-agents/" style="display: flex; flex-direction: column; gap: 14px; color: #171717; text-decoration: none">
+<span style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid #ebebeb; background: #ffffff"><img src="/assets/img/actualites/claw-code-reecriture-agents-carte.webp" alt="Trame de lignes : un rayon de miel et quelques abeilles au travail" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5c5c5c"><time datetime="2026-04-01">1 avril 2026</time> · Outils</span>
+<span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.14; letter-spacing: -0.02em">Claw Code reprend l’architecture de l’agent.</span>
+<span style="font-size: 15px; line-height: 1.6; color: #3d3d3d">Au lendemain de la fuite de Claude Code, les développeurs s’emparent de son architecture. Claw Code illustre cette envie de comprendre et de reconstruire.</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5c5c5c">4 min de lecture</span>
+</a></li><li><a href="/actualites/claude-code-fuite-sources/" style="display: flex; flex-direction: column; gap: 14px; color: #171717; text-decoration: none">
+<span style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid #ebebeb; background: #ffffff"><img src="/assets/img/actualites/claude-code-fuite-sources-carte.webp" alt="Trame de lignes : un meuble à plans dont un tiroir est resté ouvert" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5c5c5c"><time datetime="2026-03-31">31 mars 2026</time> · Outils</span>
+<span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.14; letter-spacing: -0.02em">Une source map ouvre le capot de Claude Code.</span>
+<span style="font-size: 15px; line-height: 1.6; color: #3d3d3d">Le 31 mars 2026, une livraison de Claude Code sur npm expose du code interne. Une source map donne accès aux coulisses du client en ligne de commande d’Anthropic.</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5c5c5c">4 min de lecture</span>
+</a></li></ul>
+</div>
+</section>
+</main>
+<section aria-labelledby="titre-suite" style="container-type: inline-size; background: #171717; color: #ebebeb">
+<div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; padding-block: clamp(64px, 7cqw, 112px) 40px; display: flex; flex-direction: column; gap: clamp(48px, 5cqw, 72px)">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 32px 64px">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #a3a3a3">Développeur Symfony et Sylius · Bordeaux</p>
+<h2 id="titre-suite" style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(36px, 4.2cqw, 64px); line-height: 1.04; letter-spacing: -0.03em; color: #ffffff">Une plateforme à faire évoluer ? <span style="color: #8a8a8a">Parlons-en.</span></h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="/#contact" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; background: #8fa2ff; color: #171717; border-radius: 8px; text-decoration: none; font-weight: 500">Proposer une mission</a>
+<a href="https://www.linkedin.com/in/dev-php-bordeaux/" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border: 1px solid #5c5c5c; color: #ffffff; border-radius: 8px; text-decoration: none; font-weight: 500">Suivre sur LinkedIn</a>
+</div>
+</div>
+<footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 24px; border-top: 1px solid #303030; font-size: 14px; color: #a3a3a3">
+<span>© 2026 Mickaël Teixeira · entrepreneur individuel · Bordeaux</span>
+<nav aria-label="Pied de page" style="display: flex; flex-wrap: wrap; gap: 24px"><a href="/" style="color: #a3a3a3">Accueil</a><a href="/actualites/" style="color: #a3a3a3">Actualités</a><a href="/mentions-legales/" style="color: #a3a3a3">Mentions légales</a><a href="https://www.linkedin.com/in/dev-php-bordeaux/" style="color: #a3a3a3">LinkedIn</a></nav>
+</footer>
+</div>
+</section>
+</div>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

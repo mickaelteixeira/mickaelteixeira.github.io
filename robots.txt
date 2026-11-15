@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap
 Sitemap: https://mickaelteixeira.github.io/sitemap.xml
-
-# Disallow non-indexable resources
-Disallow: /styles.css
-Disallow: /script.js
