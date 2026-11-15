@@ -1,0 +1,27 @@
+name: Signaler les pages modifiées aux moteurs (IndexNow)
+
+on:
+  workflow_run:
+    workflows: [pages-build-deployment]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      tout:
+        description: Signaler toutes les pages du sitemap
+        type: boolean
+        default: true
+
+jobs:
+  signaler:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Envoyer les URL à IndexNow
+        run: python3 _build/indexnow.py ${{ inputs.tout && '--tout' || '' }}

@@ -1,0 +1,1317 @@
+# Mickaël Teixeira
+
+> Mickaël Teixeira est développeur PHP depuis 2009 et freelance à Bordeaux depuis 2025. Il travaille sur Symfony depuis 2014, ainsi que sur Sylius, Laravel et API Platform. Ses missions concernent les plateformes e-commerce, les API, les middle offices et les intégrations ERP, CRM ou SIRH. Ses références comprennent MaxiCoffee, Commande.com avec Dn’D, HeyTeam, Ultra Premium Direct et onepoint. Il intervient à distance ou sur site à Bordeaux, Paris, Lyon, Lille et Nantes. Fondateur de Yedra, CRM des écoles créé en novembre 2024, il en prépare l’ouverture fin 2026. Il est joignable par le formulaire de son site, LinkedIn ou Malt.
+
+Mickaël Teixeira has been a PHP developer since 2009 and a freelance developer based in Bordeaux since 2025. He has worked with Symfony since 2014, as well as Sylius, Laravel and API Platform. His work covers e-commerce platforms, APIs, middle offices and ERP, CRM or HR information system integrations. His references include MaxiCoffee, Commande.com with Dn’D, HeyTeam, Ultra Premium Direct and onepoint. He works remotely or on site in Bordeaux, Paris, Lyon, Lille and Nantes. He founded Yedra, a CRM for schools, in November 2024, with launch planned for late 2026. He can be contacted through his website’s contact form, LinkedIn or Malt.
+
+## Faits essentiels
+
+- Métier : développeur Symfony, Sylius et API Platform, freelance ; aussi Laravel, architecture hexagonale et DDD, intégration ERP, CRM et SIRH
+- Base : Bordeaux (France) ; intervention à distance, ou sur site à Bordeaux, Paris, Lyon, Lille, Nantes
+- Expérience : développeur PHP depuis 2009, freelance depuis 2025
+- Références : MaxiCoffee, Commande.com (avec l’agence Dn’D), HeyTeam, Ultra Premium Direct, onepoint (Enedis, Gaz de Bordeaux, PSA, Bureau Veritas Pro, SMIP), TimeOne, Web Stratégies, illicotravel
+- Formation : Master Architecte logiciel, ETNA
+- Produit : fondateur de Yedra, le CRM des écoles (https://yedra.app), depuis novembre 2024
+- Disponibilité : toujours ouvert à une mission ou à un échange
+- Contact : https://mickaelteixeira.github.io/#contact · https://www.linkedin.com/in/dev-php-bordeaux/ · https://www.malt.fr/profile/mickaelteixeira · https://github.com/mickaelteixeira
+
+## Développeur Symfony freelance à Bordeaux. Je fais évoluer les applications PHP, les API et les plateformes e-commerce avec les équipes en place.
+
+Page : https://mickaelteixeira.github.io/expertises/symfony/
+
+Je suis Mickaël Teixeira, développeur Symfony freelance à Bordeaux. J’écris du PHP depuis 2009 et travaille avec Symfony depuis 2014, d’une migration chez Bureau Veritas Pro aux plateformes e-commerce d’Ultra Premium Direct et de Commande.com. Freelance depuis 2025, j’interviens à distance ou sur site pour les entreprises qui font évoluer leur application, leur boutique ou leurs API.
+
+En bref : Symfony : Depuis 2014 ; PHP : Depuis 2009 ; Statut : Freelance depuis 2025 ; Intervention : À distance ou sur site, notamment à Bordeaux
+
+### Ce que je fais avec Symfony.
+
+- Migration vers Symfony : Je reprends les contraintes de l’application avant de changer son socle. Chez Bureau Veritas Pro, j’ai participé à la migration de Zend Framework 1.11 vers Symfony 2.
+- Backend e-commerce : Je développe la logique métier des boutiques sur Symfony et Sylius. Chez Commande.com, mon travail portait notamment sur la logistique, les promotions et les exports.
+- API métier : Je travaille avec API Platform pour exposer les données des applications. Cette pratique traverse mes missions chez Regaz, Ultra Premium Direct et Commande.com.
+- Qualité du code : Je mets en place tests automatisés, analyse statique et intégration continue. Revues de code et décisions écrites accompagnent le travail avec l’équipe.
+
+### Des missions Symfony, de la migration à la boutique.
+
+- onepoint (2013 – 2022) : Chez onepoint, la migration de Bureau Veritas Pro vers Symfony commence en 2014. J’ai ensuite travaillé sur l’extranet B2C et le tunnel de souscription de Gaz de Bordeaux · Regaz, avec Symfony dans la pile.
+- Ultra Premium Direct (2022 – 2024) : De 2022 à 2024, en poste chez Ultra Premium Direct, j’ai travaillé sur Symfony 5 et la migration vers Sylius. Le backend devait répondre aux contraintes d’un e-commerce à fort trafic.
+- Commande.com (2025) : D’avril à juillet 2025, en freelance avec Dn’D, j’ai rejoint la refonte de Commande.com. Symfony et Sylius portaient le moteur e-commerce, connecté à l’ERP, aux transporteurs et aux outils internes.
+
+### Lire le projet et préparer sa suite.
+
+Je commence par lire le code, les données et les contraintes déjà présentes. Le conseil chez onepoint m’a appris à intervenir dans le cadre d’une autre équipe. Pour une reprise Symfony, ce point de départ guide mon travail : comprendre l’existant avant d’écrire, avec un audit écrit lorsque la mission le demande.
+
+Une migration concerne aussi les usages et l’équipe qui exploite la plateforme. Chez Ultra Premium Direct, la transition vers Sylius se préparait avec les développeurs en place. Je travaille avec des tests automatisés, de l’analyse statique et de l’intégration continue, puis je partage les décisions pour que l’équipe garde la main.
+
+### Questions fréquentes
+
+**Depuis quand êtes-vous développeur Symfony freelance à Bordeaux ?** Je suis freelance depuis 2025, avec une pratique de PHP depuis 2009 et de Symfony depuis 2014. Mes expériences Symfony antérieures comprennent Bureau Veritas Pro, Regaz et Ultra Premium Direct.
+
+**Pouvez-vous reprendre une application Symfony existante ?** Oui, la reprise et l’évolution d’un existant font partie de mon parcours. Je commence par lire le code et les contraintes, comme dans mes missions de conseil chez onepoint.
+
+**Intervenez-vous sur un e-commerce Symfony à fort trafic ?** Oui, j’ai travaillé sur le backend d’Ultra Premium Direct de 2022 à 2024. Cette expérience comprend la migration vers Sylius, l’optimisation des performances et la consolidation du backend.
+
+**Comment travaillez-vous avec notre équipe Symfony ?** Je partage les décisions par écrit et pratique les revues de code et le travail en binôme. L’objectif est que ce que je construis reste compréhensible après mon départ.
+
+---
+
+## Développeur Sylius freelance. Je relie le moteur e-commerce aux usages métier, à l’ERP et aux transporteurs.
+
+Page : https://mickaelteixeira.github.io/expertises/sylius/
+
+Je suis Mickaël Teixeira, développeur Sylius freelance à Bordeaux depuis 2025. Mon expérience Sylius comprend la migration d’Ultra Premium Direct, de 2022 à 2024 en poste, puis la refonte de Commande.com avec Dn’D en 2025. Pour ces plateformes e-commerce, je travaille sur le backend, la logique métier et les échanges avec les outils qui entourent la boutique.
+
+En bref : Références : Ultra Premium Direct et Commande.com ; Migration : Ultra Premium Direct, 2022–2024 ; Headless : Commande.com, avec Dn’D, en 2025 ; Intervention : À distance, ou sur site à Bordeaux, Paris, Lyon, Lille, Nantes
+
+### Ce que je prends en charge sur Sylius.
+
+- Migration vers Sylius : Je travaille sur le passage d’une plateforme existante vers Sylius avec l’équipe en place. Chez Ultra Premium Direct, cette transition accompagnait le travail sur la performance et la robustesse du backend.
+- E-commerce headless : En headless, la boutique consomme par API la logique de commande du moteur e-commerce. J’ai intégré ce moteur sur Sylius pour Commande.com, avec API Platform.
+- Fonctionnalités métier : Je développe les fonctions qui portent les opérations commerciales. Chez Commande.com, elles concernaient la logistique, les promotions et les exports.
+- Flux et tests : Je relie le moteur à l’ERP, aux transporteurs et aux outils internes. Sur Commande.com, les tests PHPUnit et Behat accompagnaient ces développements, avec PHPStan et CS Fixer.
+
+### Une migration et une refonte headless documentées.
+
+- Ultra Premium Direct (2022 – 2024) : Chez Ultra Premium Direct, j’ai participé à la migration de l’ancienne plateforme vers Sylius 1.10, sur Symfony 5. De 2022 à 2024, mon poste associait cette transition à l’optimisation d’un e-commerce à fort trafic.
+- Commande.com (2025) : La mission Commande.com portait sur une refonte complète avec Dn’D, d’avril à juillet 2025. J’ai intégré le moteur Sylius headless, développé des fonctionnalités métier et contribué à l’architecture et à la stratégie technique.
+
+### Préparer la transition avec l’équipe.
+
+Je pars de la plateforme qui vend déjà, de ses données et de ses contraintes. Une migration doit se préparer avec l’équipe en place pour que la boutique continue de fonctionner pendant le changement de moteur. Mon expérience chez Ultra Premium Direct associe précisément cette préparation de la transition au travail sur le backend.
+
+Chez Commande.com, la refonte comprenait aussi les échanges avec les systèmes qui entourent la commande. L’ERP, les transporteurs et les outils internes ont leurs formats et leurs rythmes. Je travaille sur ces liaisons avec les fonctionnalités métier, en m’appuyant sur les tests automatisés et les outils de qualité intégrés à GitLab CI.
+
+### Questions fréquentes
+
+**Quelle expérience avez-vous en migration vers Sylius ?** J’ai travaillé sur la migration d’Ultra Premium Direct vers Sylius entre 2022 et 2024. J’étais développeur backend en poste, avec un travail sur les performances, la robustesse et la transition avec l’équipe.
+
+**Avez-vous déjà intégré un e-commerce headless Sylius ?** Oui, chez Commande.com en 2025, avec l’agence Dn’D. Le moteur Sylius exposait la logique de commande par API Platform, consommée par la boutique.
+
+**Pouvez-vous relier Sylius à notre ERP et aux transporteurs ?** Oui, ces flux faisaient partie de ma mission Commande.com. J’y ai travaillé sur les échanges avec l’ERP, les transporteurs et les outils internes.
+
+**Un développeur Sylius freelance peut-il rejoindre notre agence ?** Oui, j’ai travaillé en freelance avec Dn’D pour Commande.com. Cette mission comprenait le développement, une contribution à l’architecture et un accompagnement sur la stratégie technique.
+
+---
+
+## Développeur API Platform freelance. Je construis les échanges entre une application métier, sa boutique et les outils qui utilisent ses données.
+
+Page : https://mickaelteixeira.github.io/expertises/api-platform/
+
+Je suis Mickaël Teixeira, développeur API Platform freelance à Bordeaux depuis 2025 et développeur PHP depuis 2009. J’ai utilisé API Platform chez Regaz, Ultra Premium Direct, Commande.com et MaxiCoffee. Je relie les données métier aux applications qui les utilisent, avec Symfony ou Laravel, à distance ou sur site. Ces expériences couvrent l’e-commerce et les applications métier.
+
+En bref : Outil : API Platform, avec Symfony ou Laravel ; E-commerce : Ultra Premium Direct et Commande.com ; Middle office : MaxiCoffee, 2025–2026 ; Intervention : À distance ou sur site
+
+### Ce que je construis avec API Platform.
+
+- Données e-commerce : J’utilise API Platform pour exposer les données d’une boutique aux outils qui les consomment. C’était son rôle chez Ultra Premium Direct, sur une plateforme Symfony et Sylius.
+- Moteur headless : Le headless sépare la boutique de la logique de commande, accessible par API. Chez Commande.com, j’ai intégré ce moteur sur Sylius et API Platform.
+- API et Laravel : Je travaille aussi avec API Platform dans un environnement Laravel. Chez MaxiCoffee, cette pile accompagne les territoires commerciaux, la facturation, la logistique et le produit.
+- Qualité des développements : Je m’appuie sur les tests automatisés, l’analyse statique et l’intégration continue. Chez Commande.com, PHPUnit, Behat et PHPStan faisaient partie de cet outillage.
+
+### Des API dans des contextes e-commerce et métier.
+
+- onepoint (2013 – 2022) : Lors de mes missions chez onepoint, API Platform faisait partie de la pile de Gaz de Bordeaux · Regaz. Le périmètre comprenait notamment un extranet B2C, son tunnel de souscription et une application de gestion du temps.
+- Ultra Premium Direct (2022 – 2024) : Chez Ultra Premium Direct, API Platform servait à exposer les données de la boutique aux outils qui en avaient besoin. J’y travaillais en poste sur le backend, de 2022 à 2024.
+- Commande.com (2025) : Chez Commande.com, API Platform reliait le moteur Sylius headless à la boutique. La refonte comprenait aussi les échanges avec l’ERP, les transporteurs et les outils internes.
+- MaxiCoffee (2025 – 2026) : Chez MaxiCoffee, j’ai travaillé avec Laravel et API Platform de juillet 2025 à octobre 2026. Le middle office, entre outils commerciaux et opérations, synchronisait des données Salesforce et des imports CSV.
+
+### Partir des données et de leurs usages.
+
+Je commence par comprendre les données, leurs usages et les contraintes de l’application. Une API n’est pas isolée du métier qu’elle expose : chez Ultra Premium Direct, elle donne accès aux données de la boutique ; chez Commande.com, elle porte l’accès à la logique de commande du moteur e-commerce.
+
+La séparation des responsabilités compte aussi derrière l’API. Chez MaxiCoffee, les territoires, la facturation, la logistique et le produit sont organisés en domaines. Dans l’architecture hexagonale, les règles métier restent au centre ; des adaptateurs relient les outils externes. Les domaines échangent ensuite des messages asynchrones avec RedPanda.
+
+### Questions fréquentes
+
+**Sur quelles missions avez-vous été développeur API Platform freelance ?** J’ai utilisé API Platform en freelance chez Commande.com en 2025 et chez MaxiCoffee de 2025 à 2026. Mes expériences précédentes avec cet outil comprennent aussi Regaz et Ultra Premium Direct.
+
+**Travaillez-vous uniquement sur des API REST Symfony ?** Non, je travaille également avec Laravel et API Platform, comme chez MaxiCoffee. Symfony fait partie de mon parcours depuis la migration de Bureau Veritas Pro en 2014.
+
+**Quelle expérience avez-vous d’un backend headless ?** J’ai intégré le moteur e-commerce headless de Commande.com sur Sylius. API Platform exposait la logique de commande à la boutique, dans une refonte menée avec Dn’D.
+
+**Votre pratique des API concerne-t-elle aussi les applications métier ?** Oui, ma mission MaxiCoffee portait sur un middle office métier avec Laravel et API Platform. Les domaines couvraient les territoires commerciaux, la facturation, la logistique et le produit.
+
+---
+
+## Développeur Laravel freelance à Bordeaux. Je fais évoluer les applications métier et leur architecture, avec des pratiques partagées par l’équipe.
+
+Page : https://mickaelteixeira.github.io/expertises/laravel/
+
+Je suis Mickaël Teixeira, développeur Laravel freelance à Bordeaux depuis 2025. Développeur PHP depuis 2009, j’ai été lead developer chez HeyTeam de janvier à avril 2025, puis développeur freelance chez MaxiCoffee de juillet 2025 à octobre 2026. Sur Laravel, mon travail porte sur les applications métier, leur architecture et les échanges avec les outils RH ou commerciaux.
+
+En bref : Laravel : HeyTeam et MaxiCoffee ; Rôle salarié : Lead developer chez HeyTeam en 2025 ; Freelance : MaxiCoffee, juillet 2025–octobre 2026 ; Intervention : À distance ou sur site
+
+### Ce que je fais sur une application Laravel.
+
+- Reprise Laravel : Je travaille à partir d’une application existante et de ses contraintes. Chez HeyTeam, j’ai fait évoluer une application Laravel 8 sans repartir d’une réécriture complète.
+- Architecture métier : Je structure les applications par domaines. Le DDD, ou Domain-Driven Design, donne à chaque domaine son vocabulaire et ses limites ; je l’ai pratiqué chez HeyTeam et MaxiCoffee.
+- API et interconnexions : Je relie les applications aux systèmes dont elles dépendent. Mon expérience Laravel comprend les outils SIRH chez HeyTeam et Salesforce avec API Platform chez MaxiCoffee.
+- Accompagnement technique : J’anime les revues de code et le travail en binôme. Chez HeyTeam, mon rôle comprenait aussi les audits, les présentations internes et l’encadrement des développeurs.
+
+### Deux contextes Laravel, du SIRH aux opérations commerciales.
+
+- HeyTeam (2025) : De janvier à avril 2025, j’étais lead developer en poste chez HeyTeam. J’ai conçu une architecture modulaire pour l’interconnexion SIRH et refondu l’application Laravel en DDD, avec des pratiques de développement standardisées.
+- MaxiCoffee (2025 – 2026) : En freelance chez MaxiCoffee, j’ai travaillé sur Laravel et API Platform dans une architecture hexagonale, qui place les règles métier au centre et les outils externes autour. Ce middle office, placé entre les outils commerciaux et les opérations, couvrait les territoires, la facturation, la logistique et le produit.
+
+### Faire évoluer l’existant et partager les pratiques.
+
+Je lis d’abord l’application et les données déjà présentes. Chez HeyTeam, cette lecture s’accompagnait d’audits techniques et d’un plan d’amélioration continue. Les tests automatisés, l’analyse statique et l’intégration continue faisaient partie de la refonte de l’existant. Le travail architectural allait avec des pratiques que les développeurs pouvaient partager et faire vivre.
+
+Chez MaxiCoffee, l’architecture hexagonale plaçait les règles métier au centre, avec Salesforce, les fichiers et la base de données autour, par des adaptateurs. Les domaines se synchronisaient par messages asynchrones avec RedPanda. Ce contexte Laravel associait donc les modules métier, les imports CSV et les échanges entre domaines dans le même travail de développement.
+
+### Questions fréquentes
+
+**Avez-vous une expérience de lead developer Laravel ?** Oui, j’ai été lead developer chez HeyTeam de janvier à avril 2025, en poste. Mon rôle associait architecture, audits techniques et encadrement de l’équipe de développeurs.
+
+**Comment avez-vous appliqué Laravel et le DDD ?** Chez HeyTeam, j’ai refondu une application Laravel existante en DDD avec des patterns simplifiés. Chez MaxiCoffee, les domaines métier étaient séparés dans une architecture hexagonale et communiquaient par messages.
+
+**Travaillez-vous avec API Platform sur Laravel ?** Oui, j’ai travaillé sur cette combinaison chez MaxiCoffee de juillet 2025 à octobre 2026. La pile comprenait PHP 8.3, Laravel, API Platform, Docker et GitLab CI.
+
+**Votre expérience Laravel couvre-t-elle les connecteurs SIRH ?** Oui, la plateforme B2B de HeyTeam reliait l’application aux outils SIRH de ses clients. J’y ai conçu et mis en place une architecture modulaire pour ces interconnexions.
+
+---
+
+## Architecture hexagonale et DDD en PHP. Je structure les applications métier autour de leurs domaines, de leurs règles et des échanges entre systèmes.
+
+Page : https://mickaelteixeira.github.io/expertises/architecture-hexagonale-ddd/
+
+Je suis Mickaël Teixeira, développeur PHP depuis 2009 et freelance à Bordeaux depuis 2025. L’architecture hexagonale PHP place les règles métier au centre et les outils externes autour. Chez MaxiCoffee en 2025–2026, je l’ai associée au DDD, qui définit le vocabulaire et les limites des domaines métier. Chez HeyTeam en 2025, j’ai conçu une architecture modulaire d’interconnexion SIRH.
+
+En bref : Hexagonal : MaxiCoffee, Laravel et API Platform ; DDD : MaxiCoffee et HeyTeam ; Formation : Master Architecte logiciel, ETNA ; Intervention : À distance ou sur site
+
+### Ce que je mets en place.
+
+- Architecture hexagonale : L’architecture hexagonale place les règles métier au centre et les outils externes autour, par des adaptateurs. Chez MaxiCoffee, cette organisation séparait le métier de Salesforce, des fichiers et de la base de données.
+- Domaines métier : Le DDD donne à chaque domaine son vocabulaire et ses limites. Chez MaxiCoffee, les territoires, la facturation, la logistique et le produit formaient des domaines distincts.
+- Messages asynchrones : Je travaille sur les échanges entre domaines par messages. Chez MaxiCoffee, RedPanda portait ces échanges : un domaine publiait un changement, les domaines concernés le traitaient à leur rythme.
+- Refonte et transmission : Je fais évoluer une architecture avec l’équipe qui la maintient. Chez HeyTeam, cette refonte associait DDD, pratiques standardisées, revues de code et accompagnement des développeurs.
+
+### Des frontières métier mises en pratique.
+
+- MaxiCoffee (2025 – 2026) : De juillet 2025 à octobre 2026, j’ai développé des modules critiques du middle office de MaxiCoffee. Laravel et API Platform s’inscrivaient dans une architecture hexagonale et DDD, avec des imports CSV et une synchronisation Salesforce.
+- HeyTeam (2025) : Chez HeyTeam, j’ai conçu une architecture modulaire pour relier la plateforme aux outils SIRH. Mon poste de lead developer comprenait une refonte Laravel en DDD, des audits et un plan d’amélioration continue.
+
+### Lire les contraintes et laisser l’équipe autonome.
+
+Je commence par les données et les contraintes, avant de choisir ce qu’il faut modifier dans le code. Chez MaxiCoffee, le middle office se tenait entre les outils commerciaux et les opérations. Les clients et les territoires venaient de Salesforce, d’autres données de fichiers CSV : les domaines devaient travailler ensemble sans être soudés les uns aux autres.
+
+Je cherche aussi à laisser une architecture que l’équipe sait faire vivre. Chez HeyTeam, cela passait par des patterns simplifiés, des revues de code, du travail en binôme et des présentations internes. Les tests automatisés, l’analyse statique et l’intégration continue accompagnaient la refonte ; les décisions écrites font également partie de ma façon de travailler.
+
+### Questions fréquentes
+
+**Où avez-vous appliqué l’architecture hexagonale PHP ?** Chez MaxiCoffee, sur un middle office développé avec Laravel et API Platform entre 2025 et 2026. Les règles métier étaient séparées de Salesforce, des fichiers et de la base de données par des adaptateurs.
+
+**Votre expérience du DDD porte-t-elle sur Symfony ou Laravel ?** Mes missions documentées en DDD concernent Laravel, chez HeyTeam et MaxiCoffee. Mon expérience Symfony comprend notamment les migrations et l’e-commerce chez Bureau Veritas Pro, Ultra Premium Direct et Commande.com.
+
+**Que recouvre votre expérience de middle office ?** Chez MaxiCoffee, j’ai travaillé sur les territoires, la facturation, la logistique et le produit. Les domaines échangeaient par messages asynchrones avec RedPanda et utilisaient des données Salesforce ainsi que des imports CSV.
+
+**Pouvez-vous accompagner notre équipe dans une refonte DDD ?** Oui, c’était une partie de mon rôle de lead developer chez HeyTeam. J’y ai associé refonte de l’application, standardisation des pratiques, revues de code et encadrement des développeurs.
+
+---
+
+## Intégration ERP, CRM et transporteurs. Je fais parler les plateformes PHP avec les outils commerciaux, les transporteurs et les systèmes RH.
+
+Page : https://mickaelteixeira.github.io/expertises/integration-erp-crm/
+
+Je m’appelle Mickaël Teixeira. Développeur PHP depuis 2009, je suis freelance à Bordeaux depuis 2025. Mon expérience d’intégration ERP e-commerce s’appuie sur Commande.com, avec Dn’D en 2025. Elle rejoint un fil plus ancien : relier des systèmes, des flux XML d’illicotravel aux outils SIRH de HeyTeam, puis aux données Salesforce et aux imports CSV de MaxiCoffee en 2025–2026.
+
+En bref : ERP : Commande.com, Sylius headless ; CRM : Salesforce chez MaxiCoffee ; SIRH : HeyTeam, architecture modulaire ; Premiers flux : XML chez illicotravel en 2009
+
+### Les intégrations que je prends en charge.
+
+- ERP et transporteurs : Je travaille sur les flux qui relient la boutique aux opérations. Chez Commande.com, ils concernaient l’ERP, les transporteurs et les outils internes, dans une refonte Sylius.
+- Synchronisation Salesforce : Je développe les échanges de données clients et de territoires commerciaux. Chez MaxiCoffee, cette synchronisation alimentait un middle office, placé entre les outils commerciaux et les opérations.
+- Imports de fichiers : Je construis des parsers et des systèmes d’import CSV, comme chez MaxiCoffee. Mon parcours d’intégration a commencé avec les flux XML des partenaires d’illicotravel.
+- Interconnexion SIRH : Je structure les connexions entre une application et les outils RH de ses clients. Chez HeyTeam, j’ai conçu une architecture modulaire et participé à la refonte Laravel en DDD.
+
+### Des formats partenaires aux données commerciales.
+
+- Commande.com (2025) : Pour Commande.com, d’avril à juillet 2025, j’ai travaillé sur les flux ERP, transporteurs et outils internes. Le moteur Sylius était headless : la boutique consommait la logique de commande par API Platform.
+- MaxiCoffee (2025 – 2026) : Chez MaxiCoffee, les clients et les territoires commerciaux étaient synchronisés avec Salesforce. J’ai aussi développé des parsers CSV et des imports complexes, dans un environnement Laravel et API Platform.
+- HeyTeam (2025) : La plateforme B2B de HeyTeam devait dialoguer avec les outils SIRH de ses clients, chacun avec ses données, ses formats et ses règles. J’y ai conçu l’architecture d’interconnexion en tant que lead developer en poste.
+- illicotravel (2009) : En stage chez illicotravel en 2009, j’ai intégré les flux XML de nouveaux partenaires au moteur de recherche. Le travail concernait les versions française et espagnole du comparateur de voyages.
+
+### Comprendre les sources et organiser les échanges.
+
+Je pars des données, de leurs formats et des contraintes des outils déjà en place. Chez Commande.com, la refonte devait tenir compte des échanges avec l’ERP et les transporteurs. Mon travail sur les flux allait avec les fonctions de logistique, de promotions et d’exports, ainsi qu’avec les tests automatisés de la plateforme.
+
+Chez MaxiCoffee, je séparais les règles métier des sources de données dans une architecture hexagonale : le métier au centre, les systèmes externes autour par des adaptateurs. Salesforce et les fichiers CSV alimentaient le middle office. Les domaines se synchronisaient par messages RedPanda, sans que chacun appelle directement tous les autres.
+
+### Questions fréquentes
+
+**Quelle référence avez-vous en intégration ERP e-commerce ?** J’ai travaillé sur les flux ERP de Commande.com avec l’agence Dn’D en 2025. La refonte Sylius comprenait également les transporteurs et les outils internes.
+
+**Avez-vous réalisé une synchronisation Salesforce en PHP ?** Oui, chez MaxiCoffee, avec PHP 8.3, Laravel et API Platform. Elle concernait les données clients et les territoires commerciaux du middle office.
+
+**Votre expérience couvre-t-elle les flux transporteurs ?** Oui, les flux transporteurs faisaient partie du périmètre de Commande.com. J’y développais aussi des fonctionnalités de logistique, de promotions et d’exports.
+
+**Pouvez-vous travailler sur un connecteur SIRH existant ?** Oui, j’ai travaillé sur l’interconnexion SIRH d’une application Laravel existante chez HeyTeam. Mon rôle associait architecture modulaire, refonte en DDD et pratiques de développement partagées.
+
+---
+
+## Questions fréquentes
+
+Page : https://mickaelteixeira.github.io/expertises/
+
+**Êtes-vous disponible pour une mission freelance ?** Je suis toujours ouvert à une mission ou à un échange. Vous pouvez me présenter votre besoin par le formulaire du site, sur LinkedIn ou sur Malt.
+
+**Travaillez-vous à distance ou sur site ?** J’interviens à distance ou sur site à Bordeaux, Paris, Lyon, Lille et Nantes. Mon activité freelance est basée à Bordeaux.
+
+**Avec quelles technologies travaillez-vous ?** Je travaille principalement sur PHP, Symfony, Sylius, Laravel et API Platform. Mes missions comprennent aussi l’architecture hexagonale, le DDD et les messages asynchrones.
+
+**Quels types de missions pouvez-vous prendre en charge ?** J’interviens sur les migrations vers Sylius, les refontes e-commerce, les middle offices et les API. Je propose aussi du renfort d’équipe et des audits techniques.
+
+**Travaillez-vous avec des agences ?** Oui, j’ai rejoint la refonte de Commande.com en freelance avec l’agence Dn’D, d’avril à juillet 2025. J’avais auparavant travaillé en alternance dans l’agence Web Stratégies.
+
+**Pouvez-vous reprendre une application existante ?** Oui, la lecture et l’évolution d’un existant font partie de ma pratique. Je commence par le code, les données et les contraintes ; chez HeyTeam, j’ai travaillé sur la refonte d’une application Laravel existante sans tout réécrire.
+
+**Sous quel statut exercez-vous ?** J’exerce comme entrepreneur individuel, sous le nom de Mickaël Teixeira. Je suis développeur freelance depuis 2025.
+
+**Comment vous contacter pour proposer une mission ?** Vous pouvez m’écrire par le formulaire de contact de ce site, sur LinkedIn ou sur Malt. C’est moi qui lis les messages et qui réponds.
+
+---
+
+## Je suis Mickaël Teixeira, développeur PHP à Bordeaux. Depuis 2009, je relie les applications, les données et les équipes qui les font vivre.
+
+Page : https://mickaelteixeira.github.io/parcours/
+
+J’écris du PHP pour le web depuis 2009. Formé en alternance à l’ETNA, je suis passé par l’agence, l’affiliation, le conseil et l’e-commerce avant de devenir freelance en 2025. À Bordeaux, je travaille sur Symfony, Sylius, Laravel et les API. Je suis aussi le fondateur et l’éditeur de Yedra, le CRM des écoles.
+
+### De mes premiers flux au freelance.
+
+Mon premier fil conducteur apparaît chez illicotravel en 2009 : intégrer les flux de partenaires à un comparateur de voyages. L’alternance chez Web Stratégies, pendant mon Master Architecte logiciel à l’ETNA, m’amène ensuite du site web au paiement e-commerce. Je développe des outils d’affiliation chez TimeOne, puis je rejoins onepoint en 2013. Le conseil me fait travailler dans le code d’autres équipes, sur des migrations, des parcours de souscription et des flux externes.
+
+Chez Ultra Premium Direct, je me concentre sur le backend e-commerce et la migration vers Sylius. Je deviens ensuite lead developer chez HeyTeam, sur une application Laravel qui relie des outils SIRH. En 2025, je passe au freelance : Commande.com avec Dn’D, puis MaxiCoffee. Mes missions associent désormais refontes e-commerce et applications métier. Un middle office, comme celui de MaxiCoffee, se place entre les outils commerciaux et les opérations de l’entreprise.
+
+### Lire, relier et transmettre.
+
+Faire parler des systèmes qui ne se connaissent pas traverse mon parcours : les partenaires XML d’illicotravel, les flux externes chez Enedis, les outils SIRH de HeyTeam, l’ERP et les transporteurs de Commande.com, Salesforce chez MaxiCoffee. Je commence par lire le code, les données et les contraintes en place. Quand la mission le demande, je produis un audit écrit. Cette lecture précède le développement et la préparation des changements avec l’équipe.
+
+Je travaille avec des tests automatisés, de l’analyse statique et de l’intégration continue dès le début de la mission. La transmission passe par les revues de code, le travail en binôme et les décisions écrites. Chez HeyTeam, j’animais aussi les rituels techniques et les présentations internes. Laisser une équipe autonome fait partie du travail : ce que je construis doit rester compréhensible après mon départ, avec des pratiques que les développeurs savent faire vivre.
+
+### Yedra et mes outils au quotidien.
+
+En novembre 2024, j’ai fondé Yedra, un CRM pour les écoles et les établissements scolaires. Je le conçois, je l’écris et je l’édite moi-même, de l’interface aux données, à la sécurité et au RGPD. Il réunit le fichier des familles par foyer, le formulaire de l’établissement, les e-mails aux parents et les parcours automatisés. Son ouverture est prévue fin 2026 ; la liste d’attente est ouverte. Le produit s’adresse aussi aux conservatoires et aux associations.
+
+Claude Code, les agents et l’automatisation des tests font partie de mon quotidien, avec les mêmes exigences de relecture que le reste du code. J’ai aussi construit Signature, un générateur de visuels réalisé sur Toolcraft avec Codex : la façade tramée à l’ouverture de ce site en sort.
+
+### Les étapes
+
+- 2025 – aujourd’hui : Développeur freelance, MaxiCoffee, Commande.com, avec l’agence Dn’D
+- 2024 – aujourd’hui : Fondateur et éditeur, Yedra, le CRM des écoles
+- 2025 : Lead developer, HeyTeam
+- 2022 – 2024 : Développeur backend e-commerce, Ultra Premium Direct
+- 2013 – 2022 : Développeur full-stack, onepoint : Enedis, Gaz de Bordeaux, PSA, Bureau Veritas Pro, SMIP
+- 2012 – 2013 : Développeur PHP, TimeOne
+- 2009 – 2011 : Développeur PHP en alternance, Agence Web Stratégies, illicotravel
+- 2008 – 2011 : Master Architecte logiciel, ETNA, école d’alternance en informatique
+
+---
+
+## Mission : MaxiCoffee (2025 – 2026)
+
+Page : https://mickaelteixeira.github.io/missions/maxicoffee/
+
+## Un middle office pour MaxiCoffee. Territoires, facturation, logistique et produit, synchronisés avec Salesforce.
+Client : MaxiCoffee
+Rôle : Développeur freelance
+Période : Juillet 2025 – octobre 2026
+Lieu : Bordeaux, en hybride
+Pile : PHP 8.3, Laravel, API Platform
+MaxiCoffee vend du café, du thé et des machines, aux particuliers comme aux professionnels. Derrière la boutique, il faut savoir à qui l’on vend, quoi facturer et comment livrer. C’est le rôle d’un middle office, et c’est celui que j’ai aidé à mettre en place, de juillet 2025 à octobre 2026.
+
+### Le problème à résoudre.
+Un middle office se tient entre les outils commerciaux et les opérations. Ici, les clients et les territoires commerciaux vivent dans Salesforce ; d’autres données arrivent sous forme de fichiers CSV ; et quatre domaines en dépendent : les territoires, la facturation, la logistique et le produit.
+Le piège classique, dans ce genre de système, c’est le couplage : chaque module finit par appeler tous les autres, et un changement de territoire peut casser la facturation. Tout l’enjeu est de faire travailler ces domaines ensemble sans les souder les uns aux autres.
+
+### Ce que j’ai construit.
+Les modules critiques La gestion des territoires, la facturation, la logistique et le produit.
+L’intégration Salesforce La synchronisation des données des clients et des territoires commerciaux.
+Les imports Des parsers CSV et des systèmes d’import complexes.
+Les messages Une architecture asynchrone pour synchroniser les domaines entre eux.
+
+### Les choix, et pourquoi.
+L’architecture hexagonale. Les règles métier sont au centre ; Salesforce, les fichiers et la base de données sont branchés autour, par des adaptateurs. Changer de source ne touche pas au métier.
+Le Domain-Driven Design. Chaque domaine a son vocabulaire et ses limites. Un territoire n’a pas le même sens pour un commercial et pour la logistique : le code le dit explicitement, au lieu de le mélanger.
+Des messages plutôt que des appels. Les domaines se synchronisent par des messages asynchrones, portés par RedPanda. Un domaine publie ce qui a changé ; ceux que ça concerne s’en occupent, à leur rythme.
+Laravel et API Platform. Le cadre et l’API, avec Docker pour les environnements et GitLab CI pour l’intégration continue.
+Quatre domaines qui travaillent ensemble, sans être soudés les uns aux autres.
+- 4 domaines critiques : territoires, facturation, logistique, produit
+- 1 synchronisation Salesforce, clients et territoires
+- 16 mois de mission, de juillet 2025 à octobre 2026
+PHP 8.3 · Laravel · API Platform · architecture hexagonale · DDD · RedPanda · Docker · GitLab CI
+
+---
+
+## Mission : Commande.com (2025)
+
+Page : https://mickaelteixeira.github.io/missions/commande/
+
+## La refonte de Commande.com sur Sylius. Un moteur headless, des flux ERP et transporteurs, des tests automatisés.
+avec l’agence Dn’D
+Client : Commande.com, avec l’agence Dn’D
+Rôle : Développeur freelance
+Période : Avril – juillet 2025
+Lieu : Bordeaux, à distance
+Pile : PHP 8.2, Symfony, Sylius
+Commande.com refaisait entièrement sa plateforme e-commerce, avec l’agence Dn’D, partenaire de Sylius. Je l’ai rejointe en freelance d’avril à juillet 2025 : un moteur headless à intégrer, des fonctionnalités métier à écrire, et des flux à tenir avec l’ERP, les transporteurs et les outils internes.
+
+### Le problème à résoudre.
+Une plateforme e-commerce ne vit jamais seule. Chaque commande parle à l’ERP, aux transporteurs, aux outils internes ; chacune de ces conversations a ses formats et ses rythmes.
+Une refonte complète, c’est changer le moteur sans couper ces conversations. Et c’est l’occasion de séparer enfin la boutique de la logique de commande : c’est tout l’intérêt d’un e-commerce headless.
+
+### Ce que j’ai construit.
+Le moteur headless L’intégration d’un moteur e-commerce headless, sur Sylius.
+Les fonctionnalités métier La logistique, les promotions, les exports.
+Les flux interconnectés L’ERP, les transporteurs, les outils internes.
+La qualité Des tests PHPUnit et Behat, PHPStan et CS Fixer.
+Et, au-delà du code : une contribution à l’architecture, et un accompagnement sur la stratégie technique.
+
+### Les choix, et pourquoi.
+Sylius, en headless. Sylius est un e-commerce open source construit sur Symfony. En headless, il sert la logique de commande par API Platform ; la boutique la consomme et vit sa propre vie.
+Une pile complète. RabbitMQ, un courtier de messages, et Elasticsearch, un moteur de recherche, complètent la pile du projet.
+Des tests qu’on peut lire. Behat décrit les comportements attendus en phrases ; PHPUnit, PHPStan et CS Fixer tiennent le reste. Le tout tourne dans GitLab CI, avec Docker.
+Changer de moteur sans couper les conversations avec l’ERP et les transporteurs.
+- 1 moteur e-commerce headless, sur Sylius
+- 3 familles de flux : ERP, transporteurs, outils internes
+- 4 outils de qualité : PHPUnit, Behat, PHPStan, CS Fixer
+PHP 8.2 · Symfony · Sylius · API Platform · RabbitMQ · Elasticsearch · Docker · GitLab CI
+
+---
+
+## Mission : HeyTeam (2025)
+
+Page : https://mickaelteixeira.github.io/missions/heyteam/
+
+## HeyTeam : une architecture modulaire. Et une équipe qui garde la main.
+Employeur : HeyTeam
+Rôle : Lead developer, en poste
+Période : Janvier – avril 2025
+Lieu : À distance
+Pile : Laravel 8, PHP 7.4, MySQL
+HeyTeam aide les entreprises à réussir l’arrivée de leurs collaborateurs, puis toutes les transitions qui suivent. En 2025, j’y ai été lead developer pendant quatre mois, sur une plateforme B2B qui relie HeyTeam aux outils SIRH de ses clients.
+
+### Le problème à résoudre.
+Une plateforme d’interconnexion vit au rythme des outils qu’elle relie : chaque SIRH a ses données, ses formats, ses règles. Sans architecture claire, chaque nouvel outil ajoute un cas particulier, et le code devient difficile à faire évoluer.
+Le point de départ était une application Laravel existante. Il fallait la faire évoluer sans tout réécrire, et poser des pratiques que toute l’équipe partage.
+
+### Ce que j’ai construit.
+Une architecture modulaire Conçue et mise en place pour l’interconnexion de HeyTeam avec les outils SIRH.
+Une refonte en DDD Des patterns simplifiés et des pratiques de développement standardisées.
+Des audits et un plan Qualité, maintenabilité, scalabilité : un plan d’amélioration continue.
+L’outillage Tests automatisés, analyse statique et intégration continue.
+
+### Lead, c’est aussi transmettre.
+Une architecture ne tient que si l’équipe sait la faire vivre. J’ai animé les rituels techniques, revues de code, pair programming, présentations internes, et encadré l’équipe de développeurs : relecture, montée en compétence, méthodologie.
+Pourquoi le DDD ici. Le Domain-Driven Design donne à chaque domaine son vocabulaire et ses limites. Dans une plateforme qui parle à plusieurs SIRH, c’est ce qui évite que les particularités de l’un se répandent dans tout le code.
+Pourquoi l’outillage d’abord. Tests, analyse statique et intégration continue donnent le filet de sécurité qui permet de refondre un existant sans le casser.
+Faire évoluer l’existant plutôt que tout réécrire, et laisser une équipe autonome.
+- 1 plateforme B2B d’interconnexion avec les SIRH
+- 3 rituels : revues de code, pair programming, présentations internes
+- 4 mois comme lead developer, de janvier à avril 2025
+Laravel 8 · PHP 7.4 · MySQL · DDD · API REST · Docker · GitLab CI
+
+---
+
+## Mission : Ultra Premium Direct (2022 – 2024)
+
+Page : https://mickaelteixeira.github.io/missions/upd/
+
+## La migration vers Sylius d’Ultra Premium Direct. Trois ans sur le backend d’un e-commerce à fort trafic.
+Employeur : Ultra Premium Direct
+Rôle : Développeur backend, en poste
+Période : Janvier 2022 – décembre 2024
+Lieu : Bordeaux, en hybride
+Pile : PHP 8, Symfony 5, Sylius 1.10
+Ultra Premium Direct fait fabriquer en France et vend en ligne des aliments pour chiens et chats. De 2022 à 2024, j’ai travaillé sur le backend de ce spécialiste du petfood en ligne : une plateforme qui doit tenir le trafic, et qui a changé de moteur en route.
+
+### Le problème à résoudre.
+Un e-commerce à fort trafic ne pardonne ni la lenteur ni la panne. L’enjeu était double : améliorer l’infrastructure backend pour répondre à ces exigences de performance et de fiabilité, et migrer l’ancienne plateforme vers Sylius, une base technologique évolutive et durable.
+Migrer une boutique qui vend tous les jours, c’est réparer l’avion en vol : la nouvelle base doit arriver sans gêner les clients.
+
+### Ce que j’ai construit.
+La migration vers Sylius Le passage stratégique de l’ancienne plateforme vers Sylius.
+La performance L’optimisation de la plateforme pour un e-commerce à fort trafic.
+La robustesse Un backend consolidé, pour gérer efficacement les opérations commerciales.
+La transition Menée en étroite collaboration avec l’équipe en place.
+
+### Les choix, et pourquoi.
+Sylius 1.10, sur Symfony 5. Un e-commerce open source, construit sur un cadre que l’équipe maîtrise : la boutique devient un projet Symfony comme les autres, que l’on peut étendre sans dépendre d’un éditeur.
+API Platform. Pour exposer les données de la boutique proprement, aux outils qui en ont besoin.
+La performance comme exigence. Sur un fort trafic, chaque requête compte ; l’optimisation ne vient pas après, elle fait partie du travail.
+Changer de moteur en route, avec l’équipe, pour que les clients ne s’en aperçoivent pas.
+- 3 ans sur le backend, de 2022 à 2024
+- 1 migration stratégique vers Sylius
+- 4 chantiers : migration, performance, robustesse, transition
+PHP 8 · Symfony 5 · Sylius 1.10 · API Platform · MySQL
+
+---
+
+## Mission : onepoint (2013 – 2022)
+
+Page : https://mickaelteixeira.github.io/missions/onepoint/
+
+## Huit ans de conseil chez onepoint. Six missions chez cinq clients, du Zend Framework à Angular, de l’extranet à l’application de dépannage.
+Employeur : onepoint
+Rôle : Développeur web full-stack, en poste
+Période : Juillet 2013 – janvier 2022
+Lieu : Pessac, en hybride
+Clients : Enedis, Gaz de Bordeaux, PSA, Bureau Veritas Pro, SMIP
+De 2013 à 2022, j’ai été développeur web full-stack chez onepoint, un groupe de conseil et de transformation numérique. Huit ans et sept mois de missions chez ses clients, depuis Pessac : l’énergie, l’automobile, l’inspection et la mutuelle.
+
+### Ce que le conseil apprend.
+Changer de client, c’est changer de code, de pile et de contraintes. Le conseil apprend à lire vite un existant, à le faire évoluer sans le casser, et à livrer dans le cadre de quelqu’un d’autre.
+Sur ces huit ans, trois fils reviennent : les migrations, du Zend Framework vers Symfony ; les parcours de souscription, du site de la mutuelle SMIP à l’extranet de Gaz de Bordeaux ; et l’intégration de flux, jusqu’au Java et au SOAP chez Enedis.
+- 8 ans et sept mois, de juillet 2013 à janvier 2022
+- 6 missions, chez cinq clients
+- 2 langages côté serveur : PHP, et Java chez Enedis
+PHP 5 → 7 · Zend Framework · Symfony 2 → · API Platform · Angular 10 et 11 · Java 8 · Spring Boot · Oracle · MySQL · Drupal
+
+### Six missions, une même exigence. Livrer dans le code des autres.
+04.2021 – 01.2022 Enedis
+De nouvelles fonctionnalités pour une application de dépannage, et l’intégration de flux externes.
+Java 8 · REST · SOAP · Spring Boot · Angular 11
+12.2015 – 03.2021 Gaz de Bordeaux · Regaz
+Un extranet B2C et son tunnel de souscription, une application de gestion du temps, une PWA, et une intégration continue améliorée.
+Zend Framework · Symfony · PHP 7 · Oracle · Angular 10 · API Platform
+03.2015 – 09.2015 Gaz de Bordeaux · Regaz
+La refonte d’un extranet B2B en tableau de bord.
+Zend Framework 1.11 · PHP 5 · Oracle 8
+11.2014 – 01.2015 PSA
+La fusion des sites Motaquip et Eurorepar, et leur renouveau graphique.
+Zend Framework 1.11 · PHP 5 · MySQL
+03.2014 – 02.2015 Bureau Veritas Pro
+La migration d’un site du Zend Framework 1.11 vers Symfony 2, pour en améliorer les performances.
+Zend Framework 1.11 → Symfony 2
+07.2013 – 09.2013 SMIP
+Le site web d’une mutuelle, et son tunnel de souscription.
+PHP 5 · MySQL · Drupal
+
+---
+
+## Mission : TimeOne (2012 – 2013)
+
+Page : https://mickaelteixeira.github.io/missions/timeone/
+
+## TimeOne, l’affiliation. Des outils pour un réseau d’affiliation, une application mobile, et Scrum au quotidien.
+Employeur : TimeOne
+Rôle : Développeur PHP, en poste
+Période : Janvier 2012 – juillet 2013
+Lieu : Bordeaux
+Pile : PHP, MySQL, JavaScript
+TimeOne est un groupe de marketing digital, spécialiste de l’acquisition de clients et de l’affiliation. De janvier 2012 à juillet 2013, j’y ai été développeur PHP, à Bordeaux.
+
+### Ce que j’ai construit.
+Des outils pour l’affiliation De nouveaux outils, et des composants ergonomiques réutilisables d’une application à l’autre.
+Une application mobile Développée avec PhoneGap, en technologies du web.
+Du code repris Du refactoring en équipe, et des requêtes SQL.
+Des interfaces Des gabarits HTML5 intégrés et créés, des templates JavaScript avec Handlebars.
+
+### Scrum, au quotidien.
+Le daily, un ScrumMaster, un Product Owner : TimeOne travaillait en Scrum. C’est une méthode qui apprend à découper le travail, à livrer souvent, et à dire tôt ce qui bloque.
+Côté technique, l’époque était au JavaScript dans le navigateur, avec jQuery et Handlebars, et aux applications mobiles hybrides avec PhoneGap : une seule base web, empaquetée pour les téléphones.
+Construire des outils qui servent à plusieurs applications, plutôt qu’à une seule.
+- 19 mois, de janvier 2012 à juillet 2013
+- 1 application mobile, avec PhoneGap
+- 3 repères Scrum : le daily, le ScrumMaster, le Product Owner
+PHP 4 et 5 · MySQL · jQuery · JavaScript · Handlebars · PhoneGap · Bootstrap · HTML5 · CSS3
+
+---
+
+## Mission : Web Stratégies (2009 – 2011)
+
+Page : https://mickaelteixeira.github.io/missions/webstrategies/
+
+## Web Stratégies, l’école de l’agence. Deux ans d’alternance, de la maquette Photoshop au paiement Magento.
+Employeur : Agence Web Stratégies
+Rôle : Développeur PHP, en alternance
+Période : Novembre 2009 – novembre 2011
+Lieu : Bordeaux
+École : ETNA, Master Architecte logiciel
+Web Stratégies est une agence web et social média, à Bordeaux et à Paris. De novembre 2009 à novembre 2011, j’y ai fait mon alternance de développeur PHP, pendant mon Master d’architecte logiciel à l’ETNA.
+
+### Le cycle complet, en agence.
+En agence, on voit tout le trajet d’un site : la maquette arrive en Photoshop, on la découpe, on écrit le squelette HTML, on l’intègre dans le CMS, on livre, puis on maintient et on fait évoluer.
+C’est là que j’ai appris le métier par tous ses bouts, et que j’ai touché pour la première fois au e-commerce : l’intégration d’une solution de paiement dans Magento.
+
+### Ce que j’ai construit.
+Des sites web En PHP 5, avec Magento, Joomla et WordPress.
+Un paiement en ligne L’intégration d’une solution de paiement dans Magento.
+De la maquette au HTML Le découpage des maquettes Photoshop, le squelette HTML, l’intégration.
+La maintenance Les évolutions de sites en PHP 5, Joomla et WordPress.
+Apprendre le métier par tous ses bouts, de la maquette au paiement.
+- 2 ans d’alternance, de 2009 à 2011
+- 3 plateformes : Magento, Joomla, WordPress
+- 1 première intégration de paiement e-commerce
+PHP 5 · Magento · Joomla · WordPress · HTML · CSS
+
+---
+
+## Mission : illicotravel (2009)
+
+Page : https://mickaelteixeira.github.io/missions/illicotravel/
+
+## illicotravel, le premier flux. Brancher de nouveaux partenaires au moteur d’un comparateur de voyages.
+illico travel
+Entreprise : illicotravel
+Rôle : Développeur PHP, en stage
+Période : Février – septembre 2009
+Lieu : Paris
+Pile : PHP, MySQL, MooTools
+illicotravel était un comparateur de voyages en ligne, qui a depuis été racheté par Liligo. En 2009, j’y ai fait un stage à Paris, de février à septembre : agréger de nouveaux partenaires à son moteur de recherche, pour la version française et la version espagnole du site.
+
+### Un comparateur vaut ce que valent ses sources.
+Un comparateur de voyages ne vend rien lui-même : il rassemble les offres de ses partenaires. Chacun arrive avec son flux, souvent en XML, avec son format et ses manques ; il faut les lire, les comprendre et les faire entrer dans un seul moteur de recherche.
+Le fil rouge de mon parcours commence là : faire parler entre eux des systèmes qui ne se connaissent pas. Il passe ensuite par les ERP, les transporteurs, Salesforce et les SIRH.
+
+### Ce que j’ai construit.
+De nouveaux partenaires Leur agrégation au moteur de recherche, par l’intégration de leurs flux XML.
+Deux pays La version française et la version espagnole du site.
+Faire parler des systèmes qui ne se connaissent pas : tout a commencé là.
+- 8 mois de stage, de février à septembre 2009
+- 2 versions du site : française et espagnole
+PHP · MySQL · XML · HTML · CSS · JavaScript · MooTools
+
+---
+
+## Yedra. Et pour une fois, je suis allé au bout. Mon CRM pour les écoles a un nom, un site et une ouverture prévue fin 2026.
+
+Page : https://mickaelteixeira.github.io/actualites/yedra-crm-ecoles/
+
+Publié le 13 août 2026 · Yedra
+
+Je construis Yedra pour réunir le fichier des familles, les demandes et les échanges avec les parents. Six modules, des choix concrets, et une ouverture prévue fin 2026 avec des écoles pilotes.
+
+Il s’appelle Yedra. C’est mon CRM pour les écoles, et voilà bientôt deux ans que je le construis. En ce 13 août 2026, il a un site, une liste d’attente et une ouverture prévue fin 2026, école après école. Je suis fier de pouvoir enfin lui donner un nom et montrer ce que je prépare pour les premiers établissements pilotes.
+
+### Pourquoi je construis Yedra.
+
+Le point de départ, c’est le fichier des familles, les demandes qui arrivent et les e-mails aux parents. Ces informations sont aujourd’hui éparpillées : un tableur pour les coordonnées, un formulaire ailleurs, des listes de destinataires à refaire. Entre une adresse corrigée et le prochain courrier, il faut retrouver la bonne information. Je veux réunir ce travail dans un outil où les étapes se suivent.
+
+Je pense aux directions et aux secrétariats des écoles, collèges et lycées privés, aux écoles hors contrat, mais aussi aux conservatoires et aux associations. Leurs organisations diffèrent ; le besoin de savoir à qui écrire, avec quelles coordonnées et pour quel sujet mérite un outil soigné. Je construis Yedra autour de six modules :
+
+- Contacts et foyers : les personnes, leurs liens de famille et leurs adresses.
+- Formulaire et demandes : la page publique et les informations à vérifier.
+- Campagnes d’e-mails : les lettres aux familles, regroupées par foyer.
+- Automatisations : les parcours visuels et leur essai avant publication.
+- Import et documents : les fichiers existants, la simulation et les PDF.
+- RGPD et sécurité : les droits des familles, les accès et le journal.
+
+### Une personne, une fiche. Une adresse, un foyer.
+
+Dans le module Contacts et foyers, chaque personne a sa fiche, avec les champs choisis par l’établissement. Un foyer rassemble adultes et enfants à une adresse. Yedra propose les foyers à partir des liens de famille ; l’équipe les confirme. Ce partage des tâches me tient à cœur : le logiciel prépare, les personnes qui connaissent les familles décident.
+
+Pour chaque élève, l’établissement précise « qui reçoit quoi », sujet par sujet : facturation, sorties, informations pratiques. Les liens familiaux, l’autorité parentale et les destinataires d’un message répondent à des questions différentes. Je veux que l’interface permette de les régler clairement. Le fichier peut ensuite être filtré, trié, regroupé, et ces réglages enregistrés dans des vues réutilisables.
+
+### Les demandes passent d’abord par « À vérifier ».
+
+Le module Formulaire et demandes donne à l’établissement une page publique, à ses couleurs, avec son formulaire. Une demande arrive dans la file « À vérifier », où se retrouvent aussi les corrections proposées par les familles et les doublons à examiner. L’équipe lit, vérifie, puis valide d’un geste : la fiche est alors créée. Un bandeau permet encore d’annuler pendant cinq secondes.
+
+**La validation fait partie du produit.** Rien n’entre dans la base sans validation : une demande ou une correction proposée par une famille doit passer par l’équipe. Je veux rendre cette décision facile à prendre, avec assez d’informations pour comprendre ce qui va changer.
+
+### Une lettre par foyer, des destinataires choisis.
+
+Les campagnes d’e-mails partent d’une vue du fichier. Une lettre par foyer ou par adresse évite de multiplier les courriers quand plusieurs enfants sont concernés. Le message reprend le logo et les couleurs de l’établissement. L’éditeur assemble textes, images, boutons ou fichiers ; un aperçu permet de regarder la lettre telle qu’une personne la recevra, au bureau ou au téléphone.
+
+Je veux aussi que l’envoi ait une suite compréhensible : suivre la remise, retrouver les réponses dans Yedra, faire revenir les adresses refusées dans « À vérifier ». Chaque famille doit pouvoir choisir ses sujets et se désinscrire en un geste. Le choix des destinataires commence dans les fiches et se prolonge jusque dans le courrier reçu.
+
+### Des parcours que l’on peut essayer avant de publier.
+
+Pour les automatisations, je travaille sur une toile où les étapes sont reliées : un déclencheur, des attentes, des conditions, des e-mails, des étiquettes ou une répartition A/B. Le parcours « Bienvenue aux nouvelles familles » rend cette logique visible. « Demande approuvée » déclenche une attente d’un jour, puis l’e-mail « Bienvenue parmi nous ». Une condition vérifie ensuite l’étiquette « Demi-pension » pour orienter la suite.
+
+Avant publication, un essai sur une fiche choisie montre le chemin suivi. Rien ne part et rien ne s’écrit pendant cet essai. C’est un choix de développeur auquel je tiens : pouvoir comprendre une règle avant de la laisser agir. Une fois le parcours publié, son déroulement doit rester consultable contact par contact, pour retrouver où chacun en est.
+
+### Importer en voyant le résultat avant l’écriture.
+
+Le module Import et documents lit les fichiers CSV, XLSX, XLS et ODS. Une ligne d’élève peut contenir ses deux responsables : Yedra prépare alors les fiches des parents et le foyer. Avant toute écriture, la simulation joue l’import sur une copie et distingue les créations, les mises à jour et les fiches inchangées. Les foyers et les fratries reconnus deviennent eux aussi visibles.
+
+**30 jours** : Le délai prévu pour annuler un import depuis les travaux de l’établissement.
+
+La réversibilité va jusqu’au détail des modifications : les fiches créées partent à la corbeille, les anciennes valeurs reviennent, sauf celles retouchées depuis. Je veux que reprendre un fichier existant soit une opération que l’on peut examiner et défaire. À partir des vues, les documents sortent en PDF : fiches, listes, étiquettes d’adresse, trombinoscopes et fiches d’urgence, dans l’ordre choisi par l’équipe.
+
+### Le RGPD se règle dans le produit.
+
+La page « Vos droits sur vos données » doit permettre aux familles, sans compte, de demander une copie, de faire corriger une information, de choisir leurs envois sujet par sujet ou de demander l’effacement. Elle annonce une réponse de l’établissement sous un mois et permet de suivre la demande. L’effacement porte sur ce que l’établissement n’est pas tenu de conserver ; il doit expliquer ce qu’il garde et pourquoi.
+
+Côté équipe, un registre suit les demandes et leurs échéances. Les durées de conservation se règlent dans Yedra ; les fiches arrivées au bout sont proposées à l’effacement. Quatre rôles structurent les accès : Direction, Secrétariat, Communication et Enseignant. Le journal garde qui a fait quoi et quand, notamment pour les imports, les exports, les documents et les connexions. Je prévois un hébergement du service et des données en France, chez Scaleway, à Paris. Ces décisions doivent se traduire en réglages et en gestes quotidiens, au-delà d’un document à lire.
+
+### Cette fois, je veux aller jusqu’aux premières écoles.
+
+Le 30 juillet, j’avais promis d’en dire plus à la rentrée. J’y avouais aussi ma longue liste de projets abandonnés, mon perfectionnisme et les moments où je perdais confiance dans ce que je pouvais apporter. Montrer Yedra aujourd’hui représente une vraie étape. Il reste en construction ; l’ouverture de fin 2026 doit se faire progressivement, avec des écoles pilotes qui pèseront sur son évolution.
+
+Je prépare aussi une démonstration accessible sans compte, où aucun e-mail ne partira, pour permettre de parcourir le produit. Pour la suite, je cherche des équipes prêtes à confronter Yedra à leurs fichiers, leurs demandes et leurs courriers. Si vous dirigez un établissement ou travaillez dans un secrétariat, un conservatoire ou une association, découvrez le projet sur https://yedra.app et rejoignez la démarche des pilotes.
+
+Sources :
+- Yedra : le CRM des écoles et des établissements scolaires : https://yedra.app
+
+---
+
+## Playwright, aussi pour le design. Avec Claude, je pars de références visuelles et je corrige le rendu composant par composant.
+
+Page : https://mickaelteixeira.github.io/actualites/playwright-mcp-design-frontend/
+
+Publié le 20 juillet 2026 · Outils
+
+Un frontend peut fonctionner et rester loin de ce que j’avais en tête. Avec Playwright MCP, j’intègre le navigateur à ma méthode de travail avec Claude.
+
+Le code passe. L’interface, elle, ne ressemble pas à ce que j’imaginais. C’est toute la difficulté du frontend avec Claude : obtenir des composants ne suffit pas à obtenir le design voulu. Au 20 juillet 2026, la méthode la plus efficace que j’ai trouvée repose sur une direction visuelle, puis des corrections successives.
+
+### Tout commence par les références.
+
+Je prépare un tableau d’inspiration sur Pinterest. Je fais ensuite définir à Claude un système de design cohérent. Puis j’avance composant par composant. Cet ordre change beaucoup de choses pour moi : je sais ce que je cherche avant de demander du code.
+
+Les références donnent la direction. Le système de design les traduit en règles. Et chaque composant devient une partie que je peux examiner et corriger. J’évite ainsi de demander toute une interface d’un coup, puis de multiplier les retouches pour retrouver mon idée de départ.
+
+### Un vrai navigateur dans la boucle.
+
+Playwright MCP donne à Claude accès à un navigateur par le protocole MCP. Il peut naviguer, interagir avec les éléments de la page, prendre des captures d’écran et consulter la console. Je peux donc lui faire examiner l’interface exécutée, puis reprendre le travail à partir de ce rendu.
+
+Pour agir sur la page, le serveur s’appuie principalement sur des instantanés de l’arbre d’accessibilité. Ils décrivent les éléments et leurs rôles. Les captures d’écran apportent l’image du rendu. J’utilise ces deux éléments ensemble : la structure pour les interactions, l’image pour le travail visuel.
+
+C’est ce qui me plaît dans cet usage de Playwright. L’outil qui sert à tester le frontend participe aussi aux corrections du design. Je donne à Claude les critères à suivre et les moyens d’examiner ce qu’il vient de produire.
+
+```sh
+claude mcp add playwright npx @playwright/mcp@latest
+```
+
+L’ajout du serveur est un point de départ. Je veux ensuite préciser ce que le navigateur doit examiner. Pour un composant, ma demande pourrait porter sur l’alignement, les espacements et le comportement lorsque le texte devient plus long. Ces critères donnent une direction à la correction. Ils évitent que chaque passage reparte vers une nouvelle proposition visuelle alors que je cherche à améliorer celle qui existe.
+
+**Une correction que je peux voir.** Pour chaque passage, je préfère nommer un écart concret, corriger le composant concerné, puis revoir le rendu. Un changement précis est plus facile à juger qu’une nouvelle version de toute la page.
+
+Imaginons une carte dont le titre occupe une ligne dans la première maquette. Je voudrais la revoir avec un titre plus long et dans une fenêtre plus étroite. Le but serait de confronter la règle choisie à plusieurs contenus, puis de décider si l’espacement et la hiérarchie tiennent encore. C’est un exemple d’exercice que je demanderais au navigateur dans cette méthode, sans le confondre avec un jugement esthétique automatique.
+
+Je voudrais aussi conserver la même direction visuelle pendant ces essais. Une référence sert à exprimer une intention ; les corrections doivent m’aider à la retrouver dans le produit. Si chaque capture devient le prétexte à changer les couleurs ou la typographie, je perds ce fil. C’est pourquoi le système de design intervient avant les composants dans ma méthode. Il me donne des règles auxquelles revenir lorsque plusieurs corrections possibles se présentent.
+
+L’image du rendu et la structure de la page apportent alors deux prises sur le même problème. Je peux regarder ce qui se voit, demander une interaction précise, puis examiner ce qui a changé. Ce va-et-vient me plaît parce qu’il ramène la discussion à l’interface que je suis en train de construire.
+
+### Produire, examiner, corriger.
+
+Dans mon CLAUDE.md, j’accompagne cette méthode de consignes nommées Frontend-Design, Self-critique et Artifacts Builder. Elles font partie de ma configuration pour poser une intention, examiner le résultat et recommencer sur une partie précise de l’interface.
+
+Chez moi, les interfaces sont plus proches de ma vision et les allers-retours moins nombreux. Tout n’est pas parfait. Mais cette façon d’avancer me convient bien mieux : des références au départ, des composants successifs, et le navigateur pour confronter le code à son rendu. Playwright a toute sa place dans ce travail de design.
+
+Et depuis : Le README de Playwright MCP recommande désormais aux agents de code le CLI de Playwright avec des skills, plus économe en contexte, et réserve le serveur MCP aux boucles qui gagnent à garder le navigateur ouvert : exploration, tests qui se réparent, longues sessions autonomes.
+
+Sources :
+- Playwright — documentation officielle de Playwright MCP : https://playwright.dev/docs/getting-started-mcp
+- Microsoft — dépôt officiel du serveur Playwright MCP : https://github.com/microsoft/playwright-mcp
+- Mickaël Teixeira — méthode et retour personnel : https://www.linkedin.com/feed/update/urn:li:activity:7484980089521315842/
+
+---
+
+## DeepSeek en local avec DwarfStar. Le projet d’antirez travaille la quantification et la mémoire pour exécuter V4 Flash sur sa machine.
+
+Page : https://mickaelteixeira.github.io/actualites/dwarfstar-deepseek-local/
+
+Publié le 15 juillet 2026 · Outils
+
+DwarfStar propose une autre façon d’utiliser DeepSeek V4 Flash : l’exécuter en local. De quoi me donner envie de regarder de près la mémoire nécessaire et les choix techniques.
+
+Faire tourner DeepSeek V4 Flash sur sa propre machine, voilà un sujet concret. DS4, aussi appelé DwarfStar, propose cette piste. Derrière ce projet, on retrouve antirez, Salvatore Sanfilippo, le créateur de Redis. Ce qui me plaît ici, c’est le travail sur l’exécution locale et sur la mémoire.
+
+### 284 milliards de paramètres au total.
+
+DwarfStar est un moteur d’inférence : le programme qui exécute un modèle pour produire ses réponses. Il vise notamment DeepSeek V4 Flash, dont l’architecture à mélange d’experts compte 284 milliards de paramètres. Environ 13 milliards sont activés par jeton.
+
+La mémoire nécessaire dépend de l’ensemble à stocker et à charger. Les 13 milliards de paramètres actifs décrivent le calcul par jeton, pas la taille du modèle complet. Pour envisager une installation locale, je regarde donc les formats proposés et la machine capable de les accueillir.
+
+### Environ 81 Gio pour la variante deux bits.
+
+Le projet propose une variante avec des experts quantifiés sur environ deux bits. Le fichier représente autour de 81 Gio, pour des machines de 96 ou 128 Go de mémoire selon les indications du projet. Une variante quatre bits vise des configurations plus grandes. On parle donc de besoins matériels conséquents.
+
+**81 Gio** : Taille approximative de la variante à experts quantifiés autour de deux bits, selon le guide du projet.
+
+La quantification réduit la précision de représentation d’une partie des poids. Le cache de contexte sur disque permet, lui, de conserver un état de calcul. Ce sont deux aspects du travail sur la mémoire : la place occupée par le modèle et celle de son contexte. La qualité des réponses et les limites de contexte feront partie de ce que je voudrai évaluer.
+
+### Choisir où le modèle s’exécute.
+
+DwarfStar annonce des chemins d’exécution Metal, CUDA et ROCm, ainsi qu’un agent de programmation intégré. J’ai envie de voir ce que cette approche donne sur des tâches précises, avec une configuration complète. Le matériel, la mémoire et le coût de l’ensemble entrent dans le choix.
+
+Mon premier essai partirait d’une tâche que je connais suffisamment pour juger la réponse. Par exemple, demander une explication de code puis examiner les points que le modèle a retenus. Je noterais la variante utilisée, le matériel et la taille du contexte. Je voudrais pouvoir refaire le même exercice avant d’élargir la conversation, afin de distinguer une première impression d’un comportement que je retrouve.
+
+```sh
+./ds4 -p "Explain Redis streams in one paragraph."
+```
+
+Cette commande donne un point d’entrée dans la documentation actuelle. Elle suppose que la compilation et le téléchargement ont déjà été faits. Je la lirais avec le guide de ma plateforme avant de préparer un essai. Le sujet matériel m’intéresse précisément parce qu’il fait partie de l’expérience : je veux savoir ce que je dois installer avant d’interpréter la première réponse comme un résultat utilisable.
+
+**Préparer une comparaison qui me parle.** Même tâche, même consigne, variante et machine notées : voilà le point de départ que je choisirais pour un essai local. J’examinerais ensuite la réponse et le temps d’attente ensemble.
+
+Je séparerais également deux questions. D’abord, est-ce que la machine peut accueillir la configuration envisagée ? Ensuite, est-ce que la qualité et le rythme des réponses conviennent à mon travail ? Un fichier qui tient dans l’espace disponible répond seulement à une partie de mon besoin. Je voudrais suivre une vraie séquence de travail avant de décider quelle place donner à cet outil.
+
+Le cache persistant entrerait dans ce même essai. Je regarderais ce qui se passe quand une conversation reprend et quand de nouveaux éléments s’ajoutent. Ce serait plus instructif pour moi qu’une réponse isolée. L’intérêt de cette piste locale tient à la possibilité d’observer l’ensemble sur une configuration que je peux décrire, puis d’en tirer une décision pour mes propres tâches.
+
+C’est cette possibilité d’exécuter le modèle chez soi qui retient mon attention. Je veux pouvoir examiner une autre manière de travailler avec l’IA et mieux maîtriser son lieu d’exécution. DwarfStar met sur la table des formats et des besoins matériels concrets. Pour aller plus loin, j’attends de confronter ces choix à la qualité des réponses sur les tâches qui me concernent.
+
+Sources :
+- antirez — dépôt DwarfStar et plateformes visées : https://github.com/antirez/ds4
+- DwarfStar — formats de modèles et mémoire : https://github.com/antirez/ds4/blob/main/docs/MODELS.md
+- DwarfStar — script de téléchargement et tailles annoncées : https://github.com/antirez/ds4/blob/main/download_model.sh
+- DeepSeek — présentation initiale de V4 Flash : https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/commit/a7aaed80dd2df27620eb534454253ea25eb11c7a
+- DwarfStar : serveur et cache persistant : https://github.com/antirez/ds4/blob/main/docs/SERVER.md
+
+---
+
+## L’IA produit du code. Le travail continue. Facturation à l’usage, réembauches et supervision remettent le coût complet au centre du sujet.
+
+Page : https://mickaelteixeira.github.io/actualites/ia-reembauches-facturation/
+
+Publié le 19 juin 2026 · IA et métier
+
+Je trouve l’IA très efficace sur le répétitif. Mais le calcul, la relecture et la maintenance font aussi partie de la facture.
+
+Produire davantage de code ne termine pas le travail. Il faut encore le relire, le sécuriser et le maintenir. Le 19 juin 2026, c’est ce coût complet qui me préoccupe. D’un côté, la facturation des outils rend la consommation plus visible. De l’autre, le service client offre des exemples où la place des humains revient dans la discussion.
+
+### Copilot compte les jetons.
+
+GitHub a annoncé la transition de Copilot vers les AI Credits à partir du 1er juin 2026. La consommation est liée aux jetons utilisés. Les abonnements comprennent une enveloppe, avec des possibilités de consommation supplémentaire. Certains abonnements annuels bénéficient d’un traitement particulier jusqu’à leur échéance.
+
+Cette évolution me ramène au coût des agents. Une aide ponctuelle et une longue session ne représentent pas nécessairement la même dépense de calcul. Quand j’évalue le temps gagné, je veux aussi tenir compte de l’usage nécessaire pour obtenir le résultat. La vitesse de production seule raconte une partie du travail.
+
+### Chez Klarna, la qualité revient dans la discussion.
+
+En mai 2025, le dirigeant de Klarna expliquait déjà vouloir recruter de nouveau pour préserver la possibilité de parler à une personne. Il reconnaissait qu’une priorité trop forte donnée aux coûts avait affecté la qualité du service. C’est cette place du contact humain qui me paraît intéressante dans son propos.
+
+Dans le service client, Gartner prévoit que, d’ici 2027, la moitié des entreprises ayant attribué des réductions d’effectifs à l’IA réembaucheront pour des fonctions similaires, sous d’autres intitulés. Cette prévision pose directement la question du travail que les entreprises voudront à nouveau confier à des personnes.
+
+**50 %** : Prévision Gartner pour 2027 : entreprises du service client ayant attribué des réductions d’effectifs à l’IA, puis réembauchant pour des fonctions similaires.
+
+> « Relying solely on AI right now is premature and could lead to unintended consequences. » (Emily Potosky)
+
+### Relire fait partie de la production.
+
+Dans ma pratique de développeur, l’IA est particulièrement utile pour les tâches répétitives et le code standard. J’apprécie cette aide. La relecture, la sécurité et la maintenance restent pourtant dans mon périmètre. Je dois juger ce qui est produit et ce que cela demandera ensuite.
+
+Pour mon propre travail, je voudrais mettre les mêmes questions dans une évaluation simple. Prenons une tâche de développement répétitive : je comparerais le temps passé à la préparer, à obtenir une proposition et à relire le résultat. J’ajouterais ensuite les corrections nécessaires et le coût de l’outil utilisé. Ce serait une manière de regarder le résultat complet, avec les étapes qui restent à ma charge.
+
+**Compter jusqu’au résultat accepté.** Je veux mesurer le travail jusqu’au moment où je peux accepter le changement. La génération est une étape du calcul ; la relecture et les reprises en font partie elles aussi.
+
+Une proposition rapide mais difficile à relire ne serait pas forcément le meilleur résultat pour moi. À l’inverse, une aide limitée à une tâche bien définie pourrait être très utile si je comprends facilement ce qu’elle a fait. Ce sont les critères que je voudrais garder dans le choix d’un usage. Je n’ai pas besoin que l’outil prenne tout en charge pour trouver sa place dans ma façon de développer.
+
+La question de la supervision se pose aussi avant de produire le code. Je voudrais décider quelles consignes donner, quelles parties examiner avec le plus d’attention et à quel moment interrompre une tentative qui s’allonge. Cela fait partie du travail que j’attends d’une personne expérimentée. Si l’on veut comparer deux méthodes, ce temps de préparation mérite d’être visible au même titre que le temps d’exécution.
+
+Le service client et le développement gardent leurs particularités. Je ne déduis pas une trajectoire d’emploi des développeurs d’une prévision sur les agents de support. Ce qui relie ces sujets dans ma réflexion, c’est une question de décision : quel travail confier à l’outil et quel résultat attend-on de l’ensemble ? C’est sur cette base que j’ai envie de parler de gains.
+
+Le rôle de supervision des seniors me paraît essentiel dans cet usage. Ma conviction reste celle d’un avenir hybride, où l’on mesure aussi la qualité du résultat. Je veux évaluer l’automatisation sur l’ensemble du travail : ce qu’elle produit, ce qu’il faut reprendre et ce qu’il faudra maintenir. C’est à cette échelle que le gain devient intéressant pour moi.
+
+Et depuis : Dans une enquête menée auprès de 275 responsables du service et du support en juillet et août 2026, Gartner indique le 5 novembre que 7 % des répondants signalent des réembauches après des réductions antérieures. L’enquête porte sur le service et le support client.
+
+Sources :
+- GitHub — annonce de la transition Copilot du 27 avril 2026 : https://github.blog/news-insights/github-copilot-is-moving-to-usage-based-billing/
+- Bloomberg — entretien du dirigeant de Klarna du 8 mai 2025 : https://news.bloomberglaw.com/daily-labor-report/klarna-rethinks-ai-cost-cutting-plan-with-call-for-real-people
+- Finextra — propos sur la qualité et ajustement de la stratégie de Klarna : https://www.finextra.com/newsarticle/45956/klarna-rethinks-ai-customer-service-push-as-as-ceo-acknowledges-value-of-human-touch
+- Gartner — prévision de réembauches dans le service client : https://www.gartner.com/en/newsroom/press-releases/2026-02-03-gartner-predicts-half-of-companies-that-cut-customer-service-staff-due-to-ai-will-rehire-by-2027
+- Gartner — enquête publiée le 5 novembre 2026 : https://www.gartner.com/en/newsroom/press-releases/2026-11-05-gartner-survey-finds-21-percent-of-service-and-support-leaders-have-reduced-human-agent-headcount-because-of-ai
+
+---
+
+## Génériques PHP et TypePHP, deux pistes à suivre. Le vote reste ouvert sur la RFC, tandis que le compilateur de Swoole explore le code natif.
+
+Page : https://mickaelteixeira.github.io/actualites/php-generiques-typephp/
+
+Publié le 17 juin 2026 · Écosystème PHP
+
+Les génériques font débat dans PHP, et TypePHP explore la compilation native. J’attends surtout de voir les garanties et la compatibilité dans des applications réelles.
+
+Les génériques dans PHP et la compilation native avec TypePHP touchent à deux sujets que j’ai envie de suivre. Le premier concerne une proposition pour le langage. Le second explore une autre façon d’exécuter du code. Au 17 juin 2026, je regarde ces deux pistes avec la même attente : comprendre ce qu’elles apportent à une application réelle.
+
+### Une proposition de génériques encore au vote.
+
+Le vote sur la RFC Bound-Erased Generic Types a commencé le 14 juin et doit se terminer le 28 juin. Il est donc encore ouvert. Dans les échanges, certains votants souhaitent des génériques tout en refusant cette proposition. Le choix de l’implémentation fait pleinement partie du débat.
+
+Les génériques permettent de décrire un type paramétré par un autre. Une collection peut ainsi préciser le type de ses éléments. La RFC propose un effacement vers les bornes déclarées à l’exécution. Elle combine plusieurs contrôles avec le travail des outils d’analyse statique.
+
+```php
+function identity<T>(T $value): T {
+    return $value;
+}
+```
+
+Cet exemple donne une idée de ce que l’on cherche à exprimer. Le paramètre T relie le type de la valeur reçue à celui de la valeur renvoyée. La fonction ne se contente donc pas d’annoncer une sortie générale : la proposition permet de décrire une relation entre l’entrée et la sortie. C’est cette relation qui m’intéresse quand je pense aux collections et aux fonctions que je voudrais rendre plus faciles à comprendre.
+
+Pour évaluer cette syntaxe dans un projet, je partirais d’un exemple assez petit pour pouvoir suivre les types à la main. Une valeur entre, passe par une collection puis ressort. Je voudrais savoir ce que le langage contrôle et ce que l’analyse statique doit encore établir. Cette répartition me paraît plus importante que l’apparence de la déclaration. Elle détermine les erreurs que je peux espérer repérer avant l’exécution.
+
+**Lire cet extrait comme une proposition.** Cette syntaxe appartient à la RFC. Je ne la copierais pas dans une application PHP courante comme une fonction déjà disponible. Elle sert ici à comprendre ce que la proposition veut permettre d’écrire.
+
+C’est sur ces garanties que je veux juger une nouvelle syntaxe. Comment les types sont-ils contrôlés, et à quel moment ? Ce sont des questions concrètes pour le code que l’on écrit. La discussion autour de cette RFC porte sur une proposition précise ; le calendrier de futurs génériques natifs reste ouvert.
+
+### TypePHP passe par la compilation.
+
+TypePHP, le projet de Swoole, se présente comme un compilateur AOT, pour Ahead-Of-Time. Il passe par une génération de C++ avant de produire du code machine natif. Cette piste de compilation me donne envie de voir ce qu’elle permet sur une application.
+
+J’attends des essais reproductibles. Pour moi, un résultat sur un calcul isolé apporte moins qu’une mesure sur une application Symfony ou Laravel. Je veux comprendre le gain dans ce contexte, avec ses dépendances et les comportements dont elle a besoin au quotidien.
+
+### La compatibilité décidera de mon choix.
+
+L’objectif de compatibilité avec l’écosystème est important. Pour envisager une migration, je voudrais surtout savoir comment le code existant se comporte. Les dépendances utilisées par l’application doivent entrer dans l’évaluation, au même titre que les performances.
+
+Du côté de TypePHP, mon premier essai souhaité serait tout aussi modeste. Je choisirais une portion d’application identifiable, avec ses entrées et son résultat attendu, puis j’examinerais le parcours de compilation et les dépendances utilisées. Je voudrais pouvoir refaire la mesure et comprendre les écarts. Un changement d’exécution devient intéressant pour moi quand je sais décrire ce qu’il améliore et ce qu’il demande en échange.
+
+Cette façon de procéder laisse de la place à l’envie d’expérimenter. Je n’ai pas besoin de choisir immédiatement un camp pour suivre les deux projets. Je veux surtout garder les questions de typage et celles de compilation assez claires pour pouvoir apprendre quelque chose de chaque essai.
+
+J’ai donc hâte de voir des applications réelles mises à l’essai avec TypePHP. Côté PHP, je suivrai le résultat du vote et les discussions sur les garanties de types. Ces deux pistes se jugeront sur ce qu’elles permettent de faire concrètement. C’est là que se décidera mon envie de les utiliser dans un projet.
+
+Et depuis : Le vote s’est clos le 28 juin 2026. La RFC a été rejetée, avec 7 voix pour, 19 contre et 10 abstentions.
+
+Sources :
+- PHP — RFC Bound-Erased Generic Types et vote : https://wiki.php.net/rfc/bound_erased_generic_types
+- PHP Internals — ouverture du vote le 14 juin : https://discourse.thephp.foundation/t/php-dev-vote-rfc-bound-erased-generic-types/5554
+- Swoole — dépôt et documentation TypePHP : https://github.com/swoole/typephp
+
+---
+
+## Le Gros Chat sait nourrir la « hype ». La parodie autour de Mistral reprend tous les codes d’une annonce de modèle très attendue.
+
+Page : https://mickaelteixeira.github.io/actualites/mistral-gros-chaton-rumeur/
+
+Publié le 15 juin 2026 · IA et métier
+
+Le « Gros Chat » est une parodie, et elle fonctionne très bien. Faux classements et visuels reprennent les ingrédients d’une annonce d’IA que l’on a envie de croire.
+
+Le « Gros Chat » de Mistral est un canular. Un nom de modèle, des visuels, des tableaux de performances : la parodie reprend les signes familiers d’une grande annonce d’IA. Le 15 juin 2026, c’est ce décalage qui m’amuse. Tout ressemble à la prochaine sortie que l’on attend avec impatience.
+
+### La recette d’une annonce attendue.
+
+La plaisanterie joue sur une promesse facile à reconnaître : un modèle français qui dépasserait ses concurrents. Les classements parodiques et les visuels donnent corps au récit. Je trouve la mise en scène réussie parce qu’elle reprend les codes que l’on croise dans les annonces de modèles.
+
+Une interface soignée, quelques noms familiers et des performances spectaculaires donnent envie de lire la suite. Je reconnais cette curiosité chez moi. La parodie s’appuie dessus : le décor est en place avant même que l’on se demande ce qui a réellement été annoncé. C’est là que le second degré fonctionne.
+
+### Arthur Mensch joue avec le nom.
+
+Le nom « Le Chaton Fat » circule aussi. Le 15 juin, Arthur Mensch répond avec humour en corrigeant le nom : « le gros chaton ». Une participation à la plaisanterie qui me fait sourire. Le chat reste un personnage du canular.
+
+J’aime cette façon de jouer avec l’attente autour des modèles. La réponse prolonge la blague et le nom devient lui-même un morceau du récit. Pour moi, le plaisir vient de ce décalage entre la solennité habituelle des annonces et ce chat un peu trop gros.
+
+### La « hype » court toujours très vite.
+
+Ce genre de parodie me renvoie à ma façon de suivre l’IA. J’ai envie de découvrir les prochains modèles, leurs possibilités et ce qu’ils peuvent changer dans mon travail. Mais cette attente rend aussi les promesses très attirantes. Un tableau de performances bien présenté capte vite mon attention.
+
+Ce que je retiens surtout, c’est la facilité avec laquelle je peux reconnaître une forme avant d’avoir lu son contenu. Un tableau semble familier, le vocabulaire ressemble aux annonces précédentes, le nom d’un laboratoire fait le reste. J’ai envie de ralentir précisément à ce moment-là. La bonne question pour ma veille serait de retrouver qui s’engage sur la promesse et où cette personne ou cette entreprise la formule.
+
+**Avant de garder le tableau.** Je veux retrouver la page de l’annonce, puis les conditions de la comparaison. Un visuel que je ne peux rattacher à rien reste un visuel, même s’il raconte exactement ce que j’espérais lire.
+
+Pour une annonce attribuée à Mistral, son espace d’actualités constitue un point de départ concret. Ce serait l’endroit où chercher le texte officiel correspondant à une image qui circule. Une page d’actualités ne suffit pas à juger un modèle, mais elle donne un premier repère pour lire ce que l’entreprise dit effectivement de son produit. C’est une étape que je veux conserver dans ma manière de suivre ces sorties.
+
+Ensuite, je voudrais pouvoir lire ce que mesure le classement. Quel est l’exercice ? Avec quelles consignes ? Quelles versions ont été comparées ? Ce sont mes questions de lecteur, pas une promesse qu’un tableau aura toutes les réponses. Elles me permettent surtout de ne pas transformer une première impression en conclusion sur l’outil que j’utiliserai demain. Une belle position dans une image et une aide utile dans mon travail ne répondent pas à la même question.
+
+Le second degré garde évidemment sa place. Je peux rire de l’idée du Gros Chaton sans lui demander une fiche technique. Ce qui m’amuse ici, c’est justement de reconnaître mes propres attentes dans la caricature. La prochaine fois qu’un nom spectaculaire apparaîtra dans mon fil, j’aimerais garder ce petit temps de recul avant de lui prêter toutes les qualités.
+
+Mon réflexe pour la veille reste de remonter à l’annonce d’origine avant d’adopter la promesse. C’est encore plus utile quand les visuels et les classements se mêlent aux plaisanteries. Je préfère prendre ce temps plutôt que construire mes attentes sur une belle mise en scène. En attendant les prochains modèles de Mistral, je peux au moins apprécier le Gros Chaton pour ce qu’il est : une bonne blague sur notre impatience.
+
+Sources :
+- Arthur Mensch — réponse du 15 juin, reprise dans les articles cités : https://x.com/arthurmensch/status/2066456715650793956
+- TestingCatalog — récit de la parodie, publié le 16 juin 2026 : https://www.testingcatalog.com/mistral-embraces-cat-mascot-after-le-chaton-fat-ai-meme-goes-viral/
+- Frandroid — récit et reprise du message d’Arthur Mensch : https://www.frandroid.com/culture-tech/intelligence-artificielle/3142097_tout-le-monde-parle-dun-monstre-ia-francais-nomme-le-chaton-fat-il-nexiste-pas-et-les-americains-adorent-sen-moquer
+- Mistral : espace officiel des actualités : https://mistral.ai/news/
+
+---
+
+## Claw Code reprend l’architecture de l’agent. Après la fuite de Claude Code, les réécritures communautaires donnent envie d’ouvrir le capot.
+
+Page : https://mickaelteixeira.github.io/actualites/claw-code-reecriture-agents/
+
+Publié le 1er avril 2026 · Outils
+
+Au lendemain de la fuite de Claude Code, les développeurs s’emparent de son architecture. Claw Code illustre cette envie de comprendre et de reconstruire.
+
+Le 1er avril 2026, au lendemain de la fuite de Claude Code, je retiens surtout la vitesse de réaction des développeurs. Des analyses et des réécritures apparaissent autour de son architecture. Cette énergie collective me plaît beaucoup. Un agent devient un objet que l’on cherche à comprendre, puis à reconstruire.
+
+### Claw Code part d’une base Python.
+
+Porté par Sigrid Jin, Claw Code est présenté par ses auteurs comme une réécriture de l’architecture de Claude Code. Ils décrivent une première base en Python et un travail de portage vers Rust. C’est cette démarche de reconstruction qui donne envie d’examiner le projet.
+
+Comment organiser un agent, son contexte et ses outils ? Voilà ce que j’ai envie de comprendre en regardant une telle réécriture. Pouvoir examiner ces choix me paraît précieux. L’intérêt est aussi dans ce que l’on apprend de l’assemblage, puis dans les idées que l’on peut mettre à l’essai.
+
+### Des outils d’IA pour reconstruire un outil d’IA.
+
+Les auteurs citent notamment oh-my-codex et oh-my-opencode pour la réécriture et le portage. L’assistance par l’IA fait donc partie de la démarche qu’ils décrivent. Je trouve cette boucle stimulante : des développeurs utilisent des agents pour travailler sur l’architecture d’un agent.
+
+Ce qui me donne envie d’aller plus loin, c’est la possibilité de comparer les choix. Comment le contexte est-il organisé ? Quelle place prennent les outils ? Une réécriture offre un autre point de départ pour examiner ces questions. C’est sur le code et son comportement que je veux porter mon attention.
+
+### La mémoire et la reprise d’erreurs m’attendent.
+
+La gestion de la mémoire, l’organisation des tâches et la capacité à reprendre après une erreur sont les sujets que je veux suivre. Ce sont des questions importantes dans mon intérêt pour les agents. J’attends de voir comment les projets les abordent et ce que leurs choix donnent à l’usage.
+
+Pour explorer ce genre de projet, je commencerais par suivre une seule tâche de bout en bout. Une demande entre, le programme prépare son contexte, choisit une action, reçoit un résultat et décide de la suite. Ce serait mon fil de lecture dans le code. Je voudrais retrouver à chaque étape les informations conservées et la décision qui provoque l’étape suivante, plutôt que commencer par une liste de fonctions annoncées.
+
+**Lire une boucle complète.** Mon premier exercice serait de suivre une demande simple jusqu’à sa réponse. Je voudrais comprendre où l’agent agit, où il attend un résultat et où un humain peut reprendre la main.
+
+Je prendrais ensuite un cas volontairement banal : un outil renvoie une erreur. Que doit faire l’agent dans cette situation ? Réessayer la même action, modifier sa demande ou demander de l’aide sont des choix différents. Avant de parler de capacité à se corriger, j’aurais envie de voir la décision et sa limite. C’est un exemple de comportement que je chercherais dans une réécriture comme Claw Code, sans présumer de sa réponse.
+
+La même lecture vaut pour la mémoire. Je voudrais distinguer ce qui reste pendant une conversation et ce qui sera retrouvé lors d’une prochaine session. Quels éléments sont retenus ? Comment une information devenue fausse peut-elle être corrigée ? Ces questions m’aident à donner un contenu précis à un terme qui peut recouvrir des mécanismes très différents. Elles rendent aussi la comparaison entre deux architectures plus intéressante pour moi.
+
+Je vois dans cette exploration une façon d’apprendre que j’aime bien : partir d’un programme assez concret pour pouvoir discuter une décision. Le passage annoncé de Python à Rust me donne envie de comparer ce qui change dans l’assemblage, et ce que les auteurs souhaitent conserver. L’intérêt est là même avant de choisir un outil pour un projet. Comprendre un compromis peut déjà nourrir la manière dont j’aborde le prochain agent.
+
+Cette réaction communautaire donne envie de comprendre et d’expérimenter. Pour choisir un outil, je regarderai ensuite sa maturité et ce qu’il permet d’utiliser dans la durée. Mais comme point de départ pour partager des idées sur les agents, cette activité est enthousiasmante. Je veux voir les améliorations concrètes qui sortiront de ce travail et les choix d’architecture que l’on pourra en retenir.
+
+Et depuis : Le dépôt principal met désormais l’espace Rust au premier plan et se décrit comme une pièce de musée entretenue par des agents, plutôt que comme un produit de production.
+
+Sources :
+- Claw Code — dépôt principal, désormais ultraworkers/claw-code : https://github.com/ultraworkers/claw-code
+- Claw Code — copie du README décrivant Python, Rust et les outils employés : https://github.com/SainathCheryala/claw-code
+
+---
+
+## Une source map ouvre le capot de Claude Code. L’erreur de publication sur npm expose le code client et révèle des fonctions internes.
+
+Page : https://mickaelteixeira.github.io/actualites/claude-code-fuite-sources/
+
+Publié le 31 mars 2026 · Outils
+
+Le 31 mars 2026, une livraison de Claude Code sur npm expose du code interne. Une source map donne accès aux coulisses du client en ligne de commande d’Anthropic.
+
+Un fichier de débogage dans une livraison npm, et le code interne de Claude Code devient lisible. Le 31 mars 2026, l’agent en ligne de commande d’Anthropic se retrouve ainsi au centre des analyses. Ce qui me frappe, c’est le point de départ de l’incident : un fichier qui accompagne le programme distribué.
+
+### Une source map d’environ 60 Mo.
+
+Le chercheur Chaofan Shou signale une source map dans la version 2.1.88. Ce type de fichier relie le programme transformé pour sa distribution à son code d’origine. Les analyses décrivent ici un fichier d’environ 60 Mo, contenant du TypeScript et faisant aussi référence à une archive.
+
+Le code exposé est celui du client : le programme qui dialogue avec le modèle et organise ses outils. Les modèles Claude, leurs données d’entraînement et l’infrastructure backend sont d’autres parties du système. C’est l’assemblage de l’agent que cette publication permet d’examiner.
+
+### Undercover vise les contributions internes.
+
+Anthropic indique qu’aucune donnée sensible de clients ni aucun identifiant d’accès n’ont été exposés. Pour moi, l’intérêt technique de cet incident tient aux fonctions internes qui apparaissent dans les analyses et à la manière dont elles s’insèrent dans le client.
+
+Parmi elles, le fichier Undercover décrit des instructions pour les versions internes d’Anthropic lors de contributions publiques. Elles visent à éviter la divulgation d’informations internes et prévoient le retrait des mentions d’attribution à l’IA. C’est un aperçu des consignes associées à ces contributions.
+
+### Regarder le paquet avant de le livrer.
+
+Le point qui me paraît transposable à nos propres outils, c’est le contenu du paquet livré. La documentation npm permet de définir un champ files dans package.json pour sélectionner les fichiers à inclure. Pour une petite bibliothèque dont la sortie JavaScript est dans dist, on peut par exemple limiter cette sélection aux fichiers JavaScript. Voici un exemple à adapter à la structure réelle du projet.
+
+```json
+{
+  "files": ["dist/**/*.js"]
+}
+```
+
+Ce choix laisse les fichiers .map hors de cette sélection. npm prévoit toutefois des fichiers toujours inclus, notamment package.json, le README, la licence et les fichiers désignés par main ou bin. Je regarderais donc le paquet obtenu avant d’en conclure que la sélection répond au besoin. Une règle écrite dans la configuration et le contenu réellement distribué sont deux choses que je veux rapprocher.
+
+```sh
+npm pack --dry-run
+```
+
+**Relire ce qui part.** Avant une livraison, je veux regarder la liste des fichiers du paquet. C’est un contrôle concret, à faire sur le résultat de la préparation, avec une attention particulière aux fichiers de débogage.
+
+Cette lecture devrait suivre le chemin de livraison. Si le paquet est préparé après une compilation, c’est à cet endroit que je voudrais examiner les fichiers. Mon objectif serait simple : retrouver les éléments nécessaires à l’usage prévu et comprendre la présence de chacun des autres. Un fichier de débogage peut être utile dans un contexte donné ; sa diffusion devrait correspondre à une décision explicite.
+
+C’est aussi ce qui rend l’incident intéressant au-delà de Claude Code. Le problème de départ tient à la frontière entre ce qui aide à construire un programme et ce qui doit accompagner sa distribution. J’y vois une bonne raison de donner à cette frontière une étape de revue à part entière. Le contenu final du paquet mérite autant d’attention que le code que l’on vient de modifier.
+
+### Buddy et Kairos apparaissent dans le code.
+
+Les analyses repèrent aussi Buddy, un compagnon virtuel, et Kairos, un mode d’assistant persistant avec consolidation de mémoire. Ces éléments donnent un aperçu de fonctions internes. À cette date, leur présence dans le code ne donne pas de calendrier de disponibilité publique.
+
+J’aime comprendre comment un agent est assemblé : le client, les outils qu’il organise et les consignes qui l’accompagnent. Cette publication involontaire en laisse voir une partie. L’ironie est assez forte pour Anthropic, qui dévoile ainsi davantage de son fonctionnement qu’il ne l’avait prévu. Cette exposition involontaire du code ne constitue pas une ouverture du logiciel. Le code exposé offre un aperçu technique ; pour les fonctions publiques, j’attends les annonces de produit.
+
+Sources :
+- Analyse technique de la publication npm par pankaj28843 : https://github.com/pankaj28843/understanding-claude-code
+- Undercover — fichier diffusé comme issu des sources exposées : https://github.com/alex000kim/claude-code/blob/main/src/utils/undercover.ts
+- Axios — déclaration d’Anthropic sur le périmètre de l’incident : https://www.axios.com/2026/03/31/anthropic-leaked-source-code-ai
+- npm : champ files, inclusions obligatoires et .npmignore : https://docs.npmjs.com/cli/v11/configuring-npm/package-json/
+- npm : commande pack et option dry-run : https://docs.npmjs.com/cli/v11/commands/npm-pack/
+
+---
+
+## Six à douze mois selon Amodei. Je reste sceptique. À Davos, il envisage que l’IA assure l’essentiel du travail logiciel dans ce délai.
+
+Page : https://mickaelteixeira.github.io/actualites/amodei-prevision-metier-developpeur/
+
+Publié le 21 janvier 2026 · IA et métier
+
+À Davos, Dario Amodei envisage que l’IA puisse assurer l’essentiel du travail logiciel sous six à douze mois. Je me méfie de ces échéances si proches.
+
+Six à douze mois. À Davos, Dario Amodei envisage que les modèles puissent accomplir la majorité, voire la totalité, du travail d’un ingénieur logiciel de bout en bout dans ce délai. Le dirigeant d’Anthropic présente cette possibilité avec une incertitude sur le calendrier. De mon côté, cette échéance me laisse sceptique.
+
+### Certains ingénieurs retouchent le code du modèle.
+
+Lors de l’échange du 20 janvier 2026, Amodei rapporte que certains de ses ingénieurs font produire le code par le modèle, puis le retouchent. C’est un usage qui occupe une place importante dans son raisonnement sur la transformation du travail logiciel.
+
+Je prends au sérieux la capacité des modèles à produire du code. Ce qui me convainc beaucoup moins, c’est le passage de cet usage à la majorité du métier, de bout en bout, dans un délai aussi court. La complexité des entreprises où nous travaillons entre aussi dans l’équation.
+
+**6 à 12 mois** : Horizon envisagé par Dario Amodei à Davos en janvier 2026.
+
+### Une accélération avec des contraintes matérielles.
+
+Son raisonnement repose sur une boucle : l’IA pourrait accélérer la conception des modèles suivants, qui deviendraient à leur tour plus performants. La fabrication des puces et le temps d’entraînement figurent parmi les limites qu’il cite. Cette accélération dépend donc aussi de ces étapes.
+
+J’entends la logique de cette projection. Mais je ne sais pas à quel rythme elle peut se traduire dans toutes les situations que recouvre notre métier. Une amélioration dans la conception des modèles me dit encore peu de choses sur le calendrier du travail dans les entreprises.
+
+### Le métier dépasse la production de code.
+
+C’est là que se situe mon scepticisme. Je ne réduis pas le travail d’un développeur au code produit. Quand je lis cette prédiction, je pense à la complexité du métier et à celle des entreprises. J’ai du mal à les faire tenir dans cette échéance de six à douze mois.
+
+Pour revenir à cette prévision dans un an, je voudrais pouvoir comparer des situations précises. Imaginons une évolution dans une application existante : la demande de départ est incomplète, plusieurs comportements sont possibles et le résultat doit s’insérer dans ce qui fonctionne déjà. Pour moi, accomplir ce travail de bout en bout voudrait dire parvenir jusqu’à une solution que l’équipe peut accepter, exploiter et reprendre plus tard.
+
+**Le rendez-vous de janvier 2027.** Je veux comparer la promesse à une tâche entière : comprendre la demande, choisir une solution, la faire fonctionner et expliquer les décisions prises. Le nombre de lignes produites ne suffira pas à mon bilan.
+
+Ma grille d’évaluation partirait de là. Qui a levé les ambiguïtés ? Qui a choisi les compromis ? Combien de reprises ont été nécessaires avant d’obtenir le comportement attendu ? Je voudrais aussi savoir ce qui se passe quand la première approche échoue. Ce sont les questions que j’aimerais poser à une démonstration avant de la rapprocher de mon travail quotidien. Elles donnent un sens concret à l’expression de bout en bout.
+
+Le rôle de la personne qui accompagne le modèle entrerait lui aussi dans le bilan. Si elle reformule chaque étape, sélectionne les bons fichiers et rattrape les erreurs, son travail mérite d’être visible. Je trouverais trompeur de regarder uniquement la dernière réponse en oubliant tout ce qui a permis de l’obtenir. À mes yeux, c’est une partie essentielle de l’évaluation d’un outil de programmation.
+
+Une échéance courte a l’avantage de permettre cette confrontation assez vite. Je n’ai pas besoin de trancher aujourd’hui tout l’avenir du métier pour demander ce qui aura changé dans douze mois. J’attends surtout des exemples que je puisse examiner à cette échelle, avec leurs conditions de réussite. C’est ainsi que je pourrai faire évoluer mon avis, plutôt qu’au rythme des formules les plus frappantes.
+
+J’y entends aussi un discours très vendeur pour les investisseurs : une technologie qui accélérerait sa propre progression. Je préfère juger les capacités à l’usage et revenir au calendrier annoncé. En ce 21 janvier 2026, mon rendez-vous est pris pour janvier 2027. Dans douze mois, je veux comparer cette perspective à ce que les modèles permettront réellement de faire de bout en bout. D’ici là, mon expérience du métier me donne de bonnes raisons de rester sceptique.
+
+Sources :
+- World Economic Forum — transcription de The Day After AGI : https://www.weforum.org/podcasts/radio-davos/episodes/ai-agi-dario-amodei-demis-hassabis/
+- World Economic Forum — échange daté du 20 janvier 2026 : https://www.weforum.org/stories/artificial-intelligence/young-people-ai-davos
+
+---
+
+## Une heure de veille de plus ne réglera pas l’avenir. Face à l’incertitude du métier et à la comparaison sur LinkedIn, j’ai besoin de fermer l’ordinateur.
+
+Page : https://mickaelteixeira.github.io/actualites/fatigue-mentale-developpeur/
+
+Publié le 9 janvier 2026 · IA et métier
+
+J’ai parfois l’impression de devoir tout apprendre tout de suite pour continuer à exister comme développeur. Cette course me fatigue, et je veux savoir m’arrêter.
+
+En ce début de janvier, j’ai envie de parler de fatigue mentale. Celle que je ressens face à l’incertitude du métier, aux nouveautés qui s’accumulent et à cette impression de devoir tout comprendre immédiatement. Plus je réfléchis à l’avenir du développement, moins j’arrive à le prédire.
+
+### La peur de devenir obsolète.
+
+Les annonces autour de l’IA se succèdent. J’y retrouve cette anxiété de l’obsolescence : apprendre encore, essayer le prochain outil, ne rien laisser passer. Je peux y consacrer beaucoup de temps sans jamais atteindre le moment où je me sentirais enfin à jour.
+
+Continuer une heure de plus est tentant. Lire encore une annonce, essayer un outil supplémentaire, s’assurer de ne rien avoir manqué. Je peux remplir toute ma soirée ainsi. À la fin, l’incertitude est toujours là. J’ai passé plus de temps devant l’écran, avec la même difficulté à imaginer la suite.
+
+### LinkedIn devient un miroir déformant.
+
+Dans mon fil, les réussites et les lancements rapides prennent beaucoup de place. À force de les regarder, mon propre travail me paraît parfois trop lent. Je vois leurs résultats, alors que je connais aussi mes hésitations et tout ce qui avance moins vite dans mon parcours.
+
+Cette comparaison me pèse. Je ne vois qu’une partie de leur histoire, mais je la mets en face de tout mon quotidien. Le décalage suffit à nourrir cette impression d’avoir pris du retard. Continuer à faire défiler les publications ne m’aide alors plus à avancer.
+
+Les projets de logiciels en abonnement que je vois passer me font aussi penser à ce besoin de sécurité. J’y vois parfois une recherche de perspective face à un avenir flou. Construire quelque chose à soi pour continuer autrement : cette idée rejoint mes interrogations sur la suite du métier.
+
+### Fermer l’ordinateur reste possible.
+
+J’ai envie de distinguer deux moments : apprendre pour répondre à une question et continuer à lire parce que m’arrêter m’inquiète. Dans le premier cas, je peux formuler ce que je cherche. Dans le second, la prochaine annonce devient elle-même une raison de poursuivre. Cette distinction me semble plus utile que de compter les outils que j’ai essayés. Elle me donne une façon de reconnaître le moment où la veille cesse de m’apporter quelque chose.
+
+**Une fin pour la veille.** Avant d’ouvrir un nouvel onglet, je peux me demander ce que je cherche à comprendre. Si je n’ai plus de question précise, je peux remettre la suite à demain. L’actualité continuera sans moi pendant la soirée.
+
+Ce serait aussi une autre manière de choisir ce que j’apprends. Je pourrais partir d’un problème rencontré dans mon travail, puis chercher l’information qui m’aide à le résoudre. Tout ce qui ne répond pas à ce besoin peut attendre. Je ne veux pas transformer chaque démonstration impressionnante en nouvelle obligation personnelle. Avoir vu qu’un outil existe ne m’oblige pas à lui consacrer mon temps disponible le jour même.
+
+L’organisation de la journée a aussi sa place dans cette réflexion. L’INRS recommande d’alterner le travail informatisé avec d’autres tâches et, lorsque cette alternance est impossible, de prévoir des pauses régulières adaptées au travail. Ce repère pratique rejoint mon envie de ne pas remplir tous les intervalles par un autre écran. Quitter le code pour continuer à faire défiler mon fil ne répond pas à ce que je cherche ici.
+
+> « Travailler toute la journée sur un écran n’est pas recommandé. » (INRS)
+
+Je veux pouvoir laisser une question ouverte sans la vivre comme un retard supplémentaire. L’avenir du métier restera incertain après ma prochaine lecture. Mon projet en cours, lui, peut avoir une prochaine étape assez claire. C’est sur cette échelle que j’ai envie de reprendre la main : une tâche, une question utile, puis un moment où la journée se termine.
+
+Je ne maîtrise ni le calendrier des outils ni la direction que prendra le développement. Je peux en revanche décider de m’arrêter pour ce soir. Je veux accepter cette limite, même quand le fil d’actualité me donne l’impression qu’il faudrait continuer.
+
+Une heure de travail de plus ne m’aurait pas donné la réponse sur l’avenir du métier. Je n’ai pas envie de transformer cette incertitude en raison de ne jamais décrocher. Préserver ma santé mentale fait partie de la manière dont je veux continuer à développer. Ce soir, fermer l’ordinateur est une décision que je peux prendre.
+
+Sources :
+- Mickaël Teixeira — témoignage personnel du 9 janvier 2026 : https://www.linkedin.com/feed/update/urn:li:activity:7415390139092201474/
+- INRS : organisation du travail sur écran et alternance des tâches : https://www.inrs.fr/risques/travail-ecran/prevention-risques.html
+
+---
+
+## Tailwind gagne des utilisateurs, perd des revenus. Le témoignage d’Adam Wathan met le financement de l’open source au cœur du sujet.
+
+Page : https://mickaelteixeira.github.io/actualites/tailwind-financement-ia/
+
+Publié le 8 janvier 2026 · IA et métier
+
+Adam Wathan annonce le licenciement de 75 % de son équipe d’ingénierie chez Tailwind Labs. Son récit montre un décalage brutal entre popularité et financement.
+
+Le message d’Adam Wathan me fait l’effet d’une douche froide. À l’origine de Tailwind CSS et dirigeant de Tailwind Labs, il décrit un framework qui gagne en popularité et une entreprise dont les revenus reculent. Le succès de l’outil et les moyens de le maintenir prennent des directions opposées.
+
+### 75 % de l’équipe d’ingénierie licenciée.
+
+Dans son commentaire GitHub du 7 janvier 2026, Wathan annonce que 75 % de son équipe d’ingénierie a perdu son emploi la veille. Il décrit un trafic vers la documentation inférieur d’environ 40 % à celui du début de 2023, et des revenus en baisse de près de 80 %.
+
+Il affirme pourtant que Tailwind continue de gagner en popularité. C’est ce contraste qui me préoccupe. L’outil est utilisé, mais le travail de ceux qui le construisent et le maintiennent doit toujours être financé. La popularité ne suffit pas à payer ce travail.
+
+> « The docs are the only way people find out about our commercial products » (Adam Wathan)
+
+### La documentation faisait découvrir les produits.
+
+Wathan explique que la documentation est le canal par lequel les utilisateurs découvrent leurs offres commerciales. Selon lui, les assistants d’IA bouleversent ce parcours. Un développeur peut obtenir de l’aide pour utiliser Tailwind sans passer par les pages où sont présentés les produits payants.
+
+C’est un mécanisme assez troublant. L’assistant facilite l’utilisation des classes CSS. Dans le même temps, ce parcours peut éloigner l’utilisateur des offres qui financent leurs créateurs. Je trouve difficile d’ignorer cette tension entre l’aide immédiate que l’on reçoit et le travail nécessaire pour que l’outil continue d’exister.
+
+Un petit exemple rend ce parcours très concret. Dans Tailwind, le préfixe hover: permet d’appliquer une classe au survol. On peut donc exprimer la couleur de fond d’un bouton et sa variation directement dans le HTML. Voici un exemple minimal que j’écris pour montrer cette syntaxe, dans une page où Tailwind est déjà chargé.
+
+```html
+<button class="bg-sky-500 hover:bg-sky-700">
+  Enregistrer
+</button>
+```
+
+Obtenir ces quelques caractères dans une réponse d’assistant est très pratique. Mais le bouton ne montre rien du travail derrière la classe : sa définition, sa documentation et son entretien. C’est cette distance qui m’interpelle. Au moment où j’utilise le résultat, je peux oublier complètement le projet qui l’a rendu possible et la manière dont son équipe finance ses journées.
+
+Pour moi, le témoignage invite à réexaminer le trajet complet. J’arrive avec un besoin d’interface, je demande une solution, j’obtiens du code. Si ce trajet contourne la documentation, la rencontre avec l’offre commerciale peut aussi disparaître. Wathan décrit précisément cette dépendance dans son entreprise. Cela suffit à poser une question économique sérieuse, sans avoir besoin d’en faire une règle pour tous les projets libres.
+
+Je voudrais garder un réflexe simple quand une dépendance compte dans mon travail : connaître aussi les gens qui la maintiennent et ce qu’ils proposent pour soutenir leur activité. Cela peut entrer dans une discussion de budget au même titre que les autres outils du projet. Je ne veux pas attendre qu’un outil manque pour me demander comment il tenait jusque-là. Son utilité mérite une place dans cette réflexion, même quand son code est accessible gratuitement.
+
+### Le code libre a toujours besoin de moyens.
+
+C’est cette facture qui me reste en tête après le témoignage de Wathan. Utiliser un framework plus facilement ne finance pas son entretien. Dans la situation qu’il décrit, le succès technique ne suffit plus à assurer l’équilibre économique de l’entreprise qui le porte.
+
+Je m’inquiète de voir le financement devenir moins visible alors que l’outil reste présent dans le travail des développeurs. Si nos habitudes pour apprendre et écrire du code changent, il faut aussi pouvoir faire évoluer les moyens de soutenir ses auteurs. Le cas de Tailwind me ramène à cette question très concrète : qui paie le travail dont nous profitons ? J’ai envie que les outils que j’utilise puissent durer, avec les moyens de les maintenir.
+
+**Un outil utile a aussi une équipe.** Quand je parle du coût de mes outils, je veux y inclure ceux dont le code est libre. La gratuité d’accès ne dit rien du temps nécessaire pour les faire durer.
+
+Sources :
+- Adam Wathan — commentaire sur la proposition llms.txt : https://github.com/tailwindlabs/tailwindcss.com/pull/2388
+- Simon Willison — relevé daté des déclarations du 7 janvier : https://simonwillison.net/2026/jan/7/adam-wathan/
+- Tailwind CSS : variantes de classes au survol : https://tailwindcss.com/docs/hover-focus-and-other-states
+
+---
+
+## Sylius dans le rachat de PrestaShop. L’opération réunit cyber_Folks, Sylius et BitBag. Une grande nouvelle pour mon cœur de développeur.
+
+Page : https://mickaelteixeira.github.io/actualites/sylius-prestashop-rapprochement/
+
+Publié le 11 décembre 2025 · Écosystème PHP
+
+Le 11 décembre 2025, Sylius participe à l’annonce du rachat de PrestaShop avec cyber_Folks et BitBag. Voir cette solution prendre cette place, ça me fait quelque chose.
+
+J’ai dû relire le titre plusieurs fois. Sylius dans le rachat de PrestaShop. Oui, cette solution basée sur Symfony, sur laquelle j’adore travailler. Le 11 décembre 2025, je ne m’attendais vraiment pas à voir ces deux noms réunis dans une telle annonce.
+
+### cyber_Folks, Sylius et BitBag réunis.
+
+L’opération annoncée réunit cyber_Folks, Sylius et BitBag autour de PrestaShop. Le processus de rachat s’ouvre. Pour moi, c’est déjà une grande nouvelle : Sylius prend place dans une opération aux côtés d’un acteur historique du commerce en ligne.
+
+J’ai vu Sylius grandir comme un challenger. J’aime son exigence technique et la place qu’il donne à l’architecture. Le retrouver dans cette annonce donne une autre portée au chemin parcouru. Il y a de quoi relire le titre, puis se réjouir pour les gens qui ont construit cette solution.
+
+### Symfony et l’open source au cœur de mon attachement.
+
+Sylius s’appuie sur Symfony et revendique une démarche open source. Ce sont des raisons très concrètes pour lesquelles j’aime travailler avec lui. L’architecture et le plaisir de développer avec cette solution comptent dans mes choix. Cette annonce touche donc aussi à mon quotidien de développeur.
+
+Ce rapprochement me parle parce que mes choix techniques engagent aussi ma façon de travailler dans la durée. Quand je défends une architecture, je pense au prochain changement de règle métier, à la personne qui reprendra le projet et au temps nécessaire pour comprendre une décision. C’est sur ce terrain que se construit mon attachement à Sylius. Une annonce de cette ampleur donne soudain une visibilité différente à ces sujets, habituellement bien moins spectaculaires qu’un rachat.
+
+**Ce que je veux retrouver dans la suite.** Mon enthousiasme tient à ce qui m’a donné envie de travailler avec Sylius : son architecture, Symfony et le code ouvert. C’est à travers ces choix que je regarderai la suite du rapprochement.
+
+Je peux me réjouir de l’opération tout en gardant des attentes très concrètes. Pour un projet existant, je voudrais regarder les versions à maintenir, les extensions dont il dépend et les possibilités de faire évoluer les développements spécifiques. Ce serait ma grille de lecture avant de déduire une décision technique de cette annonce. Le nom des entreprises réunies donne un contexte ; mon choix pour une application continuerait de partir de ses besoins.
+
+Imaginons une boutique dont les règles de commande demandent une adaptation importante. Mon premier sujet serait de savoir où placer cette logique et comment la faire évoluer proprement. C’est un exemple de question que j’aime pouvoir poser avec Sylius. Le rapprochement me donne envie de suivre ce que les équipes construiront ensemble, avec cette même attention portée au travail quotidien du développeur et à celui des personnes qui exploitent la boutique.
+
+J’attends donc une suite qui puisse se lire dans le produit autant que dans les annonces. Pouvoir continuer à comprendre les choix, à discuter les évolutions et à construire sur une base que j’apprécie : voilà ce qui compterait pour moi. Aujourd’hui, le plaisir est déjà là. Une solution à laquelle je suis attaché prend une place que je n’avais pas imaginée.
+
+J’y vois un signal encourageant pour ceux qui accordent de l’importance à la qualité du code. Quand on aime une solution pour sa manière d’aborder le développement, la voir prendre cette place fait plaisir. Cela donne un écho particulier aux choix techniques auxquels je suis attaché.
+
+### Bravo à l’équipe Sylius.
+
+Ce qui me rend enthousiaste, c’est ce parcours. Le challenger que j’ai aimé voir grandir participe aujourd’hui à une opération autour de PrestaShop. Pour mon petit cœur de développeur Symfony et Sylius, la nouvelle a une saveur particulière. J’ai envie de saluer ceux qui ont fait avancer le projet jusque-là.
+
+Bravo à l’équipe Sylius pour le chemin parcouru. Cette annonce restera pour moi un moment fort de son histoire : une solution que j’aime utiliser associée à un nom historique du commerce en ligne. Le plaisir de travailler avec elle était déjà là. Aujourd’hui s’y ajoute celui de la voir occuper cette place. C’est une bonne journée pour le développeur que je suis.
+
+Et depuis : Cyber_Folks indique détenir 100 % de PrestaShop depuis février 2026. La clôture intervient donc après cette annonce de décembre 2025.
+
+Sources :
+- Sylius — bilan de décembre 2025, opération avec cyber_Folks et BitBag : https://sylius.com/blog/ecosystem/month-of-sylius-december-2025/
+- cyber_Folks — présentation du groupe et acquisition finalisée : https://cyberfolks.com/about-us/
+
+---
+
+## Accueil
+
+Page : https://mickaelteixeira.github.io/
+
+## Développeur Symfony et Sylius, freelance à Bordeaux.
+Je conçois et je fais évoluer les plateformes e-commerce, les middle offices et les API dont une entreprise dépend chaque jour : migrations vers Sylius, architecture hexagonale, flux ERP, CRM et transporteurs. J’édite aussi Yedra, le CRM des écoles.
+Proposer une mission
+Voir les missions
+Formation : Master Architecte logiciel, ETNA
+Intervention : À distance, ou sur site à Bordeaux, Paris, Lyon, Lille, Nantes
+Disponibilité : Toujours ouvert à une mission ou un échange
+
+### Huit expériences. Depuis 2009.
+En freelance, en poste ou en conseil : chaque mission a sa page, dans l’univers de l’entreprise qui me l’a confiée.
+07.2025 – 10.2026 · Freelance
+
+#### MaxiCoffee
+Un middle office pour les territoires, la facturation et la logistique, synchronisé avec Salesforce.
+04.2025 – 07.2025 · Freelance, avec Dn’D
+
+#### Commande.com
+La refonte complète d’une plateforme e-commerce sur Sylius, en headless.
+01.2025 – 04.2025 · Lead developer
+
+#### HeyTeam
+Une architecture modulaire pour relier une plateforme RH aux outils SIRH.
+2022 – 2024 · Backend e-commerce
+
+#### Ultra Premium Direct
+La migration vers Sylius d’un e-commerce de petfood à fort trafic.
+2013 – 2022 · Full-stack, en conseil
+
+#### onepoint
+Six missions chez cinq clients : Enedis, Gaz de Bordeaux, PSA, Bureau Veritas Pro, SMIP.
+2012 – 2013 · Développeur PHP
+
+#### TimeOne
+Des outils pour l’affiliation, une application mobile, Scrum.
+2009 – 2011 · Alternance
+
+#### Web Stratégies
+Des sites et un premier paiement e-commerce, en agence.
+illico travel
+2009 · Stage
+
+#### illicotravel
+Brancher de nouveaux partenaires au moteur d’un comparateur de voyages.
+
+### Ce que je fais.
+
+#### Architecture backend
+Des applications découpées par domaine, testables et lisibles : architecture hexagonale, DDD, messages asynchrones entre services.
+Symfony · Laravel · API Platform · RabbitMQ · RedPanda
+
+#### E-commerce Sylius
+Des refontes et des migrations vers Sylius, en headless, branchées sur l’ERP et les transporteurs.
+Sylius · API Platform · Elasticsearch
+
+#### Qualité et transmission
+Audits, tests automatisés, analyse statique et intégration continue ; revues de code et pair programming, pour que l’équipe garde la main.
+PHPUnit · Behat · PHPStan · GitLab CI
+
+#### Interfaces
+Des applications métier et des PWA en Angular et TypeScript, branchées sur ces API.
+Angular · TypeScript · Vue.js
+L’IA dans le flux de travail
+
+#### La trame de ce site sort d’un outil que j’ai construit pour lui.
+La façade tramée de l’ouverture sort de Signature, un générateur de visuels que j’ai fait sur Toolcraft avec Codex ; les images des missions sont composées dans l’univers de chaque client. Claude Code, les agents et l’automatisation des tests font partie de mon quotidien, avec les mêmes exigences de relecture que le reste du code.
+
+### Yedra, le CRM des écoles. Le produit que j’ai fondé.
+En novembre 2024, j’ai fondé Yedra : un CRM pour les écoles et les établissements scolaires. Le fichier des familles rangé par foyer, le formulaire de l’établissement, les e-mails aux parents, les parcours automatisés.
+Un produit français, pensé pour les établissements scolaires, les conservatoires et les associations. Je le conçois, je l’écris et je l’édite moi-même : l’interface, les données, la sécurité, le RGPD. Ouverture fin 2026 ; la liste d’attente est ouverte.
+Découvrir Yedra (nouvel onglet)
+
+### Ma façon de travailler.
+
+#### Lire avant d’écrire.
+Je commence par le code, les données et les contraintes en place ; un audit écrit quand la mission le demande.
+
+#### Migrer sans interrompre.
+Une plateforme qui vend doit continuer de vendre pendant sa migration ; la bascule se prépare avec l’équipe en place.
+
+#### Tester ce qui compte.
+Tests automatisés, analyse statique et intégration continue dès le début de la mission, pas à la fin.
+
+#### Laisser une équipe autonome.
+Revues de code, pair programming et décisions écrites : ce que je construis reste compréhensible après mon départ.
+
+### Mon parcours.
+Je m’appelle Mickaël Teixeira. Formé en alternance à l’ETNA, j’écris du PHP pour le web depuis 2009 : une agence web, l’affiliation chez TimeOne, huit ans de conseil chez onepoint, l’e-commerce chez Ultra Premium Direct, puis le freelance et mon propre produit.
+Mon parcours en détail
+- 2025 – aujourd’hui Développeur freelance MaxiCoffee, Commande.com pour l’agence Dn’D
+- 2024 – aujourd’hui Fondateur et éditeur Yedra, le CRM des écoles
+- 2025 Lead developer HeyTeam
+- 2022 – 2024 Développeur backend e-commerce Ultra Premium Direct
+- 2013 – 2022 Développeur full-stack onepoint : Enedis, Gaz de Bordeaux, PSA, Bureau Veritas Pro, SMIP
+- 2012 – 2013 Développeur PHP TimeOne
+- 2009 – 2011 Développeur PHP en alternance Agence Web Stratégies, après illicotravel
+- 2008 – 2011 Master Architecte logiciel ETNA, école d’alternance en informatique
+« Clairement l’une des meilleures personnes avec lesquelles j’ai travaillé. Sérieux, fiable, intelligent et humain, vous pouvez foncer les yeux fermés avec Mickaël si vous avez un projet. Vous pouvez être sûr qu’il répondra à toutes vos attentes ! »
+Mathieu Dumez Développeur web senior freelance, dans la même équipe Recommandation LinkedIn · 09.2026
+
+### Ce que je lis, ce que je teste. Et ce que j’en pense.
+Toutes les actualités
+
+### Parlons de votre plateforme.
+Une migration, une refonte, un middle office à poser, une équipe à renforcer : écrivez-moi, c’est moi qui lis et qui réponds. Je suis toujours ouvert à une mission ou à un simple échange.
+- LinkedIn dev-php-bordeaux ↗
+- Malt mickaelteixeira ↗
+- GitHub mickaelteixeira ↗
+- Yedra yedra.app ↗

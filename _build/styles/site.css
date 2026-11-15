@@ -54,3 +54,15 @@ body.menu-ouvert{overflow:hidden}
 .facade img{transition:opacity .4s ease}
 .facade.est-animee img{opacity:0}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.pied{container-type:inline-size;background:var(--panneau);color:var(--panneau-second);font-size:15px;line-height:1.55;border-top:1px solid var(--panneau-trait)}
+.pied__cadre{max-width:1312px;margin:0 auto;padding:clamp(48px,5cqw,72px) clamp(20px,4.5cqw,64px) 32px;display:flex;flex-direction:column;gap:clamp(40px,4cqw,56px)}
+.pied__grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:40px 32px}
+.pied__marque{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.pied__marque p{margin:0;max-width:300px}
+.pied__nom{color:#ffffff;font-weight:600;font-size:16px;letter-spacing:-.01em}
+.pied__titre{margin:0 0 14px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:400;color:var(--panneau-second)}
+.pied ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.pied a{color:var(--panneau-texte);text-decoration:none}
+.pied a:hover{text-decoration:underline;text-underline-offset:4px}
+.pied__bas{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding-top:24px;border-top:1px solid var(--panneau-trait);font-size:14px}
+.pied__bas a{color:var(--panneau-second)}

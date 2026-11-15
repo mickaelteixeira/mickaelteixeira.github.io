@@ -1,0 +1,62 @@
+# Mickaël Teixeira
+
+> Mickaël Teixeira est développeur PHP depuis 2009 et freelance à Bordeaux depuis 2025. Il travaille sur Symfony depuis 2014, ainsi que sur Sylius, Laravel et API Platform. Ses missions concernent les plateformes e-commerce, les API, les middle offices et les intégrations ERP, CRM ou SIRH. Ses références comprennent MaxiCoffee, Commande.com avec Dn’D, HeyTeam, Ultra Premium Direct et onepoint. Il intervient à distance ou sur site à Bordeaux, Paris, Lyon, Lille et Nantes. Fondateur de Yedra, CRM des écoles créé en novembre 2024, il en prépare l’ouverture fin 2026. Il est joignable par le formulaire de son site, LinkedIn ou Malt.
+
+Mickaël Teixeira has been a PHP developer since 2009 and a freelance developer based in Bordeaux since 2025. He has worked with Symfony since 2014, as well as Sylius, Laravel and API Platform. His work covers e-commerce platforms, APIs, middle offices and ERP, CRM or HR information system integrations. His references include MaxiCoffee, Commande.com with Dn’D, HeyTeam, Ultra Premium Direct and onepoint. He works remotely or on site in Bordeaux, Paris, Lyon, Lille and Nantes. He founded Yedra, a CRM for schools, in November 2024, with launch planned for late 2026. He can be contacted through his website’s contact form, LinkedIn or Malt.
+
+## Faits essentiels
+
+- Métier : développeur Symfony, Sylius et API Platform, freelance ; aussi Laravel, architecture hexagonale et DDD, intégration ERP, CRM et SIRH
+- Base : Bordeaux (France) ; intervention à distance, ou sur site à Bordeaux, Paris, Lyon, Lille, Nantes
+- Expérience : développeur PHP depuis 2009, freelance depuis 2025
+- Références : MaxiCoffee, Commande.com (avec l’agence Dn’D), HeyTeam, Ultra Premium Direct, onepoint (Enedis, Gaz de Bordeaux, PSA, Bureau Veritas Pro, SMIP), TimeOne, Web Stratégies, illicotravel
+- Formation : Master Architecte logiciel, ETNA
+- Produit : fondateur de Yedra, le CRM des écoles (https://yedra.app), depuis novembre 2024
+- Disponibilité : toujours ouvert à une mission ou à un échange
+- Contact : https://mickaelteixeira.github.io/#contact · https://www.linkedin.com/in/dev-php-bordeaux/ · https://www.malt.fr/profile/mickaelteixeira · https://github.com/mickaelteixeira
+
+## Expertises
+
+- [Développeur Symfony freelance à Bordeaux](https://mickaelteixeira.github.io/expertises/symfony/) : Symfony depuis 2014 : migrations, API et e-commerce. Je suis développeur PHP freelance à Bordeaux depuis 2025.
+- [Développeur Sylius freelance](https://mickaelteixeira.github.io/expertises/sylius/) : Migration vers Sylius et refonte headless : mon expérience chez Ultra Premium Direct et Commande.com, avec les flux ERP et transporteurs.
+- [Développeur API Platform freelance](https://mickaelteixeira.github.io/expertises/api-platform/) : API Platform avec Symfony et Laravel : données e-commerce, moteur Sylius headless et middle office métier, de Regaz à MaxiCoffee.
+- [Développeur Laravel freelance à Bordeaux](https://mickaelteixeira.github.io/expertises/laravel/) : Laravel pour les applications métier : architecture modulaire chez HeyTeam, middle office et API Platform chez MaxiCoffee.
+- [Architecture hexagonale et DDD en PHP](https://mickaelteixeira.github.io/expertises/architecture-hexagonale-ddd/) : Architecture hexagonale PHP, DDD et messages asynchrones chez MaxiCoffee ; architecture modulaire et transmission chez HeyTeam.
+- [Intégration ERP, CRM et transporteurs](https://mickaelteixeira.github.io/expertises/integration-erp-crm/) : Flux ERP et transporteurs chez Commande.com, synchronisation Salesforce chez MaxiCoffee et interconnexions SIRH chez HeyTeam.
+- [Toutes les expertises et les questions fréquentes](https://mickaelteixeira.github.io/expertises/) : Développeur PHP freelance à Bordeaux depuis 2025 : Symfony, Sylius, Laravel et API Platform pour l’e-commerce et les applications métier.
+
+## Missions
+
+- [MaxiCoffee (2025 – 2026)](https://mickaelteixeira.github.io/missions/maxicoffee/) : Mission freelance chez MaxiCoffee (2025-2026) : un middle office Laravel en architecture hexagonale et DDD, synchronisé avec Salesforce.
+- [Commande.com (2025)](https://mickaelteixeira.github.io/missions/commande/) : Mission freelance avec l’agence Dn’D (2025) : la refonte de Commande.com sur Sylius en headless, API Platform, flux ERP et transporteurs, tests automatisés.
+- [HeyTeam (2025)](https://mickaelteixeira.github.io/missions/heyteam/) : Lead developer chez HeyTeam en 2025 : une plateforme B2B d’onboarding reliée aux SIRH des clients, en architecture modulaire Laravel.
+- [Ultra Premium Direct (2022 – 2024)](https://mickaelteixeira.github.io/missions/upd/) : Développeur backend chez Ultra Premium Direct de 2022 à 2024 : la migration vers Sylius d’un e-commerce de petfood à fort trafic, en Symfony.
+- [onepoint (2013 – 2022)](https://mickaelteixeira.github.io/missions/onepoint/) : Développeur full-stack chez onepoint de 2013 à 2022 : six missions pour Enedis, Gaz de Bordeaux, PSA, Bureau Veritas Pro et SMIP, de Zend à Angular.
+- [TimeOne (2012 – 2013)](https://mickaelteixeira.github.io/missions/timeone/) : Développeur PHP chez TimeOne de 2012 à 2013 : des outils pour un réseau d’affiliation, une application mobile et la pratique de Scrum au quotidien.
+- [Web Stratégies (2009 – 2011)](https://mickaelteixeira.github.io/missions/webstrategies/) : Alternance de développeur PHP chez Web Stratégies, agence web de Bordeaux, de 2009 à 2011 : des sites, de la maquette au paiement Magento.
+- [illicotravel (2009)](https://mickaelteixeira.github.io/missions/illicotravel/) : Stage de développeur PHP chez illicotravel en 2009 : intégrer les flux XML de nouveaux partenaires au moteur d’un comparateur de voyages.
+
+## Parcours
+
+- [Parcours](https://mickaelteixeira.github.io/parcours/) : Je suis Mickaël Teixeira, développeur PHP depuis 2009 et freelance à Bordeaux depuis 2025. Mon parcours relie e-commerce, applications métier et Yedra.
+
+## Actualités
+
+- [Yedra. Et pour une fois, je suis allé au bout](https://mickaelteixeira.github.io/actualites/yedra-crm-ecoles/) : 13 août 2026. Je construis Yedra pour réunir le fichier des familles, les demandes et les échanges avec les parents. Six modules, des choix concrets, et une ouverture prévue fin 2026 avec des écoles pilotes.
+- [Playwright, aussi pour le design](https://mickaelteixeira.github.io/actualites/playwright-mcp-design-frontend/) : 20 juillet 2026. Un frontend peut fonctionner et rester loin de ce que j’avais en tête. Avec Playwright MCP, j’intègre le navigateur à ma méthode de travail avec Claude.
+- [DeepSeek en local avec DwarfStar](https://mickaelteixeira.github.io/actualites/dwarfstar-deepseek-local/) : 15 juillet 2026. DwarfStar propose une autre façon d’utiliser DeepSeek V4 Flash : l’exécuter en local. De quoi me donner envie de regarder de près la mémoire nécessaire et les choix techniques.
+- [L’IA produit du code. Le travail continue](https://mickaelteixeira.github.io/actualites/ia-reembauches-facturation/) : 19 juin 2026. Je trouve l’IA très efficace sur le répétitif. Mais le calcul, la relecture et la maintenance font aussi partie de la facture.
+- [Génériques PHP et TypePHP, deux pistes à suivre](https://mickaelteixeira.github.io/actualites/php-generiques-typephp/) : 17 juin 2026. Les génériques font débat dans PHP, et TypePHP explore la compilation native. J’attends surtout de voir les garanties et la compatibilité dans des applications réelles.
+- [Le Gros Chat sait nourrir la « hype »](https://mickaelteixeira.github.io/actualites/mistral-gros-chaton-rumeur/) : 15 juin 2026. Le « Gros Chat » est une parodie, et elle fonctionne très bien. Faux classements et visuels reprennent les ingrédients d’une annonce d’IA que l’on a envie de croire.
+- [Claw Code reprend l’architecture de l’agent](https://mickaelteixeira.github.io/actualites/claw-code-reecriture-agents/) : 1er avril 2026. Au lendemain de la fuite de Claude Code, les développeurs s’emparent de son architecture. Claw Code illustre cette envie de comprendre et de reconstruire.
+- [Une source map ouvre le capot de Claude Code](https://mickaelteixeira.github.io/actualites/claude-code-fuite-sources/) : 31 mars 2026. Le 31 mars 2026, une livraison de Claude Code sur npm expose du code interne. Une source map donne accès aux coulisses du client en ligne de commande d’Anthropic.
+- [Six à douze mois selon Amodei. Je reste sceptique](https://mickaelteixeira.github.io/actualites/amodei-prevision-metier-developpeur/) : 21 janvier 2026. À Davos, Dario Amodei envisage que l’IA puisse assurer l’essentiel du travail logiciel sous six à douze mois. Je me méfie de ces échéances si proches.
+- [Une heure de veille de plus ne réglera pas l’avenir](https://mickaelteixeira.github.io/actualites/fatigue-mentale-developpeur/) : 9 janvier 2026. J’ai parfois l’impression de devoir tout apprendre tout de suite pour continuer à exister comme développeur. Cette course me fatigue, et je veux savoir m’arrêter.
+- [Tailwind gagne des utilisateurs, perd des revenus](https://mickaelteixeira.github.io/actualites/tailwind-financement-ia/) : 8 janvier 2026. Adam Wathan annonce le licenciement de 75 % de son équipe d’ingénierie chez Tailwind Labs. Son récit montre un décalage brutal entre popularité et financement.
+- [Sylius dans le rachat de PrestaShop](https://mickaelteixeira.github.io/actualites/sylius-prestashop-rapprochement/) : 11 décembre 2025. Le 11 décembre 2025, Sylius participe à l’annonce du rachat de PrestaShop avec cyber_Folks et BitBag. Voir cette solution prendre cette place, ça me fait quelque chose.
+
+## Optional
+
+- [Tout le contenu du site en un seul fichier texte](https://mickaelteixeira.github.io/llms-full.txt) : expertises, missions, parcours et articles.
+- [Flux Atom des actualités](https://mickaelteixeira.github.io/actualites/flux.xml) : les articles, du plus récent au plus ancien.
+- [Mentions légales](https://mickaelteixeira.github.io/mentions-legales/) : éditeur, hébergement, données personnelles.
