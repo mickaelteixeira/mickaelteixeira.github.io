@@ -120,6 +120,36 @@ def graphe(*noeuds):
     return {'@context': 'https://schema.org', '@graph': [n for n in noeuds if n]}
 
 
+def jetons(st):
+    sur_accent = 'background: #2f4bff' in st and 'color: #ffffff' in st
+    st = st.replace('background: #8fa2ff; color: #171717', '§lavande§')
+    st = st.replace('background: #ffffff', 'background: var(--fond)').replace('background: #f5f5f5', 'background: var(--fond-2)')
+    st = st.replace('background: #171717', 'background: var(--panneau)')
+    st = re.sub(r'(border(?:-top|-bottom|-left|-right)?: \d+px solid )#(?:e5e5e5|ebebeb)', r'\1var(--trait)', st)
+    st = re.sub(r'(border(?:-top|-bottom|-left|-right)?: \d+px solid )#b3b3b3', r'\1var(--trait-fort)', st)
+    st = re.sub(r'(border(?:-top|-bottom|-left|-right)?: \d+px solid )#171717', r'\1var(--encre)', st)
+    st = re.sub(r'(?<![-\w])color: #171717', 'color: var(--encre)', st)
+    st = re.sub(r'(?<![-\w])color: #3d3d3d', 'color: var(--texte)', st)
+    st = re.sub(r'(?<![-\w])color: #5c5c5c', 'color: var(--second)', st)
+    st = st.replace('#2f4bff', 'var(--accent)')
+    if sur_accent:
+        st = st.replace('color: #ffffff', 'color: var(--sur-accent)')
+    return st.replace('§lavande§', 'background: #8fa2ff; color: #171717')
+
+
+def themer(texte):
+    morceaux = re.split(r'(<!--fixe-->.*?<!--/fixe-->)', texte, flags=re.S)
+    return ''.join(m.replace('<!--fixe-->', '').replace('<!--/fixe-->', '') if m.startswith('<!--fixe-->')
+                   else re.sub(r'style="([^"]*)"', lambda s: f'style="{jetons(s.group(1))}"', m) for m in morceaux)
+
+
+def couvertures(texte, tailles):
+    return re.sub(r'<img src="/assets/img/missions/([a-z]+)-couverture\.webp"',
+                  lambda m: (f'<img src="/assets/img/missions/{m.group(1)}-couverture.webp" '
+                             f'srcset="/assets/img/missions/{m.group(1)}-couverture-800.webp 800w, /assets/img/missions/{m.group(1)}-couverture.webp 1600w" '
+                             f'sizes="{tailles}"'), texte)
+
+
 def entete(courant):
     liens = [('Missions', '/#missions'), ('Expertises', '/#expertises'), ('Yedra', '/#yedra'), ('Parcours', '/#parcours'),
              ('Actualités', '/actualites/')]
@@ -132,8 +162,11 @@ def entete(courant):
 <nav class="entete__nav" aria-label="Navigation principale">
 {nav}
 </nav>
+<div class="entete__actions">
+<button class="theme" type="button" aria-label="Thème : automatique. Changer de thème" title="Thème : automatique"><svg data-icone="auto" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="8"></circle><path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"></path></svg><svg data-icone="clair" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><svg data-icone="sombre" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg></button>
 <a class="entete__contact" href="/#contact">Me contacter</a>
 <button class="entete__menu" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
 </div>
 </header>
 <nav id="menu-mobile" class="menu-mobile" aria-label="Menu" hidden>
@@ -165,7 +198,10 @@ def page(chemin, titre, description, corps, *, courant=None, image='/assets/img/
 <link rel="canonical" href="{canonique}">
 <meta name="author" content="{NOM}">
 <meta name="google-site-verification" content="{VERIFICATION_GOOGLE}">
-<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171717" media="(prefers-color-scheme: dark)">
+<script>try{{var t=localStorage.getItem('theme');if(t==='clair'||t==='sombre')document.documentElement.setAttribute('data-theme',t)}}catch(e){{}}</script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -192,7 +228,7 @@ def page(chemin, titre, description, corps, *, courant=None, image='/assets/img/
 </head>
 <body>
 {entete(courant)}
-{corps}
+{themer(corps)}
 <script src="/assets/js/site.js" defer></script>
 </body>
 </html>
@@ -255,7 +291,7 @@ def carte(a, grand=False, theme_accueil=False):
     encre, second, trait = ('var(--encre)', 'var(--second)', 'var(--trait)') if theme_accueil else ('#171717', '#5c5c5c', '#ebebeb')
     chapo = '' if theme_accueil else f'<span style="font-size: 15px; line-height: 1.6; color: #3d3d3d">{e(a["chapo"])}</span>'
     return f'''<a href="/actualites/{a["slug"]}/" style="display: flex; flex-direction: column; gap: 14px; color: {encre}; text-decoration: none">
-<span style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid {trait}; background: #ffffff"><img src="/assets/img/actualites/{a["slug"]}-carte.webp" alt="{e(a["visuel_alt"])}" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></span>
+<span style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid {trait}; background: #ffffff"><img src="/assets/img/actualites/{a["slug"]}-carte.webp" data-theme-img="clair" alt="{e(a["visuel_alt"])}" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"><img src="/assets/img/actualites/{a["slug"]}-nuit-carte.webp" data-theme-img="sombre" alt="{e(a["visuel_alt"])}" width="800" height="450" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto"></span>
 <span style="{MONO}; font-size: 12px; color: {second}"><time datetime="{a["date"]}">{a["date_affichee"]}</time> · {e(a["rubrique"])}</span>
 <span style="{TIGHT}; font-size: 24px; line-height: 1.14; letter-spacing: -0.02em">{e(a["titre"])}</span>
 {chapo}
@@ -335,7 +371,7 @@ def page_article(a):
 </div>
 </header>
 <figure style="{WRAP}; margin: 0 auto">
-<div style="overflow: hidden; border-radius: 16px; border: 1px solid #ebebeb; background: #ffffff"><img src="/assets/img/actualites/{a["slug"]}.svg" alt="{e(a["visuel_alt"])}" width="1200" height="675" fetchpriority="high" style="display: block; width: 100%; height: auto"></div>
+<div style="overflow: hidden; border-radius: 16px; border: 1px solid #ebebeb; background: #ffffff"><img src="/assets/img/actualites/{a["slug"]}.svg" data-theme-img="clair" alt="{e(a["visuel_alt"])}" width="1200" height="675" fetchpriority="high" style="display: block; width: 100%; height: auto"><img src="/assets/img/actualites/{a["slug"]}-nuit.svg" data-theme-img="sombre" alt="{e(a["visuel_alt"])}" width="1200" height="675" loading="lazy" style="display: block; width: 100%; height: auto"></div>
 </figure>
 <div style="{WRAP}; padding-block: clamp(48px, 5cqw, 80px) clamp(72px, 8cqw, 128px); display: flex; flex-wrap: wrap; gap: 48px clamp(48px, 7cqw, 112px); align-items: flex-start">
 <div style="flex: 999 1 560px; min-width: 0; max-width: 700px; display: flex; flex-direction: column; gap: 24px; font-size: 18px; line-height: 1.75; color: #3d3d3d">
@@ -454,11 +490,13 @@ def flux():
 def page_accueil():
     t = fragment('accueil.html')
     facade = ('<div class="facade" data-grille="/assets/img/facade-grille.png">'
-              '<img src="/assets/img/facade-trame.svg" alt="Façade d’immeuble brutaliste dessinée en trame de lignes bleues" width="720" height="900" fetchpriority="high">'
+              '<img src="/assets/img/facade-trame.svg" data-theme-img="clair" alt="Façade d’immeuble brutaliste dessinée en trame de lignes bleues" width="720" height="900" fetchpriority="high">'
+              '<img src="/assets/img/facade-trame-nuit.svg" data-theme-img="sombre" alt="Façade d’immeuble brutaliste dessinée en trame de lignes bleues" width="720" height="900" loading="lazy">'
               '<canvas aria-hidden="true"></canvas></div>')
     t = t.replace('<!--facade-->', facade)
     cartes = '\n'.join(f'<li style="padding-top: 24px; border-top: 1px solid var(--trait)">{carte(a, theme_accueil=True)}</li>' for a in articles[:3])
     t = t.replace('<!--actualites-accueil-->', cartes)
+    t = couvertures(t, '(min-width: 900px) 50vw, 100vw')
     assert '<!--' not in t
     donnees = graphe(
         {'@type': 'ProfilePage', '@id': SITE + '/#page', 'url': SITE + '/', 'name': 'Développeur Symfony et Sylius freelance à Bordeaux',
@@ -476,7 +514,8 @@ def pages_missions():
     for m in MISSIONS:
         chemin = f'/missions/{m["slug"]}/'
         t = fragment(f'missions/{m["slug"]}.html').replace(f'<!--missions:{m["slug"]}-->', bande_missions(m['slug']))
-        assert '<!--' not in t, m['slug']
+        t = couvertures(t, '(min-width: 1312px) 1312px, 100vw')
+        assert '<!--missions' not in t, m['slug']
         a_propos = {'@type': 'Organization', 'name': m['nom']}
         if m['client']:
             a_propos['url'] = m['client']

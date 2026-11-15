@@ -1,4 +1,23 @@
 (() => {
+  const theme = document.querySelector('.theme');
+  if (theme) {
+    const libelles = { auto: 'Thème : automatique', clair: 'Thème : clair', sombre: 'Thème : sombre' };
+    const suivant = { auto: 'clair', clair: 'sombre', sombre: 'auto' };
+    const appliquer = choix => {
+      if (choix === 'auto') document.documentElement.removeAttribute('data-theme');
+      else document.documentElement.setAttribute('data-theme', choix);
+      theme.setAttribute('aria-label', libelles[choix] + '. Changer de thème');
+      theme.title = libelles[choix];
+    };
+    let courant = document.documentElement.getAttribute('data-theme') || 'auto';
+    appliquer(courant);
+    theme.addEventListener('click', () => {
+      courant = suivant[courant];
+      appliquer(courant);
+      try { courant === 'auto' ? localStorage.removeItem('theme') : localStorage.setItem('theme', courant); } catch (e) {}
+    });
+  }
+
   const bouton = document.querySelector('.entete__menu');
   const menu = document.getElementById('menu-mobile');
   if (bouton && menu) {
@@ -41,7 +60,7 @@
     }
     const dessiner = (lumiere, rangsVisibles) => {
       ctx.clearRect(0, 0, L, H);
-      ctx.fillStyle = '#2f4bff';
+      ctx.fillStyle = getComputedStyle(facade).getPropertyValue('--accent').trim() || '#2f4bff';
       for (let r = 0; r < rangsVisibles; r++) {
         let erreur = 0, debut = -1, somme = 0, n = 0;
         for (let c = 0; c <= COLS; c++) {

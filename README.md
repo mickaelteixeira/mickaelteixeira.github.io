@@ -26,6 +26,14 @@ Python 3 suffit pour `build.py` ; `partage.py` a besoin de Pillow et de Google C
 
 Le dossier `_build` n’est pas publié : GitHub Pages ignore les dossiers qui commencent par un tiret bas.
 
+## Thèmes clair et sombre
+
+Le thème suit le système du visiteur, ou son choix (bouton dans l’en-tête, mémorisé dans le navigateur).
+Les couleurs sont des variables dans `assets/css/site.css`. Les couleurs neutres écrites dans les fragments
+(`#ffffff`, `#171717`, `#2f4bff`…) sont converties en variables par `build.py` ; une zone entourée de
+`<!--fixe-->` et `<!--/fixe-->` garde ses couleurs, comme les pièces aux couleurs des clients. Une image
+propre à un thème porte `data-theme-img="clair"` ou `data-theme-img="sombre"`.
+
 ## Référencement
 
 Chaque page a son titre, sa description, son URL canonique, ses balises Open Graph et ses données structurées

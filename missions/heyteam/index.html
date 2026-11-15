@@ -9,7 +9,10 @@
 <link rel="canonical" href="https://mickaelteixeira.github.io/missions/heyteam/">
 <meta name="author" content="Mickaël Teixeira">
 <meta name="google-site-verification" content="wsdzIL0Lmsbtvz1F2wSa2pzjxPZG2HtzG2G24YiEvAY">
-<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171717" media="(prefers-color-scheme: dark)">
+<script>try{var t=localStorage.getItem('theme');if(t==='clair'||t==='sombre')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -46,8 +49,11 @@
 <a href="/#parcours">Parcours</a>
 <a href="/actualites/">Actualités</a>
 </nav>
+<div class="entete__actions">
+<button class="theme" type="button" aria-label="Thème : automatique. Changer de thème" title="Thème : automatique"><svg data-icone="auto" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="8"></circle><path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"></path></svg><svg data-icone="clair" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><svg data-icone="sombre" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg></button>
 <a class="entete__contact" href="/#contact">Me contacter</a>
 <button class="entete__menu" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
 </div>
 </header>
 <nav id="menu-mobile" class="menu-mobile" aria-label="Menu" hidden>
@@ -61,20 +67,20 @@
 <a href="/#contact">Me contacter</a>
 </div>
 </nav>
-<div style="container-type: inline-size; background: #ffffff; color: #171717; font-family: Inter, system-ui, sans-serif; font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased">
+<div style="container-type: inline-size; background: var(--fond); color: var(--encre); font-family: Inter, system-ui, sans-serif; font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased">
 
 <main id="contenu">
 
 <section aria-labelledby="titre-mission" style="padding-block: clamp(48px, 6cqw, 96px) clamp(32px, 4cqw, 56px)">
 <div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
-<nav aria-label="Fil d’Ariane" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #5c5c5c"><a href="/" style="color: #5c5c5c">Accueil</a> / <a href="/#missions" style="color: #5c5c5c">Missions</a> / <span aria-current="page">HeyTeam</span></nav>
+<nav aria-label="Fil d’Ariane" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--second)"><a href="/" style="color: var(--second)">Accueil</a> / <a href="/#missions" style="color: var(--second)">Missions</a> / <span aria-current="page">HeyTeam</span></nav>
 <h1 id="titre-mission" style="margin: 0; max-width: 1080px; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(42px, 5.4cqw, 80px); line-height: 1.02; letter-spacing: -0.03em">HeyTeam : une architecture modulaire. <span style="color: #9a9a9a">Et une équipe qui garde la main.</span></h1>
 </div>
 </section>
 
 <figure style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
 <div style="position: relative; overflow: hidden; border-radius: 16px; background: #e9a189; height: clamp(320px, 42cqw, 600px)">
-<img src="/assets/img/missions/heyteam-couverture.webp" alt="Le bureau d’un nouveau collaborateur, avec un badge d’accueil à cordon orange, contre un mur pêche" width="1600" height="1067" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: left center">
+<img src="/assets/img/missions/heyteam-couverture.webp" srcset="/assets/img/missions/heyteam-couverture-800.webp 800w, /assets/img/missions/heyteam-couverture.webp 1600w" sizes="(min-width: 1312px) 1312px, 100vw" alt="Le bureau d’un nouveau collaborateur, avec un badge d’accueil à cordon orange, contre un mur pêche" width="1600" height="1067" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: left center">
 <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgb(64 22 10 / 0) 40%, rgb(64 22 10 / .42) 72%, rgb(64 22 10 / .62) 100%)"></div>
 <div style="position: absolute; right: clamp(24px, 5cqw, 80px); top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; align-items: flex-end; gap: 12px">
 <img src="/assets/img/missions/heyteam-logo.svg" alt="HeyTeam" width="155" height="28" style="display: block; width: clamp(160px, 19cqw, 270px); height: auto">
@@ -84,59 +90,59 @@
 
 <section aria-label="En bref" style="padding-block: clamp(40px, 4cqw, 56px)">
 <dl style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 20px 32px; font-size: 16px">
-<div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid #171717"><dt style="font-family: 'JetBrains Mono', monospace; color: #5c5c5c; font-size: 12px">Employeur</dt><dd style="margin: 0">HeyTeam</dd></div>
-<div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid #171717"><dt style="font-family: 'JetBrains Mono', monospace; color: #5c5c5c; font-size: 12px">Rôle</dt><dd style="margin: 0">Lead developer, en poste</dd></div>
-<div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid #171717"><dt style="font-family: 'JetBrains Mono', monospace; color: #5c5c5c; font-size: 12px">Période</dt><dd style="margin: 0">Janvier – avril 2025</dd></div>
-<div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid #171717"><dt style="font-family: 'JetBrains Mono', monospace; color: #5c5c5c; font-size: 12px">Lieu</dt><dd style="margin: 0">À distance</dd></div>
-<div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid #171717"><dt style="font-family: 'JetBrains Mono', monospace; color: #5c5c5c; font-size: 12px">Pile</dt><dd style="margin: 0">Laravel 8, PHP 7.4, MySQL</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid var(--encre)"><dt style="font-family: 'JetBrains Mono', monospace; color: var(--second); font-size: 12px">Employeur</dt><dd style="margin: 0">HeyTeam</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid var(--encre)"><dt style="font-family: 'JetBrains Mono', monospace; color: var(--second); font-size: 12px">Rôle</dt><dd style="margin: 0">Lead developer, en poste</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid var(--encre)"><dt style="font-family: 'JetBrains Mono', monospace; color: var(--second); font-size: 12px">Période</dt><dd style="margin: 0">Janvier – avril 2025</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid var(--encre)"><dt style="font-family: 'JetBrains Mono', monospace; color: var(--second); font-size: 12px">Lieu</dt><dd style="margin: 0">À distance</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px; padding-top: 14px; border-top: 1px solid var(--encre)"><dt style="font-family: 'JetBrains Mono', monospace; color: var(--second); font-size: 12px">Pile</dt><dd style="margin: 0">Laravel 8, PHP 7.4, MySQL</dd></div>
 </dl>
 </section>
 
 <article style="max-width: 1312px; margin: 0 auto; padding: 0 clamp(20px, 4.5cqw, 64px) clamp(72px, 8cqw, 128px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px clamp(48px, 7cqw, 112px); align-items: flex-start">
 
-<div style="flex: 999 1 560px; min-width: 0; max-width: 700px; display: flex; flex-direction: column; gap: 56px; font-size: 18px; line-height: 1.7; color: #3d3d3d">
+<div style="flex: 999 1 560px; min-width: 0; max-width: 700px; display: flex; flex-direction: column; gap: 56px; font-size: 18px; line-height: 1.7; color: var(--texte)">
 
-<p style="margin: 0; font-size: 22px; line-height: 1.55; color: #171717">HeyTeam aide les entreprises à réussir l’arrivée de leurs collaborateurs, puis toutes les transitions qui suivent. En 2025, j’y ai été lead developer pendant quatre mois, sur une plateforme B2B qui relie HeyTeam aux outils SIRH de ses clients.</p>
+<p style="margin: 0; font-size: 22px; line-height: 1.55; color: var(--encre)">HeyTeam aide les entreprises à réussir l’arrivée de leurs collaborateurs, puis toutes les transitions qui suivent. En 2025, j’y ai été lead developer pendant quatre mois, sur une plateforme B2B qui relie HeyTeam aux outils SIRH de ses clients.</p>
 
 <section style="display: flex; flex-direction: column; gap: 16px">
-<h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; color: #171717">Le problème à résoudre.</h2>
+<h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; color: var(--encre)">Le problème à résoudre.</h2>
 <p style="margin: 0">Une plateforme d’interconnexion vit au rythme des outils qu’elle relie : chaque SIRH a ses données, ses formats, ses règles. Sans architecture claire, chaque nouvel outil ajoute un cas particulier, et le code devient difficile à faire évoluer.</p>
 <p style="margin: 0">Le point de départ était une application Laravel existante. Il fallait la faire évoluer sans tout réécrire, et poser des pratiques que toute l’équipe partage.</p>
 </section>
 
 <section style="display: flex; flex-direction: column; gap: 20px">
-<h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; color: #171717">Ce que j’ai construit.</h2>
+<h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; color: var(--encre)">Ce que j’ai construit.</h2>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px">
-<div style="padding: 20px; background: #f5f5f5; border-radius: 12px; display: flex; flex-direction: column; gap: 6px"><b style="font-weight: 600; color: #171717; font-size: 17px">Une architecture modulaire</b><span style="font-size: 16px; line-height: 1.6">Conçue et mise en place pour l’interconnexion de HeyTeam avec les outils SIRH.</span></div>
-<div style="padding: 20px; background: #f5f5f5; border-radius: 12px; display: flex; flex-direction: column; gap: 6px"><b style="font-weight: 600; color: #171717; font-size: 17px">Une refonte en DDD</b><span style="font-size: 16px; line-height: 1.6">Des patterns simplifiés et des pratiques de développement standardisées.</span></div>
-<div style="padding: 20px; background: #f5f5f5; border-radius: 12px; display: flex; flex-direction: column; gap: 6px"><b style="font-weight: 600; color: #171717; font-size: 17px">Des audits et un plan</b><span style="font-size: 16px; line-height: 1.6">Qualité, maintenabilité, scalabilité : un plan d’amélioration continue.</span></div>
-<div style="padding: 20px; background: #f5f5f5; border-radius: 12px; display: flex; flex-direction: column; gap: 6px"><b style="font-weight: 600; color: #171717; font-size: 17px">L’outillage</b><span style="font-size: 16px; line-height: 1.6">Tests automatisés, analyse statique et intégration continue.</span></div>
+<div style="padding: 20px; background: var(--fond-2); border-radius: 12px; display: flex; flex-direction: column; gap: 6px"><b style="font-weight: 600; color: var(--encre); font-size: 17px">Une architecture modulaire</b><span style="font-size: 16px; line-height: 1.6">Conçue et mise en place pour l’interconnexion de HeyTeam avec les outils SIRH.</span></div>
+<div style="padding: 20px; background: var(--fond-2); border-radius: 12px; display: flex; flex-direction: column; gap: 6px"><b style="font-weight: 600; color: var(--encre); font-size: 17px">Une refonte en DDD</b><span style="font-size: 16px; line-height: 1.6">Des patterns simplifiés et des pratiques de développement standardisées.</span></div>
+<div style="padding: 20px; background: var(--fond-2); border-radius: 12px; display: flex; flex-direction: column; gap: 6px"><b style="font-weight: 600; color: var(--encre); font-size: 17px">Des audits et un plan</b><span style="font-size: 16px; line-height: 1.6">Qualité, maintenabilité, scalabilité : un plan d’amélioration continue.</span></div>
+<div style="padding: 20px; background: var(--fond-2); border-radius: 12px; display: flex; flex-direction: column; gap: 6px"><b style="font-weight: 600; color: var(--encre); font-size: 17px">L’outillage</b><span style="font-size: 16px; line-height: 1.6">Tests automatisés, analyse statique et intégration continue.</span></div>
 </div>
 </section>
 
 <section style="display: flex; flex-direction: column; gap: 16px">
-<h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; color: #171717">Lead, c’est aussi transmettre.</h2>
+<h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; color: var(--encre)">Lead, c’est aussi transmettre.</h2>
 <p style="margin: 0">Une architecture ne tient que si l’équipe sait la faire vivre. J’ai animé les rituels techniques, revues de code, pair programming, présentations internes, et encadré l’équipe de développeurs : relecture, montée en compétence, méthodologie.</p>
-<p style="margin: 0"><b style="font-weight: 600; color: #171717">Pourquoi le DDD ici.</b> Le Domain-Driven Design donne à chaque domaine son vocabulaire et ses limites. Dans une plateforme qui parle à plusieurs SIRH, c’est ce qui évite que les particularités de l’un se répandent dans tout le code.</p>
-<p style="margin: 0"><b style="font-weight: 600; color: #171717">Pourquoi l’outillage d’abord.</b> Tests, analyse statique et intégration continue donnent le filet de sécurité qui permet de refondre un existant sans le casser.</p>
+<p style="margin: 0"><b style="font-weight: 600; color: var(--encre)">Pourquoi le DDD ici.</b> Le Domain-Driven Design donne à chaque domaine son vocabulaire et ses limites. Dans une plateforme qui parle à plusieurs SIRH, c’est ce qui évite que les particularités de l’un se répandent dans tout le code.</p>
+<p style="margin: 0"><b style="font-weight: 600; color: var(--encre)">Pourquoi l’outillage d’abord.</b> Tests, analyse statique et intégration continue donnent le filet de sécurité qui permet de refondre un existant sans le casser.</p>
 </section>
 
-<blockquote style="margin: 0; padding: 8px 0 8px 24px; border-left: 2px solid #2f4bff; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(26px, 2.6cqw, 32px); line-height: 1.25; letter-spacing: -0.02em; color: #171717">Faire évoluer l’existant plutôt que tout réécrire, et laisser une équipe autonome.</blockquote>
+<blockquote style="margin: 0; padding: 8px 0 8px 24px; border-left: 2px solid var(--accent); font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(26px, 2.6cqw, 32px); line-height: 1.25; letter-spacing: -0.02em; color: var(--encre)">Faire évoluer l’existant plutôt que tout réécrire, et laisser une équipe autonome.</blockquote>
 
 </div>
 
-<aside aria-label="En résumé" style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 20px; padding: 24px; border: 1px solid #e5e5e5; border-radius: 12px">
+<aside aria-label="En résumé" style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 20px; padding: 24px; border: 1px solid var(--trait); border-radius: 12px">
 <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 15px">
-<li style="display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 8px"><span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 28px; line-height: 1; color: #2f4bff">1</span><span>plateforme B2B d’interconnexion avec les SIRH</span></li>
-<li style="display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 8px"><span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 28px; line-height: 1; color: #2f4bff">3</span><span>rituels : revues de code, pair programming, présentations internes</span></li>
-<li style="display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 8px"><span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 28px; line-height: 1; color: #2f4bff">4</span><span>mois comme lead developer, de janvier à avril 2025</span></li>
+<li style="display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 8px"><span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 28px; line-height: 1; color: var(--accent)">1</span><span>plateforme B2B d’interconnexion avec les SIRH</span></li>
+<li style="display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 8px"><span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 28px; line-height: 1; color: var(--accent)">3</span><span>rituels : revues de code, pair programming, présentations internes</span></li>
+<li style="display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 8px"><span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: 28px; line-height: 1; color: var(--accent)">4</span><span>mois comme lead developer, de janvier à avril 2025</span></li>
 </ul>
-<p style="margin: 0; padding-top: 16px; border-top: 1px solid #e5e5e5; font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 1.8; color: #5c5c5c">Laravel 8 · PHP 7.4 · MySQL · DDD · API REST · Docker · GitLab CI</p>
+<p style="margin: 0; padding-top: 16px; border-top: 1px solid var(--trait); font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 1.8; color: var(--second)">Laravel 8 · PHP 7.4 · MySQL · DDD · API REST · Docker · GitLab CI</p>
 </aside>
 
 </article>
 
-<section aria-labelledby="titre-parcours-ht" style="padding-block: clamp(72px, 8cqw, 120px); background: #f5f5f5">
+<section aria-labelledby="titre-parcours-ht" style="padding-block: clamp(72px, 8cqw, 120px); background: var(--fond-2)">
 <div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 40px clamp(48px, 7cqw, 112px); align-items: center">
 <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
 <h2 id="titre-parcours-ht" style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(30px, 3cqw, 42px); line-height: 1.1; letter-spacing: -0.02em">HeyTeam orchestre des parcours d’arrivée. <span style="color: #8a8a8a">Voici celui de son lead developer.</span></h2>
@@ -163,7 +169,7 @@
 
 </main>
 
-<section aria-labelledby="titre-prochain" style="container-type: inline-size; background: #171717; color: #ebebeb; font-size: 16px; line-height: 1.55">
+<section aria-labelledby="titre-prochain" style="container-type: inline-size; background: var(--panneau); color: #ebebeb; font-size: 16px; line-height: 1.55">
 <div style="max-width: 1312px; margin: 0 auto; padding-inline: clamp(20px, 4.5cqw, 64px); box-sizing: border-box; padding-block: clamp(64px, 7cqw, 112px) 40px; display: flex; flex-direction: column; gap: clamp(56px, 6cqw, 88px)">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 32px 64px">
 <h2 id="titre-prochain" style="margin: 0; flex: 1 1 520px; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 300; font-size: clamp(36px, 4.2cqw, 64px); line-height: 1.04; letter-spacing: -0.03em; color: #ffffff">La prochaine mission, <span style="color: #8a8a8a">c’est peut-être la vôtre.</span></h2>
