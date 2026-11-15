@@ -5,14 +5,14 @@
 <link href="https://mickaelteixeira.github.io/actualites/flux.xml" rel="self"/>
 <link href="https://mickaelteixeira.github.io/actualites/"/>
 <id>https://mickaelteixeira.github.io/actualites/</id>
-<updated>2026-08-13T09:00:00+01:00</updated>
+<updated>2026-08-13T10:54:56+02:00</updated>
 <author><name>Mickaël Teixeira</name><uri>https://mickaelteixeira.github.io/</uri></author>
 <entry>
 <title>Yedra. Et pour une fois, je suis allé au bout</title>
 <link href="https://mickaelteixeira.github.io/actualites/yedra-crm-ecoles/"/>
 <id>https://mickaelteixeira.github.io/actualites/yedra-crm-ecoles/</id>
-<published>2026-08-13T09:00:00+01:00</published>
-<updated>2026-08-13T09:00:00+01:00</updated>
+<published>2026-08-13T10:54:56+02:00</published>
+<updated>2026-08-13T10:54:56+02:00</updated>
 <category term="Yedra"/>
 <summary>Je construis Yedra pour réunir le fichier des familles, les demandes et les échanges avec les parents. Six modules, des choix concrets, et une ouverture prévue fin 2026 avec des écoles pilotes.</summary>
 </entry>
@@ -20,8 +20,8 @@
 <title>Playwright, aussi pour le design</title>
 <link href="https://mickaelteixeira.github.io/actualites/playwright-mcp-design-frontend/"/>
 <id>https://mickaelteixeira.github.io/actualites/playwright-mcp-design-frontend/</id>
-<published>2026-07-20T09:00:00+01:00</published>
-<updated>2026-07-20T09:00:00+01:00</updated>
+<published>2026-07-20T16:38:37+02:00</published>
+<updated>2026-07-20T16:38:37+02:00</updated>
 <category term="Outils"/>
 <summary>Un frontend peut fonctionner et rester loin de ce que j’avais en tête. Avec Playwright MCP, j’intègre le navigateur à ma méthode de travail avec Claude.</summary>
 </entry>
@@ -29,8 +29,8 @@
 <title>DeepSeek en local avec DwarfStar</title>
 <link href="https://mickaelteixeira.github.io/actualites/dwarfstar-deepseek-local/"/>
 <id>https://mickaelteixeira.github.io/actualites/dwarfstar-deepseek-local/</id>
-<published>2026-07-15T09:00:00+01:00</published>
-<updated>2026-07-15T09:00:00+01:00</updated>
+<published>2026-07-15T14:37:15+02:00</published>
+<updated>2026-07-15T14:37:15+02:00</updated>
 <category term="Outils"/>
 <summary>DwarfStar propose une autre façon d’utiliser DeepSeek V4 Flash : l’exécuter en local. De quoi me donner envie de regarder de près la mémoire nécessaire et les choix techniques.</summary>
 </entry>
@@ -38,8 +38,8 @@
 <title>L’IA produit du code. Le travail continue</title>
 <link href="https://mickaelteixeira.github.io/actualites/ia-reembauches-facturation/"/>
 <id>https://mickaelteixeira.github.io/actualites/ia-reembauches-facturation/</id>
-<published>2026-06-19T09:00:00+01:00</published>
-<updated>2026-06-19T09:00:00+01:00</updated>
+<published>2026-06-19T14:25:35+02:00</published>
+<updated>2026-06-19T14:25:35+02:00</updated>
 <category term="IA et métier"/>
 <summary>Je trouve l’IA très efficace sur le répétitif. Mais le calcul, la relecture et la maintenance font aussi partie de la facture.</summary>
 </entry>
@@ -47,8 +47,8 @@
 <title>Génériques PHP et TypePHP, deux pistes à suivre</title>
 <link href="https://mickaelteixeira.github.io/actualites/php-generiques-typephp/"/>
 <id>https://mickaelteixeira.github.io/actualites/php-generiques-typephp/</id>
-<published>2026-06-17T09:00:00+01:00</published>
-<updated>2026-06-17T09:00:00+01:00</updated>
+<published>2026-06-17T17:43:55+02:00</published>
+<updated>2026-06-17T17:43:55+02:00</updated>
 <category term="Écosystème PHP"/>
 <summary>Les génériques font débat dans PHP, et TypePHP explore la compilation native. J’attends surtout de voir les garanties et la compatibilité dans des applications réelles.</summary>
 </entry>
@@ -56,8 +56,8 @@
 <title>Le Gros Chat sait nourrir la « hype »</title>
 <link href="https://mickaelteixeira.github.io/actualites/mistral-gros-chaton-rumeur/"/>
 <id>https://mickaelteixeira.github.io/actualites/mistral-gros-chaton-rumeur/</id>
-<published>2026-06-15T09:00:00+01:00</published>
-<updated>2026-06-15T09:00:00+01:00</updated>
+<published>2026-06-15T14:50:12+02:00</published>
+<updated>2026-06-15T14:50:12+02:00</updated>
 <category term="IA et métier"/>
 <summary>Le « Gros Chat » est une parodie, et elle fonctionne très bien. Faux classements et visuels reprennent les ingrédients d’une annonce d’IA que l’on a envie de croire.</summary>
 </entry>
@@ -65,8 +65,8 @@
 <title>Claw Code reprend l’architecture de l’agent</title>
 <link href="https://mickaelteixeira.github.io/actualites/claw-code-reecriture-agents/"/>
 <id>https://mickaelteixeira.github.io/actualites/claw-code-reecriture-agents/</id>
-<published>2026-04-01T09:00:00+01:00</published>
-<updated>2026-04-01T09:00:00+01:00</updated>
+<published>2026-04-01T18:01:35+02:00</published>
+<updated>2026-04-01T18:01:35+02:00</updated>
 <category term="Outils"/>
 <summary>Au lendemain de la fuite de Claude Code, les développeurs s’emparent de son architecture. Claw Code illustre cette envie de comprendre et de reconstruire.</summary>
 </entry>
@@ -74,8 +74,8 @@
 <title>Une source map ouvre le capot de Claude Code</title>
 <link href="https://mickaelteixeira.github.io/actualites/claude-code-fuite-sources/"/>
 <id>https://mickaelteixeira.github.io/actualites/claude-code-fuite-sources/</id>
-<published>2026-03-31T09:00:00+01:00</published>
-<updated>2026-03-31T09:00:00+01:00</updated>
+<published>2026-03-31T15:54:52+02:00</published>
+<updated>2026-03-31T15:54:52+02:00</updated>
 <category term="Outils"/>
 <summary>Le 31 mars 2026, une livraison de Claude Code sur npm expose du code interne. Une source map donne accès aux coulisses du client en ligne de commande d’Anthropic.</summary>
 </entry>
@@ -83,8 +83,8 @@
 <title>Six à douze mois selon Amodei. Je reste sceptique</title>
 <link href="https://mickaelteixeira.github.io/actualites/amodei-prevision-metier-developpeur/"/>
 <id>https://mickaelteixeira.github.io/actualites/amodei-prevision-metier-developpeur/</id>
-<published>2026-01-21T09:00:00+01:00</published>
-<updated>2026-01-21T09:00:00+01:00</updated>
+<published>2026-01-21T11:52:02+01:00</published>
+<updated>2026-01-21T11:52:02+01:00</updated>
 <category term="IA et métier"/>
 <summary>À Davos, Dario Amodei envisage que l’IA puisse assurer l’essentiel du travail logiciel sous six à douze mois. Je me méfie de ces échéances si proches.</summary>
 </entry>
@@ -92,8 +92,8 @@
 <title>Une heure de veille de plus ne réglera pas l’avenir</title>
 <link href="https://mickaelteixeira.github.io/actualites/fatigue-mentale-developpeur/"/>
 <id>https://mickaelteixeira.github.io/actualites/fatigue-mentale-developpeur/</id>
-<published>2026-01-09T09:00:00+01:00</published>
-<updated>2026-01-09T09:00:00+01:00</updated>
+<published>2026-01-09T14:53:00+01:00</published>
+<updated>2026-01-09T14:53:00+01:00</updated>
 <category term="IA et métier"/>
 <summary>J’ai parfois l’impression de devoir tout apprendre tout de suite pour continuer à exister comme développeur. Cette course me fatigue, et je veux savoir m’arrêter.</summary>
 </entry>
@@ -101,8 +101,8 @@
 <title>Tailwind gagne des utilisateurs, perd des revenus</title>
 <link href="https://mickaelteixeira.github.io/actualites/tailwind-financement-ia/"/>
 <id>https://mickaelteixeira.github.io/actualites/tailwind-financement-ia/</id>
-<published>2026-01-08T09:00:00+01:00</published>
-<updated>2026-01-08T09:00:00+01:00</updated>
+<published>2026-01-08T10:57:09+01:00</published>
+<updated>2026-01-08T10:57:09+01:00</updated>
 <category term="IA et métier"/>
 <summary>Adam Wathan annonce le licenciement de 75 % de son équipe d’ingénierie chez Tailwind Labs. Son récit montre un décalage brutal entre popularité et financement.</summary>
 </entry>
@@ -110,8 +110,8 @@
 <title>Sylius dans le rachat de PrestaShop</title>
 <link href="https://mickaelteixeira.github.io/actualites/sylius-prestashop-rapprochement/"/>
 <id>https://mickaelteixeira.github.io/actualites/sylius-prestashop-rapprochement/</id>
-<published>2025-12-11T09:00:00+01:00</published>
-<updated>2025-12-11T09:00:00+01:00</updated>
+<published>2025-12-11T16:02:40+01:00</published>
+<updated>2025-12-11T16:02:40+01:00</updated>
 <category term="Écosystème PHP"/>
 <summary>Le 11 décembre 2025, Sylius participe à l’annonce du rachat de PrestaShop avec cyber_Folks et BitBag. Voir cette solution prendre cette place, ça me fait quelque chose.</summary>
 </entry>
