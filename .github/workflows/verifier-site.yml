@@ -1,0 +1,19 @@
+name: Vérifier le site généré
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regénérer les pages
+        run: python3 _build/build.py
+      - name: Vérifier que les pages publiées sont à jour
+        run: git diff --exit-code -- . ':(exclude)assets/img/partage'
