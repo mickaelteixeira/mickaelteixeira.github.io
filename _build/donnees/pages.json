@@ -1,0 +1,626 @@
+{
+ "expertises": [
+  {
+   "slug": "symfony",
+   "nom": "Symfony",
+   "titre_seo": "Développeur Symfony freelance à Bordeaux",
+   "meta_description": "Développeur Symfony freelance à Bordeaux : Symfony depuis 2014, migrations, API et e-commerce chez Ultra Premium Direct et Commande.com.",
+   "h1": "Développeur Symfony freelance à Bordeaux.",
+   "h1_suite": "Je fais évoluer les applications PHP, les API et les plateformes e-commerce avec les équipes en place.",
+   "chapo": "Je suis Mickaël Teixeira, développeur Symfony freelance à Bordeaux. J’écris du PHP depuis 2009 et travaille avec Symfony depuis 2014, d’une migration chez Bureau Veritas Pro aux plateformes e-commerce d’Ultra Premium Direct et de Commande.com. Freelance depuis 2025, j’interviens à distance ou sur site pour les entreprises qui font évoluer leur application, leur boutique ou leurs API.",
+   "en_bref": [
+    {
+     "terme": "Symfony",
+     "valeur": "Depuis 2014"
+    },
+    {
+     "terme": "PHP",
+     "valeur": "Depuis 2009"
+    },
+    {
+     "terme": "Statut",
+     "valeur": "Freelance depuis 2025"
+    },
+    {
+     "terme": "Intervention",
+     "valeur": "À distance ou sur site, notamment à Bordeaux"
+    }
+   ],
+   "prestations": {
+    "titre": "Ce que je fais avec Symfony.",
+    "cartes": [
+     {
+      "titre": "Migration vers Symfony",
+      "texte": "Je reprends les contraintes de l’application avant de changer son socle. Chez Bureau Veritas Pro, j’ai participé à la migration de Zend Framework 1.11 vers Symfony 2."
+     },
+     {
+      "titre": "Backend e-commerce",
+      "texte": "Je développe la logique métier des boutiques sur Symfony et Sylius. Chez Commande.com, mon travail portait notamment sur la logistique, les promotions et les exports."
+     },
+     {
+      "titre": "API métier",
+      "texte": "Je travaille avec API Platform pour exposer les données des applications. Cette pratique traverse mes missions chez Regaz, Ultra Premium Direct et Commande.com."
+     },
+     {
+      "titre": "Qualité du code",
+      "texte": "Je mets en place tests automatisés, analyse statique et intégration continue. Revues de code et décisions écrites accompagnent le travail avec l’équipe."
+     }
+    ]
+   },
+   "preuves": {
+    "titre": "Des missions Symfony, de la migration à la boutique.",
+    "missions": [
+     {
+      "slug": "onepoint",
+      "accroche": "Chez onepoint, la migration de Bureau Veritas Pro vers Symfony commence en 2014. J’ai ensuite travaillé sur l’extranet B2C et le tunnel de souscription de Gaz de Bordeaux · Regaz, avec Symfony dans la pile."
+     },
+     {
+      "slug": "upd",
+      "accroche": "De 2022 à 2024, en poste chez Ultra Premium Direct, j’ai travaillé sur Symfony 5 et la migration vers Sylius. Le backend devait répondre aux contraintes d’un e-commerce à fort trafic."
+     },
+     {
+      "slug": "commande",
+      "accroche": "D’avril à juillet 2025, en freelance avec Dn’D, j’ai rejoint la refonte de Commande.com. Symfony et Sylius portaient le moteur e-commerce, connecté à l’ERP, aux transporteurs et aux outils internes."
+     }
+    ]
+   },
+   "approche": {
+    "titre": "Lire le projet et préparer sa suite.",
+    "paragraphes": [
+     "Je commence par lire le code, les données et les contraintes déjà présentes. Le conseil chez onepoint m’a appris à intervenir dans le cadre d’une autre équipe. Pour une reprise Symfony, ce point de départ guide mon travail : comprendre l’existant avant d’écrire, avec un audit écrit lorsque la mission le demande.",
+     "Une migration concerne aussi les usages et l’équipe qui exploite la plateforme. Chez Ultra Premium Direct, la transition vers Sylius se préparait avec les développeurs en place. Je travaille avec des tests automatisés, de l’analyse statique et de l’intégration continue, puis je partage les décisions pour que l’équipe garde la main."
+    ]
+   },
+   "faq": [
+    {
+     "question": "Depuis quand êtes-vous développeur Symfony freelance à Bordeaux ?",
+     "reponse": "Je suis freelance depuis 2025, avec une pratique de PHP depuis 2009 et de Symfony depuis 2014. Mes expériences Symfony antérieures comprennent Bureau Veritas Pro, Regaz et Ultra Premium Direct."
+    },
+    {
+     "question": "Pouvez-vous reprendre une application Symfony existante ?",
+     "reponse": "Oui, la reprise et l’évolution d’un existant font partie de mon parcours. Je commence par lire le code et les contraintes, comme dans mes missions de conseil chez onepoint."
+    },
+    {
+     "question": "Intervenez-vous sur un e-commerce Symfony à fort trafic ?",
+     "reponse": "Oui, j’ai travaillé sur le backend d’Ultra Premium Direct de 2022 à 2024. Cette expérience comprend la migration vers Sylius, l’optimisation des performances et la consolidation du backend."
+    },
+    {
+     "question": "Comment travaillez-vous avec notre équipe Symfony ?",
+     "reponse": "Je partage les décisions par écrit et pratique les revues de code et le travail en binôme. L’objectif est que ce que je construis reste compréhensible après mon départ."
+    }
+   ],
+   "resume": "Symfony depuis 2014 : migrations, API et e-commerce. Je suis développeur PHP freelance à Bordeaux depuis 2025."
+  },
+  {
+   "slug": "sylius",
+   "nom": "Sylius",
+   "titre_seo": "Développeur Sylius freelance | Migration et headless",
+   "meta_description": "Développeur Sylius freelance, je travaille sur les refontes e-commerce : migration d’Ultra Premium Direct et moteur headless de Commande.com.",
+   "h1": "Développeur Sylius freelance.",
+   "h1_suite": "Je relie le moteur e-commerce aux usages métier, à l’ERP et aux transporteurs.",
+   "chapo": "Je suis Mickaël Teixeira, développeur Sylius freelance à Bordeaux depuis 2025. Mon expérience Sylius comprend la migration d’Ultra Premium Direct, de 2022 à 2024 en poste, puis la refonte de Commande.com avec Dn’D en 2025. Pour ces plateformes e-commerce, je travaille sur le backend, la logique métier et les échanges avec les outils qui entourent la boutique.",
+   "en_bref": [
+    {
+     "terme": "Références",
+     "valeur": "Ultra Premium Direct et Commande.com"
+    },
+    {
+     "terme": "Migration",
+     "valeur": "Ultra Premium Direct, 2022–2024"
+    },
+    {
+     "terme": "Headless",
+     "valeur": "Commande.com, avec Dn’D, en 2025"
+    },
+    {
+     "terme": "Intervention",
+     "valeur": "À distance, ou sur site à Bordeaux, Paris, Lyon, Lille, Nantes"
+    }
+   ],
+   "prestations": {
+    "titre": "Ce que je prends en charge sur Sylius.",
+    "cartes": [
+     {
+      "titre": "Migration vers Sylius",
+      "texte": "Je travaille sur le passage d’une plateforme existante vers Sylius avec l’équipe en place. Chez Ultra Premium Direct, cette transition accompagnait le travail sur la performance et la robustesse du backend."
+     },
+     {
+      "titre": "E-commerce headless",
+      "texte": "En headless, la boutique consomme par API la logique de commande du moteur e-commerce. J’ai intégré ce moteur sur Sylius pour Commande.com, avec API Platform."
+     },
+     {
+      "titre": "Fonctionnalités métier",
+      "texte": "Je développe les fonctions qui portent les opérations commerciales. Chez Commande.com, elles concernaient la logistique, les promotions et les exports."
+     },
+     {
+      "titre": "Flux et tests",
+      "texte": "Je relie le moteur à l’ERP, aux transporteurs et aux outils internes. Sur Commande.com, les tests PHPUnit et Behat accompagnaient ces développements, avec PHPStan et CS Fixer."
+     }
+    ]
+   },
+   "preuves": {
+    "titre": "Une migration et une refonte headless documentées.",
+    "missions": [
+     {
+      "slug": "upd",
+      "accroche": "Chez Ultra Premium Direct, j’ai participé à la migration de l’ancienne plateforme vers Sylius 1.10, sur Symfony 5. De 2022 à 2024, mon poste associait cette transition à l’optimisation d’un e-commerce à fort trafic."
+     },
+     {
+      "slug": "commande",
+      "accroche": "La mission Commande.com portait sur une refonte complète avec Dn’D, d’avril à juillet 2025. J’ai intégré le moteur Sylius headless, développé des fonctionnalités métier et contribué à l’architecture et à la stratégie technique."
+     }
+    ]
+   },
+   "approche": {
+    "titre": "Préparer la transition avec l’équipe.",
+    "paragraphes": [
+     "Je pars de la plateforme qui vend déjà, de ses données et de ses contraintes. Une migration doit se préparer avec l’équipe en place pour que la boutique continue de fonctionner pendant le changement de moteur. Mon expérience chez Ultra Premium Direct associe précisément cette préparation de la transition au travail sur le backend.",
+     "Chez Commande.com, la refonte comprenait aussi les échanges avec les systèmes qui entourent la commande. L’ERP, les transporteurs et les outils internes ont leurs formats et leurs rythmes. Je travaille sur ces liaisons avec les fonctionnalités métier, en m’appuyant sur les tests automatisés et les outils de qualité intégrés à GitLab CI."
+    ]
+   },
+   "faq": [
+    {
+     "question": "Quelle expérience avez-vous en migration vers Sylius ?",
+     "reponse": "J’ai travaillé sur la migration d’Ultra Premium Direct vers Sylius entre 2022 et 2024. J’étais développeur backend en poste, avec un travail sur les performances, la robustesse et la transition avec l’équipe."
+    },
+    {
+     "question": "Avez-vous déjà intégré un e-commerce headless Sylius ?",
+     "reponse": "Oui, chez Commande.com en 2025, avec l’agence Dn’D. Le moteur Sylius exposait la logique de commande par API Platform, consommée par la boutique."
+    },
+    {
+     "question": "Pouvez-vous relier Sylius à notre ERP et aux transporteurs ?",
+     "reponse": "Oui, ces flux faisaient partie de ma mission Commande.com. J’y ai travaillé sur les échanges avec l’ERP, les transporteurs et les outils internes."
+    },
+    {
+     "question": "Un développeur Sylius freelance peut-il rejoindre notre agence ?",
+     "reponse": "Oui, j’ai travaillé en freelance avec Dn’D pour Commande.com. Cette mission comprenait le développement, une contribution à l’architecture et un accompagnement sur la stratégie technique."
+    }
+   ],
+   "resume": "Migration vers Sylius et refonte headless : mon expérience chez Ultra Premium Direct et Commande.com, avec les flux ERP et transporteurs."
+  },
+  {
+   "slug": "api-platform",
+   "nom": "API Platform",
+   "titre_seo": "Développeur API Platform freelance | Symfony et Laravel",
+   "meta_description": "Développeur API Platform freelance, j’ai utilisé cet outil chez Regaz, Ultra Premium Direct, Commande.com et MaxiCoffee, avec Symfony ou Laravel.",
+   "h1": "Développeur API Platform freelance.",
+   "h1_suite": "Je construis les échanges entre une application métier, sa boutique et les outils qui utilisent ses données.",
+   "chapo": "Je suis Mickaël Teixeira, développeur API Platform freelance à Bordeaux depuis 2025 et développeur PHP depuis 2009. J’ai utilisé API Platform chez Regaz, Ultra Premium Direct, Commande.com et MaxiCoffee. Je relie les données métier aux applications qui les utilisent, avec Symfony ou Laravel, à distance ou sur site. Ces expériences couvrent l’e-commerce et les applications métier.",
+   "en_bref": [
+    {
+     "terme": "Outil",
+     "valeur": "API Platform, avec Symfony ou Laravel"
+    },
+    {
+     "terme": "E-commerce",
+     "valeur": "Ultra Premium Direct et Commande.com"
+    },
+    {
+     "terme": "Middle office",
+     "valeur": "MaxiCoffee, 2025–2026"
+    },
+    {
+     "terme": "Intervention",
+     "valeur": "À distance ou sur site"
+    }
+   ],
+   "prestations": {
+    "titre": "Ce que je construis avec API Platform.",
+    "cartes": [
+     {
+      "titre": "Données e-commerce",
+      "texte": "J’utilise API Platform pour exposer les données d’une boutique aux outils qui les consomment. C’était son rôle chez Ultra Premium Direct, sur une plateforme Symfony et Sylius."
+     },
+     {
+      "titre": "Moteur headless",
+      "texte": "Le headless sépare la boutique de la logique de commande, accessible par API. Chez Commande.com, j’ai intégré ce moteur sur Sylius et API Platform."
+     },
+     {
+      "titre": "API et Laravel",
+      "texte": "Je travaille aussi avec API Platform dans un environnement Laravel. Chez MaxiCoffee, cette pile accompagne les territoires commerciaux, la facturation, la logistique et le produit."
+     },
+     {
+      "titre": "Qualité des développements",
+      "texte": "Je m’appuie sur les tests automatisés, l’analyse statique et l’intégration continue. Chez Commande.com, PHPUnit, Behat et PHPStan faisaient partie de cet outillage."
+     }
+    ]
+   },
+   "preuves": {
+    "titre": "Des API dans des contextes e-commerce et métier.",
+    "missions": [
+     {
+      "slug": "onepoint",
+      "accroche": "Lors de mes missions chez onepoint, API Platform faisait partie de la pile de Gaz de Bordeaux · Regaz. Le périmètre comprenait notamment un extranet B2C, son tunnel de souscription et une application de gestion du temps."
+     },
+     {
+      "slug": "upd",
+      "accroche": "Chez Ultra Premium Direct, API Platform servait à exposer les données de la boutique aux outils qui en avaient besoin. J’y travaillais en poste sur le backend, de 2022 à 2024."
+     },
+     {
+      "slug": "commande",
+      "accroche": "Chez Commande.com, API Platform reliait le moteur Sylius headless à la boutique. La refonte comprenait aussi les échanges avec l’ERP, les transporteurs et les outils internes."
+     },
+     {
+      "slug": "maxicoffee",
+      "accroche": "Chez MaxiCoffee, j’ai travaillé avec Laravel et API Platform de juillet 2025 à octobre 2026. Le middle office, entre outils commerciaux et opérations, synchronisait des données Salesforce et des imports CSV."
+     }
+    ]
+   },
+   "approche": {
+    "titre": "Partir des données et de leurs usages.",
+    "paragraphes": [
+     "Je commence par comprendre les données, leurs usages et les contraintes de l’application. Une API n’est pas isolée du métier qu’elle expose : chez Ultra Premium Direct, elle donne accès aux données de la boutique ; chez Commande.com, elle porte l’accès à la logique de commande du moteur e-commerce.",
+     "La séparation des responsabilités compte aussi derrière l’API. Chez MaxiCoffee, les territoires, la facturation, la logistique et le produit sont organisés en domaines. Dans l’architecture hexagonale, les règles métier restent au centre ; des adaptateurs relient les outils externes. Les domaines échangent ensuite des messages asynchrones avec RedPanda."
+    ]
+   },
+   "faq": [
+    {
+     "question": "Sur quelles missions avez-vous été développeur API Platform freelance ?",
+     "reponse": "J’ai utilisé API Platform en freelance chez Commande.com en 2025 et chez MaxiCoffee de 2025 à 2026. Mes expériences précédentes avec cet outil comprennent aussi Regaz et Ultra Premium Direct."
+    },
+    {
+     "question": "Travaillez-vous uniquement sur des API REST Symfony ?",
+     "reponse": "Non, je travaille également avec Laravel et API Platform, comme chez MaxiCoffee. Symfony fait partie de mon parcours depuis la migration de Bureau Veritas Pro en 2014."
+    },
+    {
+     "question": "Quelle expérience avez-vous d’un backend headless ?",
+     "reponse": "J’ai intégré le moteur e-commerce headless de Commande.com sur Sylius. API Platform exposait la logique de commande à la boutique, dans une refonte menée avec Dn’D."
+    },
+    {
+     "question": "Votre pratique des API concerne-t-elle aussi les applications métier ?",
+     "reponse": "Oui, ma mission MaxiCoffee portait sur un middle office métier avec Laravel et API Platform. Les domaines couvraient les territoires commerciaux, la facturation, la logistique et le produit."
+    }
+   ],
+   "resume": "API Platform avec Symfony et Laravel : données e-commerce, moteur Sylius headless et middle office métier, de Regaz à MaxiCoffee."
+  },
+  {
+   "slug": "laravel",
+   "nom": "Laravel",
+   "titre_seo": "Développeur Laravel freelance à Bordeaux",
+   "meta_description": "Développeur Laravel freelance à Bordeaux : lead developer chez HeyTeam, puis freelance sur le middle office de MaxiCoffee, en architecture hexagonale.",
+   "h1": "Développeur Laravel freelance à Bordeaux.",
+   "h1_suite": "Je fais évoluer les applications métier et leur architecture, avec des pratiques partagées par l’équipe.",
+   "chapo": "Je suis Mickaël Teixeira, développeur Laravel freelance à Bordeaux depuis 2025. Développeur PHP depuis 2009, j’ai été lead developer chez HeyTeam de janvier à avril 2025, puis développeur freelance chez MaxiCoffee de juillet 2025 à octobre 2026. Sur Laravel, mon travail porte sur les applications métier, leur architecture et les échanges avec les outils RH ou commerciaux.",
+   "en_bref": [
+    {
+     "terme": "Laravel",
+     "valeur": "HeyTeam et MaxiCoffee"
+    },
+    {
+     "terme": "Rôle salarié",
+     "valeur": "Lead developer chez HeyTeam en 2025"
+    },
+    {
+     "terme": "Freelance",
+     "valeur": "MaxiCoffee, juillet 2025–octobre 2026"
+    },
+    {
+     "terme": "Intervention",
+     "valeur": "À distance ou sur site"
+    }
+   ],
+   "prestations": {
+    "titre": "Ce que je fais sur une application Laravel.",
+    "cartes": [
+     {
+      "titre": "Reprise Laravel",
+      "texte": "Je travaille à partir d’une application existante et de ses contraintes. Chez HeyTeam, j’ai fait évoluer une application Laravel 8 sans repartir d’une réécriture complète."
+     },
+     {
+      "titre": "Architecture métier",
+      "texte": "Je structure les applications par domaines. Le DDD, ou Domain-Driven Design, donne à chaque domaine son vocabulaire et ses limites ; je l’ai pratiqué chez HeyTeam et MaxiCoffee."
+     },
+     {
+      "titre": "API et interconnexions",
+      "texte": "Je relie les applications aux systèmes dont elles dépendent. Mon expérience Laravel comprend les outils SIRH chez HeyTeam et Salesforce avec API Platform chez MaxiCoffee."
+     },
+     {
+      "titre": "Accompagnement technique",
+      "texte": "J’anime les revues de code et le travail en binôme. Chez HeyTeam, mon rôle comprenait aussi les audits, les présentations internes et l’encadrement des développeurs."
+     }
+    ]
+   },
+   "preuves": {
+    "titre": "Deux contextes Laravel, du SIRH aux opérations commerciales.",
+    "missions": [
+     {
+      "slug": "heyteam",
+      "accroche": "De janvier à avril 2025, j’étais lead developer en poste chez HeyTeam. J’ai conçu une architecture modulaire pour l’interconnexion SIRH et refondu l’application Laravel en DDD, avec des pratiques de développement standardisées."
+     },
+     {
+      "slug": "maxicoffee",
+      "accroche": "En freelance chez MaxiCoffee, j’ai travaillé sur Laravel et API Platform dans une architecture hexagonale, qui place les règles métier au centre et les outils externes autour. Ce middle office, placé entre les outils commerciaux et les opérations, couvrait les territoires, la facturation, la logistique et le produit."
+     }
+    ]
+   },
+   "approche": {
+    "titre": "Faire évoluer l’existant et partager les pratiques.",
+    "paragraphes": [
+     "Je lis d’abord l’application et les données déjà présentes. Chez HeyTeam, cette lecture s’accompagnait d’audits techniques et d’un plan d’amélioration continue. Les tests automatisés, l’analyse statique et l’intégration continue faisaient partie de la refonte de l’existant. Le travail architectural allait avec des pratiques que les développeurs pouvaient partager et faire vivre.",
+     "Chez MaxiCoffee, l’architecture hexagonale plaçait les règles métier au centre, avec Salesforce, les fichiers et la base de données autour, par des adaptateurs. Les domaines se synchronisaient par messages asynchrones avec RedPanda. Ce contexte Laravel associait donc les modules métier, les imports CSV et les échanges entre domaines dans le même travail de développement."
+    ]
+   },
+   "faq": [
+    {
+     "question": "Avez-vous une expérience de lead developer Laravel ?",
+     "reponse": "Oui, j’ai été lead developer chez HeyTeam de janvier à avril 2025, en poste. Mon rôle associait architecture, audits techniques et encadrement de l’équipe de développeurs."
+    },
+    {
+     "question": "Comment avez-vous appliqué Laravel et le DDD ?",
+     "reponse": "Chez HeyTeam, j’ai refondu une application Laravel existante en DDD avec des patterns simplifiés. Chez MaxiCoffee, les domaines métier étaient séparés dans une architecture hexagonale et communiquaient par messages."
+    },
+    {
+     "question": "Travaillez-vous avec API Platform sur Laravel ?",
+     "reponse": "Oui, j’ai travaillé sur cette combinaison chez MaxiCoffee de juillet 2025 à octobre 2026. La pile comprenait PHP 8.3, Laravel, API Platform, Docker et GitLab CI."
+    },
+    {
+     "question": "Votre expérience Laravel couvre-t-elle les connecteurs SIRH ?",
+     "reponse": "Oui, la plateforme B2B de HeyTeam reliait l’application aux outils SIRH de ses clients. J’y ai conçu et mis en place une architecture modulaire pour ces interconnexions."
+    }
+   ],
+   "resume": "Laravel pour les applications métier : architecture modulaire chez HeyTeam, middle office et API Platform chez MaxiCoffee."
+  },
+  {
+   "slug": "architecture-hexagonale-ddd",
+   "nom": "Architecture hexagonale et DDD",
+   "titre_seo": "Architecture hexagonale et DDD en PHP | Freelance à Bordeaux",
+   "meta_description": "Architecture hexagonale PHP et DDD : chez MaxiCoffee, j’ai développé un middle office Laravel avec API Platform et des messages asynchrones RedPanda.",
+   "h1": "Architecture hexagonale et DDD en PHP.",
+   "h1_suite": "Je structure les applications métier autour de leurs domaines, de leurs règles et des échanges entre systèmes.",
+   "chapo": "Je suis Mickaël Teixeira, développeur PHP depuis 2009 et freelance à Bordeaux depuis 2025. L’architecture hexagonale PHP place les règles métier au centre et les outils externes autour. Chez MaxiCoffee en 2025–2026, je l’ai associée au DDD, qui définit le vocabulaire et les limites des domaines métier. Chez HeyTeam en 2025, j’ai conçu une architecture modulaire d’interconnexion SIRH.",
+   "en_bref": [
+    {
+     "terme": "Hexagonal",
+     "valeur": "MaxiCoffee, Laravel et API Platform"
+    },
+    {
+     "terme": "DDD",
+     "valeur": "MaxiCoffee et HeyTeam"
+    },
+    {
+     "terme": "Formation",
+     "valeur": "Master Architecte logiciel, ETNA"
+    },
+    {
+     "terme": "Intervention",
+     "valeur": "À distance ou sur site"
+    }
+   ],
+   "prestations": {
+    "titre": "Ce que je mets en place.",
+    "cartes": [
+     {
+      "titre": "Architecture hexagonale",
+      "texte": "L’architecture hexagonale place les règles métier au centre et les outils externes autour, par des adaptateurs. Chez MaxiCoffee, cette organisation séparait le métier de Salesforce, des fichiers et de la base de données."
+     },
+     {
+      "titre": "Domaines métier",
+      "texte": "Le DDD donne à chaque domaine son vocabulaire et ses limites. Chez MaxiCoffee, les territoires, la facturation, la logistique et le produit formaient des domaines distincts."
+     },
+     {
+      "titre": "Messages asynchrones",
+      "texte": "Je travaille sur les échanges entre domaines par messages. Chez MaxiCoffee, RedPanda portait ces échanges : un domaine publiait un changement, les domaines concernés le traitaient à leur rythme."
+     },
+     {
+      "titre": "Refonte et transmission",
+      "texte": "Je fais évoluer une architecture avec l’équipe qui la maintient. Chez HeyTeam, cette refonte associait DDD, pratiques standardisées, revues de code et accompagnement des développeurs."
+     }
+    ]
+   },
+   "preuves": {
+    "titre": "Des frontières métier mises en pratique.",
+    "missions": [
+     {
+      "slug": "maxicoffee",
+      "accroche": "De juillet 2025 à octobre 2026, j’ai développé des modules critiques du middle office de MaxiCoffee. Laravel et API Platform s’inscrivaient dans une architecture hexagonale et DDD, avec des imports CSV et une synchronisation Salesforce."
+     },
+     {
+      "slug": "heyteam",
+      "accroche": "Chez HeyTeam, j’ai conçu une architecture modulaire pour relier la plateforme aux outils SIRH. Mon poste de lead developer comprenait une refonte Laravel en DDD, des audits et un plan d’amélioration continue."
+     }
+    ]
+   },
+   "approche": {
+    "titre": "Lire les contraintes et laisser l’équipe autonome.",
+    "paragraphes": [
+     "Je commence par les données et les contraintes, avant de choisir ce qu’il faut modifier dans le code. Chez MaxiCoffee, le middle office se tenait entre les outils commerciaux et les opérations. Les clients et les territoires venaient de Salesforce, d’autres données de fichiers CSV : les domaines devaient travailler ensemble sans être soudés les uns aux autres.",
+     "Je cherche aussi à laisser une architecture que l’équipe sait faire vivre. Chez HeyTeam, cela passait par des patterns simplifiés, des revues de code, du travail en binôme et des présentations internes. Les tests automatisés, l’analyse statique et l’intégration continue accompagnaient la refonte ; les décisions écrites font également partie de ma façon de travailler."
+    ]
+   },
+   "faq": [
+    {
+     "question": "Où avez-vous appliqué l’architecture hexagonale PHP ?",
+     "reponse": "Chez MaxiCoffee, sur un middle office développé avec Laravel et API Platform entre 2025 et 2026. Les règles métier étaient séparées de Salesforce, des fichiers et de la base de données par des adaptateurs."
+    },
+    {
+     "question": "Votre expérience du DDD porte-t-elle sur Symfony ou Laravel ?",
+     "reponse": "Mes missions documentées en DDD concernent Laravel, chez HeyTeam et MaxiCoffee. Mon expérience Symfony comprend notamment les migrations et l’e-commerce chez Bureau Veritas Pro, Ultra Premium Direct et Commande.com."
+    },
+    {
+     "question": "Que recouvre votre expérience de middle office ?",
+     "reponse": "Chez MaxiCoffee, j’ai travaillé sur les territoires, la facturation, la logistique et le produit. Les domaines échangeaient par messages asynchrones avec RedPanda et utilisaient des données Salesforce ainsi que des imports CSV."
+    },
+    {
+     "question": "Pouvez-vous accompagner notre équipe dans une refonte DDD ?",
+     "reponse": "Oui, c’était une partie de mon rôle de lead developer chez HeyTeam. J’y ai associé refonte de l’application, standardisation des pratiques, revues de code et encadrement des développeurs."
+    }
+   ],
+   "resume": "Architecture hexagonale PHP, DDD et messages asynchrones chez MaxiCoffee ; architecture modulaire et transmission chez HeyTeam."
+  },
+  {
+   "slug": "integration-erp-crm",
+   "nom": "Intégration ERP et CRM",
+   "titre_seo": "Intégration ERP, CRM et transporteurs | Développeur PHP",
+   "meta_description": "Intégration ERP e-commerce : chez Commande.com, j’ai relié Sylius aux flux ERP et transporteurs. Chez MaxiCoffee, j’ai synchronisé des données Salesforce.",
+   "h1": "Intégration ERP, CRM et transporteurs.",
+   "h1_suite": "Je fais parler les plateformes PHP avec les outils commerciaux, les transporteurs et les systèmes RH.",
+   "chapo": "Je m’appelle Mickaël Teixeira. Développeur PHP depuis 2009, je suis freelance à Bordeaux depuis 2025. Mon expérience d’intégration ERP e-commerce s’appuie sur Commande.com, avec Dn’D en 2025. Elle rejoint un fil plus ancien : relier des systèmes, des flux XML d’illicotravel aux outils SIRH de HeyTeam, puis aux données Salesforce et aux imports CSV de MaxiCoffee en 2025–2026.",
+   "en_bref": [
+    {
+     "terme": "ERP",
+     "valeur": "Commande.com, Sylius headless"
+    },
+    {
+     "terme": "CRM",
+     "valeur": "Salesforce chez MaxiCoffee"
+    },
+    {
+     "terme": "SIRH",
+     "valeur": "HeyTeam, architecture modulaire"
+    },
+    {
+     "terme": "Premiers flux",
+     "valeur": "XML chez illicotravel en 2009"
+    }
+   ],
+   "prestations": {
+    "titre": "Les intégrations que je prends en charge.",
+    "cartes": [
+     {
+      "titre": "ERP et transporteurs",
+      "texte": "Je travaille sur les flux qui relient la boutique aux opérations. Chez Commande.com, ils concernaient l’ERP, les transporteurs et les outils internes, dans une refonte Sylius."
+     },
+     {
+      "titre": "Synchronisation Salesforce",
+      "texte": "Je développe les échanges de données clients et de territoires commerciaux. Chez MaxiCoffee, cette synchronisation alimentait un middle office, placé entre les outils commerciaux et les opérations."
+     },
+     {
+      "titre": "Imports de fichiers",
+      "texte": "Je construis des parsers et des systèmes d’import CSV, comme chez MaxiCoffee. Mon parcours d’intégration a commencé avec les flux XML des partenaires d’illicotravel."
+     },
+     {
+      "titre": "Interconnexion SIRH",
+      "texte": "Je structure les connexions entre une application et les outils RH de ses clients. Chez HeyTeam, j’ai conçu une architecture modulaire et participé à la refonte Laravel en DDD."
+     }
+    ]
+   },
+   "preuves": {
+    "titre": "Des formats partenaires aux données commerciales.",
+    "missions": [
+     {
+      "slug": "commande",
+      "accroche": "Pour Commande.com, d’avril à juillet 2025, j’ai travaillé sur les flux ERP, transporteurs et outils internes. Le moteur Sylius était headless : la boutique consommait la logique de commande par API Platform."
+     },
+     {
+      "slug": "maxicoffee",
+      "accroche": "Chez MaxiCoffee, les clients et les territoires commerciaux étaient synchronisés avec Salesforce. J’ai aussi développé des parsers CSV et des imports complexes, dans un environnement Laravel et API Platform."
+     },
+     {
+      "slug": "heyteam",
+      "accroche": "La plateforme B2B de HeyTeam devait dialoguer avec les outils SIRH de ses clients, chacun avec ses données, ses formats et ses règles. J’y ai conçu l’architecture d’interconnexion en tant que lead developer en poste."
+     },
+     {
+      "slug": "illicotravel",
+      "accroche": "En stage chez illicotravel en 2009, j’ai intégré les flux XML de nouveaux partenaires au moteur de recherche. Le travail concernait les versions française et espagnole du comparateur de voyages."
+     }
+    ]
+   },
+   "approche": {
+    "titre": "Comprendre les sources et organiser les échanges.",
+    "paragraphes": [
+     "Je pars des données, de leurs formats et des contraintes des outils déjà en place. Chez Commande.com, la refonte devait tenir compte des échanges avec l’ERP et les transporteurs. Mon travail sur les flux allait avec les fonctions de logistique, de promotions et d’exports, ainsi qu’avec les tests automatisés de la plateforme.",
+     "Chez MaxiCoffee, je séparais les règles métier des sources de données dans une architecture hexagonale : le métier au centre, les systèmes externes autour par des adaptateurs. Salesforce et les fichiers CSV alimentaient le middle office. Les domaines se synchronisaient par messages RedPanda, sans que chacun appelle directement tous les autres."
+    ]
+   },
+   "faq": [
+    {
+     "question": "Quelle référence avez-vous en intégration ERP e-commerce ?",
+     "reponse": "J’ai travaillé sur les flux ERP de Commande.com avec l’agence Dn’D en 2025. La refonte Sylius comprenait également les transporteurs et les outils internes."
+    },
+    {
+     "question": "Avez-vous réalisé une synchronisation Salesforce en PHP ?",
+     "reponse": "Oui, chez MaxiCoffee, avec PHP 8.3, Laravel et API Platform. Elle concernait les données clients et les territoires commerciaux du middle office."
+    },
+    {
+     "question": "Votre expérience couvre-t-elle les flux transporteurs ?",
+     "reponse": "Oui, les flux transporteurs faisaient partie du périmètre de Commande.com. J’y développais aussi des fonctionnalités de logistique, de promotions et d’exports."
+    },
+    {
+     "question": "Pouvez-vous travailler sur un connecteur SIRH existant ?",
+     "reponse": "Oui, j’ai travaillé sur l’interconnexion SIRH d’une application Laravel existante chez HeyTeam. Mon rôle associait architecture modulaire, refonte en DDD et pratiques de développement partagées."
+    }
+   ],
+   "resume": "Flux ERP et transporteurs chez Commande.com, synchronisation Salesforce chez MaxiCoffee et interconnexions SIRH chez HeyTeam."
+  }
+ ],
+ "expertises_hub": {
+  "titre_seo": "Développeur PHP freelance à Bordeaux | Expertises",
+  "meta_description": "Développeur PHP freelance à Bordeaux depuis 2025 : Symfony, Sylius, Laravel et API Platform pour l’e-commerce et les applications métier.",
+  "h1": "Développeur PHP freelance à Bordeaux.",
+  "h1_suite": "Je développe les plateformes e-commerce, les applications métier et les API qui les relient.",
+  "chapo": "Je suis Mickaël Teixeira, développeur PHP depuis 2009 et développeur backend freelance à Bordeaux depuis 2025. Mes expertises réunissent Symfony, Sylius, Laravel, API Platform, l’architecture hexagonale et les intégrations ERP ou CRM. J’interviens sur les migrations, les refontes et les applications métier, à distance ou sur site."
+ },
+ "missions_hub": {
+  "titre_seo": "Missions et références : développeur Symfony et Sylius",
+  "meta_description": "Huit missions depuis 2009 : références de développeur Symfony et Sylius, du stage chez illicotravel au freelance chez MaxiCoffee, projet par projet.",
+  "h1": "Huit missions, depuis 2009.",
+  "h1_suite": "Mes références de développeur Symfony et Sylius, en freelance, en poste et en conseil.",
+  "chapo": "Huit expériences depuis 2009 : MaxiCoffee, Commande.com, HeyTeam, Ultra Premium Direct, onepoint, TimeOne, Web Stratégies et illicotravel. Chaque étude de cas précise le contexte, mon rôle, la période, les choix techniques et ce que j’ai construit."
+ },
+ "parcours": {
+  "titre_seo": "Mickaël Teixeira : parcours d’un développeur PHP à Bordeaux",
+  "meta_description": "Je suis Mickaël Teixeira, développeur PHP depuis 2009 et freelance à Bordeaux depuis 2025. Mon parcours relie e-commerce, applications métier et Yedra.",
+  "h1": "Je suis Mickaël Teixeira, développeur PHP à Bordeaux.",
+  "h1_suite": "Depuis 2009, je relie les applications, les données et les équipes qui les font vivre.",
+  "chapo": "J’écris du PHP pour le web depuis 2009. Formé en alternance à l’ETNA, je suis passé par l’agence, l’affiliation, le conseil et l’e-commerce avant de devenir freelance en 2025. À Bordeaux, je travaille sur Symfony, Sylius, Laravel et les API. Je suis aussi le fondateur et l’éditeur de Yedra, le CRM des écoles.",
+  "sections": [
+   {
+    "titre": "De mes premiers flux au freelance.",
+    "paragraphes": [
+     "Mon premier fil conducteur apparaît chez illicotravel en 2009 : intégrer les flux de partenaires à un comparateur de voyages. L’alternance chez Web Stratégies, pendant mon Master Architecte logiciel à l’ETNA, m’amène ensuite du site web au paiement e-commerce. Je développe des outils d’affiliation chez TimeOne, puis je rejoins onepoint en 2013. Le conseil me fait travailler dans le code d’autres équipes, sur des migrations, des parcours de souscription et des flux externes.",
+     "Chez Ultra Premium Direct, je me concentre sur le backend e-commerce et la migration vers Sylius. Je deviens ensuite lead developer chez HeyTeam, sur une application Laravel qui relie des outils SIRH. En 2025, je passe au freelance : Commande.com avec Dn’D, puis MaxiCoffee. Mes missions associent désormais refontes e-commerce et applications métier. Un middle office, comme celui de MaxiCoffee, se place entre les outils commerciaux et les opérations de l’entreprise."
+    ]
+   },
+   {
+    "titre": "Lire, relier et transmettre.",
+    "paragraphes": [
+     "Faire parler des systèmes qui ne se connaissent pas traverse mon parcours : les partenaires XML d’illicotravel, les flux externes chez Enedis, les outils SIRH de HeyTeam, l’ERP et les transporteurs de Commande.com, Salesforce chez MaxiCoffee. Je commence par lire le code, les données et les contraintes en place. Quand la mission le demande, je produis un audit écrit. Cette lecture précède le développement et la préparation des changements avec l’équipe.",
+     "Je travaille avec des tests automatisés, de l’analyse statique et de l’intégration continue dès le début de la mission. La transmission passe par les revues de code, le travail en binôme et les décisions écrites. Chez HeyTeam, j’animais aussi les rituels techniques et les présentations internes. Laisser une équipe autonome fait partie du travail : ce que je construis doit rester compréhensible après mon départ, avec des pratiques que les développeurs savent faire vivre."
+    ]
+   },
+   {
+    "titre": "Yedra et mes outils au quotidien.",
+    "paragraphes": [
+     "En novembre 2024, j’ai fondé Yedra, un CRM pour les écoles et les établissements scolaires. Je le conçois, je l’écris et je l’édite moi-même, de l’interface aux données, à la sécurité et au RGPD. Il réunit le fichier des familles par foyer, le formulaire de l’établissement, les e-mails aux parents et les parcours automatisés. Son ouverture est prévue fin 2026 ; la liste d’attente est ouverte. Le produit s’adresse aussi aux conservatoires et aux associations.",
+     "Claude Code, les agents et l’automatisation des tests font partie de mon quotidien, avec les mêmes exigences de relecture que le reste du code. J’ai aussi construit Signature, un générateur de visuels réalisé sur Toolcraft avec Codex : la façade tramée à l’ouverture de ce site en sort."
+    ]
+   }
+  ]
+ },
+ "faq_generale": [
+  {
+   "question": "Êtes-vous disponible pour une mission freelance ?",
+   "reponse": "Je suis toujours ouvert à une mission ou à un échange. Vous pouvez me présenter votre besoin par le formulaire du site, sur LinkedIn ou sur Malt."
+  },
+  {
+   "question": "Travaillez-vous à distance ou sur site ?",
+   "reponse": "J’interviens à distance ou sur site à Bordeaux, Paris, Lyon, Lille et Nantes. Mon activité freelance est basée à Bordeaux."
+  },
+  {
+   "question": "Avec quelles technologies travaillez-vous ?",
+   "reponse": "Je travaille principalement sur PHP, Symfony, Sylius, Laravel et API Platform. Mes missions comprennent aussi l’architecture hexagonale, le DDD et les messages asynchrones."
+  },
+  {
+   "question": "Quels types de missions pouvez-vous prendre en charge ?",
+   "reponse": "J’interviens sur les migrations vers Sylius, les refontes e-commerce, les middle offices et les API. Je propose aussi du renfort d’équipe et des audits techniques."
+  },
+  {
+   "question": "Travaillez-vous avec des agences ?",
+   "reponse": "Oui, j’ai rejoint la refonte de Commande.com en freelance avec l’agence Dn’D, d’avril à juillet 2025. J’avais auparavant travaillé en alternance dans l’agence Web Stratégies."
+  },
+  {
+   "question": "Pouvez-vous reprendre une application existante ?",
+   "reponse": "Oui, la lecture et l’évolution d’un existant font partie de ma pratique. Je commence par le code, les données et les contraintes ; chez HeyTeam, j’ai travaillé sur la refonte d’une application Laravel existante sans tout réécrire."
+  },
+  {
+   "question": "Sous quel statut exercez-vous ?",
+   "reponse": "J’exerce comme entrepreneur individuel, sous le nom de Mickaël Teixeira. Je suis développeur freelance depuis 2025."
+  },
+  {
+   "question": "Comment vous contacter pour proposer une mission ?",
+   "reponse": "Vous pouvez m’écrire par le formulaire de contact de ce site, sur LinkedIn ou sur Malt. C’est moi qui lis les messages et qui réponds."
+  }
+ ],
+ "resume_llm_fr": "Mickaël Teixeira est développeur PHP depuis 2009 et freelance à Bordeaux depuis 2025. Il travaille sur Symfony depuis 2014, ainsi que sur Sylius, Laravel et API Platform. Ses missions concernent les plateformes e-commerce, les API, les middle offices et les intégrations ERP, CRM ou SIRH. Ses références comprennent MaxiCoffee, Commande.com avec Dn’D, HeyTeam, Ultra Premium Direct et onepoint. Il intervient à distance ou sur site à Bordeaux, Paris, Lyon, Lille et Nantes. Fondateur de Yedra, CRM des écoles créé en novembre 2024, il en prépare l’ouverture fin 2026. Il est joignable par le formulaire de son site, LinkedIn ou Malt.",
+ "resume_llm_en": "Mickaël Teixeira has been a PHP developer since 2009 and a freelance developer based in Bordeaux since 2025. He has worked with Symfony since 2014, as well as Sylius, Laravel and API Platform. His work covers e-commerce platforms, APIs, middle offices and ERP, CRM or HR information system integrations. His references include MaxiCoffee, Commande.com with Dn’D, HeyTeam, Ultra Premium Direct and onepoint. He works remotely or on site in Bordeaux, Paris, Lyon, Lille and Nantes. He founded Yedra, a CRM for schools, in November 2024, with launch planned for late 2026. He can be contacted through his website’s contact form, LinkedIn or Malt."
+}

@@ -17,3 +17,5 @@ jobs:
         run: python3 _build/build.py
       - name: Vérifier que les pages publiées sont à jour
         run: git diff --exit-code -- . ':(exclude)assets/img/partage'
+      - name: Contrôler les liens, les balises et les données structurées
+        run: python3 _build/verifier.py
