@@ -162,7 +162,8 @@
    "écoles pilotes"
   ],
   "extrait_post": "Il s'appelle Yedra. C'est un CRM pour les écoles. Et pour une fois, je suis allé au bout.",
-  "visuel_alt": "Trame de lignes : une salle de classe vide, au matin"
+  "visuel_alt": "Trame de lignes : une salle de classe vide, au matin",
+  "date_heure": "2026-08-13T10:54:56+02:00"
  },
  {
   "id": "A11",
@@ -276,7 +277,8 @@
    "design"
   ],
   "extrait_post": "Ce n'est pas parfait, mais c'est clairement l'approche la plus efficace que j'ai trouvée à ce jour.",
-  "visuel_alt": "Trame de lignes : une scène de théâtre vide sous un projecteur"
+  "visuel_alt": "Trame de lignes : une scène de théâtre vide sous un projecteur",
+  "date_heure": "2026-07-20T16:38:37+02:00"
  },
  {
   "id": "A10",
@@ -397,7 +399,8 @@
    "antirez"
   ],
   "extrait_post": "C'est concret, technique, et ça sent le futur du développement IA local.",
-  "visuel_alt": "Trame de lignes : une maison isolée la nuit, une seule fenêtre allumée"
+  "visuel_alt": "Trame de lignes : une maison isolée la nuit, une seule fenêtre allumée",
+  "date_heure": "2026-07-15T14:37:15+02:00"
  },
  {
   "id": "A09",
@@ -517,7 +520,8 @@
    "automatisation"
   ],
   "extrait_post": "En tant que développeur, je le vois clairement : l'IA est un multiplicateur de productivité exceptionnel sur le répétitif et le boilerplate.",
-  "visuel_alt": "Trame de lignes : une porte à tambour en verre"
+  "visuel_alt": "Trame de lignes : une porte à tambour en verre",
+  "date_heure": "2026-06-19T14:25:35+02:00"
  },
  {
   "id": "A08",
@@ -632,7 +636,8 @@
    "Symfony"
   ],
   "extrait_post": "J'ai hâte de voir les premiers benchmarks concrets et la compatibilité réelle avec Laravel/Symfony.",
-  "visuel_alt": "Trame de lignes : un éléphant de profil, l’emblème de PHP"
+  "visuel_alt": "Trame de lignes : un éléphant de profil, l’emblème de PHP",
+  "date_heure": "2026-06-17T17:43:55+02:00"
  },
  {
   "id": "A07",
@@ -735,7 +740,8 @@
    "vérification"
   ],
   "extrait_post": "Dans l'IA, la hype va plus vite que la réalité.",
-  "visuel_alt": "Trame de lignes : un gros chat en contre-jour devant une fenêtre"
+  "visuel_alt": "Trame de lignes : un gros chat en contre-jour devant une fenêtre",
+  "date_heure": "2026-06-15T14:50:12+02:00"
  },
  {
   "id": "A06",
@@ -834,7 +840,8 @@
    "open source"
   ],
   "extrait_post": "Un simple incident chez Anthropic a libéré une créativité folle dans l'écosystème dev.",
-  "visuel_alt": "Trame de lignes : un rayon de miel et quelques abeilles au travail"
+  "visuel_alt": "Trame de lignes : un rayon de miel et quelques abeilles au travail",
+  "date_heure": "2026-04-01T18:01:35+02:00"
  },
  {
   "id": "A05",
@@ -961,7 +968,8 @@
    "source map"
   ],
   "extrait_post": "Ironiquement, ça rend Anthropic un peu plus « open » qu'ils ne l'auraient voulu.",
-  "visuel_alt": "Trame de lignes : un meuble à plans dont un tiroir est resté ouvert"
+  "visuel_alt": "Trame de lignes : un meuble à plans dont un tiroir est resté ouvert",
+  "date_heure": "2026-03-31T15:54:52+02:00"
  },
  {
   "id": "A04",
@@ -1062,7 +1070,8 @@
    "IA"
   ],
   "extrait_post": "Mais en tant que développeur, j'ai tendance à me méfier de ces deadlines ultra-courtes.",
-  "visuel_alt": "Trame de lignes : un sablier sous une lumière rasante"
+  "visuel_alt": "Trame de lignes : un sablier sous une lumière rasante",
+  "date_heure": "2026-01-21T11:52:02+01:00"
  },
  {
   "id": "A03",
@@ -1168,7 +1177,8 @@
    "LinkedIn"
   ],
   "extrait_post": "Le plus dur, mais le plus nécessaire aujourd'hui, c'est de savoir fermer l'ordinateur.",
-  "visuel_alt": "Trame de lignes : un ordinateur portable fermé, près d’une fenêtre d’hiver"
+  "visuel_alt": "Trame de lignes : un ordinateur portable fermé, près d’une fenêtre d’hiver",
+  "date_heure": "2026-01-09T14:53:00+01:00"
  },
  {
   "id": "A02",
@@ -1282,7 +1292,8 @@
    "financement"
   ],
   "extrait_post": "Ça pose une vraie question pour la suite : si le modèle actuel de l'Open Source ne survit pas à l'ère de l'IA, qui va payer la facture ?",
-  "visuel_alt": "Trame de lignes : une salle de lecture de bibliothèque vide"
+  "visuel_alt": "Trame de lignes : une salle de lecture de bibliothèque vide",
+  "date_heure": "2026-01-08T10:57:09+01:00"
  },
  {
   "id": "A01",
@@ -1381,6 +1392,7 @@
    "open source"
   ],
   "extrait_post": "J'ai dû relire le titre trois fois pour être sûr que ce n'était pas une blague... 😳",
-  "visuel_alt": "Trame de lignes : un cygne qui glisse sur une eau sombre"
+  "visuel_alt": "Trame de lignes : un cygne qui glisse sur une eau sombre",
+  "date_heure": "2025-12-11T16:02:40+01:00"
  }
 ]

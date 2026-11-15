@@ -7,8 +7,9 @@ import hashlib
 import html
 import json
 import re
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 RACINE = Path(__file__).resolve().parent.parent
 CONTENU = RACINE / '_build' / 'contenu'
@@ -128,6 +129,10 @@ def sans_point(texte):
     return texte.rstrip('.')
 
 
+def horodatage(jour):
+    return datetime.fromisoformat(jour).replace(hour=12, tzinfo=ZoneInfo('Europe/Paris')).isoformat()
+
+
 def date_modif(chemin, signature):
     empreinte = hashlib.sha256(signature.encode()).hexdigest()[:16]
     connue = dates.get(chemin)
@@ -173,6 +178,8 @@ ACTIVITE = {
     '@type': 'ProfessionalService', '@id': SITE + '/#activite', 'name': 'Mickaël Teixeira, développeur Symfony et Sylius freelance',
     'url': SITE + '/', 'image': url('/assets/img/partage/accueil.jpg'), 'founder': {'@id': PERSONNE['@id']},
     'description': 'Développement freelance Symfony, Sylius et API Platform : migrations e-commerce vers Sylius, middle offices, API, flux ERP, CRM et transporteurs.',
+    'address': {'@type': 'PostalAddress', 'postalCode': '33290', 'addressLocality': 'Le Pian-Médoc',
+                'addressRegion': 'Nouvelle-Aquitaine', 'addressCountry': 'FR'},
     'areaServed': [{'@type': 'City', 'name': 'Bordeaux'}, {'@type': 'City', 'name': 'Paris'}, {'@type': 'City', 'name': 'Lyon'},
                    {'@type': 'City', 'name': 'Lille'}, {'@type': 'City', 'name': 'Nantes'}, {'@type': 'Country', 'name': 'France'}],
     'availableLanguage': ['fr', 'en'],
@@ -231,11 +238,13 @@ def themer(texte):
                    else re.sub(r'style="([^"]*)"', lambda s: f'style="{jetons(s.group(1))}"', m) for m in morceaux)
 
 
-def couvertures(texte, tailles):
-    return re.sub(r'<img src="/assets/img/missions/([a-z]+)-couverture\.webp"',
-                  lambda m: (f'<img src="/assets/img/missions/{m.group(1)}-couverture.webp" '
-                             f'srcset="/assets/img/missions/{m.group(1)}-couverture-800.webp 800w, /assets/img/missions/{m.group(1)}-couverture.webp 1600w" '
-                             f'sizes="{tailles}"'), texte)
+def couvertures(texte, tailles, differe=True):
+    def balise(m):
+        slug = m.group(1)
+        base = f'/assets/img/missions/{slug}-couverture'
+        return (f'<img src="{base}.webp" srcset="{base}-480.webp 480w, {base}-800.webp 800w, {base}.webp 1600w" '
+                f'sizes="{tailles(slug) if callable(tailles) else tailles}"' + (' loading="lazy" decoding="async"' if differe else ' fetchpriority="high"'))
+    return re.sub(r'<img src="/assets/img/missions/([a-z]+)-couverture\.webp"', balise, texte)
 
 
 def entete(courant):
@@ -554,14 +563,14 @@ def page_article(a):
     modifie = max(a['date'], date_modif(chemin, json.dumps(a, ensure_ascii=False, sort_keys=True)))
     donnees = graphe(
         {'@type': 'BlogPosting', '@id': url(chemin) + '#article', 'headline': sans_point(a['titre']), 'alternativeHeadline': a['suite'],
-         'description': a['meta_description'], 'datePublished': a['date'], 'dateModified': modifie, 'inLanguage': 'fr-FR',
+         'description': a['meta_description'], 'datePublished': a['date_heure'], 'dateModified': max(a['date_heure'], horodatage(modifie)), 'inLanguage': 'fr-FR',
          'author': {'@id': PERSONNE['@id']}, 'publisher': {'@id': PERSONNE['@id']}, 'mainEntityOfPage': url(chemin),
          'image': [url(image), url(f'/assets/img/actualites/{a["slug"]}-carte.webp')], 'articleSection': a['rubrique'],
          'keywords': a.get('mots_cles', []), 'wordCount': sum(len((b.get('texte') or ' '.join(b.get('items', []))).split()) for b in a['corps']),
          'citation': [s['url'] for s in a.get('sources', [])], 'isPartOf': {'@id': url('/actualites/') + '#blog'},
          'discussionUrl': a['linkedin_url']},
         PERSONNE, SITE_WEB, fil(('Accueil', '/'), ('Actualités', '/actualites/'), (sans_point(a['titre']), chemin)))
-    tete = f'<meta property="article:published_time" content="{a["date"]}">\n<meta property="article:modified_time" content="{modifie}">\n<meta property="article:author" content="{SITE}/parcours/">\n<meta property="article:section" content="{e(a["rubrique"])}">\n'
+    tete = f'<meta property="article:published_time" content="{a["date_heure"]}">\n<meta property="article:modified_time" content="{max(a["date_heure"], horodatage(modifie))}">\n<meta property="article:author" content="{SITE}/parcours/">\n<meta property="article:section" content="{e(a["rubrique"])}">\n'
     page(chemin, sans_point(a['titre']), a['meta_description'], corps, courant='Actualités', image=image, image_alt=a['visuel_alt'],
          type_og='article', donnees=donnees, tete=tete, modifie=modifie, priorite='0.7')
     sources_texte = ''.join(f'\n- {s["libelle"]} : {s["url"]}' for s in a.get('sources', []))
@@ -608,7 +617,7 @@ def page_actualites():
         {'@type': 'Blog', '@id': url('/actualites/') + '#blog', 'name': f'Actualités de {NOM}', 'url': url('/actualites/'), 'inLanguage': 'fr-FR',
          'author': {'@id': PERSONNE['@id']}, 'publisher': {'@id': PERSONNE['@id']},
          'blogPost': [{'@type': 'BlogPosting', '@id': url(f'/actualites/{a["slug"]}/') + '#article', 'headline': sans_point(a['titre']),
-                       'datePublished': a['date'], 'url': url(f'/actualites/{a["slug"]}/')} for a in articles]},
+                       'datePublished': a['date_heure'], 'url': url(f'/actualites/{a["slug"]}/')} for a in articles]},
         PERSONNE, SITE_WEB, fil(('Accueil', '/'), ('Actualités', '/actualites/')))
     page('/actualites/', 'Actualités : PHP, Sylius, IA et outils de développeur',
          'Les notes de Mickaël Teixeira, développeur Symfony et Sylius à Bordeaux : l’écosystème PHP, l’IA dans le métier de développeur, les outils et Yedra.',
@@ -621,8 +630,8 @@ def flux():
 <title>{e(sans_point(a["titre"]))}</title>
 <link href="{url(f"/actualites/{a['slug']}/")}"/>
 <id>{url(f"/actualites/{a['slug']}/")}</id>
-<published>{a["date"]}T09:00:00+01:00</published>
-<updated>{a["date"]}T09:00:00+01:00</updated>
+<published>{a["date_heure"]}</published>
+<updated>{a["date_heure"]}</updated>
 <category term="{e(a["rubrique"])}"/>
 <summary>{e(a["chapo"])}</summary>
 </entry>
@@ -634,7 +643,7 @@ def flux():
 <link href="{url("/actualites/flux.xml")}" rel="self"/>
 <link href="{url("/actualites/")}"/>
 <id>{url("/actualites/")}</id>
-<updated>{articles[0]["date"]}T09:00:00+01:00</updated>
+<updated>{articles[0]["date_heure"]}</updated>
 <author><name>{NOM}</name><uri>{SITE}/</uri></author>
 {entrees}</feed>
 ''')
@@ -651,13 +660,14 @@ def page_accueil():
     t = t.replace('<!--actualites-accueil-->', cartes)
     liens = ''.join(f'<a href="/expertises/{x["slug"]}/" style="color: var(--lien); font-weight: 500; text-underline-offset: 4px">{e(x["nom"])}</a>' for x in expertises)
     t = t.replace('<!--liens-expertises-->', f'<nav aria-label="Expertises en détail" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 28px; padding-top: 24px; border-top: 1px solid var(--trait)"><span style="{MONO}; font-size: 12px; color: var(--second)">En détail</span>{liens}<a href="/expertises/" style="color: var(--encre); font-weight: 500; text-underline-offset: 4px">Toutes les expertises</a></nav>')
-    t = couvertures(t, '(min-width: 900px) 50vw, 100vw')
+    grandes = {'maxicoffee', 'commande', 'heyteam', 'upd'}
+    t = couvertures(t, lambda slug: '(min-width: 1100px) 640px, 100vw' if slug in grandes else '(min-width: 1160px) 320px, (min-width: 620px) 50vw, 100vw')
     assert '<!--' not in t
     modifie = date_modif('/', source)
     donnees = graphe(
         {'@type': 'ProfilePage', '@id': SITE + '/#page', 'url': SITE + '/', 'name': 'Développeur Symfony et Sylius freelance à Bordeaux',
          'inLanguage': 'fr-FR', 'isPartOf': {'@id': SITE_WEB['@id']}, 'mainEntity': {'@id': PERSONNE['@id']},
-         'about': {'@id': ACTIVITE['@id']}, 'dateModified': modifie},
+         'about': {'@id': ACTIVITE['@id']}, 'dateModified': horodatage(modifie)},
         PERSONNE, ACTIVITE, SITE_WEB,
         {'@type': 'Organization', '@id': 'https://yedra.app/#organisation', 'name': 'Yedra', 'url': 'https://yedra.app/',
          'description': 'Yedra, le CRM des écoles et des établissements scolaires.', 'founder': {'@id': PERSONNE['@id']},
@@ -679,7 +689,7 @@ def pages_missions():
                      f'<p style="margin: 0; {MONO}; font-size: 12px; color: #5c5c5c">Expertises mobilisées</p>'
                      f'<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px">{liens}</ul></nav>')
         t = source.replace('<!--expertises-liees-->', liees).replace(f'<!--missions:{m["slug"]}-->', bande_missions(m['slug']))
-        t = couvertures(t, '(min-width: 1312px) 1312px, 100vw').replace('-couverture.webp" srcset', '-couverture.webp" fetchpriority="high" srcset', 1)
+        t = couvertures(t, '(min-width: 1312px) 1312px, 100vw', differe=False)
         assert '<!--missions' not in t and '<!--expertises' not in t, m['slug']
         modifie = date_modif(chemin, source + m['titre'] + m['description'])
         a_propos = {'@type': 'Organization', 'name': m['nom']}
@@ -688,7 +698,7 @@ def pages_missions():
         donnees = graphe(
             {'@type': 'WebPage', '@id': url(chemin) + '#page', 'url': url(chemin), 'name': m['titre'], 'description': m['description'],
              'inLanguage': 'fr-FR', 'isPartOf': {'@id': SITE_WEB['@id']}, 'author': {'@id': PERSONNE['@id']}, 'about': a_propos,
-             'primaryImageOfPage': url(f'/assets/img/missions/{m["slug"]}-couverture.webp'), 'dateModified': modifie},
+             'primaryImageOfPage': url(f'/assets/img/missions/{m["slug"]}-couverture.webp'), 'dateModified': horodatage(modifie)},
             PERSONNE, SITE_WEB, fil(('Accueil', '/'), ('Missions', '/missions/'), (m['nom'], chemin)))
         page(chemin, m['titre'], m['description'], t, courant='Missions', image=f'/assets/img/partage/mission-{m["slug"]}.jpg',
              image_alt=f'{m["nom"]} × {NOM}', donnees=donnees, modifie=modifie, priorite='0.8')
@@ -698,7 +708,7 @@ def pages_missions():
 def page_missions():
     hub = PAGES['missions_hub']
     cartes = ''.join(f'''<li><a href="/missions/{m["slug"]}/" style="display: flex; flex-direction: column; gap: 14px; color: #171717; text-decoration: none">
-<span style="display: block; overflow: hidden; border-radius: 12px; aspect-ratio: 16 / 9; background: #171717"><img src="/assets/img/missions/{m["slug"]}-couverture-800.webp" alt="" width="800" height="533" {'fetchpriority="high"' if i < 2 else 'loading="lazy" decoding="async"'} style="display: block; width: 100%; height: 100%; object-fit: cover"></span>
+<span style="display: block; overflow: hidden; border-radius: 12px; aspect-ratio: 16 / 9; background: #171717"><img src="/assets/img/missions/{m["slug"]}-couverture-800.webp" srcset="/assets/img/missions/{m["slug"]}-couverture-480.webp 480w, /assets/img/missions/{m["slug"]}-couverture-800.webp 800w, /assets/img/missions/{m["slug"]}-couverture.webp 1600w" sizes="(min-width: 900px) 640px, 100vw" alt="" width="800" height="533" {'fetchpriority="high"' if i < 2 else 'loading="lazy" decoding="async"'} style="display: block; width: 100%; height: 100%; object-fit: cover"></span>
 <span style="{MONO}; font-size: 12px; color: #5c5c5c">{m["annees"]} · {e(m["role"])}</span>
 <h2 style="margin: 0; {TIGHT}; font-size: 30px; line-height: 1.1; letter-spacing: -0.02em">{e(m["nom"])}</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3d3d3d">{e(m["resume"])}</p>
@@ -796,7 +806,7 @@ def page_expertise(x):
     donnees = graphe(
         {'@type': 'WebPage', '@id': url(chemin) + '#page', 'url': url(chemin), 'name': x['titre_seo'], 'description': x['meta_description'],
          'inLanguage': 'fr-FR', 'isPartOf': {'@id': SITE_WEB['@id']}, 'author': {'@id': PERSONNE['@id']},
-         'mainEntity': {'@id': url(chemin) + '#service'}, 'dateModified': modifie},
+         'mainEntity': {'@id': url(chemin) + '#service'}, 'dateModified': horodatage(modifie)},
         service(x), questions(x['faq']), ACTIVITE, PERSONNE, SITE_WEB,
         fil(('Accueil', '/'), ('Expertises', '/expertises/'), (x['nom'], chemin)))
     page(chemin, x['titre_seo'], x['meta_description'], corps, courant='Expertises', image=f'/assets/img/partage/expertise-{x["slug"]}.jpg',
@@ -893,7 +903,7 @@ def page_parcours():
     modifie = date_modif('/parcours/', signature)
     donnees = graphe(
         {'@type': 'AboutPage', '@id': url('/parcours/') + '#page', 'url': url('/parcours/'), 'name': p['titre_seo'], 'description': p['meta_description'],
-         'inLanguage': 'fr-FR', 'isPartOf': {'@id': SITE_WEB['@id']}, 'mainEntity': {'@id': PERSONNE['@id']}, 'dateModified': modifie},
+         'inLanguage': 'fr-FR', 'isPartOf': {'@id': SITE_WEB['@id']}, 'mainEntity': {'@id': PERSONNE['@id']}, 'dateModified': horodatage(modifie)},
         PERSONNE, SITE_WEB, fil(('Accueil', '/'), ('Parcours', '/parcours/')))
     page('/parcours/', p['titre_seo'], p['meta_description'], corps, courant='Parcours', image='/assets/img/partage/parcours.jpg',
          image_alt='Mickaël Teixeira, développeur Symfony et Sylius freelance à Bordeaux', type_og='profile', donnees=donnees, modifie=modifie,

@@ -58,9 +58,13 @@
       const v = 1 - pixels[i * 4] / 255;
       sombre[i] = Math.pow(Math.max(0, (v - PLANCHER) / (1 - PLANCHER)), GAMMA);
     }
+    const lireCouleur = () => getComputedStyle(facade).getPropertyValue('--accent').trim() || '#2f4bff';
+    let couleur = lireCouleur();
+    new MutationObserver(() => { couleur = lireCouleur(); }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { couleur = lireCouleur(); });
     const dessiner = (lumiere, rangsVisibles) => {
       ctx.clearRect(0, 0, L, H);
-      ctx.fillStyle = getComputedStyle(facade).getPropertyValue('--accent').trim() || '#2f4bff';
+      ctx.fillStyle = couleur;
       for (let r = 0; r < rangsVisibles; r++) {
         let erreur = 0, debut = -1, somme = 0, n = 0;
         for (let c = 0; c <= COLS; c++) {
