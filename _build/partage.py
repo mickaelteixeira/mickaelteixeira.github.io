@@ -10,6 +10,7 @@ import tempfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
+from logo import signe  # noqa: E402
 RACINE = Path(__file__).resolve().parent.parent
 CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 SORTIE = RACINE / 'assets' / 'img' / 'partage'
@@ -30,11 +31,13 @@ h1{{margin:0;font-family:'Inter Tight',Inter,sans-serif;font-weight:300;font-siz
 h1 span{{color:#9a9a9a}}
 .pied{{display:flex;justify-content:space-between;align-items:center;font-size:20px;font-weight:600}}
 .pied i{{font-style:normal;font-family:'JetBrains Mono',monospace;font-weight:400;font-size:18px;color:#2f4bff}}
+.marque{{display:inline-flex;align-items:center;gap:12px}}
+.marque svg{{fill:#2f4bff}}
 .visuel{{background:{fond_visuel};display:flex;align-items:center;justify-content:center;overflow:hidden}}
 .visuel img{{width:100%;height:100%;object-fit:{ajustement}}}
 </style></head><body><div class="cadre"><div class="texte"><div class="sur">{html.escape(surtitre)}</div>
 <h1>{html.escape(titre)} <span>{html.escape(suite)}</span></h1>
-<div class="pied">Mickaël Teixeira<i>mickaelteixeira.github.io</i></div></div>
+<div class="pied"><span class="marque">{signe(30)}Mickaël Teixeira</span><i>mickaelteixeira.github.io</i></div></div>
 <div class="visuel"><img src="{a}{visuel}"></div></div></body></html>'''
 
 

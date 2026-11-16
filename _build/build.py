@@ -11,6 +11,8 @@ from datetime import date, datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from logo import signe, signe_anime
+
 RACINE = Path(__file__).resolve().parent.parent
 CONTENU = RACINE / '_build' / 'contenu'
 DONNEES = RACINE / '_build' / 'donnees'
@@ -176,7 +178,8 @@ PERSONNE = {
 }
 ACTIVITE = {
     '@type': 'ProfessionalService', '@id': SITE + '/#activite', 'name': 'Mickaël Teixeira, développeur Symfony et Sylius freelance',
-    'url': SITE + '/', 'image': url('/assets/img/partage/accueil.jpg'), 'founder': {'@id': PERSONNE['@id']},
+    'url': SITE + '/', 'logo': url('/assets/img/logo-mickael-teixeira.png'), 'image': url('/assets/img/partage/accueil.jpg'),
+    'founder': {'@id': PERSONNE['@id']},
     'description': 'Développement freelance Symfony, Sylius et API Platform : migrations e-commerce vers Sylius, middle offices, API, flux ERP, CRM et transporteurs.',
     'address': {'@type': 'PostalAddress', 'postalCode': '33290', 'addressLocality': 'Le Pian-Médoc',
                 'addressRegion': 'Nouvelle-Aquitaine', 'addressCountry': 'FR'},
@@ -255,7 +258,7 @@ def entete(courant):
     return f'''<a class="evitement" href="#contenu">Aller au contenu</a>
 <header class="entete">
 <div class="entete__barre">
-<a class="entete__nom" href="/">{NOM}</a>
+<a class="entete__nom" href="/">{signe_anime()}<span>{NOM}</span></a>
 <nav class="entete__nav" aria-label="Navigation principale">
 {nav}
 </nav>
@@ -286,7 +289,7 @@ def pied():
 <div class="pied__cadre">
 <div class="pied__grille">
 <div class="pied__marque">
-<a class="pied__nom" href="/">{NOM}</a>
+<a class="pied__nom" href="/">{signe()}<span>{NOM}</span></a>
 <p>Développeur Symfony et Sylius freelance à Bordeaux. PHP depuis 2009.</p>
 </div>
 <nav aria-labelledby="pied-expertises"><h2 class="pied__titre" id="pied-expertises">Expertises</h2><ul>{liste(expertises_liens)}</ul></nav>
@@ -328,8 +331,8 @@ def page(chemin, titre, description, corps, *, courant=None, image='/assets/img/
 <link rel="preload" href="/assets/fonts/inter-400-800.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-tight-300-400.woff2" as="font" type="font/woff2" crossorigin>
 <style>{CSS}</style>
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
 <link rel="alternate" type="application/atom+xml" title="Actualités de {NOM}" href="/actualites/flux.xml">
