@@ -40,7 +40,16 @@ img,svg,canvas{max-width:100%}
 .evitement:focus{top:12px}
 .entete{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--fond) 92%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--trait)}
 .entete__barre{max-width:1312px;margin:0 auto;padding-inline:clamp(20px,4.5vw,64px);min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px 32px}
-.entete__nom{color:var(--encre);text-decoration:none;font-weight:600;font-size:16px;letter-spacing:-.01em}
+.entete__nom{display:inline-flex;align-items:center;gap:10px;color:var(--encre);text-decoration:none;font-weight:600;font-size:16px;letter-spacing:-.01em}
+.logo{display:block;flex:none;overflow:hidden;fill:var(--accent)}
+.logo--anime rect{animation:logo-rang .5s cubic-bezier(.2,.7,.2,1) both}
+.logo--anime rect:nth-child(2){animation-delay:.07s}.logo--anime rect:nth-child(3){animation-delay:.14s}.logo--anime rect:nth-child(4){animation-delay:.21s}.logo--anime rect:nth-child(5){animation-delay:.28s}.logo--anime rect:nth-child(6){animation-delay:.35s}
+.logo--anime g{animation:logo-lumiere 1.1s cubic-bezier(.65,0,.35,1) .9s both}
+.entete__nom:hover .logo--anime g,.entete__nom:focus-visible .logo--anime g{animation:logo-lumiere 1.1s cubic-bezier(.65,0,.35,1) .9s both,logo-lumiere-bis 1.1s cubic-bezier(.65,0,.35,1) both}
+@keyframes logo-rang{from{opacity:0}}
+@keyframes logo-lumiere{from{transform:translateX(-44px)}}
+@keyframes logo-lumiere-bis{49.9%{transform:translateX(44px)}50%{transform:translateX(-44px)}}
+@media (prefers-reduced-motion:reduce){.logo--anime rect,.logo--anime g{animation:none!important}}
 .entete__nav{display:flex;align-items:center;gap:32px;font-size:15px}
 .entete__nav a{color:var(--encre);text-decoration:none}
 .entete__nav a:hover{text-decoration:underline;text-underline-offset:8px}
@@ -76,15 +85,16 @@ body.menu-ouvert{overflow:hidden}
 .pied__grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:40px 32px}
 .pied__marque{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
 .pied__marque p{margin:0;max-width:300px}
-.pied__nom{color:#ffffff;font-weight:600;font-size:16px;letter-spacing:-.01em}
+.pied__nom{display:inline-flex;align-items:center;gap:10px;color:#ffffff;font-weight:600;font-size:16px;letter-spacing:-.01em}
+.pied .logo{fill:var(--panneau-accent)}
 .pied__titre{margin:0 0 14px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:400;color:var(--panneau-second)}
 .pied ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
 .pied a{color:var(--panneau-texte);text-decoration:none}
 .pied a:hover{text-decoration:underline;text-underline-offset:4px}
 .pied__bas{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding-top:24px;border-top:1px solid var(--panneau-trait);font-size:14px}
 .pied__bas a{color:var(--panneau-second)}</style>
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
 <link rel="alternate" type="application/atom+xml" title="Actualités de Mickaël Teixeira" href="/actualites/flux.xml">
@@ -112,7 +122,7 @@ body.menu-ouvert{overflow:hidden}
 <a class="evitement" href="#contenu">Aller au contenu</a>
 <header class="entete">
 <div class="entete__barre">
-<a class="entete__nom" href="/">Mickaël Teixeira</a>
+<a class="entete__nom" href="/"><svg class="logo logo--anime" viewBox="0 0 24 22" width="24" height="22" aria-hidden="true" focusable="false"><g><rect x="-55" y="0" width="72" height="2"/><rect x="-58" y="4" width="72" height="2"/><rect x="-61" y="8" width="72" height="2"/><rect x="-64" y="12" width="72" height="2"/><rect x="-67" y="16" width="72" height="2"/><rect x="-70" y="20" width="72" height="2"/></g><g><rect x="22" y="0" width="72" height="2"/><rect x="19" y="4" width="72" height="2"/><rect x="16" y="8" width="72" height="2"/><rect x="13" y="12" width="72" height="2"/><rect x="10" y="16" width="72" height="2"/><rect x="7" y="20" width="72" height="2"/></g></svg><span>Mickaël Teixeira</span></a>
 <nav class="entete__nav" aria-label="Navigation principale">
 <a href="/missions/" aria-current="page">Missions</a>
 <a href="/expertises/">Expertises</a>
@@ -280,7 +290,7 @@ body.menu-ouvert{overflow:hidden}
 <div class="pied__cadre">
 <div class="pied__grille">
 <div class="pied__marque">
-<a class="pied__nom" href="/">Mickaël Teixeira</a>
+<a class="pied__nom" href="/"><svg class="logo" viewBox="0 0 24 22" width="24" height="22" aria-hidden="true" focusable="false"><path d="M0 0h17v2h-17zM22 0h2v2h-2zM0 4h14v2h-14zM19 4h5v2h-5zM0 8h11v2h-11zM16 8h8v2h-8zM0 12h8v2h-8zM13 12h11v2h-11zM0 16h5v2h-5zM10 16h14v2h-14zM0 20h2v2h-2zM7 20h17v2h-17z"/></svg><span>Mickaël Teixeira</span></a>
 <p>Développeur Symfony et Sylius freelance à Bordeaux. PHP depuis 2009.</p>
 </div>
 <nav aria-labelledby="pied-expertises"><h2 class="pied__titre" id="pied-expertises">Expertises</h2><ul><li><a href="/expertises/symfony/">Symfony</a></li><li><a href="/expertises/sylius/">Sylius</a></li><li><a href="/expertises/api-platform/">API Platform</a></li><li><a href="/expertises/laravel/">Laravel</a></li><li><a href="/expertises/architecture-hexagonale-ddd/">Architecture hexagonale et DDD</a></li><li><a href="/expertises/integration-erp-crm/">Intégration ERP et CRM</a></li></ul></nav>
