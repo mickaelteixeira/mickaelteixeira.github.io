@@ -41,7 +41,7 @@ for p in pages:
     description = html.unescape(re.search(r'name="description" content="([^"]*)"', t).group(1))
     indexable = 'content="noindex' not in t
     if indexable:
-        if len(titre) > 70:
+        if len(titre) > 60:
             erreurs.append(f'{nom} : titre de {len(titre)} signes')
         if not 50 <= len(description) <= 158:
             erreurs.append(f'{nom} : description de {len(description)} signes')

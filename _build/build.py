@@ -307,7 +307,8 @@ def pied():
 def page(chemin, titre, description, corps, *, courant=None, image='/assets/img/partage/accueil.jpg',
          image_alt='Mickaël Teixeira, développeur Symfony et Sylius à Bordeaux', type_og='website', donnees=None,
          indexable=True, tete='', modifie=None, priorite='0.6'):
-    titre_complet = titre if NOM in titre or len(titre) > 43 else f'{titre} · {NOM}'
+    avec_nom = f'{titre} · {NOM}'
+    titre_complet = titre if NOM in titre or len(avec_nom) > 60 else avec_nom
     canonique = url(chemin)
     robots = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' if indexable else 'noindex, follow'
     jsonld = f'<script type="application/ld+json">{json.dumps(donnees, ensure_ascii=False, separators=(",", ":"))}</script>' if donnees else ''
@@ -354,6 +355,7 @@ def page(chemin, titre, description, corps, *, courant=None, image='/assets/img/
 <meta name="twitter:title" content="{e(titre)}">
 <meta name="twitter:description" content="{e(description)}">
 <meta name="twitter:image" content="{url(image)}">
+<meta name="twitter:image:alt" content="{e(image_alt)}">
 {tete}{jsonld}
 </head>
 <body>
@@ -675,7 +677,7 @@ def page_accueil():
         {'@type': 'Organization', '@id': 'https://yedra.app/#organisation', 'name': 'Yedra', 'url': 'https://yedra.app/',
          'description': 'Yedra, le CRM des écoles et des établissements scolaires.', 'founder': {'@id': PERSONNE['@id']},
          'foundingDate': '2024-11'})
-    page('/', 'Développeur Symfony & Sylius freelance à Bordeaux · Mickaël Teixeira',
+    page('/', 'Développeur Symfony et Sylius freelance à Bordeaux',
          'Développeur Symfony, Sylius et API Platform freelance à Bordeaux, PHP depuis 2009 : migrations e-commerce, middle offices, API et flux ERP.',
          t, donnees=donnees, image_alt='Mickaël Teixeira, développeur Symfony et Sylius freelance à Bordeaux', modifie=modifie, priorite='1.0')
     textes_llm.append(('/', 'Accueil', en_texte(source)))

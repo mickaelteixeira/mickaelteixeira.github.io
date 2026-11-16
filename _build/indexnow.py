@@ -1,7 +1,8 @@
-"""Signale aux moteurs compatibles IndexNow (Bing, Yandex, Seznam, Naver) les pages modifiées par le dernier commit.
+"""Signale aux moteurs compatibles IndexNow (Bing, Yandex, Seznam, Naver) les pages modifiées.
 
-Usage : python3 _build/indexnow.py          les pages modifiées par le dernier commit
-        python3 _build/indexnow.py --tout   toutes les pages du sitemap
+Usage : python3 _build/indexnow.py                    les pages modifiées par le dernier commit
+        python3 _build/indexnow.py --depuis <commit>  les pages modifiées depuis ce commit
+        python3 _build/indexnow.py --tout             toutes les pages du sitemap
 """
 import json
 import re
@@ -18,7 +19,8 @@ plan = re.findall(r'<loc>([^<]+)</loc>', (RACINE / 'sitemap.xml').read_text())
 
 
 def modifiees():
-    sortie = subprocess.run(['git', 'diff', '--name-only', 'HEAD^', 'HEAD'], cwd=RACINE, capture_output=True, text=True)
+    depuis = sys.argv[sys.argv.index('--depuis') + 1] if '--depuis' in sys.argv else 'HEAD^'
+    sortie = subprocess.run(['git', 'diff', '--name-only', depuis, 'HEAD'], cwd=RACINE, capture_output=True, text=True)
     if sortie.returncode:
         return plan
     urls = set()

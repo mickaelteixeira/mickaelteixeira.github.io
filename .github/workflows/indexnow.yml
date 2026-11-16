@@ -11,6 +11,10 @@ on:
         type: boolean
         default: true
 
+permissions:
+  contents: read
+  actions: read
+
 jobs:
   signaler:
     if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
@@ -19,9 +23,26 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.workflow_run.head_sha || github.sha }}
-          fetch-depth: 2
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - name: Envoyer les URL à IndexNow
-        run: python3 _build/indexnow.py ${{ inputs.tout && '--tout' || '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TOUT: ${{ inputs.tout }}
+          DEPLOIEMENT: ${{ github.event.workflow_run.id }}
+        run: |
+          if [ "$TOUT" = "true" ]; then
+            python3 _build/indexnow.py --tout
+          elif [ -n "$DEPLOIEMENT" ]; then
+            precedent=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs?event=dynamic&status=success&per_page=20" \
+              --jq "[.workflow_runs[] | select(.id < $DEPLOIEMENT)][0].head_sha // empty")
+            if [ -n "$precedent" ]; then
+              python3 _build/indexnow.py --depuis "$precedent"
+            else
+              python3 _build/indexnow.py --tout
+            fi
+          else
+            python3 _build/indexnow.py
+          fi
