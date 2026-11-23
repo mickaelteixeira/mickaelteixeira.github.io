@@ -670,14 +670,14 @@ def page_accueil():
     assert '<!--' not in t
     modifie = date_modif('/', source)
     donnees = graphe(
-        {'@type': 'ProfilePage', '@id': SITE + '/#page', 'url': SITE + '/', 'name': 'Développeur Symfony et Sylius freelance à Bordeaux',
+        {'@type': 'ProfilePage', '@id': SITE + '/#page', 'url': SITE + '/', 'name': 'Mickaël Teixeira, développeur Symfony et Sylius à Bordeaux',
          'inLanguage': 'fr-FR', 'isPartOf': {'@id': SITE_WEB['@id']}, 'mainEntity': {'@id': PERSONNE['@id']},
          'about': {'@id': ACTIVITE['@id']}, 'dateModified': horodatage(modifie)},
         PERSONNE, ACTIVITE, SITE_WEB,
         {'@type': 'Organization', '@id': 'https://yedra.app/#organisation', 'name': 'Yedra', 'url': 'https://yedra.app/',
          'description': 'Yedra, le CRM des écoles et des établissements scolaires.', 'founder': {'@id': PERSONNE['@id']},
          'foundingDate': '2024-11'})
-    page('/', 'Développeur Symfony et Sylius freelance à Bordeaux',
+    page('/', 'Mickaël Teixeira, développeur Symfony et Sylius à Bordeaux',
          'Développeur Symfony, Sylius et API Platform freelance à Bordeaux, PHP depuis 2009 : migrations e-commerce, middle offices, API et flux ERP.',
          t, donnees=donnees, image_alt='Mickaël Teixeira, développeur Symfony et Sylius freelance à Bordeaux', modifie=modifie, priorite='1.0')
     textes_llm.append(('/', 'Accueil', en_texte(source)))
