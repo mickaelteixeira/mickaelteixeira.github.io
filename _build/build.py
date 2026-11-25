@@ -35,6 +35,11 @@ H2 = f'margin: 0; {TIGHT}; font-size: 34px; line-height: 1.15; letter-spacing: -
 BOUTON = 'display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 16px'
 
 MISSIONS = [
+    {'slug': 'electra', 'resume': 'Un système de mise à jour à distance du firmware des serveurs de site et des totems piétons, piloté depuis le back-office.', 'pile': 'Go · Ruby on Rails · MQTT · S3',
+     'nom': 'Electra', 'annees': '2026 – aujourd’hui', 'role': 'Firmware à distance · freelance',
+     'titre': 'Electra : mise à jour du firmware à distance',
+     'description': 'Depuis octobre 2026, mission freelance chez Electra sur la mise à jour à distance du firmware des stations de recharge, en Go et Ruby on Rails.',
+     'client': 'https://www.go-electra.com/'},
     {'slug': 'maxicoffee', 'resume': 'Un middle office pour les territoires, la facturation et la logistique, synchronisé avec Salesforce.', 'pile': 'PHP 8.3 · Laravel · API Platform · RedPanda',
      'nom': 'MaxiCoffee', 'annees': '2025 – 2026', 'role': 'Middle office · freelance',
      'titre': 'Middle office MaxiCoffee : Laravel et Salesforce',
@@ -79,7 +84,7 @@ MISSIONS = [
 MISSION = {m['slug']: m for m in MISSIONS}
 
 ETAPES = [
-    ('2025 – aujourd’hui', 'Développeur freelance', [('MaxiCoffee', '/missions/maxicoffee/'), ('Commande.com, avec l’agence Dn’D', '/missions/commande/')]),
+    ('2025 – aujourd’hui', 'Développeur freelance', [('Electra', '/missions/electra/'), ('MaxiCoffee', '/missions/maxicoffee/'), ('Commande.com, avec l’agence Dn’D', '/missions/commande/')]),
     ('2024 – aujourd’hui', 'Fondateur et éditeur', [('Yedra, le CRM des écoles', 'https://yedra.app')]),
     ('2025', 'Lead developer', [('HeyTeam', '/missions/heyteam/')]),
     ('2022 – 2024', 'Développeur backend e-commerce', [('Ultra Premium Direct', '/missions/upd/')]),
@@ -171,7 +176,7 @@ PERSONNE = {
                       'skills': 'PHP, Symfony, Sylius, API Platform, Laravel, architecture hexagonale, Domain-Driven Design, intégration ERP et CRM'},
     'knowsAbout': ['PHP', 'Symfony', 'Sylius', 'API Platform', 'Laravel', 'E-commerce', 'Architecture hexagonale',
                    'Domain-Driven Design', 'Salesforce', 'Angular', 'Elasticsearch', 'RabbitMQ', 'RedPanda', 'Docker', 'GitLab CI',
-                   'Tests automatisés'],
+                   'Tests automatisés', 'Go', 'Ruby on Rails', 'Terraform', 'AWS IoT', 'MQTT'],
     'knowsLanguage': ['fr', 'en'],
     'worksFor': {'@id': SITE + '/#activite'},
     'sameAs': PROFILS,
@@ -665,7 +670,7 @@ def page_accueil():
     t = t.replace('<!--actualites-accueil-->', cartes)
     liens = ''.join(f'<a href="/expertises/{x["slug"]}/" style="color: var(--lien); font-weight: 500; text-underline-offset: 4px">{e(x["nom"])}</a>' for x in expertises)
     t = t.replace('<!--liens-expertises-->', f'<nav aria-label="Expertises en détail" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 28px; padding-top: 24px; border-top: 1px solid var(--trait)"><span style="{MONO}; font-size: 12px; color: var(--second)">En détail</span>{liens}<a href="/expertises/" style="color: var(--encre); font-weight: 500; text-underline-offset: 4px">Toutes les expertises</a></nav>')
-    grandes = {'maxicoffee', 'commande', 'heyteam', 'upd'}
+    grandes = {'electra', 'maxicoffee', 'commande', 'heyteam', 'upd'}
     t = couvertures(t, lambda slug: '(min-width: 1100px) 640px, 100vw' if slug in grandes else '(min-width: 1160px) 320px, (min-width: 620px) 50vw, 100vw')
     assert '<!--' not in t
     modifie = date_modif('/', source)

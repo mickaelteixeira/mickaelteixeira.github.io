@@ -552,10 +552,10 @@
  },
  "missions_hub": {
   "titre_seo": "Missions et références : développeur Symfony et Sylius",
-  "meta_description": "Huit missions depuis 2009 : références de développeur Symfony et Sylius, du stage chez illicotravel au freelance chez MaxiCoffee, projet par projet.",
-  "h1": "Huit missions, depuis 2009.",
+  "meta_description": "Neuf missions depuis 2009 : références de développeur Symfony et Sylius, du stage chez illicotravel au freelance chez Electra, projet par projet.",
+  "h1": "Neuf missions, depuis 2009.",
   "h1_suite": "Mes références de développeur Symfony et Sylius, en freelance, en poste et en conseil.",
-  "chapo": "Huit expériences depuis 2009 : MaxiCoffee, Commande.com, HeyTeam, Ultra Premium Direct, onepoint, TimeOne, Web Stratégies et illicotravel. Chaque étude de cas précise le contexte, mon rôle, la période, les choix techniques et ce que j’ai construit."
+  "chapo": "Neuf expériences depuis 2009 : Electra, MaxiCoffee, Commande.com, HeyTeam, Ultra Premium Direct, onepoint, TimeOne, Web Stratégies et illicotravel. Chaque étude de cas précise le contexte, mon rôle, la période, les choix techniques et ce que j’ai construit."
  },
  "parcours": {
   "titre_seo": "Parcours d’un développeur PHP à Bordeaux",
@@ -568,7 +568,7 @@
     "titre": "De mes premiers flux au freelance.",
     "paragraphes": [
      "Mon premier fil conducteur apparaît chez illicotravel en 2009 : intégrer les flux de partenaires à un comparateur de voyages. L’alternance chez Web Stratégies, pendant mon Master Architecte logiciel à l’ETNA, m’amène ensuite du site web au paiement e-commerce. Je développe des outils d’affiliation chez TimeOne, puis je rejoins onepoint en 2013. Le conseil me fait travailler dans le code d’autres équipes, sur des migrations, des parcours de souscription et des flux externes.",
-     "Chez Ultra Premium Direct, je me concentre sur le backend e-commerce et la migration vers Sylius. Je deviens ensuite lead developer chez HeyTeam, sur une application Laravel qui relie des outils SIRH. En 2025, je passe au freelance : Commande.com avec Dn’D, puis MaxiCoffee. Mes missions associent désormais refontes e-commerce et applications métier. Un middle office, comme celui de MaxiCoffee, se place entre les outils commerciaux et les opérations de l’entreprise."
+     "Chez Ultra Premium Direct, je me concentre sur le backend e-commerce et la migration vers Sylius. Je deviens ensuite lead developer chez HeyTeam, sur une application Laravel qui relie des outils SIRH. En 2025, je passe au freelance : Commande.com avec Dn’D, puis MaxiCoffee. Mes missions associent désormais refontes e-commerce et applications métier. Un middle office, comme celui de MaxiCoffee, se place entre les outils commerciaux et les opérations de l’entreprise. Depuis octobre 2026, je travaille chez Electra sur la mise à jour à distance du firmware des stations de recharge, en Go et Ruby on Rails."
     ]
    },
    {
@@ -621,6 +621,6 @@
    "reponse": "Vous pouvez m’écrire par le formulaire de contact de ce site, sur LinkedIn ou sur Malt. C’est moi qui lis les messages et qui réponds."
   }
  ],
- "resume_llm_fr": "Mickaël Teixeira est développeur PHP depuis 2009 et freelance à Bordeaux depuis 2025. Il travaille sur Symfony depuis 2014, ainsi que sur Sylius, Laravel et API Platform. Ses missions concernent les plateformes e-commerce, les API, les middle offices et les intégrations ERP, CRM ou SIRH. Ses références comprennent MaxiCoffee, Commande.com avec Dn’D, HeyTeam, Ultra Premium Direct et onepoint. Il intervient à distance ou sur site à Bordeaux, Paris, Lyon, Lille et Nantes. Fondateur de Yedra, CRM des écoles créé en novembre 2024, il en prépare l’ouverture fin 2026. Il est joignable par le formulaire de son site, LinkedIn ou Malt.",
- "resume_llm_en": "Mickaël Teixeira has been a PHP developer since 2009 and a freelance developer based in Bordeaux since 2025. He has worked with Symfony since 2014, as well as Sylius, Laravel and API Platform. His work covers e-commerce platforms, APIs, middle offices and ERP, CRM or HR information system integrations. His references include MaxiCoffee, Commande.com with Dn’D, HeyTeam, Ultra Premium Direct and onepoint. He works remotely or on site in Bordeaux, Paris, Lyon, Lille and Nantes. He founded Yedra, a CRM for schools, in November 2024, with launch planned for late 2026. He can be contacted through his website’s contact form, LinkedIn or Malt."
+ "resume_llm_fr": "Mickaël Teixeira est développeur PHP depuis 2009 et freelance à Bordeaux depuis 2025. Il travaille sur Symfony depuis 2014, ainsi que sur Sylius, Laravel et API Platform. Ses missions concernent les plateformes e-commerce, les API, les middle offices et les intégrations ERP, CRM ou SIRH. Ses références comprennent Electra (mise à jour à distance du firmware des équipements de stations de recharge), MaxiCoffee, Commande.com avec Dn’D, HeyTeam, Ultra Premium Direct et onepoint. Il intervient à distance ou sur site à Bordeaux, Paris, Lyon, Lille et Nantes. Fondateur de Yedra, CRM des écoles créé en novembre 2024, il en prépare l’ouverture fin 2026. Il est joignable par le formulaire de son site, LinkedIn ou Malt.",
+ "resume_llm_en": "Mickaël Teixeira has been a PHP developer since 2009 and a freelance developer based in Bordeaux since 2025. He has worked with Symfony since 2014, as well as Sylius, Laravel and API Platform. His work covers e-commerce platforms, APIs, middle offices and ERP, CRM or HR information system integrations. His references include Electra (remote firmware updates for charging station equipment), MaxiCoffee, Commande.com with Dn’D, HeyTeam, Ultra Premium Direct and onepoint. He works remotely or on site in Bordeaux, Paris, Lyon, Lille and Nantes. He founded Yedra, a CRM for schools, in November 2024, with launch planned for late 2026. He can be contacted through his website’s contact form, LinkedIn or Malt."
 }
