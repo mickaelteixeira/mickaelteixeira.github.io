@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://mickaelteixeira.github.io/</loc><lastmod>2026-11-15</lastmod><priority>1.0</priority></url>
+<url><loc>https://mickaelteixeira.github.io/</loc><lastmod>2026-11-25</lastmod><priority>1.0</priority></url>
 <url><loc>https://mickaelteixeira.github.io/expertises/</loc><lastmod>2026-11-15</lastmod><priority>0.9</priority></url>
 <url><loc>https://mickaelteixeira.github.io/expertises/api-platform/</loc><lastmod>2026-11-15</lastmod><priority>0.9</priority></url>
 <url><loc>https://mickaelteixeira.github.io/expertises/architecture-hexagonale-ddd/</loc><lastmod>2026-11-15</lastmod><priority>0.9</priority></url>
@@ -9,8 +9,9 @@
 <url><loc>https://mickaelteixeira.github.io/expertises/sylius/</loc><lastmod>2026-11-15</lastmod><priority>0.9</priority></url>
 <url><loc>https://mickaelteixeira.github.io/expertises/symfony/</loc><lastmod>2026-11-15</lastmod><priority>0.9</priority></url>
 <url><loc>https://mickaelteixeira.github.io/actualites/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
-<url><loc>https://mickaelteixeira.github.io/missions/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
+<url><loc>https://mickaelteixeira.github.io/missions/</loc><lastmod>2026-11-25</lastmod><priority>0.8</priority></url>
 <url><loc>https://mickaelteixeira.github.io/missions/commande/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
+<url><loc>https://mickaelteixeira.github.io/missions/electra/</loc><lastmod>2026-11-25</lastmod><priority>0.8</priority></url>
 <url><loc>https://mickaelteixeira.github.io/missions/heyteam/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
 <url><loc>https://mickaelteixeira.github.io/missions/illicotravel/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
 <url><loc>https://mickaelteixeira.github.io/missions/maxicoffee/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
@@ -30,6 +31,6 @@
 <url><loc>https://mickaelteixeira.github.io/actualites/sylius-prestashop-rapprochement/</loc><lastmod>2026-11-15</lastmod><priority>0.7</priority></url>
 <url><loc>https://mickaelteixeira.github.io/actualites/tailwind-financement-ia/</loc><lastmod>2026-11-15</lastmod><priority>0.7</priority></url>
 <url><loc>https://mickaelteixeira.github.io/actualites/yedra-crm-ecoles/</loc><lastmod>2026-11-15</lastmod><priority>0.7</priority></url>
-<url><loc>https://mickaelteixeira.github.io/parcours/</loc><lastmod>2026-11-16</lastmod><priority>0.7</priority></url>
+<url><loc>https://mickaelteixeira.github.io/parcours/</loc><lastmod>2026-11-25</lastmod><priority>0.7</priority></url>
 <url><loc>https://mickaelteixeira.github.io/mentions-legales/</loc><lastmod>2026-11-15</lastmod><priority>0.2</priority></url>
 </urlset>

@@ -1,7 +1,7 @@
 {
  "/": {
-  "empreinte": "7f010a755ceca1da",
-  "modifie": "2026-11-15"
+  "empreinte": "c2510bc263635448",
+  "modifie": "2026-11-25"
  },
  "/actualites/": {
   "empreinte": "f1066dd928cb3bfe",
@@ -88,12 +88,16 @@
   "modifie": "2026-11-15"
  },
  "/missions/": {
-  "empreinte": "3bef5ad58fd354a9",
-  "modifie": "2026-11-15"
+  "empreinte": "2719b573769c0a09",
+  "modifie": "2026-11-25"
  },
  "/missions/commande/": {
   "empreinte": "20e21c45d19585d6",
   "modifie": "2026-11-15"
+ },
+ "/missions/electra/": {
+  "empreinte": "df9eaa272a14283f",
+  "modifie": "2026-11-25"
  },
  "/missions/heyteam/": {
   "empreinte": "2b6bc1419bcea067",
@@ -124,7 +128,7 @@
   "modifie": "2026-11-15"
  },
  "/parcours/": {
-  "empreinte": "46779768f752f296",
-  "modifie": "2026-11-16"
+  "empreinte": "c29fc7fbc4a23ef4",
+  "modifie": "2026-11-25"
  }
 }

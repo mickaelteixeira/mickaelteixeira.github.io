@@ -1,15 +1,15 @@
 # Mickaël Teixeira
 
-> Mickaël Teixeira est développeur PHP depuis 2009 et freelance à Bordeaux depuis 2025. Il travaille sur Symfony depuis 2014, ainsi que sur Sylius, Laravel et API Platform. Ses missions concernent les plateformes e-commerce, les API, les middle offices et les intégrations ERP, CRM ou SIRH. Ses références comprennent MaxiCoffee, Commande.com avec Dn’D, HeyTeam, Ultra Premium Direct et onepoint. Il intervient à distance ou sur site à Bordeaux, Paris, Lyon, Lille et Nantes. Fondateur de Yedra, CRM des écoles créé en novembre 2024, il en prépare l’ouverture fin 2026. Il est joignable par le formulaire de son site, LinkedIn ou Malt.
+> Mickaël Teixeira est développeur PHP depuis 2009 et freelance à Bordeaux depuis 2025. Il travaille sur Symfony depuis 2014, ainsi que sur Sylius, Laravel et API Platform. Ses missions concernent les plateformes e-commerce, les API, les middle offices et les intégrations ERP, CRM ou SIRH. Ses références comprennent Electra (mise à jour à distance du firmware des équipements de stations de recharge), MaxiCoffee, Commande.com avec Dn’D, HeyTeam, Ultra Premium Direct et onepoint. Il intervient à distance ou sur site à Bordeaux, Paris, Lyon, Lille et Nantes. Fondateur de Yedra, CRM des écoles créé en novembre 2024, il en prépare l’ouverture fin 2026. Il est joignable par le formulaire de son site, LinkedIn ou Malt.
 
-Mickaël Teixeira has been a PHP developer since 2009 and a freelance developer based in Bordeaux since 2025. He has worked with Symfony since 2014, as well as Sylius, Laravel and API Platform. His work covers e-commerce platforms, APIs, middle offices and ERP, CRM or HR information system integrations. His references include MaxiCoffee, Commande.com with Dn’D, HeyTeam, Ultra Premium Direct and onepoint. He works remotely or on site in Bordeaux, Paris, Lyon, Lille and Nantes. He founded Yedra, a CRM for schools, in November 2024, with launch planned for late 2026. He can be contacted through his website’s contact form, LinkedIn or Malt.
+Mickaël Teixeira has been a PHP developer since 2009 and a freelance developer based in Bordeaux since 2025. He has worked with Symfony since 2014, as well as Sylius, Laravel and API Platform. His work covers e-commerce platforms, APIs, middle offices and ERP, CRM or HR information system integrations. His references include Electra (remote firmware updates for charging station equipment), MaxiCoffee, Commande.com with Dn’D, HeyTeam, Ultra Premium Direct and onepoint. He works remotely or on site in Bordeaux, Paris, Lyon, Lille and Nantes. He founded Yedra, a CRM for schools, in November 2024, with launch planned for late 2026. He can be contacted through his website’s contact form, LinkedIn or Malt.
 
 ## Faits essentiels
 
 - Métier : développeur Symfony, Sylius et API Platform, freelance ; aussi Laravel, architecture hexagonale et DDD, intégration ERP, CRM et SIRH
 - Base : Bordeaux (France) ; intervention à distance, ou sur site à Bordeaux, Paris, Lyon, Lille, Nantes
 - Expérience : développeur PHP depuis 2009, freelance depuis 2025
-- Références : MaxiCoffee, Commande.com (avec l’agence Dn’D), HeyTeam, Ultra Premium Direct, onepoint (Enedis, Gaz de Bordeaux, PSA, Bureau Veritas Pro, SMIP), TimeOne, Web Stratégies, illicotravel
+- Références : Electra, MaxiCoffee, Commande.com (avec l’agence Dn’D), HeyTeam, Ultra Premium Direct, onepoint (Enedis, Gaz de Bordeaux, PSA, Bureau Veritas Pro, SMIP), TimeOne, Web Stratégies, illicotravel
 - Formation : Master Architecte logiciel, ETNA
 - Produit : fondateur de Yedra, le CRM des écoles (https://yedra.app), depuis novembre 2024
 - Disponibilité : toujours ouvert à une mission ou à un échange
@@ -27,6 +27,7 @@ Mickaël Teixeira has been a PHP developer since 2009 and a freelance developer 
 
 ## Missions
 
+- [Electra (2026 – aujourd’hui)](https://mickaelteixeira.github.io/missions/electra/) : Depuis octobre 2026, mission freelance chez Electra sur la mise à jour à distance du firmware des stations de recharge, en Go et Ruby on Rails.
 - [MaxiCoffee (2025 – 2026)](https://mickaelteixeira.github.io/missions/maxicoffee/) : Mission freelance chez MaxiCoffee (2025-2026) : un middle office Laravel en architecture hexagonale et DDD, synchronisé avec Salesforce.
 - [Commande.com (2025)](https://mickaelteixeira.github.io/missions/commande/) : Mission freelance avec l’agence Dn’D (2025) : la refonte de Commande.com sur Sylius en headless, API Platform, flux ERP et transporteurs, tests automatisés.
 - [HeyTeam (2025)](https://mickaelteixeira.github.io/missions/heyteam/) : Lead developer chez HeyTeam en 2025 : une plateforme B2B d’onboarding reliée aux SIRH des clients, en architecture modulaire Laravel.

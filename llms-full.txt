@@ -1,15 +1,15 @@
 # Mickaël Teixeira
 
-> Mickaël Teixeira est développeur PHP depuis 2009 et freelance à Bordeaux depuis 2025. Il travaille sur Symfony depuis 2014, ainsi que sur Sylius, Laravel et API Platform. Ses missions concernent les plateformes e-commerce, les API, les middle offices et les intégrations ERP, CRM ou SIRH. Ses références comprennent MaxiCoffee, Commande.com avec Dn’D, HeyTeam, Ultra Premium Direct et onepoint. Il intervient à distance ou sur site à Bordeaux, Paris, Lyon, Lille et Nantes. Fondateur de Yedra, CRM des écoles créé en novembre 2024, il en prépare l’ouverture fin 2026. Il est joignable par le formulaire de son site, LinkedIn ou Malt.
+> Mickaël Teixeira est développeur PHP depuis 2009 et freelance à Bordeaux depuis 2025. Il travaille sur Symfony depuis 2014, ainsi que sur Sylius, Laravel et API Platform. Ses missions concernent les plateformes e-commerce, les API, les middle offices et les intégrations ERP, CRM ou SIRH. Ses références comprennent Electra (mise à jour à distance du firmware des équipements de stations de recharge), MaxiCoffee, Commande.com avec Dn’D, HeyTeam, Ultra Premium Direct et onepoint. Il intervient à distance ou sur site à Bordeaux, Paris, Lyon, Lille et Nantes. Fondateur de Yedra, CRM des écoles créé en novembre 2024, il en prépare l’ouverture fin 2026. Il est joignable par le formulaire de son site, LinkedIn ou Malt.
 
-Mickaël Teixeira has been a PHP developer since 2009 and a freelance developer based in Bordeaux since 2025. He has worked with Symfony since 2014, as well as Sylius, Laravel and API Platform. His work covers e-commerce platforms, APIs, middle offices and ERP, CRM or HR information system integrations. His references include MaxiCoffee, Commande.com with Dn’D, HeyTeam, Ultra Premium Direct and onepoint. He works remotely or on site in Bordeaux, Paris, Lyon, Lille and Nantes. He founded Yedra, a CRM for schools, in November 2024, with launch planned for late 2026. He can be contacted through his website’s contact form, LinkedIn or Malt.
+Mickaël Teixeira has been a PHP developer since 2009 and a freelance developer based in Bordeaux since 2025. He has worked with Symfony since 2014, as well as Sylius, Laravel and API Platform. His work covers e-commerce platforms, APIs, middle offices and ERP, CRM or HR information system integrations. His references include Electra (remote firmware updates for charging station equipment), MaxiCoffee, Commande.com with Dn’D, HeyTeam, Ultra Premium Direct and onepoint. He works remotely or on site in Bordeaux, Paris, Lyon, Lille and Nantes. He founded Yedra, a CRM for schools, in November 2024, with launch planned for late 2026. He can be contacted through his website’s contact form, LinkedIn or Malt.
 
 ## Faits essentiels
 
 - Métier : développeur Symfony, Sylius et API Platform, freelance ; aussi Laravel, architecture hexagonale et DDD, intégration ERP, CRM et SIRH
 - Base : Bordeaux (France) ; intervention à distance, ou sur site à Bordeaux, Paris, Lyon, Lille, Nantes
 - Expérience : développeur PHP depuis 2009, freelance depuis 2025
-- Références : MaxiCoffee, Commande.com (avec l’agence Dn’D), HeyTeam, Ultra Premium Direct, onepoint (Enedis, Gaz de Bordeaux, PSA, Bureau Veritas Pro, SMIP), TimeOne, Web Stratégies, illicotravel
+- Références : Electra, MaxiCoffee, Commande.com (avec l’agence Dn’D), HeyTeam, Ultra Premium Direct, onepoint (Enedis, Gaz de Bordeaux, PSA, Bureau Veritas Pro, SMIP), TimeOne, Web Stratégies, illicotravel
 - Formation : Master Architecte logiciel, ETNA
 - Produit : fondateur de Yedra, le CRM des écoles (https://yedra.app), depuis novembre 2024
 - Disponibilité : toujours ouvert à une mission ou à un échange
@@ -280,7 +280,7 @@ J’écris du PHP pour le web depuis 2009. Formé en alternance à l’ETNA, je 
 
 Mon premier fil conducteur apparaît chez illicotravel en 2009 : intégrer les flux de partenaires à un comparateur de voyages. L’alternance chez Web Stratégies, pendant mon Master Architecte logiciel à l’ETNA, m’amène ensuite du site web au paiement e-commerce. Je développe des outils d’affiliation chez TimeOne, puis je rejoins onepoint en 2013. Le conseil me fait travailler dans le code d’autres équipes, sur des migrations, des parcours de souscription et des flux externes.
 
-Chez Ultra Premium Direct, je me concentre sur le backend e-commerce et la migration vers Sylius. Je deviens ensuite lead developer chez HeyTeam, sur une application Laravel qui relie des outils SIRH. En 2025, je passe au freelance : Commande.com avec Dn’D, puis MaxiCoffee. Mes missions associent désormais refontes e-commerce et applications métier. Un middle office, comme celui de MaxiCoffee, se place entre les outils commerciaux et les opérations de l’entreprise.
+Chez Ultra Premium Direct, je me concentre sur le backend e-commerce et la migration vers Sylius. Je deviens ensuite lead developer chez HeyTeam, sur une application Laravel qui relie des outils SIRH. En 2025, je passe au freelance : Commande.com avec Dn’D, puis MaxiCoffee. Mes missions associent désormais refontes e-commerce et applications métier. Un middle office, comme celui de MaxiCoffee, se place entre les outils commerciaux et les opérations de l’entreprise. Depuis octobre 2026, je travaille chez Electra sur la mise à jour à distance du firmware des stations de recharge, en Go et Ruby on Rails.
 
 ### Lire, relier et transmettre.
 
@@ -296,7 +296,7 @@ Claude Code, les agents et l’automatisation des tests font partie de mon quoti
 
 ### Les étapes
 
-- 2025 – aujourd’hui : Développeur freelance, MaxiCoffee, Commande.com, avec l’agence Dn’D
+- 2025 – aujourd’hui : Développeur freelance, Electra, MaxiCoffee, Commande.com, avec l’agence Dn’D
 - 2024 – aujourd’hui : Fondateur et éditeur, Yedra, le CRM des écoles
 - 2025 : Lead developer, HeyTeam
 - 2022 – 2024 : Développeur backend e-commerce, Ultra Premium Direct
@@ -304,6 +304,41 @@ Claude Code, les agents et l’automatisation des tests font partie de mon quoti
 - 2012 – 2013 : Développeur PHP, TimeOne
 - 2009 – 2011 : Développeur PHP en alternance, Agence Web Stratégies, illicotravel
 - 2008 – 2011 : Master Architecte logiciel, ETNA, école d’alternance en informatique
+
+---
+
+## Mission : Electra (2026 – aujourd’hui)
+
+Page : https://mickaelteixeira.github.io/missions/electra/
+
+## La mise à jour du firmware chez Electra. Des serveurs de site et des totems piétons mis à jour à distance, sans déplacement.
+Electra
+Client : Electra
+Rôle : Développeur freelance
+Période : Depuis octobre 2026
+Pile : Go, Ruby on Rails, AWS IoT
+Electra exploite des stations de recharge rapide pour véhicules électriques. Depuis octobre 2026, j’y travaille en freelance dans l’équipe chargée du logiciel des stations, où j’ai repris un chantier déjà lancé : mettre à jour à distance le firmware, le logiciel qui tourne sur leurs équipements.
+
+### Le problème à résoudre.
+Le chantier commence par le firmware des serveurs de site, les ordinateurs installés dans les stations. Il s’étend ensuite aux totems piétons, des bornes à écran en mode kiosque. Chaque mise à jour doit pouvoir se faire sans personne sur place.
+Pendant le téléchargement, le réseau peut se figer ou se couper. En pleine installation, le courant peut sauter. Si la nouvelle version ne démarre pas, l’équipement doit repartir tout seul sur l’ancienne.
+
+### Ce que j’ai construit.
+Le stager Un service en Go sur chaque appareil pour télécharger et vérifier la version, puis l’installer sur commande.
+Les essais Des essais de panne en atelier sur un vrai équipement, avec des coupures de réseau et de courant.
+Le back-office Une page par appareil, en Ruby on Rails, pour suivre la mise à jour et lancer l’installation.
+Les outils Une release du firmware construite en conteneur et une commande qui refuse de réécrire une version déjà publiée.
+
+### Les choix, et pourquoi.
+L’installation sur commande. Le téléchargement peut prendre du temps, alors il tourne en fond et reprend là où il s’est arrêté après une coupure. L’équipe choisit ensuite le moment de l’installation, l’étape où une coupure de courant peut imposer un retour à l’ancienne version.
+Le démarrage avec repli. Le démarrage A/B garde l’ancienne version disponible. Si la nouvelle ne démarre pas, l’appareil repart automatiquement sur l’ancienne pour éviter de rester à l’arrêt.
+Un état par appareil. En rattachant l’état de la mise à jour à l’appareil, j’ai pu donner aux totems leur propre page de suivi et garder la même commande d’installation que pour les serveurs de site.
+Les essais en atelier. Je teste les coupures sur un vrai équipement en atelier pour vérifier son comportement avant la production. En production, le déploiement commence sur un seul appareil, puis s’étend par petits groupes.
+À distance, une mise à jour doit aussi savoir faire marche arrière.
+- 2 familles d’équipements : serveurs de site et totems piétons
+- 1 clic pour lancer l’installation depuis le back-office
+- 0 déplacement : tout se fait à distance
+Go · Ruby on Rails · Python · bash · Terraform · AWS IoT Core · AWS IoT Greengrass · S3 · MQTT · Datadog · GitHub Actions · Docker · systemd
 
 ---
 
@@ -1215,8 +1250,13 @@ Formation : Master Architecte logiciel, ETNA
 Intervention : À distance, ou sur site à Bordeaux, Paris, Lyon, Lille, Nantes
 Disponibilité : Toujours ouvert à une mission ou un échange
 
-### Huit expériences. Depuis 2009.
+### Neuf expériences. Depuis 2009.
 En freelance, en poste ou en conseil : chaque mission a sa page, dans l’univers de l’entreprise qui me l’a confiée.
+Electra
+Depuis 10.2026 · Freelance · En cours
+
+#### Electra
+Un système de mise à jour à distance du firmware des serveurs de site et des totems piétons, piloté depuis le back-office.
 07.2025 – 10.2026 · Freelance
 
 #### MaxiCoffee
@@ -1295,7 +1335,7 @@ Revues de code, pair programming et décisions écrites : ce que je construis re
 ### Mon parcours.
 Je m’appelle Mickaël Teixeira. Formé en alternance à l’ETNA, j’écris du PHP pour le web depuis 2009 : une agence web, l’affiliation chez TimeOne, huit ans de conseil chez onepoint, l’e-commerce chez Ultra Premium Direct, puis le freelance et mon propre produit.
 Mon parcours en détail
-- 2025 – aujourd’hui Développeur freelance MaxiCoffee, Commande.com pour l’agence Dn’D
+- 2025 – aujourd’hui Développeur freelance Electra, MaxiCoffee, Commande.com pour l’agence Dn’D
 - 2024 – aujourd’hui Fondateur et éditeur Yedra, le CRM des écoles
 - 2025 Lead developer HeyTeam
 - 2022 – 2024 Développeur backend e-commerce Ultra Premium Direct
