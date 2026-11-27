@@ -197,7 +197,7 @@ ACTIVITE = {
     'vatID': 'FR88831303185', 'taxID': '831 303 185', 'sameAs': PROFILS,
 }
 SITE_WEB = {'@type': 'WebSite', '@id': SITE + '/#site', 'url': SITE + '/', 'name': NOM,
-            'alternateName': 'Mickaël Teixeira, développeur Symfony et Sylius freelance', 'inLanguage': 'fr-FR',
+            'alternateName': ['Mickael Teixeira', SITE.split('//')[1]], 'inLanguage': 'fr-FR',
             'description': 'Le site de Mickaël Teixeira, développeur Symfony, Sylius et API Platform freelance à Bordeaux.',
             'publisher': {'@id': PERSONNE['@id']}}
 
@@ -678,10 +678,9 @@ def page_accueil():
         {'@type': 'ProfilePage', '@id': SITE + '/#page', 'url': SITE + '/', 'name': 'Mickaël Teixeira, développeur Symfony et Sylius à Bordeaux',
          'inLanguage': 'fr-FR', 'isPartOf': {'@id': SITE_WEB['@id']}, 'mainEntity': {'@id': PERSONNE['@id']},
          'about': {'@id': ACTIVITE['@id']}, 'dateModified': horodatage(modifie)},
-        PERSONNE, ACTIVITE, SITE_WEB,
-        {'@type': 'Organization', '@id': 'https://yedra.app/#organisation', 'name': 'Yedra', 'url': 'https://yedra.app/',
-         'description': 'Yedra, le CRM des écoles et des établissements scolaires.', 'founder': {'@id': PERSONNE['@id']},
-         'foundingDate': '2024-11'})
+        # Yedra stays a bare reference to the node yedra.app publishes about itself: a standalone
+        # Organization node on this page made Brave Search label the whole site "Yedra".
+        {**PERSONNE, 'affiliation': {'@id': 'https://yedra.app/#org'}}, ACTIVITE, SITE_WEB)
     page('/', 'Mickaël Teixeira, développeur Symfony et Sylius à Bordeaux',
          'Développeur Symfony, Sylius et API Platform freelance à Bordeaux, PHP depuis 2009 : migrations e-commerce, middle offices, API et flux ERP.',
          t, donnees=donnees, image_alt='Mickaël Teixeira, développeur Symfony et Sylius freelance à Bordeaux', modifie=modifie, priorite='1.0')
