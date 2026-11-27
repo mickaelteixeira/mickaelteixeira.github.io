@@ -70,6 +70,33 @@ for p in pages:
         except ValueError as erreur:
             erreurs.append(f'{nom} : JSON-LD invalide ({erreur})')
 
+def nodes(value):
+    if isinstance(value, dict):
+        yield value
+        for child in value.values():
+            yield from nodes(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from nodes(child)
+
+
+# Search engines derive the site name from the home page: its entities must not compete with the WebSite node.
+home = (RACINE / 'index.html').read_text()
+home_nodes = [n for bloc in re.findall(r'<script type="application/ld\+json">(.*?)</script>', home, re.S) for n in nodes(json.loads(bloc))]
+websites = [n for n in home_nodes if n.get('@type') == 'WebSite']
+host = re.search(r'rel="canonical" href="https://([^/"]+)', home).group(1)
+if len(websites) != 1:
+    erreurs.append(f'index.html : {len(websites)} nœuds WebSite, un seul attendu')
+else:
+    site_name = html.unescape(re.search(r'property="og:site_name" content="([^"]*)"', home).group(1))
+    if websites[0].get('name') != site_name:
+        erreurs.append(f'index.html : WebSite « {websites[0].get("name")} » et og:site_name « {site_name} » diffèrent')
+    if websites[0].get('alternateName', [None])[-1] != host:
+        erreurs.append(f'index.html : le dernier alternateName du WebSite doit être {host}')
+for n in home_nodes:
+    if n.get('@type') == 'Organization':
+        erreurs.append(f'index.html : nœud Organization « {n.get("name")} », qui concurrence le nom du site')
+
 plan = (RACINE / 'sitemap.xml').read_text()
 for loc in re.findall(r'<loc>([^<]+)</loc>', plan):
     chemin = loc.replace('https://mickaelteixeira.github.io', '')
